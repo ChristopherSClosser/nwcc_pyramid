@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+      <meta name="description" content="Northwest Community Church We Love Boldly." />
+      <meta name="keywords" content="all the keywords separated by comas">
+      <meta charset="utf-8">
+      <link href="{{request.static_url('nwcc_pyramid:static/theme.css')}}" rel="stylesheet">
+      <link rel="shortcut icon" href="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" type="image/x-icon">
+
+      <title>NWCC</title>
+    {% endblock %}
+  </head>
+  <body>
+    
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
