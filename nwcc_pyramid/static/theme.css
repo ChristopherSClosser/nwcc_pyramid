@@ -1,8 +1,8 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  /* font-weight: 300; */
   color: #bc2131;
   display: flex;
   min-height: 97vh;
@@ -31,7 +31,7 @@ hr {
 .brand h2 {
   padding-top: 1rem;
   text-shadow: 0 0 0.08rem black;
-  font-size: 1px;
+  font-size: 0.5rem;
   background: white;
   height: 4rem;
   margin: 0;
