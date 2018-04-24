@@ -28,7 +28,7 @@ hr {
   width: 100vw;
   height: 6rem;
   background: white;
-  line-height: 1.1rem;
+  line-height: 1.3rem;
 }
 
 .brand h2 {
@@ -41,7 +41,7 @@ hr {
 }
 
 .brand img {
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
   width: 4rem;
   float: left;
   z-index: 9999999;
@@ -51,7 +51,7 @@ hr {
     font-size: 32px;
     float: right;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
     margin-right: 0.1rem;
     background-color: Transparent;
     background-repeat: no-repeat;
