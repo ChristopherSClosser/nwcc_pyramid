@@ -26,7 +26,9 @@ hr {
 
 .brand {
   width: 100vw;
-  line-height: 1.5rem;
+  height: 6rem;
+  background: white;
+  line-height: 1.1rem;
 }
 
 .brand h2 {
@@ -154,6 +156,12 @@ footer {
 
 .content {
   flex: 1 0 auto;
+}
+
+@media only screen and (min-width: 320px) {
+    body {
+      -webkit-text-size-adjust: 100%;
+    }
 }
 
 @media only screen and (min-width: 400px) {
