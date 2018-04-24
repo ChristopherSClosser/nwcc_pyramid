@@ -22,7 +22,11 @@
   </head>
   <body>
     <header class="header nav-down">
-      <button class="burger">&#9776;</button>
+      <div class="brand">
+        <img style="z-index: 9999999;" src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" alt="">
+        <button class="burger">&#9776;</button>
+        <h2>NORTHWEST<br>COMMUNITY CHURCH</h2>
+      </div>
       <nav class="hidden main-nav" id="main-nav">
         <ul id="nav">
           <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
@@ -39,13 +43,14 @@
           <li id="giving"><a href="">GIVING</a></li>
         </ul>
       </nav>
+
     </header>
 
     <center>
     <ul class="gallery" id="slider">
-      <li><img style="z-index: 9999999" class="mySlides" src="{{request.static_url('nwcc_pyramid:static/img_2146.jpg')}}" alt=""></li>
-      <li><img style="z-index: 999999" class="mySlides" id="size" src="{{request.static_url('nwcc_pyramid:static/logo.png')}}" alt=""></li>
-      <li><img style="z-index: 99999" class="mySlides" src="{{request.static_url('nwcc_pyramid:static/the_club.jpg')}}" alt="NWCC @ the Hope Center B&GC Lakewood"></li>
+      <li><img class="mySlides" src="{{request.static_url('nwcc_pyramid:static/img_2146.jpg')}}" alt=""></li>
+      <li><img class="mySlides" id="size" src="{{request.static_url('nwcc_pyramid:static/logo.png')}}" alt=""></li>
+      <li><img class="mySlides" src="{{request.static_url('nwcc_pyramid:static/the_club.jpg')}}" alt="NWCC @ the Hope Center B&GC Lakewood"></li>
     </ul>
     </center>
 
