@@ -41,22 +41,20 @@ hr {
     list-style-type: none;
     padding: 0;
     width: 98%;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
     z-index: 999;
 }
 
 .gallery li img {
     display: block;
-
     margin: auto;
     width: 100%;
-    margin-top: 2.4em;
     background-repeat: no-repeat;
 }
 
-.mySlides {
+/* .mySlides {
     display: none;
-}
+} */
 
 .hidden {
     display: none;
@@ -81,8 +79,10 @@ hr {
   float: right;
   list-style-type: none;
   text-align: right;
-  font-weight: bolder;
-  background: #f1f1f1;
+  font-weight: bold;
+  /* background: #f1f1f1; */
+  background-image: linear-gradient(to right, rgba(241,241,241,0.1), rgba(221, 221, 221, 0.74), #f1f1f1, #f1f1f1);
+
   font-size: 18px;
   margin: auto;
   padding: 4%;
