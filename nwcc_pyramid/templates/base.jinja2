@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{request.locale_name}}">
+  <head>
+    {% block head %}
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Northwest Community Church We Love Boldly." />
+      <meta name="keywords" content="all the keywords separated by comas">
+      <meta charset="utf-8">
+
+      <link href="{{request.static_url('nwcc_pyramid:static/theme.css')}}" rel="stylesheet">
+      <link rel="shortcut icon" href="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" type="image/x-icon">
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js" integrity="sha384-f1r2UzjsxZ9T4V1f2zBO/evUqSEOpeaUUZcMTz1Up63bl4ruYnFYeM+BxI4NhyI0" crossorigin="anonymous"></script>
+      <![endif]-->
+
+      <title>Northwest Community Church - Love Boldly{% block title %}{% endblock %}</title>
+    {% endblock %}
+  </head>
+  <body>
+    <header class="header nav-down">
+      <div class="brand">
+        <img style="z-index: 9999999;" src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" alt="">
+        <button class="burger">&#9776;</button>
+        <h2>NORTHWEST<br>COMMUNITY CHURCH</h2>
+      </div>
+      <nav class="hidden main-nav" id="main-nav">
+        <ul id="nav">
+          <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
+          <li id="about"><a href="">ABOUT US</a></li><hr>
+          <li id="events"><a href="">EVENTS</a></li><hr>
+          <li id="ministries"><a href="">MINISTRIES</a></li><hr>
+          <li id="service"><a href="">SUNDAY SERVICE</a>
+            <ul style="display: none;" class="hidden">
+              <li>THE MESSAGE</li>
+              <li>SUNDAY PROGRAM</li>
+              <li>HANDOUT</li>
+            </ul>
+          </li><hr>
+          <li id="giving"><a href="">GIVING</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <center>
+    <ul class="gallery" id="slider">
+      <li><img class="mySlides" src="{{request.static_url('nwcc_pyramid:static/img_2146.jpg')}}" alt=""></li>
+      <li><img class="mySlides" id="size" src="{{request.static_url('nwcc_pyramid:static/logo.png')}}" alt=""></li>
+      <li><img class="mySlides" src="{{request.static_url('nwcc_pyramid:static/the_club.jpg')}}" alt="NWCC @ the Hope Center B&GC Lakewood"></li>
+    </ul>
+    </center>
+
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <center>
+    <footer>
+      <div class="row">
+        <div class="copyright">
+          Copyright &copy; Northwest Community Church - Love Boldly
+        </div>
+      </div>
+    </footer>
+    </center>
+  </body>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js" integrity="sha384-aBL3Lzi6c9LNDGvpHkZrrm3ZVsIwohDD7CDozL0pk8FwCrfmV7H9w8j3L7ikEv6h" crossorigin="anonymous"></script>
+  <script src="{{request.static_url('nwcc_pyramid:static/scripts/app.js')}}"></script>
+</html>

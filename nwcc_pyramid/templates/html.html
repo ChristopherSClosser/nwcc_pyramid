@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+      <meta name="description" content="Northwest Community Church We Love Boldly." />
+      <meta name="keywords" content="all the keywords separated by comas">
+      <meta charset="utf-8">
+      <link href="{{request.static_url('nwcc_pyramid:static/theme.css')}}" rel="stylesheet">
+      <link rel="shortcut icon" href="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" type="image/x-icon">
+
+      <title>NWCC</title>
+    {% endblock %}
+  </head>
+  <body>
+
+  </body>
+</html>
+<h2></h2>
+<img src="" alt="">
+<header>
+
+</header>
+
+<nav>
+
+</nav>
+<footer></footer>
+<li></li>
+
+
+<li id="about"><a href="{{request.route_url('about')}}">ABOUT US</a></li>
+<li id="events"><a href="{{request.route_url('events')}}">EVENTS</a></li>
+<li id="ministries"><a href="{{request.route_url('ministries')}}">MINISTRIES</a></li>
+<li id="service"><a href="{{request.route_url('service')}}">SUNDAY SERVICE</a>
+  <ul>
+    <li>THE MESSAGE</li>
+    <li>SUNDAY PROGRAM</li>
+    <li>HANDOUT</li>
+  </ul>
+</li>
+<li id="giving"><a href="{{request.route_url('giving')}}">GIVING</a></li>

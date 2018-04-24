@@ -1,0 +1,3 @@
+[run]
+source = nwcc_pyramid
+omit = nwcc_pyramid/test*
