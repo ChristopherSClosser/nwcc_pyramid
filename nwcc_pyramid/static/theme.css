@@ -31,7 +31,7 @@ hr {
 .brand h2 {
   padding-top: 1rem;
   text-shadow: 0 0 0.08rem black;
-  font-size: medium;
+  font-size: smaller;
   background: white;
   height: 4rem;
   margin: 0;
