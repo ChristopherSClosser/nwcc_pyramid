@@ -114,6 +114,38 @@ hr {
   flex: none;
 }
 
+#service {
+  display: inline;
+}
+
+.dropdown {
+  /* float: left; */
+  overflow: hidden;
+  /* position: absolute; */
+  /* text-align: left; */
+}
+
+#dropdown-content {
+  width: fit-content;
+  height: fit-content;
+
+  position: absolute;
+  right: 15vw;
+  padding-left: 0.5rem;
+  margin-left: -.67rem;
+  padding-top: .5rem;
+  width: 7rem;
+  background-color: #f1f1f1;
+  text-align: left;
+  color: #81766a;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* z-index: 99999; */
+  max-height: 249px;
+  overflow-y: : scroll;
+  overflow-x: hidden;
+}
+
 footer {
   flex: none;
   font-size: x-small;
@@ -136,6 +168,15 @@ footer {
 }
 
 @media only screen and (min-width: 739px) {
+  #dropdown-content {
+    margin-top: 0.1rem;
+    padding-top: 0.2rem;
+    margin-right: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: none;
+    width: fit-content;
+  }
     #main-nav {
         display: inline-block;
         height: .5em;
@@ -155,7 +196,7 @@ footer {
         height: 2.5rem;
     }
     #main-nav li {
-        display: inline-block;
+        display: inline;
         list-style-type: none;
         margin-top: .1rem;
         margin-right: 2%;
@@ -166,4 +207,12 @@ footer {
     .burger {
      display: none;
     }
+    .dropdown a {
+     padding-right: 2rem;
+   }
+   .dropdown {
+     /* position: absolute; */
+     text-align: left;
+   }
+
 }
