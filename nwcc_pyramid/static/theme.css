@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
+  -webkit-text-size-adjust: 100%;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* font-weight: 300; */
+  font-weight: 300;
   color: #bc2131;
   display: flex;
   min-height: 97vh;
