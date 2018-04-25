@@ -64,15 +64,16 @@ hr {
   padding-top: 0;
   text-shadow: 0 0 0.08rem black;
   color: white;
+  font-weight: bold;
   font-size: smaller;
   border-bottom: white solid 0.1px;
   background: rgba(255, 255, 255, 0.25);
-  height: 4.5rem;
+  height: 5.5rem;
   margin: 0;
 }
 
 .brand img {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   width: 4rem;
   float: left;
   z-index: 9999999;
@@ -85,7 +86,7 @@ hr {
   font-size: 32px;
   float: right;
   font-weight: bold;
-  margin-top: 1.1rem;
+  margin-top: 1.5rem;
   margin-right: 0rem;
   background-color: Transparent;
   background-repeat: no-repeat;
