@@ -102,7 +102,7 @@ hr {
   outline: none;
   z-index: 999999999;
   position: absolute;
-  right: 0rem;
+  right: -1rem;
 }
 
 .gallery {
