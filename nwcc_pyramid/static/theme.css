@@ -100,10 +100,9 @@ hr {
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  transform: translateY(10%);
   z-index: 999999999;
   position: absolute;
-  right: 1rem;
+  right: 0.1rem;
 }
 
 .gallery {
