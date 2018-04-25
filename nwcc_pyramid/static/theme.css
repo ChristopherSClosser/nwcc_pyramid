@@ -73,7 +73,7 @@ hr {
 }
 
 .brand img {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   width: 4rem;
   float: left;
   z-index: 9999999;
@@ -86,7 +86,7 @@ hr {
   font-size: 32px;
   float: right;
   font-weight: bold;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-right: 0rem;
   background-color: Transparent;
   background-repeat: no-repeat;
