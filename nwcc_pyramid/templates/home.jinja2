@@ -17,27 +17,27 @@
     {% endfor %}
   </div>
   <div class="tri">
-    <div class="tricontent">
       {% for item in tri_info %}
-        <div>
-          {{ item.title | safe }}
-        </div>
-        <div>
-          {{ item.markdown | safe }}
-        </div>
-        {% if item.subcategory == 'first_tri_info' %}
-          <div style="border:1px solid #717171; width:278px; height:150px;" class="space_before">
-            <img
-            class="tricontent"
-            src="{{ item.imgsrc }}"
-            alt="{{ item.markdown }}" border="0">
+        <div class="tricontent">
+          <div>
+            {{ item.title | safe }}
           </div>
-        {% endif %}
-        <div>
-          {{ item.extra | safe }}
+          <div>
+            {{ item.markdown | safe }}
+          </div>
+          {% if item.subcategory == 'first_tri_info' %}
+            <div>
+              <img
+              src="{{ item.imgsrc }}"
+              alt="{{ item.markdown }}"
+              style="border:1px solid #717171;">
+            </div>
+          {% endif %}
+          <div>
+            {{ item.extra | safe }}
+          </div>
         </div>
       {% endfor %}
-    </div>
   </div>
 
 

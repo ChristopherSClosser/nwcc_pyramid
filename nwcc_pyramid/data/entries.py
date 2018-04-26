@@ -12,6 +12,16 @@ ENTRIES = [
   {
     "page": "home",
     "category": "tri_info",
+    "subcategory": "second_tri_info",
+    "title": "",
+    "img": "",
+    "imgsrc": "",
+    "markdown": "",
+    "extra": "",
+  },
+  {
+    "page": "home",
+    "category": "tri_info",
     "subcategory": "third_tri_info",
     "title": "",
     "img": "",
