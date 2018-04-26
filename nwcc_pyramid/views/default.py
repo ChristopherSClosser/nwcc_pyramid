@@ -17,6 +17,15 @@ def home_view(request):
         auth = request.cookies['auth_tkt']
     except KeyError:
         pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'home').all()
+    topimg = [item for item in content if item.category == 'topimg']
+    tri_img = [item for item in content if item.category == 'tri_img']
+    tri_info = [item for item in content if item.category == 'tri_info']
     return {
         'auth': auth,
+        'content': content,
+        'topimg': topimg,
+        'tri_img': tri_img,
+        'tri_info': tri_info,
     }
