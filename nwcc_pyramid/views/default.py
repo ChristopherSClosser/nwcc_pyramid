@@ -1,9 +1,9 @@
 """Interstate Sales Views."""
 
-# from pyramid.security import remember, forget
+from pyramid.security import remember, forget
 from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid.view import view_config, forbidden_view_config
-# from ..security import is_authenticated
+from ..security import is_authenticated
 from ..models import MyModel
 import shutil
 import os
@@ -29,3 +29,25 @@ def home_view(request):
         'tri_img': tri_img,
         'tri_info': tri_info,
     }
+
+
+@view_config(route_name='login', renderer='../templates/login.jinja2')
+@forbidden_view_config(renderer='../templates/nonentry.jinja2')
+def login(request):
+    """."""
+    if request.method == 'GET':
+        return {}
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        if is_authenticated(username, password):
+            headers = remember(request, username)
+            return HTTPFound(request.route_url('home'), headers=headers)
+        return {'res': 'Username or Password Entered Incorrect'}
+
+
+@view_config(route_name='logout')
+def logout(request):
+    """."""
+    headers = forget(request)
+    return HTTPFound(request.route_url('home'), headers=headers)

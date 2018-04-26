@@ -30,6 +30,10 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
+.login {
+  margin-top: 33%;
+}
+
 .smaller {
   font-size: smaller;
 }
