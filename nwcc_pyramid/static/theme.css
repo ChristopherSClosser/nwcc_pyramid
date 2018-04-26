@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* @font-face {
+  font-family: 'Font File';
+  src: url('./fonts/font-file.woff2') format('woff2'),
+    url('..fonts/font-file.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
 
 body {
   -webkit-text-size-adjust: 100%;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
   font-weight: 300;
   color: #bc2131;
   display: flex;
@@ -239,7 +245,7 @@ footer {
   }
 
   .tricontent {
-    width: 33.3933vw;
+    width: 33.33333vw;
     margin: -2px;
   }
 
