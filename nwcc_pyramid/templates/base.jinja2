@@ -46,14 +46,11 @@
       </nav>
       {% block login %}{% endblock %}
       {% if auth %}
-
-        <div>
-          <form class="" action="edit" method="get">
-
-            <input style="margin-top: .75rem; margin-left: .75rem;" type="submit" value="Add Item">
-          </form>
+        <center>
+        <div class="loggedin">
+          You Are Logged in as Administrator
         </div>
-
+        </center>
       {% endif %}
 
     </header>

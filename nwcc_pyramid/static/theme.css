@@ -30,6 +30,14 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
+.loggedin {
+  text-align: center;
+  color: white;
+  border-bottom: white solid 0.1px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: .2rem;
+}
+
 .login, .markdown {
   margin-left: 2rem;
   margin-top: 2rem;
