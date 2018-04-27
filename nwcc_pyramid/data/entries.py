@@ -106,7 +106,7 @@ ENTRIES = [
     "title": "Welcome to Northwest Community Church!",
     "img": "",
     "imgsrc": "",
-    "markdown": "Our office hours:<br>Monday: CLOSED<br><em>Please Note: Our Pastors need a weekly day of rest and have designated Mondays for this purpose. Contacting them only in emergencies is greatly appreciated.</em><br>Tuesday: 9:00 – 5:00<br>  (CLOSED from 12:00 – 1:00)<br>Wednesday: BY APPOINTMENT ONLY<br>Thursday: 9:00 – 5:00<br>  (CLOSED from 12:00 – 1:00)<br>Friday: 9:00 – 12:00 BY APPOINTMENT ONLY<br>1:00 – 5:00<br><br><br><b>Church Address (Hope Center)</b><br>10402 Kline St SW<br>Lakewood, WA 98499<br><b>Office Address (Hope Center)</b><br>10402 Kline St SW #103<br>Lakewood, WA 98499<br>Phone: (253) 926-2528<br>Email: nwrabbi@comcast.net",
+    "markdown": "<h2>Our office hours:</h2><br>Monday: CLOSED<br><em>Please Note: Our Pastors need a weekly day of rest and have designated Mondays for this purpose. Contacting them only in emergencies is greatly appreciated.</em><br><br>Tuesday: 9:00 – 5:00<br>  (CLOSED from 12:00 – 1:00)<br><br>Wednesday: BY APPOINTMENT ONLY<br><br>Thursday: 9:00 – 5:00<br>  (CLOSED from 12:00 – 1:00)<br><br>Friday: 9:00 – 12:00 BY APPOINTMENT ONLY<br>1:00 – 5:00<br><br><br><b>Church Address (Hope Center)</b><br>10402 Kline St SW<br>Lakewood, WA 98499<br><br><b>Office Address (Hope Center)</b><br>10402 Kline St SW #103<br>Lakewood, WA 98499<br><b>Phone:</b> (253) 926-2528<br><b>Email:</b> <a href='mailto:nwrabbi7@gmail.com'>nwrabbi7@gmail.com</a>",
     "extra": "contact",
   },
   {

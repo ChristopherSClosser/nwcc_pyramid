@@ -2,6 +2,7 @@ from .default import (
     home_view,
     about_view,
     values_view,
+    contact_view,
 )
 
 
@@ -10,3 +11,4 @@ def includeme(config):
     config.add_view(home_view, route_name='home')
     config.add_view(about_view, route_name='about')
     config.add_view(values_view, route_name='values')
+    config.add_view(contact_view, route_name='contact')
