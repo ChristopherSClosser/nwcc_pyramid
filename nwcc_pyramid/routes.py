@@ -10,3 +10,4 @@ def includeme(config):
     config.add_route('about', '/about_us')
     config.add_route('values', '/values')
     config.add_route('contact', '/contact')
+    config.add_route('mission', '/mission_statement')

@@ -97,6 +97,29 @@ def contact_view(request):
     }
 
 
+@view_config(route_name='mission', renderer='../templates/mission.jinja2')
+def mission_view(request):
+    """Mission statement view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'about').all()
+    # submenu for filtering out staff ------------->
+    submenu = [item for item in content if item.category != 'staff']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'mission_statement']
+    return {
+        'auth': auth,
+        'content': content,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main[0],
+    }
+
+
 @view_config(route_name='login', renderer='../templates/login.jinja2')
 @forbidden_view_config(renderer='../templates/nonentry.jinja2')
 def login(request):
