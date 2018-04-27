@@ -86,7 +86,7 @@ ENTRIES = [
     "title": "",
     "img": "",
     "imgsrc": "",
-    "markdown": "<b>\"God is not through with you...\"</b> is at the heart of Northwest Community Church.<br><br><em>Whether you are:</em><br>• a new seeker looking for God<br>• or have known God, but now feel distant<br>• or you have been a faithful follower<br><br>...God is not through with you!<br><br>\"For I know the plan I have for you declares the Lord... plans to give you hope and a future\"  <a href='http://www.biblegateway.com/passage/?search=Jeremiah%2029:11&version=NIV'>Jeremiah 29:11</a><br><br> <a href='weloveboldly.com'Pastors Mary and Joe Walsh inviting you to join us!</a>",
+    "markdown": "<b>\"God is not through with you...\"</b> is at the heart of Northwest Community Church.<br><br><em>Whether you are:</em><br>• a new seeker looking for God<br>• or have known God, but now feel distant<br>• or you have been a faithful follower<br><br>...God is not through with you!<br><br>\"For I know the plan I have for you declares the Lord... plans to give you hope and a future\"  <a href='http://www.biblegateway.com/passage/?search=Jeremiah%2029:11&version=NIV'>Jeremiah 29:11</a><br><br> <a href='http://www.weloveboldly.com'>Pastors Mary and Joe Walsh inviting you to join us!</a>",
     "extra": "",
   },
   {
@@ -97,7 +97,7 @@ ENTRIES = [
     "img": "",
     "imgsrc": "",
     "markdown": "1. Contemporary, heartfelt worship where God's presence is experienced.<br><br>2. Relevant and applicable preaching.<br><br>3. Focus on prayer - \"crying out to God for His power!\"<br><br>4. Excellence in assimilation, greeting ministry, follow-up on each visitor, and networking their friends and relatives.<br><br>5. Emphasis on small group ministries - Home Life Groups.<br><br>6. Effective \"out-reach\" and evangelism. Through large group activities, Halloween outreach, Christmas concert etc... and personal invitation to church small groups.<br><br>7. Discipleship is vital. We are to present every person mature in Christ (accomplished through small and specialized groups).<br><br>8. Preparing people for ministry through the discovery of their spiritual gifts.<br><br>9. To reproduce ourselves through church planting.<br><br>10. To be highly involved in missions and world evangelism through short-term missions and support of Foursquare Missions.",
-    "extra": "",
+    "extra": "values",
   },
   {
     "page": "about",
@@ -107,7 +107,7 @@ ENTRIES = [
     "img": "",
     "imgsrc": "",
     "markdown": "Our office hours:<br>Monday: CLOSED<br><em>Please Note: Our Pastors need a weekly day of rest and have designated Mondays for this purpose. Contacting them only in emergencies is greatly appreciated.</em><br>Tuesday: 9:00 – 5:00<br>  (CLOSED from 12:00 – 1:00)<br>Wednesday: BY APPOINTMENT ONLY<br>Thursday: 9:00 – 5:00<br>  (CLOSED from 12:00 – 1:00)<br>Friday: 9:00 – 12:00 BY APPOINTMENT ONLY<br>1:00 – 5:00<br><br><br><b>Church Address (Hope Center)</b><br>10402 Kline St SW<br>Lakewood, WA 98499<br><b>Office Address (Hope Center)</b><br>10402 Kline St SW #103<br>Lakewood, WA 98499<br>Phone: (253) 926-2528<br>Email: nwrabbi@comcast.net",
-    "extra": "",
+    "extra": "contact",
   },
   {
     "page": "about",
@@ -117,7 +117,7 @@ ENTRIES = [
     "img": "",
     "imgsrc": "",
     "markdown": "We exist to encourage and transform the lives of people through: contemporary, Spirit-filled worship; relevant messages, and excellence in children, youth and life groups.",
-    "extra": "",
+    "extra": "mission_statement",
   },
   {
     "page": "about",
@@ -187,6 +187,6 @@ ENTRIES = [
     "img": "",
     "imgsrc": "",
     "markdown": "<b>Office Phone:</b> (253) 926-2528<br><b>Email:</b> nwrabbi@comcast.net<br><b>Facebook:</b> https://www.facebook.com/northwestcommunitychurchlakewood/<br><b>Twitter:</b> https://twitter.com/MaryWal91137429",
-    "extra": "youth_directors",
+    "extra": "assistant",
   },
 ]

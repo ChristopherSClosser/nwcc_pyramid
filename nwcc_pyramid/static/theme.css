@@ -39,9 +39,19 @@ hr {
 }
 
 .login, .markdown {
-  margin-left: 2rem;
-  margin-top: 2rem;
-  margin-right: 2rem;
+  margin: 2rem;
+}
+
+.spacer {
+  margin-top: 8rem;
+}
+
+/* current page sub menu items */
+.sublinks {
+  display: inline-block;
+  background: white;
+  padding: 1.5rem;
+  list-style: none;
 }
 
 .imgtitle {

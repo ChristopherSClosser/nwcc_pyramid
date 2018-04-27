@@ -51,6 +51,29 @@ def about_view(request):
     }
 
 
+@view_config(route_name='values', renderer='../templates/values.jinja2')
+def values_view(request):
+    """Core Values view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'about').all()
+    # submenu for filtering out staff ------------->
+    submenu = [item for item in content if item.category != 'staff']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'core_values']
+    return {
+        'auth': auth,
+        'content': content,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main[0],
+    }
+
+
 @view_config(route_name='login', renderer='../templates/login.jinja2')
 @forbidden_view_config(renderer='../templates/nonentry.jinja2')
 def login(request):
