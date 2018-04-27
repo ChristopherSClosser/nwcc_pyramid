@@ -30,9 +30,17 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
-.login {
+.login, .markdown {
   margin-left: 2rem;
   margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.imgtitle {
+  position: absolute;
+  margin-top: -20%;
+  margin-left: 0.5rem;
+  color: white;
 }
 
 .smaller {

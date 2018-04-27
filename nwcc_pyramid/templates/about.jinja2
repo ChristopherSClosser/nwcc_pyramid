@@ -3,5 +3,17 @@
 {% block title %}About Us{% endblock %}
 
 {% block content %}
+  {% if topimg %}
+    <div>
+      <img
+        class="{{ topimg.category }}"
+        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+        alt="{{ topimg.title }}">
+      <h1 class="imgtitle">{{ main.subcategory }}</h1>
 
+    </div>
+  {% endif %}
+  {% if main %}
+      <div class="markdown">{{ main.markdown|safe }}</div>
+  {% endif %}
 {% endblock content %}

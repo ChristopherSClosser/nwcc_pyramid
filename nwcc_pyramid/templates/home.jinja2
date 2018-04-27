@@ -3,13 +3,13 @@
 
 {% block content %}
   {% if auth %}
-    
+
   {% endif %}
   {% if topimg %}
     <img
-      class="{{ topimg[0].category }}"
-      src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg[0].img }}"
-      alt="{{ topimg[0].title }}">
+      class="{{ topimg.category }}"
+      src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+      alt="{{ topimg.title }}">
   {% endif %}
   <div class="tri">
     {% for item in tri_img %}

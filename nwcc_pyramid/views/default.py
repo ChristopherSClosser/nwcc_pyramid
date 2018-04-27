@@ -25,7 +25,7 @@ def home_view(request):
     return {
         'auth': auth,
         'content': content,
-        'topimg': topimg,
+        'topimg': topimg[0],
         'tri_img': tri_img,
         'tri_info': tri_info,
     }
@@ -42,14 +42,12 @@ def about_view(request):
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     topimg = [item for item in content if item.category == 'topimg']
-    tri_img = [item for item in content if item.category == 'tri_img']
-    tri_info = [item for item in content if item.category == 'tri_info']
+    main = [item for item in content if item.category == 'main']
     return {
         'auth': auth,
         'content': content,
-        'topimg': topimg,
-        'tri_img': tri_img,
-        'tri_info': tri_info,
+        'topimg': topimg[0],
+        'main': main[0],
     }
 
 
