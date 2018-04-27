@@ -27,6 +27,13 @@
         <h2>NORTHWEST<br>COMMUNITY CHURCH</h2>
         <button class="burger">&#9776;</button>
       </div>
+      {% if auth %}
+        <center>
+        <div class="loggedin">
+          You Are Logged in as Administrator
+        </div>
+        </center>
+      {% endif %}
       <nav class="hidden main-nav" id="main-nav">
         <ul id="nav">
           <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
@@ -45,13 +52,7 @@
 
       </nav>
       {% block login %}{% endblock %}
-      {% if auth %}
-        <center>
-        <div class="loggedin">
-          You Are Logged in as Administrator
-        </div>
-        </center>
-      {% endif %}
+
 
     </header>
 
