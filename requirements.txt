@@ -24,6 +24,7 @@ plaster==1.0
 plaster-pastedeploy==0.5
 poyo==0.4.1
 prompt-toolkit==1.0.15
+psycopg2-binary==2.7.4
 ptyprocess==0.5.2
 Pygments==2.2.0
 pyramid==1.9.1
