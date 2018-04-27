@@ -31,10 +31,32 @@ def home_view(request):
     }
 
 
+@view_config(route_name='about', renderer='../templates/about.jinja2')
+def about_view(request):
+    """About view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'about').all()
+    topimg = [item for item in content if item.category == 'topimg']
+    tri_img = [item for item in content if item.category == 'tri_img']
+    tri_info = [item for item in content if item.category == 'tri_info']
+    return {
+        'auth': auth,
+        'content': content,
+        'topimg': topimg,
+        'tri_img': tri_img,
+        'tri_info': tri_info,
+    }
+
+
 @view_config(route_name='login', renderer='../templates/login.jinja2')
 @forbidden_view_config(renderer='../templates/nonentry.jinja2')
 def login(request):
-    """."""
+    """Login view."""
     if request.method == 'GET':
         return {}
     if request.method == 'POST':

@@ -2,20 +2,20 @@
 
 {% block title %}Login{% endblock %}
 
-{% block content %}
+{% block login %}
   <h3 class="login">Login</h3>
 
   {% if res %}
-    <p style="color: red;"><b>{{ res }}</b></p>
+    <p class="login" tyle="color: red;"><b>{{ res }}</b></p>
   {% endif %}
-  <form class="new_entry" method="POST">
+  <form class="new_entry login" method="POST">
     <p>
-      <label for="username">Enter your username: </label>
+      <label for="username">Enter username: </label>
       <input type="text" name="username">
     </p>
     <br>
     <p class="text">
-      <label for="password">Enter your password: </label>
+      <label for="password">Enter password: </label>
       <input type="password" name="password">
     </p>
     <br>
@@ -23,4 +23,4 @@
       <input type="submit" name="Login">
     </p>
   </form>
-{% endblock content %}
+{% endblock %}

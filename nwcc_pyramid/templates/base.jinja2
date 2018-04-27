@@ -44,38 +44,25 @@
         </ul>
 
       </nav>
+      {% block login %}{% endblock %}
       {% if auth %}
 
-      <div id="header" style="background:grey;height:50px;width:980px;float:left;">
-
         <div>
-          <form class="" action="item/new-entry" method="get">
+          <form class="" action="edit" method="get">
 
             <input style="margin-top: .75rem; margin-left: .75rem;" type="submit" value="Add Item">
           </form>
-          <form class="" action="upload" method="get">
-
-            <input style="position:absolute;float:left;margin-top: .75rem; margin-left: .75rem;width: 200px;" type="submit" value="Upload Image">
-          </form>
-        </div>
-        <div>
-
         </div>
 
-      </div>
-      <div id="header" style="background-color:white;height:25px;width:980px;float:left;"></div>
-
-    {% endif %}
+      {% endif %}
 
     </header>
-
-
-
 
     <div class="content">
       {% block content %}
       {% endblock %}
     </div>
+
     <center>
     <footer>
       <div class="row">
@@ -85,6 +72,7 @@
       </div>
     </footer>
     </center>
+
   </body>
 
   <!-- Bootstrap core JavaScript
