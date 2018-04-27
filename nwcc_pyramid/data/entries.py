@@ -6,7 +6,7 @@ ENTRIES = [
     "title": "<b>Join us on Sundays at 10am NorthWest Community Church</b>",
     "img": "",
     "imgsrc": "https://maps.googleapis.com/maps/api/staticmap?center=10402+Kline+St+SW,Lakewood,WA&zoom=12&size=278x150&markers=color:blue|10402+Kline+St+SW,Lakewood,WA&maptype=roadmap&sensor=false&key=AIzaSyAWz4naVapxCeD9t8gsPg9B62d8YtGV8fs",
-    "markdown": "10402 Kline St SW<br>at the HOPE Center<br>Lakewood, WA 98499<br>(253) 926-2528<br>nwrabbi@comcast.net",
+    "markdown": "10402 Kline St SW<br>at the HOPE Center<br>Lakewood, WA 98499<br>(253) 926-2528",
     "extra": "",
   },
   {
