@@ -34,7 +34,7 @@
         </div>
         </center>
       {% endif %}
-      
+
 
       <nav class="hidden main-nav" id="main-nav">
         <ul id="nav">
@@ -56,10 +56,10 @@
 
 
     </header>
-    <div class="spacer">
-      {% block login %}{% endblock %}
-      {% block notfound %}{% endblock %}
-    </div>
+
+      {% block login %}<div class="spacer"></div>{% endblock %}
+      {% block notfound %}<div class="spacer"></div>{% endblock %}
+
     <div class="content">
       {% block content %}
       {% endblock %}
