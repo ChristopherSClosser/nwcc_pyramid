@@ -35,14 +35,13 @@
         </center>
       {% endif %}
 
-
       <nav class="hidden main-nav" id="main-nav">
         <ul id="nav">
           <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
           <li id="about"><a href="{{request.route_url('about')}}">ABOUT US</a></li><hr>
           <li id="events"><a href="">EVENTS</a></li><hr>
           <li id="ministries"><a href="">MINISTRIES</a></li><hr>
-          <li id="service"><a href="" class="dropdown" onclick="return false;">SUNDAY SERVICE</a>
+          <li id="service"><a href="">SUNDAY SERVICE</a>
             <div class="hidden dropdown-content" id="dropdown-content"><hr>
               <div><a href="">THE MESSAGE</a></div><hr>
               <div><a href="">SUNDAY PROGRAM</a></div><hr>
@@ -56,7 +55,6 @@
 
 
     </header>
-
       {% block login %}{% endblock %}
       {% block notfound %}{% endblock %}
 

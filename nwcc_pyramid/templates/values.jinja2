@@ -9,8 +9,19 @@
         class="{{ topimg.category }}"
         src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
-      <h1 class="imgtitle">{{ main.subcategory }}</h1>
+      <div class="imgtitle">
+        <h1><a href="" class="dropdown2" onclick="return false;">{{ main.subcategory }}</a></h1>
+        {% if content %}
+          <ul class="sublinks hidden dropdown-content2">
+          {% for item in content %}
+            {% if item.subcategory %}
 
+              <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
     </div>
   {% endif %}
   {% if main %}

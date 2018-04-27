@@ -48,16 +48,21 @@ hr {
 
 /* current page sub menu items */
 .sublinks {
-  display: inline-block;
+  position: absolute;
   background: white;
-  padding: 1.5rem;
+  padding: 1rem;
+  margin-top: -0.6rem;
   list-style: none;
+  width: 200px;
 }
 
 .imgtitle {
   position: absolute;
-  margin-top: -20%;
+  margin-top: -26%;
   margin-left: 0.5rem;
+}
+
+.imgtitle h1 {
   color: white;
 }
 
@@ -242,6 +247,10 @@ footer {
     body {
       -webkit-text-size-adjust: 100%;
     }
+    .sublinks {
+      /* width: max-content; */
+      /* margin-top: -2rem; */
+    }
 
 }
 
@@ -252,6 +261,9 @@ footer {
   .burger {
     font-size: 62px;
     /* margin-top: 2.5rem; */
+  }
+  .sublinks {
+    /* margin-top: -2rem; */
   }
 
 }
@@ -287,6 +299,9 @@ footer {
   .tricontent div {
     margin: 2rem;
   }
+  .sublinks {
+    /* margin-top: -5rem; */
+  }
 
 }
 
@@ -298,6 +313,9 @@ footer {
     font-size: -webkit-xxx-large;
     line-height: 3.7rem;
     padding-top: 0.3rem;
+  }
+  .sublinks {
+    /* margin-top: -7.2rem; */
   }
   /* #dropdown-content {
     margin-top: 0.1rem;

@@ -87,7 +87,7 @@ ENTRIES = [
     "img": "",
     "imgsrc": "",
     "markdown": "<b>\"God is not through with you...\"</b> is at the heart of Northwest Community Church.<br><br><em>Whether you are:</em><br>• a new seeker looking for God<br>• or have known God, but now feel distant<br>• or you have been a faithful follower<br><br>...God is not through with you!<br><br>\"For I know the plan I have for you declares the Lord... plans to give you hope and a future\"  <a href='http://www.biblegateway.com/passage/?search=Jeremiah%2029:11&version=NIV'>Jeremiah 29:11</a><br><br> <a href='http://www.weloveboldly.com'>Pastors Mary and Joe Walsh inviting you to join us!</a>",
-    "extra": "",
+    "extra": "about_us",
   },
   {
     "page": "about",

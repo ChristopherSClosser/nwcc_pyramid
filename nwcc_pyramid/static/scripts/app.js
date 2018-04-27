@@ -76,6 +76,16 @@ $(function(){
     }
   });
 
+  // displays project list on click for mobile
+  $('.dropdown2').on('click', function(){
+    if ($('.dropdown-content2').is(':hidden')){
+      // $('#project-list').animate({width: 'toggle'},350);
+      $('.dropdown-content2').slideDown();
+    } else {
+      $('.dropdown-content2').slideUp();
+    }
+  });
+
   // handles projects to display
   // $('.dropdown-content').on('click', function(e){
   //   e.preventDefault();
