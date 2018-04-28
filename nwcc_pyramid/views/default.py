@@ -41,11 +41,12 @@ def about_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'main']
     return {
         'auth': auth,
-        'content': content,
+        'submenu': submenu,
         'topimg': topimg[0],
         'main': main[0],
     }
@@ -61,16 +62,14 @@ def values_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
-    # submenu for filtering out staff ------------->
-    submenu = [item for item in content if item.category != 'staff']
+    submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'core_values']
     return {
         'auth': auth,
-        'content': content,
         'submenu': submenu,
         'topimg': topimg[0],
-        'main': main[0],
+        'main': main[1],
     }
 
 
@@ -84,16 +83,14 @@ def contact_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
-    # submenu for filtering out staff ------------->
-    submenu = [item for item in content if item.category != 'staff']
+    submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'contact']
     return {
         'auth': auth,
-        'content': content,
         'submenu': submenu,
         'topimg': topimg[0],
-        'main': main[0],
+        'main': main[1],
     }
 
 
@@ -107,16 +104,14 @@ def mission_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
-    # submenu for filtering out staff ------------->
-    submenu = [item for item in content if item.category != 'staff']
+    submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'mission_statement']
     return {
         'auth': auth,
-        'content': content,
         'submenu': submenu,
         'topimg': topimg[0],
-        'main': main[0],
+        'main': main[1],
     }
 
 
@@ -130,13 +125,11 @@ def staff_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
-    # submenu for filtering out staff ------------->
-    submenu = [item for item in content if item.category != 'staff']
+    submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'staff']
     return {
         'auth': auth,
-        'content': content,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main,
@@ -153,13 +146,11 @@ def council_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
-    # submenu for filtering out staff ------------->
-    submenu = [item for item in content if item.category != 'staff']
+    submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'council']
     return {
         'auth': auth,
-        'content': content,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main,
@@ -176,13 +167,11 @@ def beliefs_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
-    # submenu for filtering out staff ------------->
-    submenu = [item for item in content if item.category != 'staff']
+    submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'we_believe']
     return {
         'auth': auth,
-        'content': content,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main,
@@ -199,16 +188,14 @@ def im_new_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
-    # submenu for filtering out staff ------------->
-    submenu = [item for item in content if item.category != 'staff']
+    submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'im_new']
     return {
         'auth': auth,
-        'content': content,
         'submenu': submenu,
         'topimg': topimg[0],
-        'main': main[0],
+        'main': main[1],
     }
 
 

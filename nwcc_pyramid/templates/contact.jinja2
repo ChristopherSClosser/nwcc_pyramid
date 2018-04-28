@@ -12,9 +12,9 @@
         alt="{{ topimg.title }}">
       <div class="imgtitle">
         <h1><a href="" class="dropdown2" onclick="return false;">{{ main.subcategory }}</a></h1>
-        {% if content %}
+        {% if submenu %}
           <ul class="sublinks hidden dropdown-content2">
-          {% for item in content %}
+          {% for item in submenu %}
             {% if item.subcategory %}
 
               <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
