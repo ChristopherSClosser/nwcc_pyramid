@@ -10,6 +10,7 @@ from .default import (
     council_view,
     beliefs_view,
     im_new_view,
+    foursquare_view,
 )
 
 
@@ -24,3 +25,4 @@ def includeme(config):
     config.add_view(council_view, route_name='council')
     config.add_view(beliefs_view, route_name='beliefs')
     config.add_view(im_new_view, route_name='im_new')
+    config.add_view(foursquare_view, route_name='foursquare')
