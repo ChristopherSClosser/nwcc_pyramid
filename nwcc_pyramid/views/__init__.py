@@ -4,6 +4,7 @@ from .default import (
     values_view,
     contact_view,
     mission_view,
+    staff_view,
 )
 
 
@@ -14,3 +15,4 @@ def includeme(config):
     config.add_view(values_view, route_name='values')
     config.add_view(contact_view, route_name='contact')
     config.add_view(mission_view, route_name='mission')
+    config.add_view(staff_view, route_name='staff')

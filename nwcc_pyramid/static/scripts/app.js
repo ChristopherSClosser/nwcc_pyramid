@@ -51,13 +51,13 @@ $(function () {
 $(function(){
   $('.dropdown-content').hide();
 
-  $('.burger').on('click', function(){
-    if ($('nav').is(':hidden')){
-      $('#main-nav').slideDown('fast');
-    } else {
-      $('#main-nav').slideUp('fast');
-    }
-  });
+  // $('.burger').on('click', function(){
+  //   if ($('nav').is(':hidden')){
+  //     $('#main-nav').slideDown('fast');
+  //   } else {
+  //     $('#main-nav').slideUp('fast');
+  //   }
+  // });
 
   // hide nav into burger when width is small
   $('#home, #about, #events').on('click', function(){

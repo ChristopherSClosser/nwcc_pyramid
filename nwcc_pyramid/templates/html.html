@@ -8,7 +8,14 @@
   "markdown": "",
   "extra": "",
 },
-
+<div class="tri">
+  {% for item in tri_img %}
+      <img
+        class="tricontent {{ item.category }}"
+        src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}"
+        alt="{{ item.title }}">
+  {% endfor %}
+</div>
 <!DOCTYPE html>
 <html>
   <head>

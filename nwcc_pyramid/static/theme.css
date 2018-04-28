@@ -30,6 +30,10 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
+.program img {
+  width: 90vw;
+}
+
 .loggedin {
   text-align: center;
   color: white;

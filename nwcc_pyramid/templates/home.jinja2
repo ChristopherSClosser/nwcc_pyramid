@@ -11,14 +11,11 @@
       src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
       alt="{{ topimg.title }}">
   {% endif %}
-  <div class="tri">
-    {% for item in tri_img %}
-        <img
-          class="tricontent {{ item.category }}"
-          src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}"
-          alt="{{ item.title }}">
-    {% endfor %}
-  </div>
+  <center>
+    <div class="program">
+      <img src="{{request.static_url('nwcc_pyramid:static/4-29-18Program.jpg')}}" alt="">
+    </div>
+  </center>
   <div class="tri">
       {% for item in tri_info %}
         <div class="tricontent">
