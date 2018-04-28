@@ -24,40 +24,45 @@
     <header class="header nav-down">
       <div class="brand">
         <img style="z-index: 9999999;" src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" alt="">
-        <button class="burger">&#9776;</button>
         <h2>NORTHWEST<br>COMMUNITY CHURCH</h2>
+        <button class="burger">&#9776;</button>
       </div>
+      {% if auth %}
+        <center>
+        <div class="loggedin">
+          You Are Logged in as Administrator
+        </div>
+        </center>
+      {% endif %}
+
       <nav class="hidden main-nav" id="main-nav">
         <ul id="nav">
           <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
-          <li id="about"><a href="">ABOUT US</a></li><hr>
+          <li id="about"><a href="{{request.route_url('about')}}">ABOUT US</a></li><hr>
           <li id="events"><a href="">EVENTS</a></li><hr>
           <li id="ministries"><a href="">MINISTRIES</a></li><hr>
           <li id="service"><a href="">SUNDAY SERVICE</a>
-            <ul style="display: none;" class="hidden">
-              <li>THE MESSAGE</li>
-              <li>SUNDAY PROGRAM</li>
-              <li>HANDOUT</li>
-            </ul>
+            <div class="hidden dropdown-content" id="dropdown-content"><hr>
+              <div><a href="">THE MESSAGE</a></div><hr>
+              <div><a href="">SUNDAY PROGRAM</a></div><hr>
+              <div><a href="">HANDOUT</a></div><hr>
+            </div>
           </li><hr>
-          <li id="giving"><a href="">GIVING</a></li>
+          <li id="giving"><a href="">GIVING</a></li><hr>
         </ul>
+
       </nav>
 
-    </header>
 
-    <center>
-    <ul class="gallery" id="slider">
-      <li><img class="mySlides" src="{{request.static_url('nwcc_pyramid:static/img_2146.jpg')}}" alt=""></li>
-      <li><img class="mySlides" id="size" src="{{request.static_url('nwcc_pyramid:static/logo.png')}}" alt=""></li>
-      <li><img class="mySlides" src="{{request.static_url('nwcc_pyramid:static/the_club.jpg')}}" alt="NWCC @ the Hope Center B&GC Lakewood"></li>
-    </ul>
-    </center>
+    </header>
+      {% block login %}{% endblock %}
+      {% block notfound %}{% endblock %}
 
     <div class="content">
       {% block content %}
       {% endblock %}
     </div>
+
     <center>
     <footer>
       <div class="row">
@@ -67,6 +72,7 @@
       </div>
     </footer>
     </center>
+
   </body>
 
   <!-- Bootstrap core JavaScript

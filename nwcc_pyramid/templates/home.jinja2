@@ -2,5 +2,43 @@
 
 
 {% block content %}
-  
+  {% if auth %}
+
+  {% endif %}
+  {% if topimg %}
+    <img
+      class="{{ topimg.category }}"
+      src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+      alt="{{ topimg.title }}">
+  {% endif %}
+  <center>
+    <div class="program">
+      <img src="{{request.static_url('nwcc_pyramid:static/4-29-18Program.jpg')}}" alt="">
+    </div>
+  </center>
+  <div class="tri">
+      {% for item in tri_info %}
+        <div class="tricontent">
+          <div>
+            {{ item.title | safe }}
+          </div>
+          <div>
+            {{ item.markdown | safe }}
+          </div>
+          {% if item.subcategory == 'first_tri_info' %}
+            <div>
+              <img
+              src="{{ item.imgsrc }}"
+              alt="{{ item.markdown }}"
+              style="border:1px solid #717171;">
+            </div>
+          {% endif %}
+          <div>
+            {{ item.extra | safe }}
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+
+
 {% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.jinja2" %}
+
+{% block title %}Staff{% endblock %}
+
+{% block content %}
+
+  {% if topimg %}
+    <div>
+      <img
+        class="{{ topimg.category }}"
+        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+        alt="{{ topimg.title }}">
+      <div class="imgtitle">
+        <h1><a href="" class="dropdown2" onclick="return false;">{{ main[0].subcategory|title }}</a></h1>
+        {% if submenu %}
+          <ul class="sublinks hidden dropdown-content2">
+          {% for item in submenu %}
+            {% if item.subcategory %}
+
+              <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  {% if main %}
+    {% for item in main %}
+      {% if item.title == 'menu_place_holder' %}
+
+      {% else %}
+        <div class="markdown">
+          <img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}" alt="{{ item.title }}">
+          <h2>{{ item.title }}</h2>
+          {{ item.subcategory }}<br><br>
+          {{ item.markdown|safe }}
+        </div><hr style="background: black;">
+      {% endif %}
+
+    {% endfor %}
+  {% endif %}
+{% endblock content %}

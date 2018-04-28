@@ -49,7 +49,7 @@ $(function () {
 
 // function for mobile menu on page ready
 $(function(){
-  $('section').hide();
+  $('.dropdown-content').hide();
 
   $('.burger').on('click', function(){
     if ($('nav').is(':hidden')){
@@ -66,17 +66,25 @@ $(function(){
     }
   });
 
-
+  // displays project list on click for mobile
+  $('.dropdown').on('click', function(){
+    if ($('.dropdown-content').is(':hidden')){
+      // $('#project-list').animate({width: 'toggle'},350);
+      $('.dropdown-content').slideDown();
+    } else {
+      $('.dropdown-content').slideUp();
+    }
+  });
 
   // displays project list on click for mobile
-  // $('.list-projects').on('click', function(){
-  //   if ($('.dropdown-content').is(':hidden')){
-  //     // $('#project-list').animate({width: 'toggle'},350);
-  //     $('#project-list').slideDown('fast');
-  //   } else {
-  //     $('#project-list').slideUp('fast');
-  //   }
-  // });
+  $('.dropdown2').on('click', function(){
+    if ($('.dropdown-content2').is(':hidden')){
+      // $('#project-list').animate({width: 'toggle'},350);
+      $('.dropdown-content2').slideDown();
+    } else {
+      $('.dropdown-content2').slideUp();
+    }
+  });
 
   // handles projects to display
   // $('.dropdown-content').on('click', function(e){

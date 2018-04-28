@@ -1,3 +1,21 @@
+{
+  "page": "",
+  "category": "",
+  "subcategory": "",
+  "title": "",
+  "img": "",
+  "imgsrc": "",
+  "markdown": "",
+  "extra": "",
+},
+<div class="tri">
+  {% for item in tri_img %}
+      <img
+        class="tricontent {{ item.category }}"
+        src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}"
+        alt="{{ item.title }}">
+  {% endfor %}
+</div>
 <!DOCTYPE html>
 <html>
   <head>
@@ -39,3 +57,15 @@
   </ul>
 </li>
 <li id="giving"><a href="{{request.route_url('giving')}}">GIVING</a></li>
+
+
+<center>
+<ul class="gallery" id="slider">
+  <li><img class="mySlides" src="{{request.static_url('nwcc_pyramid:static/img_2146.jpg')}}" alt=""></li>
+  <li><img class="mySlides" id="size" src="{{request.static_url('nwcc_pyramid:static/logo.png')}}" alt=""></li>
+  <li><img class="mySlides" src="{{request.static_url('nwcc_pyramid:static/the_club.jpg')}}" alt="NWCC @ the Hope Center B&GC Lakewood"></li>
+</ul>
+</center>
+<div class="">
+
+</div>
