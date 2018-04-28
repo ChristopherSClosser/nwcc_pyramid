@@ -189,6 +189,29 @@ def beliefs_view(request):
     }
 
 
+@view_config(route_name='im_new', renderer='../templates/im_new.jinja2')
+def im_new_view(request):
+    """What we believe view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'about').all()
+    # submenu for filtering out staff ------------->
+    submenu = [item for item in content if item.category != 'staff']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'im_new']
+    return {
+        'auth': auth,
+        'content': content,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main[0],
+    }
+
+
 @view_config(route_name='login', renderer='../templates/login.jinja2')
 @forbidden_view_config(renderer='../templates/nonentry.jinja2')
 def login(request):

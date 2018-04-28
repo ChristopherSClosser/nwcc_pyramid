@@ -9,6 +9,7 @@ from .default import (
     staff_view,
     council_view,
     beliefs_view,
+    im_new_view,
 )
 
 
@@ -22,3 +23,4 @@ def includeme(config):
     config.add_view(staff_view, route_name='staff')
     config.add_view(council_view, route_name='council')
     config.add_view(beliefs_view, route_name='beliefs')
+    config.add_view(im_new_view, route_name='im_new')

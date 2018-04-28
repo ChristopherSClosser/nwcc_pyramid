@@ -14,3 +14,4 @@ def includeme(config):
     config.add_route('staff', '/staff')
     config.add_route('council', '/council')
     config.add_route('beliefs', '/what_we_believe')
+    config.add_route('im_new', '/im_new')

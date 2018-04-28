@@ -449,4 +449,14 @@ ENTRIES = [
     "markdown": "Hell is the place of eternal torment for all who reject Christ as the Savior.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Revelation%2020:10-15&amp;version=NIV\" target=\"_blank\">Revelation 20:10 -15</a>)",
     "extra": "",
   },
+  {
+    "page": "about",
+    "category": "im_new",
+    "subcategory": "I'm New",
+    "title": "I'm New",
+    "img": "",
+    "imgsrc": "",
+    "markdown": "<b>Welcome to the NorthWest Community Church website!</b><br><br>We invite you to attend our church on Sundays at 10am where you will enjoy the warmth of new friendships and experience the wonderful presence of God! Please fill out our online Connection Card and let us know if we can answer any questions, or pray for any special needs you might have.  We hope you come visit us soon and consider making NorthWest your new home!<br><br>We believe that whether you are:<ul><li>a new seeker looking for God</li><li>or have known God, but now feel distant...</li><li>or you have been a faithful follower...</li></ul><center><br>\"God is not through with you!\"</center><br>\"For I know the plans I have for you declares the Lord...plans to give you hope and a future!\" Jer 29:11<br><br>Fill out a Connection Card!",
+    "extra": "im_new",
+  },
 ]
