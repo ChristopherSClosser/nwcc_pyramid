@@ -89,6 +89,7 @@ hr {
 .tricontent {
   width: 101vw;
   margin: -2px;
+  display: initial;
 }
 
 .tri_img {
