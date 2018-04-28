@@ -83,7 +83,7 @@ hr {
   width: 100vw;
   overflow: hidden;
   margin-top: -0.4rem;
-  /* display: -webkit-inline-box; */
+
 }
 
 .tricontent {
@@ -319,6 +319,11 @@ footer {
     line-height: 3.7rem;
     padding-top: 0.3rem;
   }
+
+  .tricontent {
+    display: block;
+  }
+
   .sublinks {
     /* margin-top: -7.2rem; */
   }
