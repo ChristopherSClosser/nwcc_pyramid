@@ -166,6 +166,29 @@ def council_view(request):
     }
 
 
+@view_config(route_name='beliefs', renderer='../templates/beliefs.jinja2')
+def beliefs_view(request):
+    """What we believe view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'about').all()
+    # submenu for filtering out staff ------------->
+    submenu = [item for item in content if item.category != 'staff']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'we_believe']
+    return {
+        'auth': auth,
+        'content': content,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
+    }
+
+
 @view_config(route_name='login', renderer='../templates/login.jinja2')
 @forbidden_view_config(renderer='../templates/nonentry.jinja2')
 def login(request):

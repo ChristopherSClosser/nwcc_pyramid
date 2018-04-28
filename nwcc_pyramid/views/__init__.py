@@ -8,6 +8,7 @@ from .default import (
     mission_view,
     staff_view,
     council_view,
+    beliefs_view,
 )
 
 
@@ -20,3 +21,4 @@ def includeme(config):
     config.add_view(mission_view, route_name='mission')
     config.add_view(staff_view, route_name='staff')
     config.add_view(council_view, route_name='council')
+    config.add_view(beliefs_view, route_name='beliefs')
