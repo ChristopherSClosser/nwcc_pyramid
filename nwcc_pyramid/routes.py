@@ -16,3 +16,4 @@ def includeme(config):
     config.add_route('beliefs', '/what_we_believe')
     config.add_route('im_new', '/im_new')
     config.add_route('foursquare', '/foursquare')
+    config.add_route('giving', '/giving')

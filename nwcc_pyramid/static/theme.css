@@ -46,6 +46,10 @@ hr {
   margin: 2rem;
 }
 
+.markdown img {
+  max-width: 90%;
+}
+
 .spacer {
   margin-top: 8rem;
 }
@@ -72,7 +76,7 @@ hr {
 
 .imgtitle a {
   display: flex;
-  
+
 }
 
 .smaller {

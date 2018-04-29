@@ -1,6 +1,6 @@
 {% extends "base.jinja2" %}
 
-{% block title %}Foursquare{% endblock %}
+{% block title %}Council{% endblock %}
 
 {% block content %}
 
@@ -11,7 +11,7 @@
         src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
       <div class="imgtitle">
-        <h1><a href="" class="dropdown2" onclick="return false;">{{ main[0].subcategory }}<div class="arrow-down"></div></a></h1>
+        <h1>{{ main[0].subcategory }}</h1>
         {% if submenu %}
           <ul class="sublinks hidden dropdown-content2">
           {% for item in submenu %}
@@ -31,10 +31,12 @@
         <center>
           <h1 class="markdown">{{ item.subcategory }}</h1>
         </center>
+      {% elif item.category == 'topimg' %}
+
       {% else %}
         <div class="markdown">
           {% if item.img %}
-            <img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}" alt="{{ item.title }}">
+            <center><img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}" alt="{{ item.title }}"></center>
           {% endif %}
           <h3>{{ item.title }}</h3>
           {{ item.markdown|safe }}
