@@ -16,7 +16,13 @@
       <img src="{{request.static_url('nwcc_pyramid:static/4-29-18Program.jpg')}}" alt="">
     </div>
   </center>
-  
+  <center class="markdown">
+    <iframe
+      class="calendar"
+      src="https://calendar.google.com/calendar/htmlembed?title=NWCC+Life&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=bob97ghmfr9fpm7iqpv6t0fl1c@group.calendar.google.com&amp;color=%23856508&amp;ctz=America/Los_Angeles">
+    </iframe>
+  </center>
+
   <div class="tri">
       {% for item in tri_info %}
         <div class="tricontent">
@@ -27,12 +33,14 @@
             {{ item.markdown | safe }}
           </div>
           {% if item.subcategory == 'first_tri_info' %}
+          <center>
             <div>
               <img
               src="{{ item.imgsrc }}"
               alt="{{ item.markdown }}"
               style="border:1px solid #717171;">
             </div>
+          </center>
           {% endif %}
           <div>
             {{ item.extra | safe }}

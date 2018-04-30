@@ -99,10 +99,14 @@ hr {
   margin-top: -0.4rem;
   display: -webkit-inline-box;
 }
+.tri img {
+  max-width: 100%;
+}
 
 .tricontent {
   width: 101vw;
   margin: -2px;
+  display: initial;
 }
 
 .tri_img {
@@ -312,6 +316,9 @@ footer {
     overflow: hidden;
     margin-top: -0.4rem;
     display: -webkit-inline-box;
+  }
+  .tri img {
+    /* max-width: 33.3%; */
   }
 
   .tricontent {
