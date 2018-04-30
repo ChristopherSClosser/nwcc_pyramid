@@ -33,7 +33,7 @@ ENTRIES = [
     "page": "home",
     "category": "topimg",
     "subcategory": "",
-    "title": "",
+    "title": "Love Boldly",
     "img": "img_2146.jpg",
     "imgsrc": "",
     "markdown": "",
