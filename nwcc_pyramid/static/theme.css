@@ -104,9 +104,9 @@ hr {
 }
 
 .tricontent {
-  width: 101vw;
+  width: 100vw;
   margin: -2px;
-  display: initial;
+  /* display: initial; */
 }
 
 .tri_img {
@@ -315,15 +315,19 @@ footer {
     width: 100vw;
     overflow: hidden;
     margin-top: -0.4rem;
-    display: -webkit-inline-box;
+    display: inline-flex;
   }
   .tri img {
     /* max-width: 33.3%; */
   }
 
   .tricontent {
-    width: 33.33333vw;
+    width: 50vw;
     margin: -2px;
+  }
+
+  .second_tri_info {
+    width: 0;
   }
 
   .tri_img {

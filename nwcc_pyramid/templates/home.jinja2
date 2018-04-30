@@ -25,7 +25,7 @@
 
   <div class="tri">
       {% for item in tri_info %}
-        <div class="tricontent">
+        <div class="tricontent {{ item.subcategory }}">
           <div>
             {{ item.title | safe }}
           </div>
