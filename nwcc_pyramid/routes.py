@@ -17,3 +17,4 @@ def includeme(config):
     config.add_route('im_new', '/im_new')
     config.add_route('foursquare', '/foursquare')
     config.add_route('giving', '/giving')
+    config.add_route('events', '/events')

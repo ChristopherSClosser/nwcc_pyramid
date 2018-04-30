@@ -17,7 +17,7 @@
         <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js" integrity="sha384-f1r2UzjsxZ9T4V1f2zBO/evUqSEOpeaUUZcMTz1Up63bl4ruYnFYeM+BxI4NhyI0" crossorigin="anonymous"></script>
       <![endif]-->
 
-      <title>Northwest Community Church - Love Boldly{% block title %}{% endblock %}</title>
+      <title>Northwest Community Church - Love Boldly - {% block title %}{% endblock %}</title>
     {% endblock %}
   </head>
   <body>
@@ -39,7 +39,7 @@
         <ul id="nav">
           <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
           <li id="about"><a href="{{request.route_url('about')}}">ABOUT US</a></li><hr>
-          <li id="events"><a href="">EVENTS</a></li><hr>
+          <li id="events"><a href="{{request.route_url('events')}}">EVENTS</a></li><hr>
           <li id="ministries"><a href="">MINISTRIES</a></li><hr>
           <li id="service"><a href="">SUNDAY SERVICE</a>
             <div class="hidden dropdown-content" id="dropdown-content"><hr>

@@ -241,6 +241,27 @@ def giving_view(request):
     }
 
 
+@view_config(route_name='events', renderer='../templates/events.jinja2')
+def events_view(request):
+    """Events' view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'events').all()
+    # submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    # main = [item for item in content if item.category == 'foursquare']
+    return {
+        'auth': auth,
+        # 'submenu': submenu,
+        'topimg': topimg[0],
+        'main': content,
+    }
+
+
 @view_config(route_name='login', renderer='../templates/login.jinja2')
 @forbidden_view_config(renderer='../templates/nonentry.jinja2')
 def login(request):

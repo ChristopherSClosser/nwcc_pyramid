@@ -12,6 +12,7 @@ from .default import (
     im_new_view,
     foursquare_view,
     giving_view,
+    events_view,
 )
 
 
@@ -28,3 +29,4 @@ def includeme(config):
     config.add_view(im_new_view, route_name='im_new')
     config.add_view(foursquare_view, route_name='foursquare')
     config.add_view(giving_view, route_name='giving')
+    config.add_view(events_view, route_name='events')

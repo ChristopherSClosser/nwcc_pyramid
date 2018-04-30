@@ -50,6 +50,11 @@ hr {
   max-width: 90%;
 }
 
+.calendar {
+  width: 90%;
+  height: 37rem;
+}
+
 .spacer {
   margin-top: 8rem;
 }
