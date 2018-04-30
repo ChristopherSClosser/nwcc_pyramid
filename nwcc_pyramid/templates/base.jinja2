@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Northwest Community Church We Love Boldly." />
-      <meta name="keywords" content="all the keywords separated by comas">
+      <meta name="keywords" content="weloveboldly, loveboldly, love, boldly, nwcc, northwestcommunitychurchlakewood, northwest, north, west, community, church, lakewood">
       <meta charset="utf-8">
 
       <link href="{{request.static_url('nwcc_pyramid:static/theme.css')}}" rel="stylesheet">
@@ -23,8 +23,8 @@
   <body>
     <header class="header nav-down">
       <div class="brand">
-        <img style="z-index: 9999999;" src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" alt="">
-        <h2>NORTHWEST<br>COMMUNITY CHURCH</h2>
+        <a href="{{request.route_url('home')}}"><img style="z-index: 9999999;" src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" alt="Northwest Community Church - Love Boldly"></a>
+        <a href="{{request.route_url('home')}}"><h2>NORTHWEST<br>COMMUNITY CHURCH</h2></a>
         <button class="burger">&#9776;</button>
       </div>
       {% if auth %}

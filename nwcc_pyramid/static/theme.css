@@ -130,6 +130,7 @@ hr {
 }
 
 .brand h2 {
+  display: inline-block;
   flex: 0;
   /* width: 100vw; */
   /* padding-top: 0; */
@@ -144,29 +145,25 @@ hr {
 
 .brand img {
   flex: 0.4;
-  width: 6rem;
+  width: 4rem;
   z-index: 9999999;
 }
 
 .burger {
-  flex: 1;
-  color: white;
-  /* border: white solid 2px; */
-  border-radius: 6px;
-  font-size: 32px;
+  font-size: 20px;
   float: right;
-  font-weight: bold;
-  /* margin-top: 2rem; */
-  margin-right: 0rem;
+  margin-top: -0.1rem;
+  padding-right: 0;
   background-color: Transparent;
   background-repeat: no-repeat;
+  color: white;
   border: none;
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  z-index: 999999999;
   position: absolute;
-  right: 0rem;
+  right: 0.5rem;
+  /* transform: translateY(10%); */
 }
 
 .gallery {
@@ -303,7 +300,7 @@ footer {
   .brand h2 {
     font-size: xx-large;
     flex: 4;
-    line-height: 2.3rem;
+    line-height: 1.8rem;
     padding-top: 0;
   }
   .topimg {
@@ -348,8 +345,8 @@ footer {
     margin-right: 2rem;
   }
   .brand h2 {
-    font-size: -webkit-xxx-large;
-    line-height: 3.7rem;
+    /* font-size: -webkit-xxx-large; */
+    /* line-height: 3.7rem; */
     padding-top: 0.3rem;
   }
   .sublinks {
