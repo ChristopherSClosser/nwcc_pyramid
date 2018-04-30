@@ -97,7 +97,7 @@ hr {
   width: 100vw;
   overflow: hidden;
   margin-top: -0.4rem;
-  display: -webkit-inline-box;
+  display: inline-block;
 }
 .tri img {
   max-width: 100%;
