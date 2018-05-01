@@ -1,14 +1,25 @@
 /* @font-face {
-  font-family: 'Font File';
-  src: url('./fonts/font-file.woff2') format('woff2'),
-    url('..fonts/font-file.woff') format('woff');
+  font-family: 'Betm Rounded';
+  src: url('./static/fonts/Typesketchbook-BetmRounded-Regular.otf') format('otf'),
   font-weight: normal;
   font-style: normal;
 } */
+/* @import url('https://www.gfxfile.com/3vc/betm.7z'); */
+
+@import url("//hello.myfonts.net/count/367f56");
+@import url("//hello.myfonts.net/count/367f61");
+
+@font-face {font-family: 'Gilroy-ExtraBold';src: url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'BetmRounded-SemiLight';src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'BetmRounded-Bold';src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.ttf') format('truetype');}
+
+
 
 body {
   -webkit-text-size-adjust: 100%;
-  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  font-family: 'BetmRounded-SemiLight';
   font-weight: 300;
   color: #bc2131;
   display: flex;
@@ -76,7 +87,8 @@ hr {
 }
 
 .imgtitle h1 {
-  color: white;
+  text-shadow: 0 0 0.1px white;
+  color: #af1c07;
 }
 
 .imgtitle a {
@@ -124,23 +136,32 @@ hr {
   width: 100vw;
   /* height: 6rem; */
   border-bottom: white solid 0.1px;
-  background: rgba(0, 0, 0, 0.65);
-  /* background: white; */
+  /* background: rgba(0, 0, 0, 0.65); */
+  background: white;
   line-height: 1.3rem;
 }
 
 .brand h2 {
   display: inline-block;
+  font-family: 'Gilroy-ExtraBold';
   flex: 0;
+  letter-spacing: 0.2rem;
   /* width: 100vw; */
   /* padding-top: 0; */
-  text-shadow: 0 0 0.08rem black;
-  color: white;
-  font-weight: bold;
-  font-size: smaller;
-
+  /* text-shadow: 0 0 0.08rem black; */
+  /* font-weight: bold; */
+  color: #2d595a;
+  font-size: xx-large;
   /* height: 5.5rem; */
-  margin: 0;
+  margin-bottom: 0;
+}
+
+.brand h3 {
+  margin-top: 0;
+  font-family: 'BetmRounded-Bold';
+  color: grey;
+
+  letter-spacing: 0.055rem;
 }
 
 .brand img {
@@ -156,7 +177,7 @@ hr {
   padding-right: 0;
   background-color: Transparent;
   background-repeat: no-repeat;
-  color: white;
+  color: #af1c07;
   border: none;
   cursor: pointer;
   overflow: hidden;
@@ -284,7 +305,7 @@ footer {
 
 @media only screen and (min-width: 400px) {
   .brand h2 {
-    font-size: x-large;
+    /* font-size: x-large; */
   }
   .burger {
     font-size: 62px;
@@ -345,10 +366,15 @@ footer {
     margin-right: 2rem;
   }
   .brand h2 {
-    /* font-size: -webkit-xxx-large; */
+    font-size: -webkit-xxx-large;
     /* line-height: 3.7rem; */
-    padding-top: 0.3rem;
+    /* padding-top: 0.3rem; */
   }
+
+  .brand h3 {
+    font-size: 27.5px;
+  }
+
   .sublinks {
     /* margin-top: -7.2rem; */
   }

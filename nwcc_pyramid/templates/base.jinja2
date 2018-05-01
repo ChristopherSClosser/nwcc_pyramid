@@ -5,9 +5,9 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Northwest Community Church We Love Boldly." />
-      <meta name="keywords" content="weloveboldly, loveboldly, love, boldly, nwcc, northwestcommunitychurchlakewood, northwest, north, west, community, church, lakewood">
+      <meta name="keywords" content="weloveboldly, loveboldly, love, boldly, nwcc, northwestcommunitychurchlakewood, northwest, north, west, community, church, lakewood, food bank wednesday only, ">
       <meta charset="utf-8">
-
+      
       <link href="{{request.static_url('nwcc_pyramid:static/theme.css')}}" rel="stylesheet">
       <link rel="shortcut icon" href="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" type="image/x-icon">
 
@@ -24,7 +24,7 @@
     <header class="header nav-down">
       <div class="brand">
         <a href="{{request.route_url('home')}}"><img style="z-index: 9999999;" src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" alt="Northwest Community Church - Love Boldly"></a>
-        <a href="{{request.route_url('home')}}"><h2>NORTHWEST<br>COMMUNITY CHURCH</h2></a>
+        <a href="{{request.route_url('home')}}"><h2>Northwest</h2><br><h3>COMMUNITY CHURCH</h3></a>
         <button class="burger">&#9776;</button>
       </div>
       {% if auth %}
@@ -38,17 +38,9 @@
       <nav class="hidden main-nav" id="main-nav">
         <ul id="nav">
           <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
-          <li id="about"><a href="{{request.route_url('about')}}">ABOUT US</a></li><hr>
-          <li id="events"><a href="{{request.route_url('events')}}">EVENTS</a></li><hr>
-          <li id="ministries"><a href="">MINISTRIES</a></li><hr>
-          <li id="service"><a href="">SUNDAY SERVICE</a>
-            <div class="hidden dropdown-content" id="dropdown-content"><hr>
-              <div><a href="">THE MESSAGE</a></div><hr>
-              <div><a href="">SUNDAY PROGRAM</a></div><hr>
-              <div><a href="">HANDOUT</a></div><hr>
-            </div>
-          </li><hr>
-          <li id="giving"><a href="{{request.route_url('giving')}}">GIVING</a></li><hr>
+          <li id="about"><a href="{{request.route_url('about')}}">Food Bank</a></li><hr>
+          <li id="events"><a href="{{request.route_url('im_new')}}">I'm New</a></li><hr>
+
         </ul>
 
       </nav>
