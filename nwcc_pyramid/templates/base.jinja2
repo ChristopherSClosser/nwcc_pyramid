@@ -7,7 +7,7 @@
       <meta name="description" content="Northwest Community Church We Love Boldly." />
       <meta name="keywords" content="weloveboldly, loveboldly, love, boldly, nwcc, northwestcommunitychurchlakewood, northwest, north, west, community, church, lakewood, food bank wednesday only, ">
       <meta charset="utf-8">
-      
+
       <link href="{{request.static_url('nwcc_pyramid:static/theme.css')}}" rel="stylesheet">
       <link rel="shortcut icon" href="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" type="image/x-icon">
 
@@ -23,9 +23,12 @@
   <body>
     <header class="header nav-down">
       <div class="brand">
-        <a href="{{request.route_url('home')}}"><img style="z-index: 9999999;" src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" alt="Northwest Community Church - Love Boldly"></a>
-        <a href="{{request.route_url('home')}}"><h2>Northwest</h2><br><h3>COMMUNITY CHURCH</h3></a>
-        <button class="burger">&#9776;</button>
+        <a href="{{request.route_url('home')}}"><img
+          class="logo"
+          src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}"
+          alt="Northwest Community Church - Love Boldly"></a>
+        <a class="brandtitle" href="{{request.route_url('home')}}"><h2>Northwest</h2><br><h3>COMMUNITY CHURCH</h3></a>
+        <div class="burger"><img src="{{request.static_url('nwcc_pyramid:static/burger.png')}}"></div>
       </div>
       {% if auth %}
         <center>
