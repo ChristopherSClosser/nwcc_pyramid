@@ -59,6 +59,10 @@ $(function(){
     }
   });
 
+  $('#logo').on('click', function(){
+    $('.overlay').fadeOut('slow');
+  });
+
   // hide nav into burger when width is small
   $('#home, #about, #events').on('click', function(){
     if (window.innerWidth <= 739){

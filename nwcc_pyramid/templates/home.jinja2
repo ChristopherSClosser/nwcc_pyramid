@@ -2,6 +2,13 @@
 
 
 {% block content %}
+  <div class="overlay">
+    <center>
+      <a id="logo" href="" onclick="return false;">
+        <img src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}"
+          alt="{{ topimg.title }}"></a>
+    </center>
+  </div>
   {% if auth %}
 
   {% endif %}
