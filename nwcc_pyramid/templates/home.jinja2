@@ -9,36 +9,80 @@
         <a id="logo" href="" onclick="return false;">
           <img src="{{request.static_url('nwcc_pyramid:static/overlay_logo.png')}}"
             alt="{{ topimg.title }}"></a>
-
       </div>
     </center>
   </div>
   {% if auth %}
 
   {% endif %}
-  {% if topimg %}
-    <div class="topimg_placeholder"></div>
-    <center>
-      <img
-        class="{{ topimg.category }} hometopimg"
-        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
-        alt="{{ topimg.title }}">
-    </center>
-    <div class="imgtitle">
-    <h1>{{ topimg.title }}</h1>
-    {% if submenu %}
-      <ul class="sublinks hidden dropdown-content2">
-        {% for item in submenu %}
-          {% if item.subcategory %}
+  <div class="topimg_placeholder"></div>
 
-            <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    {% endif %}
-    </div>
+    {% for step in steps %}
+      {% if step.subcategory == 'title' %}
+        <center>
+          <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
+        </center>
+
+      <div class="steps_container">
+      {% elif step.subcategory == 'step4' or step.subcategory == 'step5' %}
+        <div class="{{ step.category }} {{ step.subcategory }}">
+          <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
+
+          <p>{{ step.markdown|safe }}</p>
+        </div>
+
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="steps_container">
+
+    {% for step in steps %}
+      {% if step.subcategory == 'step3' %}
+        <center>
+          <div id="{{ step.subcategory }}" class="{{ step.category }}">
+            <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
+
+            <p>{{ step.markdown|safe }}</p>
+          </div>
+        </center>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="steps_container">
+    {% for step in steps %}
+
+      {% if step.subcategory == 'logo_large' %}
+        <center>
+          <div class="{{ step.subcategory }}">
+            <img
+              src="{{request.static_url('nwcc_pyramid:static/')}}{{ step.img }}"
+              alt="{{ step.extra }}">
+          </div>
+        </center>
+      {% elif step.subcategory == 'step1' or step.subcategory == 'step2' %}
+        <div class="{{ step.category }} {{ step.subcategory }}">
+          <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
+
+          <p>{{ step.markdown|safe }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="imgtitle">
+  <h1>{{ topimg.title }}</h1>
+  {% if submenu %}
+    <ul class="sublinks hidden dropdown-content2">
+      {% for item in submenu %}
+        {% if item.subcategory %}
+
+          <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
+        {% endif %}
+      {% endfor %}
+    </ul>
   {% endif %}
-  
+  </div>
+
 
 
 {% endblock %}

@@ -22,12 +22,14 @@ def home_view(request):
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     tri_info = [item for item in content if item.category == 'tri_info']
+    steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
         'tri_info': tri_info,
+        'steps': steps,
     }
 
 
