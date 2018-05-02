@@ -257,7 +257,6 @@ hr {
   vertical-align: middle;
   align-items: center;
   width: 100%;
-  transition: top 0.4s ease-in-out;
   /* height: 6rem; */
   border-bottom: white solid 0.1px;
   background: rgba(255, 255, 255, 0.9);

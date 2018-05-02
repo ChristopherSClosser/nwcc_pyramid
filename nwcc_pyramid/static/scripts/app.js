@@ -31,7 +31,8 @@ $(function(){
 
       userScrolled = false;
     }
-  }, 700);
+    // delay...
+  }, 600);
 });
 
 // displays gallery imgs in slide show format
@@ -59,6 +60,12 @@ $(function () {
 
 // function for mobile menu on page ready
 $(function(){
+  if (!sessionStorage.visited){
+    $('.overlay').show();
+  } else {
+    $('.overlay').hide();
+  }
+
   $('.dropdown-content').hide();
 
   $('.burger').on('click', function(){
@@ -69,7 +76,9 @@ $(function(){
     }
   });
 
-  $('#logo').on('click', function(){
+  $('.overlay').on('click', function(){
+    sessionStorage.visited = true;
+    // console.log(visited);
     $('.overlay').fadeOut('slow');
   });
 
@@ -80,7 +89,7 @@ $(function(){
     }
   });
 
-  // displays project list on click for mobile
+  // displays dropdown list on click for mobile
   $('.dropdown').on('click', function(){
     if ($('.dropdown-content').is(':hidden')){
       // $('#project-list').animate({width: 'toggle'},350);
@@ -124,3 +133,4 @@ $(function(){
   //   }
   // });
 });
+// localStorage.removeItem(key);
