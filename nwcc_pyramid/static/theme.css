@@ -95,8 +95,8 @@ hr {
 }
 
 .logo_large {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
 }
 
 .logo_large img {
@@ -191,6 +191,7 @@ hr {
 }
 
 .imgtitle {
+  letter-spacing: -1px;
   /* position: absolute;
   margin-top: -26%; */
   /* margin-left: 1rem; */
@@ -200,7 +201,9 @@ hr {
   font-family: 'BetmRounded-ExtraBlack';
   /* text-shadow: 0 0 0.1px white; */
   color: #af1c07;
+  letter-spacing: -0.12rem;
   text-align: center;
+  font-weight: 100;
 }
 
 .imgtitle a {
@@ -254,6 +257,7 @@ hr {
   vertical-align: middle;
   align-items: center;
   width: 100%;
+  transition: top 0.4s ease-in-out;
   /* height: 6rem; */
   border-bottom: white solid 0.1px;
   background: rgba(255, 255, 255, 0.9);

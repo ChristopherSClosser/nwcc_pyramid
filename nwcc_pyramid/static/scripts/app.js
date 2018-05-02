@@ -3,25 +3,35 @@
 $(function(){
   // Keep track of last scroll
   var lastScroll = 0;
+  var userScrolled = false;
+
   $(window).scroll(function(event){
-    // Sets the current scroll position
-    var st = $(this).scrollTop();
-    // Determines up-or-down scrolling
-    if (st > lastScroll){
-      // function call for downward-scrolling
-      // $('.ckata').hide();
-      // $('.linked').hide();
-      $('header').slideUp('fast');
-    }
-    else {
-      // function call for upward-scrolling
-      $('header').slideDown('fast');
-      // $('.ckata').fadeIn('fast');
-      // $('.linked').fadeIn('fast');
-    }
-    // Updates scroll position
-    lastScroll = st;
+    userScrolled = true;
   });
+  setInterval(function() {
+    if (userScrolled) {
+
+      // Sets the current scroll position
+      var st = $(this).scrollTop();
+      // Determines up-or-down scrolling
+      if (st > lastScroll){
+        // function call for downward-scrolling
+        // $('.ckata').hide();
+        // $('.linked').hide();
+        $('header').slideUp('fast');
+      }
+      else {
+        // function call for upward-scrolling
+        $('header').slideDown('fast');
+        // $('.ckata').fadeIn('fast');
+        // $('.linked').fadeIn('fast');
+      }
+      // Updates scroll position
+      lastScroll = st;
+
+      userScrolled = false;
+    }
+  }, 700);
 });
 
 // displays gallery imgs in slide show format
