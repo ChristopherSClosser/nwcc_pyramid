@@ -17,66 +17,28 @@
 
   {% endif %}
   {% if topimg %}
-    <img
-      class="{{ topimg.category }}"
-      src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
-      alt="{{ topimg.title }}">
-      <div class="imgtitle">
-      <h1>{{ topimg.title }}</h1>
-      {% if submenu %}
-        <ul class="sublinks hidden dropdown-content2">
-          {% for item in submenu %}
-            {% if item.subcategory %}
+    <div class="topimg_placeholder"></div>
+    <center>
+      <img
+        class="{{ topimg.category }} hometopimg"
+        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+        alt="{{ topimg.title }}">
+    </center>
+    <div class="imgtitle">
+    <h1>{{ topimg.title }}</h1>
+    {% if submenu %}
+      <ul class="sublinks hidden dropdown-content2">
+        {% for item in submenu %}
+          {% if item.subcategory %}
 
-              <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% endif %}
-      </div>
-  {% endif %}
-  <center>
-    <div class="tri">
-      <div class="program markdown">
-        <img src="{{request.static_url('nwcc_pyramid:static/4-29-18Program_1st.jpg')}}" alt="">
-      </div>
-      <div class="program markdown">
-        <img src="{{request.static_url('nwcc_pyramid:static/4-29-18Program_2nd.jpg')}}" alt="">
-      </div>
-    </div>
-  </center>
-  <center class="markdown">
-    <iframe
-      class="calendar"
-      src="https://calendar.google.com/calendar/htmlembed?title=NWCC+Life&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=bob97ghmfr9fpm7iqpv6t0fl1c@group.calendar.google.com&amp;color=%23856508&amp;ctz=America/Los_Angeles">
-    </iframe>
-  </center>
-
-  <div class="tri">
-      {% for item in tri_info %}
-        <div class="tricontent {{ item.subcategory }}">
-          <div>
-            {{ item.title | safe }}
-          </div>
-          <div>
-            {{ item.markdown | safe }}
-          </div>
-          {% if item.subcategory == 'first_tri_info' %}
-          <center>
-            <div>
-              <img
-              src="{{ item.imgsrc }}"
-              alt="{{ item.markdown }}"
-              style="border:1px solid #717171;">
-            </div>
-          </center>
+            <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
           {% endif %}
-          <div>
-            {{ item.extra | safe }}
-          </div>
-        </div>
-      {% endfor %}
-  </div>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    </div>
+  {% endif %}
+  
 
 
 {% endblock %}

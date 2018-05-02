@@ -121,9 +121,9 @@ hr {
 }
 
 .imgtitle {
-  position: absolute;
-  margin-top: -26%;
-  margin-left: 0.5rem;
+  /* position: absolute;
+  margin-top: -26%; */
+  margin-left: 1rem;
 }
 
 .imgtitle h1 {
@@ -139,6 +139,14 @@ hr {
 
 .smaller {
   font-size: smaller;
+}
+
+.topimg_placeholder {
+  height: 5rem;
+}
+
+.hometopimg {
+  max-width: 90%;
 }
 
 .topimg {
@@ -177,8 +185,7 @@ hr {
   width: 100vw;
   /* height: 6rem; */
   border-bottom: white solid 0.1px;
-  /* background: rgba(0, 0, 0, 0.65); */
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   line-height: 1.3rem;
 }
 
