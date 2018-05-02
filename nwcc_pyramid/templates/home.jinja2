@@ -4,9 +4,13 @@
 {% block content %}
   <div class="overlay">
     <center>
-      <a id="logo" href="" onclick="return false;">
-        <img src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}"
-          alt="{{ topimg.title }}"><h3>Enter</h3></a>
+      <div class="overlaygroup">
+
+        <a id="logo" href="" onclick="return false;">
+          <img src="{{request.static_url('nwcc_pyramid:static/overlay_logo.png')}}"
+            alt="{{ topimg.title }}"></a>
+
+      </div>
     </center>
   </div>
   {% if auth %}

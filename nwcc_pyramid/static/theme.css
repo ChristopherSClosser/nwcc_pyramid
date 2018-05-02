@@ -53,10 +53,28 @@ hr {
   z-index: 77777777777777777777777;
 }
 
-.overlay img, .overlay h3 {
-  width: 55%;
+.overlaygroup {
   position: absolute;
   margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay img {
+  width: 33%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay h3 {
+  position: absolute;
+  /* margin: auto; */
   top: 0;
   left: 0;
   right: 0;
