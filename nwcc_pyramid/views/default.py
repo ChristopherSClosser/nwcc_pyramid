@@ -33,6 +33,27 @@ def home_view(request):
     }
 
 
+@view_config(route_name='foodbank', renderer='../templates/foodbank.jinja2')
+def foodbank_view(request):
+    """Foodbank view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'foodbank').all()
+    # submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.subcategory == 'info']
+    return {
+        'auth': auth,
+        # 'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
+    }
+
+
 @view_config(route_name='about', renderer='../templates/about.jinja2')
 def about_view(request):
     """About view."""

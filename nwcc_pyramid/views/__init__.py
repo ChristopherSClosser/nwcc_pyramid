@@ -13,6 +13,7 @@ from .default import (
     foursquare_view,
     giving_view,
     events_view,
+    foodbank_view,
 )
 
 
@@ -30,3 +31,4 @@ def includeme(config):
     config.add_view(foursquare_view, route_name='foursquare')
     config.add_view(giving_view, route_name='giving')
     config.add_view(events_view, route_name='events')
+    config.add_view(foodbank_view, route_name='foodbank')

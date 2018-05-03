@@ -19,7 +19,10 @@
 
 @font-face {font-family: 'BetmRounded-Bold';src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.ttf') format('truetype');}
 
-
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 
 body {
   -webkit-text-size-adjust: 100%;
@@ -31,6 +34,7 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: column;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -87,7 +91,7 @@ hr {
 .title {
   color: #4b4b4b;
   font-family: 'BetmRounded-Bold';
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.09rem;
   font-weight: normal;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -102,6 +106,11 @@ hr {
 
 .logo_large img {
   max-width: 60%;
+
+}
+
+#steps1_4 {
+  margin-bottom: 2rem;
 }
 
 #step1 {
@@ -264,7 +273,7 @@ hr {
   display: flex;
   vertical-align: middle;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   /* height: 6rem; */
   border-bottom: white solid 0.1px;
   background: rgba(255, 255, 255, 0.9);
@@ -336,7 +345,7 @@ hr {
     height: 50px;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 98vw;
     z-index: 9999;
 }
 
@@ -416,6 +425,7 @@ footer {
   margin-top: 1rem;
   flex: none;
   font-size: x-small;
+  font-weight: bold;
 }
 
 .content {
@@ -525,11 +535,22 @@ footer {
 }
 
 @media only screen and (min-width: 739px) {
+  .logo_large img {
+    max-width: 35%;
+    position: absolute;
+    margin: auto;
+    top: 17rem;
+    /* bottom: 50%; */
+    left: 0;
+    right: 0;
+    z-index: -99;
+  }
+
   .title {
     font-size: 3rem;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .burger {
     margin-right: 2rem;
@@ -562,20 +583,34 @@ footer {
     margin-left: 0;
   }
 
+  #step3 h1 {
+    text-shadow: 2px 3px 10px #000000;
+  }
+
+  #step3 p {
+    text-shadow: 0 0 15px #ffffff;
+  }
+
   .steps h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .steps p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-left: 2.5rem;
-    line-height: 1.8rem;
+    line-height: 1rem;
+    font-weight: bold;
   }
 
   #steps2_5, #steps1_4 {
     float: right;
-    margin-right: -13%;
-    width: 100%;
+    margin-right: -38%;
+    width: 135%;
+  }
+
+  #steps1_4 {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
   }
   /* #dropdown-content {
     margin-top: 0.1rem;
@@ -624,4 +659,74 @@ footer {
      text-align: left;
    }
 
+}
+
+@media only screen and (min-width: 834px) {
+  .logo_large img {
+    max-width: 35%;
+    position: absolute;
+    margin: auto;
+    top: 30rem;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    z-index: -99;
+  }
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -30%;
+    width: 122%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  /* .logo_large img {
+    max-width: 60%;
+    position: absolute;
+    margin: auto;
+    top: 12rem;
+    left: 0;
+    right: 0;
+    z-index: -99;
+  } */
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -29vw;
+    width: 118%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .logo_large img {
+    max-width: 26%;
+    position: absolute;
+    margin: auto;
+    top: 44rem;
+    left: 0;
+    right: 0;
+    z-index: -99;
+  }
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -30%;
+    width: 120%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .steps p {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+  }
+
+  .steps h1 {
+    font-size: 2.3rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
 }

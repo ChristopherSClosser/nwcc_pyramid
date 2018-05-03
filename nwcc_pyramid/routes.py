@@ -18,3 +18,4 @@ def includeme(config):
     config.add_route('foursquare', '/foursquare')
     config.add_route('giving', '/giving')
     config.add_route('events', '/events')
+    config.add_route('foodbank', '/foodbank')
