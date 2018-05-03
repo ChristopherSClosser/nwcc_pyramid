@@ -14,7 +14,7 @@ ENTRIES = [
         "category": "steps",
         "subcategory": "logo_large",
         "title": "Boldly transforming lives with the love of Christ.",
-        "img": "logo_large.png",
+        "img": "logo_large_white.png",
         "imgsrc": "",
         "markdown": "",
         "extra": "Northwest Community Church | Boldly transforming lives with the love of Christ.",
