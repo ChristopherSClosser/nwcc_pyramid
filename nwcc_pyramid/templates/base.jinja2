@@ -53,7 +53,7 @@
     </header>
     {% block login %}{% endblock %}
     {% block notfound %}{% endblock %}
-    
+
     <div class="content">
       {% block content %}
       {% endblock %}
@@ -61,6 +61,25 @@
 
     <center>
     <footer>
+      <div class="row">
+        <div>
+          <a href="http://www.facebook.com/northwestcommunitychurchlakewood">
+            <img src="{{request.static_url('nwcc_pyramid:static/facebookgrey.png')}}"
+              alt="Northwest Community Church - Facebook">
+          </a>
+          <a href="https://twitter.com/MaryWal91137429">
+
+            <img src="{{request.static_url('nwcc_pyramid:static/twitter.png')}}"
+              alt="Northwest Community Church - Twitter">
+          </a>
+          <a href="">
+
+            <img src="{{request.static_url('nwcc_pyramid:static/instagram-grey.png')}}"
+              alt="Northwest Community Church - Instagram">
+          </a>
+        </div>
+      </div>
+
       <div class="row">
         <div class="copyright">
           Copyright &copy; Northwest Community Church - Love Boldly
