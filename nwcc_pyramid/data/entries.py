@@ -56,7 +56,7 @@ ENTRIES = [
         "title": "4. Mature in Christ.",
         "img": "",
         "imgsrc": "",
-        "markdown": "We love to help you mature your<br>identity, your understanding, and<br>your everyday growth in Christ.",
+        "markdown": "We love to help you mature<br>your identity, your<br>understanding, and your<br>everyday growth in Christ.",
         "extra": "",
     },
     {

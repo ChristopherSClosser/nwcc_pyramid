@@ -31,6 +31,7 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: column;
+  overflow: hidden;
 }
 
 a {
@@ -103,11 +104,11 @@ hr {
   max-width: 60%;
 }
 
-.step1 {
+#step1 {
   color: #2d595a;
 }
 
-.step2 {
+#step2 {
   color: #439696;
 }
 
@@ -117,20 +118,24 @@ hr {
   color: #96c832;
 }
 
-.step4 {
+#step4 {
   color: #ee7c12;
 }
 
-.step5 {
+#step5 {
   color: #af1c07;
 }
 
+.stepspacer {
+  display: none;
+}
+
 .steps_container {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .steps {
-  width: 49.5%;
+  width: 49%;
   letter-spacing: -1px;
   font-size: 11px;
   display: inline-table;
@@ -139,15 +144,18 @@ hr {
 .steps h1 {
   font-family: 'BetmRounded-Bold';
   font-weight: 100;
+  margin-bottom: 0.2rem;
   /* letter-spacing: 0em; */
 }
 
 .steps p {
+  margin: 0;
   color: #4b4b4b;
   margin-left: 1rem;
   font-size: 16px;
   line-height: 0.8rem;
   letter-spacing: -0.06em;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -418,6 +426,12 @@ footer {
       /* width: max-content; */
       /* margin-top: -2rem; */
     }
+    /* .steps {
+      width: 30%;
+      letter-spacing: -1px;
+      font-size: 11px;
+      display: inline-table;
+    } */
 
 }
 
@@ -433,9 +447,25 @@ footer {
     /* margin-top: -2rem; */
   }
 
+  #step3 {
+    margin-left: -2rem;
+  }
+
+  .steps_container {
+    margin-left: 5%;
+  }
+
 }
 
 @media only screen and (min-width: 550px) {
+  .logo_large {
+    max-width: 50%;
+  }
+
+  .steps_container {
+    margin-left: 0;
+  }
+
   .brand h2 {
     font-size: xx-large;
     flex: 4;
@@ -477,9 +507,22 @@ footer {
     /* margin-top: -5rem; */
   }
 
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -14%;
+    width: 100%;
+    margin-left: 100%;
+  }
+
 }
 
 @media only screen and (min-width: 739px) {
+  .title {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
   .burger {
     margin-right: 2rem;
   }
@@ -505,6 +548,26 @@ footer {
 
   .sublinks {
     /* margin-top: -7.2rem; */
+  }
+
+  .steps_container {
+    margin-left: 0;
+  }
+
+  .steps h1 {
+    font-size: 2rem;
+  }
+
+  .steps p {
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    line-height: 1.8rem;
+  }
+
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -13%;
+    width: 100%;
   }
   /* #dropdown-content {
     margin-top: 0.1rem;

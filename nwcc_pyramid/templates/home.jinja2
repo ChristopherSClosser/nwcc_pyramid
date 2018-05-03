@@ -12,6 +12,7 @@
       </div>
     </center>
   </div>
+
   {% if auth %}
 
   {% endif %}
@@ -23,14 +24,15 @@
           <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
         </center>
 
-      <div class="steps_container">
-      {% elif step.subcategory == 'step4' or step.subcategory == 'step5' %}
-        <div class="{{ step.category }} {{ step.subcategory }}">
-          <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
+      <div id="steps2_5" class="steps_container">
+      {% elif step.subcategory == 'step2' or step.subcategory == 'step5' %}
+          <div id="{{ step.subcategory }}" class="{{ step.category }} {{ step.subcategory }}">
+            <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
 
-          <p>{{ step.markdown|safe }}</p>
-        </div>
-
+            <p>{{ step.markdown|safe }}</p>
+          </div>
+          {% if step.subcategory == 'step2' %}
+          {% endif %}
       {% endif %}
     {% endfor %}
   </div>
@@ -48,23 +50,29 @@
       {% endif %}
     {% endfor %}
   </div>
-  <div class="steps_container">
+  {% for step in steps %}
+    {% if step.subcategory == 'logo_large' %}
+      <center>
+        <div class="{{ step.subcategory }}">
+          <img
+            src="{{request.static_url('nwcc_pyramid:static/')}}{{ step.img }}"
+            alt="{{ step.extra }}">
+        </div>
+      </center>
+      {% endif %}
+  {% endfor %}
+  <div id="steps1_4" class="steps_container">
     {% for step in steps %}
 
-      {% if step.subcategory == 'logo_large' %}
-        <center>
-          <div class="{{ step.subcategory }}">
-            <img
-              src="{{request.static_url('nwcc_pyramid:static/')}}{{ step.img }}"
-              alt="{{ step.extra }}">
-          </div>
-        </center>
-      {% elif step.subcategory == 'step1' or step.subcategory == 'step2' %}
-        <div class="{{ step.category }} {{ step.subcategory }}">
+
+      {% if step.subcategory == 'step1' or step.subcategory == 'step4' %}
+        <div id="{{ step.subcategory }}" class="{{ step.category }} {{ step.subcategory }}">
           <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
 
           <p>{{ step.markdown|safe }}</p>
         </div>
+        {% if step.subcategory == 'step1' %}
+        {% endif %}
       {% endif %}
     {% endfor %}
   </div>
