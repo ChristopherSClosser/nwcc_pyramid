@@ -77,20 +77,4 @@
     {% endfor %}
   </div>
 
-  <div class="imgtitle">
-  <h1>{{ topimg.title }}</h1>
-  {% if submenu %}
-    <ul class="sublinks hidden dropdown-content2">
-      {% for item in submenu %}
-        {% if item.subcategory %}
-
-          <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-  </div>
-
-
-
 {% endblock %}

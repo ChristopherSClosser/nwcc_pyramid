@@ -208,6 +208,7 @@ hr {
 }
 
 .imgtitle {
+  margin-top: -4rem;
   letter-spacing: -1px;
   /* position: absolute;
   margin-top: -26%; */
@@ -225,7 +226,7 @@ hr {
 
 .imgtitle a {
   display: flex;
-
+  letter-spacing: 0rem;
 }
 
 .smaller {
@@ -550,7 +551,7 @@ footer {
     font-size: 3rem;
   }
   h1 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
   .burger {
     margin-right: 2rem;
