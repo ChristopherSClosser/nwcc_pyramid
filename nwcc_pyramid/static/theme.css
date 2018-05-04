@@ -476,7 +476,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 545px) {
   .logo_large {
     max-width: 50%;
   }
@@ -526,10 +526,35 @@ footer {
     /* margin-top: -5rem; */
   }
 
+  .logo_large img {
+    max-width: 25%;
+    position: absolute;
+    margin: auto;
+    top: 11rem;
+    /* bottom: 50%; */
+    left: 0;
+    right: 0;
+    z-index: -99;
+  }
+
+  #steps1_4 {
+    margin-top: -1.5rem;
+  }
+
+  #steps2_5 {
+    margin-top: 5rem;
+  }
+
+  #step3 {
+    position: absolute;
+    left: 13%;
+    margin-top: -1rem;
+  }
+
   #steps2_5, #steps1_4 {
     float: right;
-    margin-right: -14%;
-    width: 100%;
+    margin-right: -26%;
+    width: 118%;
     margin-left: 100%;
   }
 
@@ -584,12 +609,10 @@ footer {
     margin-left: 0;
   }
 
-  #step3 h1 {
-    text-shadow: 2px 3px 10px #000000;
-  }
-
-  #step3 p {
-    text-shadow: 0 0 15px #ffffff;
+  #step3 {
+    position: absolute;
+    left: 7%;
+    margin-top: 2rem;
   }
 
   .steps h1 {
@@ -601,6 +624,9 @@ footer {
     margin-left: 2.5rem;
     line-height: 1rem;
     font-weight: bold;
+  }
+  #steps2_5 {
+    margin-top: 11rem;
   }
 
   #steps2_5, #steps1_4 {
@@ -673,6 +699,11 @@ footer {
     right: 0;
     z-index: -99;
   }
+
+  #step3 {
+    left: 11%;
+  }
+
   #steps2_5, #steps1_4 {
     float: right;
     margin-right: -30%;
@@ -695,6 +726,21 @@ footer {
     margin-right: -29vw;
     width: 118%;
   }
+  #step3 {
+    left: 14.5%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #step3 {
+    left: 13.5%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #step3 {
+    left: 13%;
+  }
 }
 
 @media only screen and (min-width: 1700px) {
@@ -707,6 +753,15 @@ footer {
     right: 0;
     z-index: -99;
   }
+
+  #step3 {
+    left: 12%;
+  }
+
+  #steps2_5 {
+    margin-top: 14rem;
+  }
+
   #steps2_5, #steps1_4 {
     float: right;
     margin-right: -30%;

@@ -11,7 +11,7 @@
         src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
       <div class="markdown imgtitle">
-        <h1><a href="" class="dropdown2" onclick="return false;">{{ main[0].title }}</a></h1>
+        <h1><a href="" class="dropdown2" onclick="return false;">{{ imgtitle.title }}</a></h1>
         {% if submenu %}
           <ul class="sublinks hidden dropdown-content2">
           {% for item in submenu %}
