@@ -1,12 +1,25 @@
 """Interstate Sales Views."""
 
+import os
+import shutil
+from ..models import MyModel
+from ..security import is_authenticated
+from pyramid_mailer.message import Message
 from pyramid.security import remember, forget
 from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid.view import view_config, forbidden_view_config
-from ..security import is_authenticated
-from ..models import MyModel
-import shutil
-import os
+
+
+"""
+    mailer = request.mailer
+    message = Message(
+        subject="hello world",
+        sender="admin@mysite.com",
+        recipients=["arthur.dent@gmail.com"],
+        body="hello, arthur")
+
+    mailer.send(message)
+"""
 
 
 @view_config(route_name='home', renderer='../templates/home.jinja2')
@@ -221,6 +234,39 @@ def im_new_view(request):
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main[1],
+    }
+
+
+@view_config(route_name='connect', renderer='../templates/connect.jinja2')
+def connect_view(request):
+    """Connect view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'connect').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'connect_form']
+    # cc_email = os.environ['MAIL_SEND_TO']
+    # if request.method == 'POST':
+    #     mailer = request.mailer
+    #     message = Message(
+    #         subject="New connection card!",
+    #         sender="weloveboldly@gmail.com",
+    #         recipients=[cc_email],
+    #         body="hello, arthur")
+    # 
+    #     mailer.send_immediately(message)
+    #     # transaction.commit()
+    #     return HTTPFound(request.route_url('home'))
+    return {
+        'auth': auth,
+        # 'submenu': submenu,
+        # 'topimg': topimg[0],
+        # 'main': main[1],
     }
 
 
