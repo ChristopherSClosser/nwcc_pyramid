@@ -1,6 +1,6 @@
 {% extends "base.jinja2" %}
 
-{% block title %}Council{% endblock %}
+{% block title %}Events{% endblock %}
 
 {% block content %}
 
@@ -11,7 +11,7 @@
         src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
       <div class="imgtitle">
-        <h1><a href="" class="dropdown2" onclick="return false;">{{ main[0].subcategory }}<div class="arrow-down"></div></a></h1>
+        <h1>{{ main[0].subcategory }}</h1>
         {% if submenu %}
           <ul class="sublinks hidden dropdown-content2">
           {% for item in submenu %}
@@ -28,14 +28,25 @@
   {% if main %}
     {% for item in main %}
       {% if item.title == 'menu_place_holder' %}
+        <center>
+          <h1 class="markdown">{{ item.subcategory }}</h1>
+        </center>
+      {% elif item.category == 'topimg' %}
 
       {% else %}
         <div class="markdown">
-          <img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}" alt="{{ item.title }}">
-          <h2>{{ item.title }}</h2>
-          {{ item.subcategory }}<br><br>
-          {{ item.markdown|safe }}
-        </div><hr style="background: black;">
+          {% if item.title == 'Google Calendar' %}
+            <center>
+              <iframe
+                class="calendar"
+                src="https://calendar.google.com/calendar/htmlembed?title=NWCC+Life&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=bob97ghmfr9fpm7iqpv6t0fl1c@group.calendar.google.com&amp;color=%23856508&amp;ctz=America/Los_Angeles">
+              </iframe>
+            </center>
+          {% endif %}
+          {% if item.img %}
+            <center><img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}" alt="{{ item.title }}"></center>
+          {% endif %}
+        </div>
       {% endif %}
 
     {% endfor %}

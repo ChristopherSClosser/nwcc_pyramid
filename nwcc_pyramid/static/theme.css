@@ -1,14 +1,32 @@
 /* @font-face {
-  font-family: 'Font File';
-  src: url('./fonts/font-file.woff2') format('woff2'),
-    url('..fonts/font-file.woff') format('woff');
+  font-family: 'Betm Rounded';
+  src: url('./static/fonts/Typesketchbook-BetmRounded-Regular.otf') format('otf'),
   font-weight: normal;
   font-style: normal;
 } */
+/* @import url('https://www.gfxfile.com/3vc/betm.7z'); */
+
+@import url("//hello.myfonts.net/count/367f56");
+@import url("//hello.myfonts.net/count/367f61");
+@import url("//hello.myfonts.net/count/367fa1");
+
+
+@font-face {font-family: 'BetmRounded-ExtraBlack';src: url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'Gilroy-ExtraBold';src: url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367F56_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'BetmRounded-SemiLight';src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'BetmRounded-Bold';src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.ttf') format('truetype');}
+
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 
 body {
   -webkit-text-size-adjust: 100%;
-  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  font-family: 'BetmRounded-SemiLight';
   font-weight: 300;
   color: #bc2131;
   display: flex;
@@ -16,6 +34,8 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: column;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -28,6 +48,124 @@ hr {
   height: 1px;
   background-color: white;
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d2d2d;
+  z-index: 77777777777777777777777;
+}
+
+.overlaygroup {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay img {
+  max-width: 33%;
+  max-height: 33%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay h3 {
+  position: absolute;
+  /* margin: auto; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.title {
+  color: #4b4b4b;
+  font-family: 'BetmRounded-Bold';
+  letter-spacing: -0.09rem;
+  font-weight: normal;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+}
+
+.logo_large {
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+}
+
+.logo_large img {
+  max-width: 60%;
+
+}
+
+#steps1_4 {
+  margin-bottom: 2rem;
+}
+
+#step1 {
+  color: #2d595a;
+}
+
+#step2 {
+  color: #439696;
+}
+
+#step3 {
+  width: auto;
+  text-align: left;
+  color: #96c832;
+}
+
+#step4 {
+  color: #ee7c12;
+}
+
+#step5 {
+  color: #af1c07;
+}
+
+.stepspacer {
+  display: none;
+}
+
+.steps_container {
+  margin-left: 0.5rem;
+}
+
+.steps {
+  width: 49%;
+  letter-spacing: -1px;
+  font-size: 11px;
+  display: inline-table;
+}
+
+.steps h1 {
+  font-family: 'BetmRounded-Bold';
+  font-weight: 100;
+  margin-bottom: 0.2rem;
+  /* letter-spacing: 0em; */
+}
+
+.steps p {
+  margin: 0;
+  color: #4b4b4b;
+  margin-left: 1rem;
+  font-size: 16px;
+  line-height: 0.8rem;
+  letter-spacing: -0.06em;
+  margin-bottom: 1.5rem;
+
 }
 
 .program img {
@@ -46,6 +184,15 @@ hr {
   margin: 2rem;
 }
 
+.markdown img {
+  max-width: 90%;
+}
+
+.calendar {
+  width: 90%;
+  height: 37rem;
+}
+
 .spacer {
   margin-top: 8rem;
 }
@@ -61,17 +208,37 @@ hr {
 }
 
 .imgtitle {
-  position: absolute;
-  margin-top: -26%;
-  margin-left: 0.5rem;
+  margin-top: -4rem;
+  letter-spacing: -1px;
+  /* position: absolute;
+  margin-top: -26%; */
+  /* margin-left: 1rem; */
 }
 
 .imgtitle h1 {
-  color: white;
+  font-family: 'BetmRounded-ExtraBlack';
+  /* text-shadow: 0 0 0.1px white; */
+  color: #af1c07;
+  letter-spacing: -0.12rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+.imgtitle a {
+  display: flex;
+  letter-spacing: 0rem;
 }
 
 .smaller {
   font-size: smaller;
+}
+
+.topimg_placeholder {
+  height: 5rem;
+}
+
+.hometopimg {
+  max-width: 90%;
 }
 
 .topimg {
@@ -83,12 +250,16 @@ hr {
   width: 100vw;
   overflow: hidden;
   margin-top: -0.4rem;
-  display: -webkit-inline-box;
+  display: inline-block;
+}
+.tri img {
+  max-width: 100%;
 }
 
 .tricontent {
-  width: 101vw;
+  width: 100vw;
   margin: -2px;
+  /* display: initial; */
 }
 
 .tri_img {
@@ -106,49 +277,46 @@ hr {
   width: 100vw;
   /* height: 6rem; */
   border-bottom: white solid 0.1px;
-  background: rgba(0, 0, 0, 0.65);
-  /* background: white; */
+  background: rgba(255, 255, 255, 0.9);
   line-height: 1.3rem;
 }
 
-.brand h2 {
-  flex: 0;
-  /* width: 100vw; */
-  /* padding-top: 0; */
-  text-shadow: 0 0 0.08rem black;
-  color: white;
-  font-weight: bold;
-  font-size: smaller;
-
-  /* height: 5.5rem; */
-  margin: 0;
+.brandtitle {
+  margin-top: 0.7rem;
 }
 
-.brand img {
+.brand h2 {
+  display: inline-block;
+  font-family: 'Gilroy-ExtraBold';
+  flex: 0;
+  letter-spacing: 0.2rem;
+  color: #2d595a;
+  font-size: xx-large;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+.brand h3 {
+  margin-top: 0;
+  margin-bottom: 0rem;
+  font-family: 'BetmRounded-Bold';
+  color: grey;
+  letter-spacing: 0.075rem;
+}
+
+.logo {
   flex: 0.4;
-  width: 6rem;
+  vertical-align: middle;
+  width: 4rem;
   z-index: 9999999;
 }
 
-.burger {
-  flex: 1;
-  color: white;
-  /* border: white solid 2px; */
-  border-radius: 6px;
-  font-size: 32px;
-  float: right;
-  font-weight: bold;
-  /* margin-top: 2rem; */
-  margin-right: 0rem;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
+.burger img {
+  width: 3rem;
   cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  z-index: 999999999;
   position: absolute;
-  right: 0rem;
+  right: 0.5rem;
+  margin-top: -1.5rem;
 }
 
 .gallery {
@@ -178,7 +346,7 @@ hr {
     height: 50px;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 98vw;
     z-index: 9999;
 }
 
@@ -203,6 +371,15 @@ hr {
   padding-bottom: 1rem;
   list-style: none;
   flex: none;
+}
+.arrow-down {
+  margin-top: .7rem;
+  margin-left: .5rem;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid white;
 }
 
 #service {
@@ -237,14 +414,27 @@ hr {
   overflow-x: hidden;
 }
 
+.row {
+  margin-bottom: 0.5rem;
+}
+
+.row img {
+  width: 2.5rem;
+}
+
 footer {
   margin-top: 1rem;
   flex: none;
   font-size: x-small;
+  font-weight: bold;
 }
 
 .content {
+  /* width: 100%; */
   flex: 1 0 auto;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  /* display: grid; */
 }
 
 @media only screen and (min-width: 320px) {
@@ -255,12 +445,18 @@ footer {
       /* width: max-content; */
       /* margin-top: -2rem; */
     }
+    /* .steps {
+      width: 30%;
+      letter-spacing: -1px;
+      font-size: 11px;
+      display: inline-table;
+    } */
 
 }
 
 @media only screen and (min-width: 400px) {
   .brand h2 {
-    font-size: x-large;
+    /* font-size: x-large; */
   }
   .burger {
     font-size: 62px;
@@ -270,13 +466,29 @@ footer {
     /* margin-top: -2rem; */
   }
 
+  #step3 {
+    margin-left: -2rem;
+  }
+
+  .steps_container {
+    margin-left: 5%;
+  }
+
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 545px) {
+  .logo_large {
+    max-width: 50%;
+  }
+
+  .steps_container {
+    margin-left: 0;
+  }
+
   .brand h2 {
     font-size: xx-large;
     flex: 4;
-    line-height: 2.3rem;
+    /* line-height: 1.8rem; */
     padding-top: 0;
   }
   .topimg {
@@ -288,12 +500,19 @@ footer {
     width: 100vw;
     overflow: hidden;
     margin-top: -0.4rem;
-    display: -webkit-inline-box;
+    display: inline-flex;
+  }
+  .tri img {
+    /* max-width: 33.3%; */
   }
 
   .tricontent {
-    width: 33.33333vw;
+    width: 50vw;
     margin: -2px;
+  }
+
+  .second_tri_info {
+    width: 0;
   }
 
   .tri_img {
@@ -307,19 +526,118 @@ footer {
     /* margin-top: -5rem; */
   }
 
+  .logo_large img {
+    max-width: 25%;
+    position: absolute;
+    margin: auto;
+    top: 11rem;
+    /* bottom: 50%; */
+    left: 0;
+    right: 0;
+    z-index: -99;
+  }
+
+  #steps1_4 {
+    margin-top: -1.5rem;
+  }
+
+  #steps2_5 {
+    margin-top: 5rem;
+  }
+
+  #step3 {
+    position: absolute;
+    left: 13%;
+    margin-top: -1rem;
+  }
+
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -26%;
+    width: 118%;
+    margin-left: 100%;
+  }
+
 }
 
 @media only screen and (min-width: 739px) {
+  .logo_large img {
+    max-width: 35%;
+    position: absolute;
+    margin: auto;
+    top: 17rem;
+    /* bottom: 50%; */
+    left: 0;
+    right: 0;
+    z-index: -99;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+  h1 {
+    /* font-size: 1.5rem; */
+  }
   .burger {
     margin-right: 2rem;
   }
   .brand h2 {
     font-size: -webkit-xxx-large;
-    line-height: 3.7rem;
-    padding-top: 0.3rem;
+    /* line-height: 3.7rem; */
+    /* padding-top: 0.3rem; */
   }
+
+  .logo {
+    width: 5rem;
+  }
+
+  .brandtitle {
+    margin-top: 1.1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .brand h3 {
+    font-size: 27.5px;
+  }
+
   .sublinks {
     /* margin-top: -7.2rem; */
+  }
+
+  .steps_container {
+    margin-left: 0;
+  }
+
+  #step3 {
+    position: absolute;
+    left: 7%;
+    margin-top: 2rem;
+  }
+
+  .steps h1 {
+    font-size: 1.5rem;
+  }
+
+  .steps p {
+    font-size: 1rem;
+    margin-left: 2.5rem;
+    line-height: 1rem;
+    font-weight: bold;
+  }
+  #steps2_5 {
+    margin-top: 11rem;
+  }
+
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -38%;
+    width: 135%;
+  }
+
+  #steps1_4 {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
   }
   /* #dropdown-content {
     margin-top: 0.1rem;
@@ -368,4 +686,103 @@ footer {
      text-align: left;
    }
 
+}
+
+@media only screen and (min-width: 834px) {
+  .logo_large img {
+    max-width: 35%;
+    position: absolute;
+    margin: auto;
+    top: 30rem;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    z-index: -99;
+  }
+
+  #step3 {
+    left: 11%;
+  }
+
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -30%;
+    width: 122%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  /* .logo_large img {
+    max-width: 60%;
+    position: absolute;
+    margin: auto;
+    top: 12rem;
+    left: 0;
+    right: 0;
+    z-index: -99;
+  } */
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -29vw;
+    width: 118%;
+  }
+  #step3 {
+    left: 14.5%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #step3 {
+    left: 13.5%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #step3 {
+    left: 13%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .logo_large img {
+    max-width: 26%;
+    position: absolute;
+    margin: auto;
+    top: 44rem;
+    left: 0;
+    right: 0;
+    z-index: -99;
+  }
+
+  #step3 {
+    left: 12%;
+  }
+
+  #steps2_5 {
+    margin-top: 14rem;
+  }
+
+  #steps2_5, #steps1_4 {
+    float: right;
+    margin-right: -30%;
+    width: 120%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .steps p {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+  }
+
+  .steps h1 {
+    font-size: 2.3rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
 }

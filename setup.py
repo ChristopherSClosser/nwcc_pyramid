@@ -21,6 +21,7 @@ requires = [
     'zope.sqlalchemy',
     'waitress',
     'passlib',
+    'pyramid_mailer',
 ]
 
 tests_require = [

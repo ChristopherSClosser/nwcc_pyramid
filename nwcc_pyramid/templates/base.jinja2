@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Northwest Community Church We Love Boldly." />
-      <meta name="keywords" content="all the keywords separated by comas">
+      <meta name="keywords" content="weloveboldly, loveboldly, love, boldly, nwcc, northwestcommunitychurchlakewood, northwest, north, west, community, church, lakewood, food bank wednesday only, ">
       <meta charset="utf-8">
 
       <link href="{{request.static_url('nwcc_pyramid:static/theme.css')}}" rel="stylesheet">
@@ -17,15 +17,18 @@
         <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js" integrity="sha384-f1r2UzjsxZ9T4V1f2zBO/evUqSEOpeaUUZcMTz1Up63bl4ruYnFYeM+BxI4NhyI0" crossorigin="anonymous"></script>
       <![endif]-->
 
-      <title>Northwest Community Church - Love Boldly{% block title %}{% endblock %}</title>
+      <title>Northwest Community Church - Love Boldly - {% block title %}{% endblock %}</title>
     {% endblock %}
   </head>
   <body>
     <header class="header nav-down">
       <div class="brand">
-        <img style="z-index: 9999999;" src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" alt="">
-        <h2>NORTHWEST<br>COMMUNITY CHURCH</h2>
-        <button class="burger">&#9776;</button>
+        <a href="{{request.route_url('home')}}"><img
+          class="logo"
+          src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}"
+          alt="Northwest Community Church - Love Boldly"></a>
+        <a class="brandtitle" href="{{request.route_url('home')}}"><h2>Northwest</h2><br><h3>COMMUNITY CHURCH</h3></a>
+        <div class="burger"><img src="{{request.static_url('nwcc_pyramid:static/burger.png')}}"></div>
       </div>
       {% if auth %}
         <center>
@@ -37,26 +40,19 @@
 
       <nav class="hidden main-nav" id="main-nav">
         <ul id="nav">
+          <hr>
           <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
-          <li id="about"><a href="{{request.route_url('about')}}">ABOUT US</a></li><hr>
-          <li id="events"><a href="">EVENTS</a></li><hr>
-          <li id="ministries"><a href="">MINISTRIES</a></li><hr>
-          <li id="service"><a href="">SUNDAY SERVICE</a>
-            <div class="hidden dropdown-content" id="dropdown-content"><hr>
-              <div><a href="">THE MESSAGE</a></div><hr>
-              <div><a href="">SUNDAY PROGRAM</a></div><hr>
-              <div><a href="">HANDOUT</a></div><hr>
-            </div>
-          </li><hr>
-          <li id="giving"><a href="">GIVING</a></li><hr>
+          <li id="about"><a href="{{request.route_url('im_new')}}">I'M NEW</a></li><hr>
+          <li id="events"><a href="{{request.route_url('foodbank')}}">FOOD BANK</a></li><hr>
+
         </ul>
 
       </nav>
 
 
     </header>
-      {% block login %}{% endblock %}
-      {% block notfound %}{% endblock %}
+    {% block login %}{% endblock %}
+    {% block notfound %}{% endblock %}
 
     <div class="content">
       {% block content %}
@@ -66,8 +62,27 @@
     <center>
     <footer>
       <div class="row">
+        <div>
+          <a href="http://www.facebook.com/northwestcommunitychurchlakewood">
+            <img src="{{request.static_url('nwcc_pyramid:static/facebookgrey.png')}}"
+              alt="Northwest Community Church - Facebook">
+          </a>
+          <a href="https://twitter.com/MaryWal91137429">
+
+            <img src="{{request.static_url('nwcc_pyramid:static/twitter.png')}}"
+              alt="Northwest Community Church - Twitter">
+          </a>
+          <a href="">
+
+            <img src="{{request.static_url('nwcc_pyramid:static/instagram-grey.png')}}"
+              alt="Northwest Community Church - Instagram">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="copyright">
-          Copyright &copy; Northwest Community Church - Love Boldly
+          Copyright &copy; Northwest Community Church - Love boldly
         </div>
       </div>
     </footer>

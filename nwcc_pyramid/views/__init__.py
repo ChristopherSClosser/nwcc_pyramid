@@ -10,6 +10,11 @@ from .default import (
     council_view,
     beliefs_view,
     im_new_view,
+    foursquare_view,
+    giving_view,
+    events_view,
+    foodbank_view,
+    connect_view,
 )
 
 
@@ -24,3 +29,8 @@ def includeme(config):
     config.add_view(council_view, route_name='council')
     config.add_view(beliefs_view, route_name='beliefs')
     config.add_view(im_new_view, route_name='im_new')
+    config.add_view(foursquare_view, route_name='foursquare')
+    config.add_view(giving_view, route_name='giving')
+    config.add_view(events_view, route_name='events')
+    config.add_view(foodbank_view, route_name='foodbank')
+    config.add_view(connect_view, route_name='connect')
