@@ -114,7 +114,7 @@ ENTRIES = [
         "category": "topimg",
         "subcategory": "",
         "title": "Love boldly",
-        "img": "transforming.png",
+        "img": "welcome.png",
         "imgsrc": "",
         "markdown": "",
         "extra": "",
