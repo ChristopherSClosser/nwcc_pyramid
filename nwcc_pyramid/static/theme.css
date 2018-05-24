@@ -67,7 +67,9 @@ hr {
 }
 
 .q1 {
-  background: linear-gradient(135deg, #34761e 0%,#34761e 41%,#2d595a 100%);
+  background-image: url('sunday_morning.jpg');
+  background-repeat: round;
+  /* background: linear-gradient(135deg, #34761e 0%,#34761e 41%,#2d595a 100%); */
 }
 
 .q2 {
