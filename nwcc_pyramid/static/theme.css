@@ -68,7 +68,7 @@ hr {
 
 .q1 {
   background-image: url('sunday_morning.jpg');
-  background-repeat: round;
+  background-size: cover;
   /* background: linear-gradient(135deg, #34761e 0%,#34761e 41%,#2d595a 100%); */
 }
 
@@ -77,17 +77,32 @@ hr {
 }
 
 .q3 {
-  background: #2d595a;
+  background-image: url('happenin.jpg');
+  background-size: cover;
 }
 
 .q4 {
-  background: #ee7c12;
+  background-image: url('go_deeper.png');
+  background-size: cover;
+}
+
+.q4 h2 {
+  color: #fff;
+  text-shadow: #000 0px 0px 6px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .quad-container {
   display: inline-table;
   padding: 0;
   width: 101vw;
+}
+
+.quad h2 {
+  font-family: 'BetmRounded-ExtraBlack';
+  font-weight: 100;
+  font-size: 29px;
+  line-height: 1.5rem;
 }
 
 .quad {
