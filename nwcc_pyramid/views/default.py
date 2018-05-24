@@ -34,14 +34,14 @@ def home_view(request):
     content = query.filter(MyModel.page == 'home').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
-    tri_info = [item for item in content if item.category == 'tri_info']
+    quad_info = [item for item in content if item.category == 'quad_info']
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
-        'tri_info': tri_info,
+        'quad_info': quad_info,
         'steps': steps,
     }
 
@@ -85,14 +85,40 @@ def sundays_view(request):
     content = query.filter(MyModel.page == 'sundays').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
-    tri_info = [item for item in content if item.category == 'tri_info']
+    quad_info = [item for item in content if item.category == 'quad_info']
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
-        'tri_info': tri_info,
+        'quad_info': quad_info,
+        'steps': steps,
+    }
+
+
+@view_config(route_name='youth_kids', renderer='../templates/youth.jinja2')
+def youth_kids_view(request):
+    """Youth & kids view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'youth_kids').all()
+    topimg = [item for item in content if item.category == 'topimg']
+    tri_img = [item for item in content if item.category == 'tri_img']
+    quad_info = [item for item in content if item.category == 'quad_info']
+    main = [item for item in content if item.category == 'main']
+    steps = [item for item in content if item.category == 'steps']
+    return {
+        'auth': auth,
+        'content': content,
+        'topimg': topimg[0],
+        'tri_img': tri_img,
+        'quad_info': quad_info,
+        'main': main[0],
         'steps': steps,
     }
 

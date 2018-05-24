@@ -54,16 +54,47 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
-#jlc, #foursquare {
+.single {
+  width: 50%;
+}
+
+#jlc {
+  width: 1.5rem;
+}
+
+#foursquare {
   width: 1rem;
 }
 
+.q1 {
+  background: linear-gradient(135deg, #34761e 0%,#34761e 41%,#2d595a 100%);
+}
+
+.q2 {
+  background: #af1c07;
+}
+
+.q3 {
+  background: #2d595a;
+}
+
+.q4 {
+  background: #ee7c12;
+}
+
+.quad-container {
+  display: inline-table;
+  padding: 0;
+  width: 101vw;
+}
+
 .quad {
+  margin: -6px;
   display: inline-grid;
   height: 8rem;
   text-align: center;
-  width: 49%;
-  border: solid 1px black;
+  width: 52%;
+  /* border: solid 1px black; */
 }
 
 .overlay {
@@ -236,7 +267,7 @@ hr {
 .imgtitle h1 {
   font-family: 'BetmRounded-ExtraBlack';
   /* text-shadow: 0 0 0.1px white; */
-  color: #af1c07;
+  color: white;
   letter-spacing: -0.12rem;
   text-align: center;
   font-weight: 100;
@@ -391,13 +422,13 @@ hr {
   flex: none;
 }
 .arrow-down {
-  margin-top: .7rem;
-  margin-left: .5rem;
+  margin-top: 0.7rem;
+  margin-left: 0.5rem;
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 20px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid white;
 }
 
 #service {
@@ -494,6 +525,19 @@ footer {
 
 }
 
+@media only screen and (min-width: 512px) {
+  .quad-container{
+    margin-top: -1rem;
+  }
+  .quad {
+    margin: 0px;
+    display: inline-grid;
+    height: 8rem;
+    text-align: center;
+    width: 25%;
+    /* border: solid 1px black; */
+  }
+
 @media only screen and (min-width: 545px) {
   .logo_large {
     max-width: 50%;
@@ -510,8 +554,9 @@ footer {
     padding-top: 0;
   }
   .topimg {
-    width: 100vw;
+    width: 101vw;
     z-index: -9999;
+    margin-left: -1px;
   }
 
   .tri {
