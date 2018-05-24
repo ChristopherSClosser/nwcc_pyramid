@@ -8,6 +8,7 @@ def includeme(config):
     config.add_route('welcome', '/welcome')
     config.add_route('sundays', '/sundays')
     config.add_route('youth_kids', '/youth_kids')
+    config.add_route('go_deeper', '/go_deeper')
     config.add_route('login', '/login')
     config.add_route('logout', '/logout')
     config.add_route('about', '/about_us')
