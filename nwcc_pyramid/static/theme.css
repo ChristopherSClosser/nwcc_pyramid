@@ -59,7 +59,7 @@ hr {
 }
 
 .quad {
-  display: inline-block;
+  display: inline-grid;
   height: 8rem;
   text-align: center;
   width: 49%;
@@ -224,7 +224,9 @@ hr {
 }
 
 .imgtitle {
-  margin-top: -4rem;
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
   letter-spacing: -1px;
   /* position: absolute;
   margin-top: -26%; */

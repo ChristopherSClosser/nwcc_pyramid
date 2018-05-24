@@ -46,6 +46,57 @@ def home_view(request):
     }
 
 
+@view_config(route_name='welcome', renderer='../templates/welcome.jinja2')
+def welcome_view(request):
+    """Welcome view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'welcome').all()
+    topimg = [item for item in content if item.category == 'topimg']
+    about = query.filter(MyModel.page == 'about').all()
+    submenu = [item for item in about if item.title == 'menu_place_holder']
+    tri_img = [item for item in content if item.category == 'tri_img']
+    tri_info = [item for item in content if item.category == 'tri_info']
+    steps = [item for item in content if item.category == 'steps']
+    return {
+        'auth': auth,
+        'content': content,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'tri_img': tri_img,
+        'tri_info': tri_info,
+        'steps': steps,
+    }
+
+
+@view_config(route_name='sundays', renderer='../templates/sundays.jinja2')
+def sundays_view(request):
+    """Sunday mornings view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'sundays').all()
+    topimg = [item for item in content if item.category == 'topimg']
+    tri_img = [item for item in content if item.category == 'tri_img']
+    tri_info = [item for item in content if item.category == 'tri_info']
+    steps = [item for item in content if item.category == 'steps']
+    return {
+        'auth': auth,
+        'content': content,
+        'topimg': topimg[0],
+        'tri_img': tri_img,
+        'tri_info': tri_info,
+        'steps': steps,
+    }
+
+
 @view_config(route_name='foodbank', renderer='../templates/foodbank.jinja2')
 def foodbank_view(request):
     """Foodbank view."""
@@ -258,7 +309,7 @@ def connect_view(request):
     #         sender="weloveboldly@gmail.com",
     #         recipients=[cc_email],
     #         body="hello, arthur")
-    # 
+    #
     #     mailer.send_immediately(message)
     #     # transaction.commit()
     #     return HTTPFound(request.route_url('home'))

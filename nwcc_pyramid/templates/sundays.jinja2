@@ -1,0 +1,26 @@
+{% extends "base.jinja2" %}
+
+{% block title %}Sunday Mornings{% endblock %}
+
+{% block content %}
+<div class="topimg_placeholder"></div>
+
+  {% if topimg %}
+    <div>
+      <img
+        class="{{ topimg.category }}"
+        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+        alt="{{ topimg.title }}">
+
+    </div>
+  {% endif %}
+  <div class="quad-container">
+    <div class="quad"><h2>Worship</h2></div>
+    <div class="quad"><h2>He-brews Boldly</h2></div>
+    <div class="quad"><h2>Message</h2></div>
+    <div class="quad"><h2>Nursery <br>&<br> Kids Church</h2></div>
+  </div>
+  {% if main %}
+      <div class="markdown">{{ main.markdown|safe }}</div>
+  {% endif %}
+{% endblock content %}

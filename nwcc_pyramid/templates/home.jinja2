@@ -5,14 +5,15 @@
   <div class="topimg_placeholder"></div>
   {% if topimg %}
     <div>
-      <img
-        class="{{ topimg.category }}"
-        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
-        alt="{{ topimg.title }}">
-
+      <a href="{{request.route_url('welcome')}}">
+        <img
+          class="{{ topimg.category }}"
+          src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+          alt="{{ topimg.title }}">
+      </a>
     </div>
   {% endif %}
-  <div class="quad"><h2>Sunday Mornings</h2></div>
+  <a href="{{request.route_url('sundays')}}"><div class="quad"><h2>Sunday Mornings</h2></div></a>
   <div class="quad"><h2>Youth & Kids</h2></div>
   <div class="quad"><h2>What's Happenin'</h2></div>
   <div class="quad"><h2>Go Deeper</h2></div>
