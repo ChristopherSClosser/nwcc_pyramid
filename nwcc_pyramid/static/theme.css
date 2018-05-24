@@ -73,7 +73,8 @@ hr {
 }
 
 .q2 {
-  background: #af1c07;
+  background-image: url('youth.jpg');
+  background-size: cover;
 }
 
 .q3 {
@@ -86,7 +87,7 @@ hr {
   background-size: cover;
 }
 
-.q4 h2 {
+.q2 h2, .q4 h2 {
   color: #fff;
   text-shadow: #000 0px 0px 6px;
   -webkit-font-smoothing: antialiased;
@@ -99,9 +100,9 @@ hr {
 }
 
 .quad h2 {
-  font-family: 'BetmRounded-ExtraBlack';
+  font-family: 'Gilroy-ExtraBold';
   font-weight: 100;
-  font-size: 29px;
+  font-size: 25px;
   line-height: 1.5rem;
 }
 
