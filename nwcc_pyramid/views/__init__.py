@@ -9,6 +9,7 @@ from .default import (
     worship_view,
     hebrews_view,
     message_view,
+    children_view,
     about_view,
     values_view,
     contact_view,
@@ -35,6 +36,7 @@ def includeme(config):
     config.add_view(worship_view, route_name='worship')
     config.add_view(hebrews_view, route_name='hebrews')
     config.add_view(message_view, route_name='message')
+    config.add_view(children_view, route_name='children')
     config.add_view(about_view, route_name='about')
     config.add_view(values_view, route_name='values')
     config.add_view(contact_view, route_name='contact')

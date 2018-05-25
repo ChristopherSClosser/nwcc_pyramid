@@ -12,6 +12,7 @@ def includeme(config):
     config.add_route('worship', '/worship')
     config.add_route('hebrews', '/hebrews')
     config.add_route('message', '/message')
+    config.add_route('children', '/children')
     config.add_route('login', '/login')
     config.add_route('logout', '/logout')
     config.add_route('about', '/about_us')
