@@ -66,28 +66,28 @@ hr {
   width: 1rem;
 }
 
-.q1 {
+.q1home {
   background-image: url('sunday_morning.jpg');
   background-size: cover;
   /* background: linear-gradient(135deg, #34761e 0%,#34761e 41%,#2d595a 100%); */
 }
 
-.q2 {
+.q2home {
   background-image: url('youth.jpg');
   background-size: cover;
 }
 
-.q3 {
+.q3home {
   background-image: url('happenin.jpg');
   background-size: cover;
 }
 
-.q4 {
+.q4home {
   background-image: url('go_deeper.png');
   background-size: cover;
 }
 
-.q2 h2, .q4 h2 {
+.q2home h2, .q4home h2 {
   color: #fff;
   text-shadow: #000 0px 0px 6px;
   -webkit-font-smoothing: antialiased;
