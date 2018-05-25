@@ -421,6 +421,10 @@ hr {
   top: -86px;
 }
 
+#main-nav {
+  margin-right: -0.5rem;
+}
+
 #main-nav ul {
   display: block;
   width: 10rem;
@@ -438,7 +442,9 @@ hr {
   padding-bottom: 1rem;
   list-style: none;
   flex: none;
+  margin-right: -8px;
 }
+
 .arrow-down {
   margin-top: 0.7rem;
   margin-left: 0.5rem;

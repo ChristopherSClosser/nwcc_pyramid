@@ -37,17 +37,20 @@
         </div>
         </center>
       {% endif %}
+      {% if main_menu %}
 
-      <nav class="hidden main-nav" id="main-nav">
-        <ul id="nav">
-          <hr>
-          <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
-          <li id="about"><a href="{{request.route_url('im_new')}}">I'M NEW</a></li><hr>
-          <li id="events"><a href="{{request.route_url('foodbank')}}">FOOD BANK</a></li><hr>
+        <nav class="hidden main-nav" id="main-nav">
+          <ul id="nav">
+            <hr>
+            {% for item in main_menu %}
+              <li id="{{ item.extra }}"><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.title }}</a></li><hr>
 
-        </ul>
+            {% endfor %}
 
-      </nav>
+          </ul>
+
+        </nav>
+      {% endif %}
 
 
     </header>

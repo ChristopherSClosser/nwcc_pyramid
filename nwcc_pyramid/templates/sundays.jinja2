@@ -18,7 +18,7 @@
     <div class="quad-container">
       {% for item in quad_info %}
         <a class="quad" href="{{request.route_url('home')}}{{ item.extra }}">
-          <div class="{{ item.subcategory }}"><h2>{{ item.title | safe }}</h2></div>
+          <div class="{{ item.subcategory }}home"><h2>{{ item.title | safe }}</h2></div>
         </a>
 
       {% endfor %}

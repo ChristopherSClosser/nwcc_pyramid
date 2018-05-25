@@ -32,13 +32,14 @@ def home_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'home').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
-        'content': content,
+        'main_menu': main_menu,
         'topimg': topimg[0],
         'tri_img': tri_img,
         'quad_info': quad_info,
@@ -56,6 +57,7 @@ def welcome_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'welcome').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
     about = query.filter(MyModel.page == 'about').all()
     submenu = [item for item in about if item.title == 'menu_place_holder']
@@ -65,6 +67,7 @@ def welcome_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'content': content,
         'submenu': submenu,
         'topimg': topimg[0],
@@ -85,12 +88,14 @@ def sundays_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'sundays').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
@@ -109,6 +114,7 @@ def youth_kids_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'youth_kids').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
@@ -116,6 +122,7 @@ def youth_kids_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
@@ -135,6 +142,7 @@ def go_deeper_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'go_deeper').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     steps_info = query.filter(MyModel.page == 'home').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
@@ -143,6 +151,7 @@ def go_deeper_view(request):
     steps = [item for item in steps_info if item.category == 'steps']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
@@ -162,6 +171,7 @@ def worship_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'worship').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
@@ -169,6 +179,7 @@ def worship_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
@@ -188,6 +199,7 @@ def hebrews_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'hebrews').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
@@ -195,6 +207,7 @@ def hebrews_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
@@ -214,6 +227,7 @@ def message_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'message').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
@@ -221,6 +235,7 @@ def message_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
@@ -240,6 +255,7 @@ def children_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'children').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
@@ -247,6 +263,7 @@ def children_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
@@ -266,12 +283,14 @@ def foodbank_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'foodbank').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     # submenu = [item for item in content if item.title == 'menu_place_holder']
     title = [item for item in content if item.subcategory == 'title']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.subcategory == 'info']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         # 'submenu': submenu,
         'imgtitle': title[0],
         'topimg': topimg[0],
@@ -289,11 +308,13 @@ def about_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'main']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main[0],
@@ -310,11 +331,13 @@ def values_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'core_values']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main[1],
@@ -331,11 +354,13 @@ def contact_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'contact']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main[1],
@@ -352,11 +377,13 @@ def mission_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'mission_statement']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main[1],
@@ -373,11 +400,13 @@ def staff_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'staff']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main,
@@ -394,11 +423,13 @@ def council_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'council']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main,
@@ -415,11 +446,13 @@ def beliefs_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'we_believe']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main,
@@ -436,11 +469,13 @@ def im_new_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'im_new']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main[1],
@@ -457,6 +492,7 @@ def connect_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'connect').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'connect_form']
@@ -474,6 +510,7 @@ def connect_view(request):
     #     return HTTPFound(request.route_url('home'))
     return {
         'auth': auth,
+        'main_menu': main_menu,
         # 'submenu': submenu,
         # 'topimg': topimg[0],
         # 'main': main[1],
@@ -490,11 +527,13 @@ def foursquare_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'foursquare']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main,
@@ -511,11 +550,13 @@ def giving_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'giving').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     # submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     # main = [item for item in content if item.category == 'foursquare']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         # 'submenu': submenu,
         'topimg': topimg[0],
         'main': content,
@@ -532,11 +573,13 @@ def events_view(request):
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'events').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     # submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     # main = [item for item in content if item.category == 'foursquare']
     return {
         'auth': auth,
+        'main_menu': main_menu,
         # 'submenu': submenu,
         'topimg': topimg[0],
         'main': content,
