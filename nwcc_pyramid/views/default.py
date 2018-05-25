@@ -59,6 +59,7 @@ def welcome_view(request):
     topimg = [item for item in content if item.category == 'topimg']
     about = query.filter(MyModel.page == 'about').all()
     submenu = [item for item in about if item.title == 'menu_place_holder']
+    main = [item for item in about if item.category == 'main']
     tri_img = [item for item in content if item.category == 'tri_img']
     tri_info = [item for item in content if item.category == 'tri_info']
     steps = [item for item in content if item.category == 'steps']
@@ -70,6 +71,7 @@ def welcome_view(request):
         'tri_img': tri_img,
         'tri_info': tri_info,
         'steps': steps,
+        'main': main[0]
     }
 
 

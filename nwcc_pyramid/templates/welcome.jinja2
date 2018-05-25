@@ -5,6 +5,8 @@
 {% block content %}
 
   <div class="topimg_placeholder"></div>
+  <div class="topimg_placeholder"></div>
+  
   {% if topimg %}
     <div>
       <img
@@ -25,6 +27,9 @@
         {% endif %}
       </div>
     </div>
+  {% endif %}
+  {% if main %}
+      <div class="markdown">{{ main.markdown|safe }}</div>
   {% endif %}
 
 {% endblock content %}

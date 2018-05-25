@@ -421,16 +421,6 @@ ENTRIES = [
     },
     {
         "page": "about",
-        "category": "about_us",
-        "subcategory": "About Us",
-        "title": "menu_place_holder",
-        "img": "",
-        "imgsrc": "",
-        "markdown": "",
-        "extra": "about_us",
-    },
-    {
-        "page": "about",
         "category": "main",
         "subcategory": "About Us",
         "title": "",

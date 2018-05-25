@@ -285,7 +285,7 @@ hr {
 .imgtitle h1 {
   font-family: 'BetmRounded-ExtraBlack';
   /* text-shadow: 0 0 0.1px white; */
-  color: white;
+  color: black;
   letter-spacing: -0.12rem;
   text-align: center;
   font-weight: 100;
@@ -446,7 +446,7 @@ hr {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 15px solid white;
+  border-top: 15px solid black;
 }
 
 #service {
