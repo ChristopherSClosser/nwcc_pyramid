@@ -176,6 +176,32 @@ def worship_view(request):
     }
 
 
+@view_config(route_name='hebrews', renderer='../templates/hebrews.jinja2')
+def hebrews_view(request):
+    """He brews boldly view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'hebrews').all()
+    topimg = [item for item in content if item.category == 'topimg']
+    tri_img = [item for item in content if item.category == 'tri_img']
+    quad_info = [item for item in content if item.category == 'quad_info']
+    main = [item for item in content if item.category == 'main']
+    steps = [item for item in content if item.category == 'steps']
+    return {
+        'auth': auth,
+        'content': content,
+        'topimg': topimg[0],
+        'tri_img': tri_img,
+        'quad_info': quad_info,
+        'main': main[0],
+        'steps': steps,
+    }
+
+
 @view_config(route_name='foodbank', renderer='../templates/foodbank.jinja2')
 def foodbank_view(request):
     """Foodbank view."""

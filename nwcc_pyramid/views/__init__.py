@@ -7,6 +7,7 @@ from .default import (
     youth_kids_view,
     go_deeper_view,
     worship_view,
+    hebrews_view,
     about_view,
     values_view,
     contact_view,
@@ -31,6 +32,7 @@ def includeme(config):
     config.add_view(youth_kids_view, route_name='youth_kids')
     config.add_view(go_deeper_view, route_name='go_deeper')
     config.add_view(worship_view, route_name='worship')
+    config.add_view(hebrews_view, route_name='hebrews')
     config.add_view(about_view, route_name='about')
     config.add_view(values_view, route_name='values')
     config.add_view(contact_view, route_name='contact')
