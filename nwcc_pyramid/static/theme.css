@@ -9,6 +9,7 @@
 @import url("//hello.myfonts.net/count/367f56");
 @import url("//hello.myfonts.net/count/367f61");
 @import url("//hello.myfonts.net/count/367fa1");
+@import url("//hello.myfonts.net/count/36c056");
 
 
 @font-face {font-family: 'BetmRounded-ExtraBlack';src: url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367FA1_0_0.ttf') format('truetype');}
@@ -19,6 +20,8 @@
 
 @font-face {font-family: 'BetmRounded-Bold';src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.eot');src: url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/367F61_1_0.ttf') format('truetype');}
 
+@font-face {font-family: 'Gilroy-Light';src: url('webfonts/36C056_0_0.eot');src: url('webfonts/36C056_0_0.eot?#iefix') format('embedded-opentype'),url('./fonts/MyFontsWebfontsKit/webfonts/36C056_0_0.woff2') format('woff2'),url('./fonts/MyFontsWebfontsKit/webfonts/36C056_0_0.woff') format('woff'),url('./fonts/MyFontsWebfontsKit/webfonts/36C056_0_0.ttf') format('truetype');}
+
 html {
   max-width: 100vw;
   overflow-x: hidden;
@@ -28,7 +31,7 @@ body {
   -webkit-text-size-adjust: 100%;
   font-family: 'BetmRounded-SemiLight';
   font-weight: 300;
-  color: #bc2131;
+  color: black;
   display: flex;
   min-height: 97vh;
   margin: 0;
@@ -36,6 +39,10 @@ body {
   flex-direction: column;
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+table {
+  display: inline-block;
 }
 
 a {
@@ -48,6 +55,85 @@ hr {
   height: 1px;
   background-color: white;
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
+}
+
+.welcomecontainer {
+  position: relative;
+}
+
+.welcometxt {
+  font-family: 'Gilroy-Light';
+  font-size: 4rem;
+  font-weight: 600;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.single {
+  width: 50%;
+}
+
+#jlc {
+  width: 1.5rem;
+}
+
+#foursquare {
+  width: 2rem;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.q1home {
+  background-color: white;
+  background-image: url('sunday_morning.jpg');
+  background-size: cover;
+  /* background: linear-gradient(135deg, #34761e 0%,#34761e 41%,#2d595a 100%); */
+}
+
+.q2home {
+  background-image: url('youth.jpg');
+  background-size: cover;
+}
+
+.q3home {
+  background-image: url('happenin.jpg');
+  background-size: cover;
+}
+
+.q4home {
+  background-image: url('go_deeper.png');
+  background-size: cover;
+}
+
+.q2home h2, .q4home h2 {
+  color: #fff;
+  text-shadow: #000 0px 0px 6px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.quad-container {
+  display: inline-table;
+  padding: 0;
+  width: 101vw;
+  margin-top: 0rem;
+}
+
+.quad h2 {
+  font-family: 'Gilroy-ExtraBold';
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 1.5rem;
+}
+
+.quad {
+  margin: -6px;
+  display: inline-grid;
+  height: 8rem;
+  text-align: center;
+  width: 52%;
+  /* border: solid 1px black; */
 }
 
 .overlay {
@@ -95,6 +181,7 @@ hr {
   font-weight: normal;
   margin-right: 1rem;
   margin-left: 1rem;
+  margin-top: 3rem;
   /* padding-left: 2rem;
   padding-right: 2rem; */
 }
@@ -107,6 +194,10 @@ hr {
 .logo_large img {
   max-width: 60%;
 
+}
+
+#sublinks {
+  margin-top: -0.8rem;
 }
 
 #steps1_4 {
@@ -208,7 +299,9 @@ hr {
 }
 
 .imgtitle {
-  margin-top: -4rem;
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
   letter-spacing: -1px;
   /* position: absolute;
   margin-top: -26%; */
@@ -218,7 +311,7 @@ hr {
 .imgtitle h1 {
   font-family: 'BetmRounded-ExtraBlack';
   /* text-shadow: 0 0 0.1px white; */
-  color: #af1c07;
+  color: black;
   letter-spacing: -0.12rem;
   text-align: center;
   font-weight: 100;
@@ -234,7 +327,7 @@ hr {
 }
 
 .topimg_placeholder {
-  height: 5rem;
+  height: 4rem;
 }
 
 .hometopimg {
@@ -354,6 +447,10 @@ hr {
   top: -86px;
 }
 
+#main-nav {
+  margin-right: -0.5rem;
+}
+
 #main-nav ul {
   display: block;
   width: 10rem;
@@ -371,15 +468,17 @@ hr {
   padding-bottom: 1rem;
   list-style: none;
   flex: none;
+  margin-right: -8px;
 }
+
 .arrow-down {
-  margin-top: .7rem;
-  margin-left: .5rem;
+  margin-top: 0.7rem;
+  margin-left: 0.5rem;
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 20px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid black;
 }
 
 #service {
@@ -423,10 +522,14 @@ hr {
 }
 
 footer {
-  margin-top: 1rem;
+  margin-top: 2rem;
   flex: none;
   font-size: x-small;
   font-weight: bold;
+}
+
+.copyright {
+  display: grid;
 }
 
 .content {
@@ -476,7 +579,41 @@ footer {
 
 }
 
+@media only screen and (min-width: 512px) {
+
+
+  .quad-container {
+    margin-top: -2rem;
+  }
+
+  .quad {
+    margin: 0px;
+    display: inline-grid;
+    height: 11rem;
+    text-align: center;
+    width: 25%;
+    /* border: solid 1px black; */
+  }
+
+  .quad h2 {
+    font-size: 28px;
+    line-height: 2.5rem;
+  }
+
+
+
 @media only screen and (min-width: 545px) {
+  .welcomeimg {
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+  }
+
+  #homeqc {
+    margin-top: -30%;
+    z-index: 9999999999;
+    position: absolute;
+  }
+
   .logo_large {
     max-width: 50%;
   }
@@ -492,8 +629,9 @@ footer {
     padding-top: 0;
   }
   .topimg {
-    width: 100vw;
+    width: 102vw;
     z-index: -9999;
+    margin-left: -1px;
   }
 
   .tri {
@@ -549,6 +687,7 @@ footer {
     position: absolute;
     left: 13%;
     margin-top: -1rem;
+    z-index: -99999;
   }
 
   #steps2_5, #steps1_4 {
@@ -572,8 +711,17 @@ footer {
     z-index: -99;
   }
 
+  #sublinks {
+    margin-top: -1.3rem;
+  }
+
+  .imgtitle {
+    top: 4rem;
+  }
+
   .title {
     font-size: 3rem;
+    margin-bottom: -2rem;
   }
   h1 {
     /* font-size: 1.5rem; */
@@ -613,6 +761,7 @@ footer {
     position: absolute;
     left: 7%;
     margin-top: 2rem;
+
   }
 
   .steps h1 {
@@ -689,6 +838,12 @@ footer {
 }
 
 @media only screen and (min-width: 834px) {
+  #homeqc {
+    margin-top: -26vh;
+    z-index: 9999999999;
+    position: absolute;
+  }
+
   .logo_large img {
     max-width: 35%;
     position: absolute;

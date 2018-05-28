@@ -1,0 +1,38 @@
+{% extends "base.jinja2" %}
+
+{% block title %}Youth & Kids{% endblock %}
+
+{% block content %}
+<div class="topimg_placeholder"></div>
+
+  {% if topimg %}
+    <div>
+      <img
+        class="{{ topimg.category }}"
+        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+        alt="{{ topimg.title }}">
+
+    </div>
+  {% endif %}
+  {% if quad_info %}
+    <div class="quad-container">
+      {% for item in quad_info %}
+        <a class="quad" href="{{request.route_url('home')}}{{ item.extra }}">
+          <div class="{{ item.subcategory }}"><h2>{{ item.title | safe }}</h2></div>
+        </a>
+
+      {% endfor %}
+
+    </div>
+  {% endif %}
+  {% if main %}
+    <center>
+      <div class="markdown">{{ main.markdown|safe }}</div>
+      {% if main.img %}
+        <img
+          class="single"
+          src="{{request.static_url('nwcc_pyramid:static/')}}{{ main.img }}">
+      {% endif %}
+    </center>
+  {% endif %}
+{% endblock content %}

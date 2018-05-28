@@ -7,50 +7,43 @@
 <div class="topimg_placeholder"></div>
 
 <form name="connect_form" method="POST">
-<table width="650px" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="main_table">
+<div bgcolor="#FFFFFF" class="main_table">
 
-  <tbody><tr>
-    <td colspan="2" align="center" height="50" class="formtitlebg">
-	<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td class="form_title">NWCC Connection Card</td>
-  </tr>
-</tbody></table>
+  <div>
+    NWCC Connection Card
+  </div>
+</div>
 
-	<hr>	</td>
-  </tr>
-  <tr>    <td colspan="2">
-	<form name="cww_form" method="POST" action="/display/formDisplay.php" onsubmit="return checkform(this)">
+	<hr>
+
+  <div>
 		<input type="hidden" name="formid" value="1119">
 		<input type="hidden" name="formpin" value="CSNJ">
+  </div>
 
 
+		<div>
+        <span class="required">*</span>
+		      First Name:<br>
+					<input type="text" maxlength="60" name="firstName" size="30">
+    </div>
+    <div>
+        <span class="required">*</span>
+		      Last Name:<br>
+					<input type="text" maxlength="60" name="lastName" size="30">
 
-	<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-														<tbody><tr><td width="310" class="preset_field_td"><span class="required">*</span>
-		First Name:<br>
-										<input type="text" maxlength="60" name="firstName" size="30"></td>
-														<td class="preset_field_td" width="290"><span class="required">*</span>
-		Last Name:<br>
-										<input type="text" maxlength="60" name="lastName" size="30"></td>
-
-  </tr>
-  </tbody></table>
+    </div>
 
 
-<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td class="preset_field_td">
-		Address:<br><input type="text" maxlength="255" name="address" size="60"></td>
-  </tr>
-  </tbody></table>
-      <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
+<div >
+  <div>
+		Address:<br><input type="text" maxlength="255" name="address" size="60">
+  </div>
 
-    <td class="preset_field_td" width="310">
-		City:<br><input type="text" maxlength="60" name="city" size="30"></td>
+  <div>
 
-    <td class="preset_field_td" width="175">
+		City:<br><input type="text" maxlength="60" name="city" size="30">
+
 		State / Province<br>
 	<select name="state">
 			<option value="">Select a State
@@ -117,53 +110,46 @@
             </option><option value="QC">Quebec
             </option><option value="SK">Saskatchewan
             </option><option value="YT">Yukon Territory
-          </option></select></td>
+          </option></select>
 
-      <td class="preset_field_td" width="115">
 		Zip Code:<br>
-	<input type="text" maxlength="12" name="zip" size="6"></td>
-  </tr></tbody></table>
+	<input type="text" maxlength="12" name="zip" size="6">
+  </div></div>
 
-<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-   <tbody><tr>
+<div >
+   <div>
 
-    <td width="310" class="preset_field_td">
 		<span class="required">*</span>
 		Phone:<br>
-            <input type="text" maxlength="30" name="phone" size="30"></td>
-        <td class="preset_field_td" width="290">
+            <input type="text" maxlength="30" name="phone" size="30">
 		<span class="required">*</span>
 		Email:<br>
-            <input type="text" maxlength="60" name="email" size="30"></td>
-  </tr>
-</tbody></table>
+            <input type="text" maxlength="60" name="email" size="30">
+  </div>
+</div>
 
 
-				<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td class="preset_field_td">
-	Comment:<br><textarea name="comment" cols="71" rows="5"></textarea></td>
-  </tr>
-</tbody></table>
+				<div >
+  <div>
+	Comment:<br><textarea name="comment" cols="71" rows="5"></textarea>
+  </div>
+</div>
 
 
-				<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td class="textarea">
+				<div >
+  <div><div>
 	How did you hear about NWCC?<br>
 				<input type="hidden" name="question_1_title" value="How%20did%20you%20hear%20about%20NWCC%3F">
 				<input type="hidden" name="question_1_type" value="textarea">
 				<input type="hidden" name="question_1_id" value="6763">
-				<textarea name="question_1" rows="6" cols="71"></textarea></td>
-  </tr>
-</tbody></table>
-									<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td class="checkboxlist">
-		Please Check any appropriate boxes</td>
-  </tr>
-  <tr>
-    <td class="checkboxlist_answers">
+				<textarea name="question_1" rows="6" cols="71"></textarea>
+  </div>
+</div></div>
+									<div >
+  <div><div>
+		Please Check any appropriate boxes
+  </div>
+  <div>
 					<input type="hidden" name="question_2_title" value="Please Check any appropriate boxes">
 					<input type="hidden" name="question_2_type" value="checkbox">
 					<input type="hidden" name="question_2_id" value="6764">
@@ -176,17 +162,15 @@
 						Married<br>
                                 						<input type="checkbox" name="question_2_checkbox_4" value="Widow%20%28er%29">
 						Widow (er)<br>
-                                </td>
-  </tr>
-</tbody></table>
 
-											<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td class="checkboxlist">
-		Adults:</td>
-  </tr>
-  <tr>
-    <td class="checkboxlist_answers">
+  </div>
+</div></div>
+
+											<div >
+  <div><div>
+		Adults:
+  </div>
+  <div>
 					<input type="hidden" name="question_3_title" value="Adults:">
 					<input type="hidden" name="question_3_type" value="checkbox">
 					<input type="hidden" name="question_3_id" value="6766">
@@ -201,17 +185,15 @@
 						51-65<br>
                                 						<input type="checkbox" name="question_3_checkbox_5" value="over%2065">
 						over 65<br>
-                                </td>
-  </tr>
-</tbody></table>
 
-											<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td class="checkboxlist">
-		Children:</td>
-  </tr>
-  <tr>
-    <td class="checkboxlist_answers">
+  </div>
+</div></div>
+
+											<div >
+  <div><div>
+		Children:
+  </div>
+  <div>
 					<input type="hidden" name="question_4_title" value="Children:">
 					<input type="hidden" name="question_4_type" value="checkbox">
 					<input type="hidden" name="question_4_id" value="6765">
@@ -224,13 +206,12 @@
 						Jr. High<br>
                                 						<input type="checkbox" name="question_4_checkbox_4" value="Sr%2E%20High">
 						Sr. High<br>
-                                </td>
-  </tr>
-</tbody></table>
 
-											<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td class="dropdownlist">
+  </div>
+</div></div>
+
+											<div >
+  <div><div>
 	I desire:<br>
 					<input type="hidden" name="question_5_title" value="I%20desire%3A">
 					<input type="hidden" name="question_5_type" value="dropdown">
@@ -242,28 +223,27 @@
 												<option value="To%20be%20Baptized">To be Baptized</option>
 												<option value="To%20Begin%20a%20Relationship%20with%20God">To Begin a Relationship with God</option>
 												<option value="To%20Be%20in%20a%20Home%20Group">To Be in a Home Group</option>
-						</select></td>
-  </tr>
-</tbody></table>
+						</select>
+  </div>
+</div></div>
 
 
-		 <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td class="submitbutton">
+		 <div >
+  <div><div>
 					<div align="center">
 						<hr>
 
 						<input type="submit" name="submit" value="Submit">
 						<p><span class="required">*</span> Indicates required entry field&nbsp;&nbsp;&nbsp;&nbsp;</p>
 					</div>
-				</td>
-  </tr>
-</tbody></table>
+
+  </div>
+</div></div>
 	<input type="hidden" name="number_of_questions" value="5">
 	</form>
-	</td>
-  </tr>
-</tbody></table>
+
+  </div>
+</div></div>
 </form>
 
 {% endblock content %}

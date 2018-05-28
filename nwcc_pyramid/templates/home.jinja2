@@ -2,79 +2,26 @@
 
 
 {% block content %}
-  <div class="overlay hidden">
-    <center>
-      <div class="overlaygroup">
+  {% if topimg %}
+    <div class="welcomecontainer">
+      <a href="{{request.route_url('welcome')}}">
 
-        <a id="logo" href="" onclick="return false;">
-          <img src="{{request.static_url('nwcc_pyramid:static/overlay_logo.png')}}"
-            alt="{{ topimg.title }}"></a>
-      </div>
-    </center>
-  </div>
-
-  {% if auth %}
-
+        <img
+          class="welcomeimg {{ topimg.category }}"
+          src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+          alt="{{ topimg.title }}">
+        <h1 class="welcometxt">WELCOME</h1>
+      </a>
+    </div>
   {% endif %}
-  <div class="topimg_placeholder"></div>
-
-    {% for step in steps %}
-      {% if step.subcategory == 'title' %}
-        <center>
-          <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
-        </center>
-
-      <div id="steps2_5" class="steps_container">
-      {% elif step.subcategory == 'step2' or step.subcategory == 'step5' %}
-          <div id="{{ step.subcategory }}" class="{{ step.category }} {{ step.subcategory }}">
-            <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
-
-            <p>{{ step.markdown|safe }}</p>
-          </div>
-          {% if step.subcategory == 'step2' %}
-          {% endif %}
-      {% endif %}
-    {% endfor %}
-  </div>
-  <div class="steps_container">
-
-    {% for step in steps %}
-      {% if step.subcategory == 'step3' %}
-        <center>
-          <div id="{{ step.subcategory }}" class="{{ step.category }}">
-            <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
-
-            <p>{{ step.markdown|safe }}</p>
-          </div>
-        </center>
-      {% endif %}
-    {% endfor %}
-  </div>
-  {% for step in steps %}
-    {% if step.subcategory == 'logo_large' %}
-      <center>
-        <div class="{{ step.subcategory }}">
-          <img
-            src="{{request.static_url('nwcc_pyramid:static/')}}{{ step.img }}"
-            alt="{{ step.extra }}">
-        </div>
-      </center>
-      {% endif %}
-  {% endfor %}
-  <div id="steps1_4" class="steps_container">
-    {% for step in steps %}
-
-
-      {% if step.subcategory == 'step1' or step.subcategory == 'step4' %}
-        <div id="{{ step.subcategory }}" class="{{ step.category }} {{ step.subcategory }}">
-          <h1 class="{{ step.subcategory }}">{{ step.title }}</h1>
-
-          <p>{{ step.markdown|safe }}</p>
-        </div>
-        {% if step.subcategory == 'step1' %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </div>
-
+  {% if quad_info %}
+    <div id="homeqc" class="quad-container">
+      {% for item in quad_info %}
+        <a class="quad" href="{{request.route_url('home')}}{{ item.extra }}">
+          <div class="{{ item.subcategory }}home"><h2>{{ item.title | safe }}</h2></div>
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+  
 {% endblock %}

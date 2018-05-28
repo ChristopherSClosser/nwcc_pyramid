@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Northwest Community Church We Love Boldly." />
-      <meta name="keywords" content="weloveboldly, loveboldly, love, boldly, nwcc, northwestcommunitychurchlakewood, northwest, north, west, community, church, lakewood, food bank wednesday only, ">
+      <meta name="keywords" content="weloveboldly, loveboldly, love, boldly, nwcc, nwcclakewood, northwestcommunitychurch northwestcommunitychurchlakewood, northwest, communitychurch, communitychurchlakewood, community, church, lakewood, food bank wednesdays only, foodbank wednesday only">
       <meta charset="utf-8">
 
       <link href="{{request.static_url('nwcc_pyramid:static/theme.css')}}" rel="stylesheet">
@@ -37,17 +37,20 @@
         </div>
         </center>
       {% endif %}
+      {% if main_menu %}
 
-      <nav class="hidden main-nav" id="main-nav">
-        <ul id="nav">
-          <hr>
-          <li id="home"><a href="{{request.route_url('home')}}">WELCOME</a></li><hr>
-          <li id="about"><a href="{{request.route_url('im_new')}}">I'M NEW</a></li><hr>
-          <li id="events"><a href="{{request.route_url('foodbank')}}">FOOD BANK</a></li><hr>
+        <nav class="hidden main-nav" id="main-nav">
+          <ul id="nav">
+            <hr>
+            {% for item in main_menu %}
+              <li id="{{ item.extra }}"><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.title }}</a></li><hr>
 
-        </ul>
+            {% endfor %}
 
-      </nav>
+          </ul>
+
+        </nav>
+      {% endif %}
 
 
     </header>
@@ -63,27 +66,39 @@
     <footer>
       <div class="row">
         <div>
+
           <a href="http://www.facebook.com/northwestcommunitychurchlakewood">
             <img src="{{request.static_url('nwcc_pyramid:static/facebookgrey.png')}}"
               alt="Northwest Community Church - Facebook">
           </a>
-          <a href="https://twitter.com/MaryWal91137429">
+          <a href="https://twitter.com/weloveboldly">
 
             <img src="{{request.static_url('nwcc_pyramid:static/twitter.png')}}"
               alt="Northwest Community Church - Twitter">
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/weloveboldly">
 
             <img src="{{request.static_url('nwcc_pyramid:static/instagram-grey.png')}}"
               alt="Northwest Community Church - Instagram">
           </a>
+
         </div>
       </div>
 
       <div class="row">
+
         <div class="copyright">
-          Copyright &copy; Northwest Community Church - Love boldly
+          <a href="https://www.foursquare.org/">
+            <img id="foursquare" src="{{request.static_url('nwcc_pyramid:static/foursquare_logo.png')}}"
+              alt="Northwest Community Church - Facebook">
+          </a>
+          <a href="https://www.instagram.com/j.l.c_photo/">
+            Photos by: J.L.C. Photography
+          </a>
+          &emsp; &copy; 2018 Northwest Community Church - Love boldly &emsp;
+
         </div>
+
       </div>
     </footer>
     </center>

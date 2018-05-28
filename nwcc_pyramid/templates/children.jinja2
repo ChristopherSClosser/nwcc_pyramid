@@ -1,0 +1,42 @@
+{% extends "base.jinja2" %}
+
+{% block title %}Nursery & Kids Church{% endblock %}
+
+{% block content %}
+<div class="topimg_placeholder"></div>
+
+  {% if topimg %}
+    <div>
+      <img
+        class="{{ topimg.category }}"
+        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+        alt="{{ topimg.title }}">
+
+    </div>
+  {% endif %}
+  {% if quad_info %}
+    <div class="quad-container">
+      {% for item in quad_info %}
+        <a class="quad" href="{{request.route_url('home')}}{{ item.extra }}">
+          <div class="{{ item.subcategory }}"><h2>{{ item.title | safe }}</h2></div>
+        </a>
+
+      {% endfor %}
+
+    </div>
+  {% endif %}
+  {% if main %}
+    {% for item in main %}
+
+      <center>
+        <h1>{{ item.title | safe }}</h1>
+        {% if item.img %}
+          <img
+            class="single"
+            src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}">
+        {% endif %}
+        <div class="markdown">{{ item.markdown|safe }}</div>
+      </center>
+    {% endfor %}
+  {% endif %}
+{% endblock content %}

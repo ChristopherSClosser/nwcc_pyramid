@@ -1,10 +1,12 @@
 {% extends "base.jinja2" %}
 
-{% block title %}Staff{% endblock %}
+{% block title %}Welcome{% endblock %}
 
 {% block content %}
-<div class="topimg_placeholder"></div>
-<div class="topimg_placeholder"></div>
+
+  <div class="topimg_placeholder"></div>
+  <div class="topimg_placeholder"></div>
+  
   {% if topimg %}
     <div>
       <img
@@ -12,7 +14,7 @@
         src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
       <div class="imgtitle">
-        <h1><a href="" class="dropdown2" onclick="return false;">{{ main[0].subcategory }}<div class="arrow-down"></div></a></h1>
+        <h1><a href="" class="dropdown2" onclick="return false;">About Us<div class="arrow-down"></div></a></h1>
         {% if submenu %}
           <ul class="sublinks hidden dropdown-content2">
           {% for item in submenu %}
@@ -27,18 +29,7 @@
     </div>
   {% endif %}
   {% if main %}
-    {% for item in main %}
-      {% if item.title == 'menu_place_holder' %}
-
-      {% else %}
-        <div class="markdown">
-          <img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}" alt="{{ item.title }}">
-          <h2>{{ item.title }}</h2>
-          {{ item.subcategory }}<br><br>
-          {{ item.markdown|safe }}
-        </div><hr style="background: black;">
-      {% endif %}
-
-    {% endfor %}
+      <div class="markdown">{{ main.markdown|safe }}</div>
   {% endif %}
+
 {% endblock content %}

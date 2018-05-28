@@ -1,16 +1,13 @@
 {% extends "base.jinja2" %}
 
-{% block title %}Staff{% endblock %}
+{% block title %}Bible Studies{% endblock %}
 
 {% block content %}
 <div class="topimg_placeholder"></div>
 <div class="topimg_placeholder"></div>
   {% if topimg %}
     <div>
-      <img
-        class="{{ topimg.category }}"
-        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
-        alt="{{ topimg.title }}">
+      
       <div class="imgtitle">
         <h1><a href="" class="dropdown2" onclick="return false;">{{ main[0].subcategory }}<div class="arrow-down"></div></a></h1>
         {% if submenu %}
@@ -32,11 +29,12 @@
 
       {% else %}
         <div class="markdown">
-          <img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}" alt="{{ item.title }}">
           <h2>{{ item.title }}</h2>
-          {{ item.subcategory }}<br><br>
+          <img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}" alt="{{ item.title }}"><br><br>
+
           {{ item.markdown|safe }}
-        </div><hr style="background: black;">
+        </div>
+        <hr style="background: black;">
       {% endif %}
 
     {% endfor %}

@@ -2,6 +2,15 @@
 
 from .default import (
     home_view,
+    welcome_view,
+    sundays_view,
+    youth_kids_view,
+    go_deeper_view,
+    bible_studies_view,
+    worship_view,
+    hebrews_view,
+    message_view,
+    children_view,
     about_view,
     values_view,
     contact_view,
@@ -21,6 +30,15 @@ from .default import (
 def includeme(config):
     """List of views to include for the configurator object."""
     config.add_view(home_view, route_name='home')
+    config.add_view(welcome_view, route_name='welcome')
+    config.add_view(sundays_view, route_name='sundays')
+    config.add_view(youth_kids_view, route_name='youth_kids')
+    config.add_view(go_deeper_view, route_name='go_deeper')
+    config.add_view(bible_studies_view, route_name='bible_studies')
+    config.add_view(worship_view, route_name='worship')
+    config.add_view(hebrews_view, route_name='hebrews')
+    config.add_view(message_view, route_name='message')
+    config.add_view(children_view, route_name='children')
     config.add_view(about_view, route_name='about')
     config.add_view(values_view, route_name='values')
     config.add_view(contact_view, route_name='contact')
