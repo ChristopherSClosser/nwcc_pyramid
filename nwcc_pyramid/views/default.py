@@ -8,6 +8,18 @@ from pyramid_mailer.message import Message
 from pyramid.security import remember, forget
 from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid.view import view_config, forbidden_view_config
+from pyramid.view import notfound_view_config
+
+
+@notfound_view_config(renderer='../templates/404.jinja2')
+def notfound_view(request):
+    """."""
+    query = request.dbsession.query(MyModel)
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    request.response.status = 404
+    return {
+        'main_menu': main_menu,
+    }
 
 
 """
