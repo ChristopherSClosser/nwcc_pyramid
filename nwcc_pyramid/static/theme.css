@@ -181,6 +181,7 @@ hr {
   font-weight: normal;
   margin-right: 1rem;
   margin-left: 1rem;
+  margin-top: 3rem;
   /* padding-left: 2rem;
   padding-right: 2rem; */
 }
@@ -193,6 +194,10 @@ hr {
 .logo_large img {
   max-width: 60%;
 
+}
+
+#sublinks {
+  margin-top: -0.8rem;
 }
 
 #steps1_4 {
@@ -682,6 +687,7 @@ footer {
     position: absolute;
     left: 13%;
     margin-top: -1rem;
+    z-index: -99999;
   }
 
   #steps2_5, #steps1_4 {
@@ -705,8 +711,17 @@ footer {
     z-index: -99;
   }
 
+  #sublinks {
+    margin-top: -1.3rem;
+  }
+
+  .imgtitle {
+    top: 4rem;
+  }
+
   .title {
     font-size: 3rem;
+    margin-bottom: -2rem;
   }
   h1 {
     /* font-size: 1.5rem; */
@@ -746,6 +761,7 @@ footer {
     position: absolute;
     left: 7%;
     margin-top: 2rem;
+
   }
 
   .steps h1 {
