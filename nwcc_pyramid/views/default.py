@@ -145,6 +145,7 @@ def go_deeper_view(request):
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     steps_info = query.filter(MyModel.page == 'home').all()
     topimg = [item for item in content if item.category == 'topimg']
+    submenu = [item for item in content if item.title == 'menu_place_holder']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
     main = [item for item in content if item.category == 'main']
@@ -152,11 +153,12 @@ def go_deeper_view(request):
     return {
         'auth': auth,
         'main_menu': main_menu,
+        'submenu': submenu,
         'content': content,
         'topimg': topimg[0],
         'tri_img': tri_img,
         'quad_info': quad_info,
-        'main': main,
+        'main': main[0],
         'steps': steps,
     }
 

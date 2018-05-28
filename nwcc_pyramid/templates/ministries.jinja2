@@ -9,6 +9,25 @@
 
   {% endif %}
   <div class="topimg_placeholder"></div>
+  <div class="topimg_placeholder"></div>
+
+    <div class="imgtitle">
+      <h1><a href="" class="dropdown2" onclick="return false;">{{ main.title }}
+        {% if submenu %}
+          <div class="arrow-down"></div>
+        {% endif %}
+      </a></h1>
+      {% if submenu %}
+        <ul class="sublinks hidden dropdown-content2">
+        {% for item in submenu %}
+          {% if item.subcategory %}
+
+            <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
 
     {% for step in steps %}
       {% if step.subcategory == 'title' %}
