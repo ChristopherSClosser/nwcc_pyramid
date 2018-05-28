@@ -141,7 +141,7 @@ def go_deeper_view(request):
     except KeyError:
         pass
     query = request.dbsession.query(MyModel)
-    content = query.filter(MyModel.page == 'go_deeper').all()
+    content = query.filter(MyModel.page == 'ministries').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     steps_info = query.filter(MyModel.page == 'home').all()
     topimg = [item for item in content if item.category == 'topimg']
@@ -160,6 +160,29 @@ def go_deeper_view(request):
         'quad_info': quad_info,
         'main': main[0],
         'steps': steps,
+    }
+
+
+@view_config(route_name='bible_studies', renderer='../templates/bible_studies.jinja2')
+def bible_studies_view(request):
+    """Bible studies view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'ministries').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'bible_studies']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
     }
 
 

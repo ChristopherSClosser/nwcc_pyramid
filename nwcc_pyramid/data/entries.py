@@ -440,7 +440,7 @@ ENTRIES = [
         "extra": "",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "topimg",
         "subcategory": "",
         "title": "Go Deeper Ministries",
@@ -450,7 +450,7 @@ ENTRIES = [
         "extra": "",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "main",
         "subcategory": "",
         "title": "Go Deeper Ministries",
@@ -460,7 +460,7 @@ ENTRIES = [
         "extra": "",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "foodbank",
         "subcategory": "Northwest Foodbank",
         "title": "menu_place_holder",
@@ -470,7 +470,7 @@ ENTRIES = [
         "extra": "foodbank",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "kidschurch",
         "subcategory": "Children's Church",
         "title": "menu_place_holder",
@@ -480,7 +480,7 @@ ENTRIES = [
         "extra": "children",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "youth_kids",
         "subcategory": "Youth Group",
         "title": "menu_place_holder",
@@ -490,7 +490,7 @@ ENTRIES = [
         "extra": "youth_kids",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "bible_studies",
         "subcategory": "Bible Studies",
         "title": "menu_place_holder",
@@ -500,7 +500,7 @@ ENTRIES = [
         "extra": "bible_studies",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "life_groups",
         "subcategory": "Life Groups",
         "title": "menu_place_holder",
@@ -510,7 +510,7 @@ ENTRIES = [
         "extra": "life_groups",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "military",
         "subcategory": "Military",
         "title": "menu_place_holder",
@@ -520,7 +520,7 @@ ENTRIES = [
         "extra": "military",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "walk_the_walk",
         "subcategory": "Walk the Walk",
         "title": "menu_place_holder",
@@ -530,7 +530,7 @@ ENTRIES = [
         "extra": "walk_the_walk",
     },
     {
-        "page": "go_deeper",
+        "page": "ministries",
         "category": "bobs",
         "subcategory": "B.O.B.S.",
         "title": "menu_place_holder",
@@ -1206,7 +1206,7 @@ ENTRIES = [
         "title": "Going Deeper",
         "img": "deeper.png",
         "imgsrc": "",
-        "markdown": "Going Deeper is a weekly Bible study which meets in the conference room each Wednesday morning from 11:00 to 12:30.  This is an interactive study which allows for each person to share comments and ask questions.  The lessons are designed to carefully and prayerfully consider each verse or verses to find the meaning and how it might apply to our personal lives.  We often cross reference with like verses or passages of scripture to look for a deeper meaning.<br><br>This is a friendly welcoming time in which friends can openly share concerns, questions, prayer request and victories.  It is a time to look deep into God’s Word and find resources to help us Go Deeper in our Christian lives.  A place where we can feel safe, loved and supported in our walk with each other and with our Lord.<br><br>There is always a warm welcome a hot cup of coffee and more often than not a plate of freshly baked cookies.<br><table><tbody><tr><td style=\"padding-right:20px;\"><div style=\"border:1px solid #717171;width:300px;height:180px;\"><a href=\"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=10402+Kline+Street+SW,+Lakewood,+WA+98499&amp;z=16\" target=\"_blank\"><img src=\"https://maps.googleapis.com/maps/api/staticmap?center=10402 Kline Street SW,Lakewood,WA&amp;zoom=13&amp;size=300x180&amp;markers=color:blue|10402 Kline Street SW,Lakewood,WA&amp;maptype=roadmap&amp;sensor=true&amp;key=AIzaSyAWz4naVapxCeD9t8gsPg9B62d8YtGV8fs\"></a></div></td><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Paul Robertson</span>, Chaplain</td></tr><tr><th>Phone:</th><td>(253) 381-3464</td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>&nbsp;</td><td>Lakewood, WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood+WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table></td></tr></tbody></table>",
+        "markdown": "Going Deeper is a weekly Bible study which meets in the conference room each Wednesday morning from 11:00 to 12:30.  This is an interactive study which allows for each person to share comments and ask questions.  The lessons are designed to carefully and prayerfully consider each verse or verses to find the meaning and how it might apply to our personal lives.  We often cross reference with like verses or passages of scripture to look for a deeper meaning.<br><br>This is a friendly welcoming time in which friends can openly share concerns, questions, prayer request and victories.  It is a time to look deep into God’s Word and find resources to help us Go Deeper in our Christian lives.  A place where we can feel safe, loved and supported in our walk with each other and with our Lord.<br><br>There is always a warm welcome a hot cup of coffee and more often than not a plate of freshly baked cookies.<br><br><div><a href=\"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=10402+Kline+Street+SW,+Lakewood,+WA+98499&amp;z=16\" target=\"_blank\"><img src=\"https://maps.googleapis.com/maps/api/staticmap?center=10402 Kline Street SW,Lakewood,WA&amp;zoom=13&amp;size=300x180&amp;markers=color:blue|10402 Kline Street SW,Lakewood,WA&amp;maptype=roadmap&amp;sensor=true&amp;key=AIzaSyAWz4naVapxCeD9t8gsPg9B62d8YtGV8fs\"></a></div><br><br><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Paul Robertson</span>, Chaplain</td></tr><tr><th>Phone:</th><td>(253) 381-3464</td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>&nbsp;</td><td>Lakewood, WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood+WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table>",
         "extra": "",
     },
     {

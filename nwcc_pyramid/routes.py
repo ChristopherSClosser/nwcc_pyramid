@@ -9,6 +9,7 @@ def includeme(config):
     config.add_route('sundays', '/sundays')
     config.add_route('youth_kids', '/youth_kids')
     config.add_route('go_deeper', '/go_deeper')
+    config.add_route('bible_studies', '/bible_studies')
     config.add_route('worship', '/worship')
     config.add_route('hebrews', '/hebrews')
     config.add_route('message', '/message')

@@ -6,6 +6,7 @@ from .default import (
     sundays_view,
     youth_kids_view,
     go_deeper_view,
+    bible_studies_view,
     worship_view,
     hebrews_view,
     message_view,
@@ -33,6 +34,7 @@ def includeme(config):
     config.add_view(sundays_view, route_name='sundays')
     config.add_view(youth_kids_view, route_name='youth_kids')
     config.add_view(go_deeper_view, route_name='go_deeper')
+    config.add_view(bible_studies_view, route_name='bible_studies')
     config.add_view(worship_view, route_name='worship')
     config.add_view(hebrews_view, route_name='hebrews')
     config.add_view(message_view, route_name='message')
