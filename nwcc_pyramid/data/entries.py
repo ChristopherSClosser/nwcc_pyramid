@@ -356,7 +356,7 @@ ENTRIES = [
         "title": "He-brews boldly",
         "img": "",
         "imgsrc": "",
-        "markdown": "Add info for coffee...",
+        "markdown": "Coming Soon!",
         "extra": "",
     },
     {
@@ -376,7 +376,7 @@ ENTRIES = [
         "title": "Listen to the Message",
         "img": "audio_icon.png",
         "imgsrc": "",
-        "markdown": "Add info...",
+        "markdown": "Coming Soon!",
         "extra": "",
     },
     {
@@ -386,7 +386,7 @@ ENTRIES = [
         "title": "Sermon Handouts",
         "img": "",
         "imgsrc": "",
-        "markdown": "Add info...",
+        "markdown": "Coming Soon!",
         "extra": "",
     },
     {
@@ -396,7 +396,7 @@ ENTRIES = [
         "title": "Sunday Program",
         "img": "",
         "imgsrc": "",
-        "markdown": "Add info...",
+        "markdown": "Coming Soon!",
         "extra": "",
     },
     {
@@ -416,7 +416,7 @@ ENTRIES = [
         "title": "Nursery & Kids Church",
         "img": "",
         "imgsrc": "",
-        "markdown": "Add Nursery & Kids Church info...",
+        "markdown": "Coming Soon!",
         "extra": "",
     },
     {
@@ -694,9 +694,9 @@ ENTRIES = [
         "category": "staff",
         "subcategory": "Music Director",
         "title": "Waid Hoyt",
-        "img": "",
+        "img": "waid.jpg",
         "imgsrc": "",
-        "markdown": "",
+        "markdown": "Waid Hoyt grew up in Tacoma, WA and was bit by the music bug early in life. It wasn't long before he found a passion for music in school, playing in various concert/symphonic & jazz bands through his scholastic years. He has served as a member of multiple worship teams over the last 15 years. Waid came to NWCC in 2013 and has been co-leading worship the past since that time. More recently, he began taking over the worship director role in 2017.<br><br>In 2013 when God called him to NWCC, it was a natural fit to become a part of the worship team. Music has always been at the core of his passions and in that he finds a deep connection with God through worship & praise music. His heart is to provide a place for other musicians to grow in their skill and in their relationship with Jesus in worship music.",
         "extra": "music_director",
     },
     {
@@ -714,7 +714,7 @@ ENTRIES = [
         "category": "staff",
         "subcategory": "Youth Directors",
         "title": "Waid and Brittnae Hoyt",
-        "img": "",
+        "img": "waid_brittnae.jpg",
         "imgsrc": "",
         "markdown": "Waid & Brittnae Hoyt both grew up in Tacoma, WA and lived in the Pierce County area all their lives, now calling Puyallup, WA their home. They have served on staff as the Youth Directors since 2015. A calling that they felt near and dear to their heart. Both having been involved in youth group as teens and finding those years so crucial in their faith. They have a heart to see this generation grow up in The Lord to build their foundation of love & hope through Jesus Christ.<br><br>The Youth Group meets the 2nd & 4th Tuesday of every month @ 7PM. When they gather, there is always a fun time! Games, delicious snacks, a whole lot of laughter, worship music and discussions about the love of God.<br><br><b>Office Phone:</b> (253)926-2528<br><b>Facebook:</b> https://www.facebook.com/groups/nwccyouth/<br><b>",
         "extra": "youth_directors",
