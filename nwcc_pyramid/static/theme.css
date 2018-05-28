@@ -62,9 +62,9 @@ hr {
 }
 
 .welcometxt {
-  font-family: 'Gilroy-ExtraBold';
+  font-family: 'Gilroy-Light';
   font-size: 4rem;
-  font-weight: 100;
+  font-weight: 600;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -595,13 +595,16 @@ footer {
     line-height: 2.5rem;
   }
 
-  .welcomeimg {
-    margin-top: -4rem;
-  }
+
 
 @media only screen and (min-width: 545px) {
+  .welcomeimg {
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+  }
+
   #homeqc {
-    margin-top: -20%;
+    margin-top: -30%;
     z-index: 9999999999;
     position: absolute;
   }
@@ -621,7 +624,7 @@ footer {
     padding-top: 0;
   }
   .topimg {
-    width: 101vw;
+    width: 102vw;
     z-index: -9999;
     margin-left: -1px;
   }
@@ -819,6 +822,12 @@ footer {
 }
 
 @media only screen and (min-width: 834px) {
+  #homeqc {
+    margin-top: -26vh;
+    z-index: 9999999999;
+    position: absolute;
+  }
+
   .logo_large img {
     max-width: 35%;
     position: absolute;
