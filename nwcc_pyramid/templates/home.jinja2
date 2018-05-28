@@ -2,19 +2,20 @@
 
 
 {% block content %}
-  <div class="topimg_placeholder"></div>
   {% if topimg %}
-    <div>
+    <div class="welcomecontainer">
       <a href="{{request.route_url('welcome')}}">
+
         <img
-          class="{{ topimg.category }}"
+          class="welcomeimg {{ topimg.category }}"
           src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
           alt="{{ topimg.title }}">
+        <h1 class="welcometxt">WELCOME</h1>
       </a>
     </div>
   {% endif %}
   {% if quad_info %}
-    <div class="quad-container">
+    <div id="homeqc" class="quad-container">
       {% for item in quad_info %}
         <a class="quad" href="{{request.route_url('home')}}{{ item.extra }}">
           <div class="{{ item.subcategory }}home"><h2>{{ item.title | safe }}</h2></div>
@@ -22,5 +23,5 @@
       {% endfor %}
     </div>
   {% endif %}
-
+  
 {% endblock %}
