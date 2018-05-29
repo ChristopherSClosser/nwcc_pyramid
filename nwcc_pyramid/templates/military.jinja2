@@ -1,0 +1,42 @@
+{% extends "base.jinja2" %}
+
+{% block title %}Military Ministries{% endblock %}
+
+{% block content %}
+<div class="topimg_placeholder"></div>
+<div class="topimg_placeholder"></div>
+  {% if topimg %}
+    <div>
+
+      <div class="imgtitle">
+        <h1><a href="" class="dropdown2" onclick="return false;">{{ main[0].subcategory }}<div class="arrow-down"></div></a></h1>
+        {% if submenu %}
+          <ul class="sublinks hidden dropdown-content2">
+          {% for item in submenu %}
+            {% if item.subcategory %}
+
+              <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  {% if main %}
+    {% for item in main %}
+      {% if item.title == 'menu_place_holder' %}
+
+      {% else %}
+        <div class="markdown">
+          <h2>{{ item.title }}</h2>
+          <img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}" alt="{{ item.title }}"><br><br>
+
+          {{ item.markdown|safe }}
+        </div>
+        <hr style="background: black;">
+      {% endif %}
+
+    {% endfor %}
+  {% endif %}
+{% endblock content %}

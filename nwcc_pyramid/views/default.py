@@ -221,6 +221,29 @@ def life_groups_view(request):
     }
 
 
+@view_config(route_name='military', renderer='../templates/military.jinja2')
+def military_view(request):
+    """Military view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'ministries').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'military_ministries']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
+    }
+
+
 @view_config(route_name='worship', renderer='../templates/worship.jinja2')
 def worship_view(request):
     """Worship view."""

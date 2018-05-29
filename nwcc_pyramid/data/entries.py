@@ -1242,7 +1242,7 @@ ENTRIES = [
     {
         "page": "ministries",
         "category": "military_ministries",
-        "subcategory": "main",
+        "subcategory": "Military Ministries",
         "title": "Military Ministries",
         "img": "militaryministry.png",
         "imgsrc": "militaryministryaction.jpg",
@@ -1284,7 +1284,7 @@ ENTRIES = [
         "category": "military_ministries",
         "subcategory": "bbq",
         "title": "Military Ministry Events",
-        "img": "",
+        "img": "militaryministryaction.jpg",
         "imgsrc": "",
         "markdown": "We conduct quarterly BBQs on the Army Installation and at home.  Military families and veterans within our church family extend personal invites, which opens the opportunity to meet new families. BBQ Meal, kids & adult activities.<br><br><h2>Military BBQ Proposed dates:<br><br>May 7, 2017<br>September 17, 2017</h2>",
         "extra": "",

@@ -11,6 +11,7 @@ def includeme(config):
     config.add_route('go_deeper', '/go_deeper')
     config.add_route('bible_studies', '/bible_studies')
     config.add_route('life_groups', '/life_groups')
+    config.add_route('military', '/military')
     config.add_route('worship', '/worship')
     config.add_route('hebrews', '/hebrews')
     config.add_route('message', '/message')

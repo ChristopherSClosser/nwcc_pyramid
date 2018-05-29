@@ -8,6 +8,7 @@ from .default import (
     go_deeper_view,
     bible_studies_view,
     life_groups_view,
+    military_view,
     worship_view,
     hebrews_view,
     message_view,
@@ -37,6 +38,7 @@ def includeme(config):
     config.add_view(go_deeper_view, route_name='go_deeper')
     config.add_view(bible_studies_view, route_name='bible_studies')
     config.add_view(life_groups_view, route_name='life_groups')
+    config.add_view(military_view, route_name='military')
     config.add_view(worship_view, route_name='worship')
     config.add_view(hebrews_view, route_name='hebrews')
     config.add_view(message_view, route_name='message')
