@@ -244,6 +244,52 @@ def military_view(request):
     }
 
 
+@view_config(route_name='walk_the_walk', renderer='../templates/walk_the_walk.jinja2')
+def walk_the_walk_view(request):
+    """Walk the walk view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'ministries').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'walk_the_walk']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
+    }
+
+
+@view_config(route_name='bobs', renderer='../templates/bobs.jinja2')
+def bobs_view(request):
+    """Walk the walk view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'ministries').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'bobs']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
+    }
+
+
 @view_config(route_name='worship', renderer='../templates/worship.jinja2')
 def worship_view(request):
     """Worship view."""
