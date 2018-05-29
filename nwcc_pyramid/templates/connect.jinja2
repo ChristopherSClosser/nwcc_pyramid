@@ -25,12 +25,12 @@
 		<div>
         <span class="required">*</span>
 		      First Name:<br>
-					<input type="text" maxlength="60" name="firstName" size="30">
+					<input type="text" maxlength="60" name="firstName" size="30" required>
     </div>
     <div>
         <span class="required">*</span>
 		      Last Name:<br>
-					<input type="text" maxlength="60" name="lastName" size="30">
+					<input type="text" maxlength="60" name="lastName" size="30" required>
 
     </div>
 
@@ -121,10 +121,10 @@
 
 		<br><span class="required">*</span>
 		Phone:<br>
-            <input type="text" maxlength="30" name="phone" size="30"><br>
+            <input type="text" maxlength="30" name="phone" size="30" required><br>
 		<div><span class="required">*</span>
 		Email:</div>
-            <input type="text" maxlength="60" name="email" size="30">
+            <input type="text" maxlength="60" name="email" size="30" required>
   </div>
 </div>
 
@@ -139,7 +139,7 @@
 				<div >
   <div><div>
 	How did you hear about NWCC?<br>
-				<input type="hidden" name="question_1_title" value="How%20did%20you%20hear%20about%20NWCC%3F">
+				<input type="hidden" name="question_1_title" value="How did you hear about NWCC?">
 				<input type="hidden" name="question_1_type" value="textarea">
 				<input type="hidden" name="question_1_id" value="6763">
 				<textarea name="question_1" rows="6" cols="71"></textarea>
@@ -150,17 +150,17 @@
 		<br>Please Check any appropriate boxes<br>
   </div>
   <div>
-					<input type="hidden" name="question_2_title" value="Please Check any appropriate boxes">
-					<input type="hidden" name="question_2_type" value="checkbox">
-					<input type="hidden" name="question_2_id" value="6764">
-					<input type="hidden" name="question_2_count" value="4">
+					<input type="hidden" value="Please Check any appropriate boxes">
+					<input type="hidden" value="checkbox">
+					<input type="hidden" value="6764">
+					<input type="hidden" value="4">
 											<input type="checkbox" name="question_2_checkbox_1" value="Single">
 						Single<br>
-                                						<input type="checkbox" name="question_2_checkbox_2" value="Single%20Parent">
+                                						<input type="checkbox" name="question_2_checkbox_2" value="Single Parent">
 						Single Parent<br>
                                 						<input type="checkbox" name="question_2_checkbox_3" value="Married">
 						Married<br>
-                                						<input type="checkbox" name="question_2_checkbox_4" value="Widow%20%28er%29">
+                                						<input type="checkbox" name="question_2_checkbox_4" value="Widow(er)">
 						Widow (er)<br>
 
   </div>
@@ -171,19 +171,19 @@
 		<br>Adults:
   </div>
   <div>
-					<input type="hidden" name="question_3_title" value="Adults:">
-					<input type="hidden" name="question_3_type" value="checkbox">
-					<input type="hidden" name="question_3_id" value="6766">
-					<input type="hidden" name="question_3_count" value="5">
-											<input type="checkbox" name="question_3_checkbox_1" value="18%2D24%20">
+					<input type="hidden" value="Adults:">
+					<input type="hidden" value="checkbox">
+					<input type="hidden" value="6766">
+					<input type="hidden" value="5">
+											<input type="checkbox" name="question_3_checkbox_1" value="18-24 ">
 						18-24 <br>
-                                						<input type="checkbox" name="question_3_checkbox_2" value="25%2D34">
+                                						<input type="checkbox" name="question_3_checkbox_2" value="25-34">
 						25-34<br>
-                                						<input type="checkbox" name="question_3_checkbox_3" value="35%2D50">
+                                						<input type="checkbox" name="question_3_checkbox_3" value="35-50">
 						35-50<br>
-                                						<input type="checkbox" name="question_3_checkbox_4" value="51%2D65">
+                                						<input type="checkbox" name="question_3_checkbox_4" value="51-65">
 						51-65<br>
-                                						<input type="checkbox" name="question_3_checkbox_5" value="over%2065">
+                                						<input type="checkbox" name="question_3_checkbox_5" value="over 65">
 						over 65<br>
 
   </div>
@@ -194,17 +194,17 @@
 		<br>Children:
   </div>
   <div>
-					<input type="hidden" name="question_4_title" value="Children:">
-					<input type="hidden" name="question_4_type" value="checkbox">
-					<input type="hidden" name="question_4_id" value="6765">
-					<input type="hidden" name="question_4_count" value="4">
+					<input type="hidden" value="Children:">
+					<input type="hidden" value="checkbox">
+					<input type="hidden" value="6765">
+					<input type="hidden" value="4">
 											<input type="checkbox" name="question_4_checkbox_1" value="Preschool">
 						Preschool<br>
-                                						<input type="checkbox" name="question_4_checkbox_2" value="Grade%20School">
+                                						<input type="checkbox" name="question_4_checkbox_2" value="Grade School">
 						Grade School<br>
-                                						<input type="checkbox" name="question_4_checkbox_3" value="Jr%2E%20High">
+                                						<input type="checkbox" name="question_4_checkbox_3" value="Jr. High">
 						Jr. High<br>
-                                						<input type="checkbox" name="question_4_checkbox_4" value="Sr%2E%20High">
+                                						<input type="checkbox" name="question_4_checkbox_4" value="Sr. High">
 						Sr. High<br>
 
   </div>
@@ -213,16 +213,16 @@
 											<div >
   <div><div>
 	<br>I desire:<br>
-					<input type="hidden" name="question_5_title" value="I%20desire%3A">
+					<input type="hidden" name="question_5_title" value="I desire:">
 					<input type="hidden" name="question_5_type" value="dropdown">
 					<input type="hidden" name="question_5_id" value="6767">
 					<input type="hidden" name="question_5_count" value="4">
 					<select name="question_5">
 					<option value="">Make a Selection</option>
-											<option value="A%20Pastorial%20Contact">A Pastorial Contact</option>
-												<option value="To%20be%20Baptized">To be Baptized</option>
-												<option value="To%20Begin%20a%20Relationship%20with%20God">To Begin a Relationship with God</option>
-												<option value="To%20Be%20in%20a%20Home%20Group">To Be in a Home Group</option>
+											<option value="A Pastorial Contact">A Pastorial Contact</option>
+												<option value="To be Baptized">To be Baptized</option>
+												<option value="To Begin a Relationship with God">To Begin a Relationship with God</option>
+												<option value="To Be in a Home Group">To Be in a Home Group</option>
 						</select>
   </div>
 </div></div>

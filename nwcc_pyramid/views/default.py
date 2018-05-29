@@ -625,18 +625,60 @@ def connect_view(request):
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'connect_form']
-    # cc_email = os.environ['MAIL_SEND_TO']
-    # if request.method == 'POST':
-    #     mailer = request.mailer
-    #     message = Message(
-    #         subject="New connection card!",
-    #         sender="weloveboldly@gmail.com",
-    #         recipients=[cc_email],
-    #         body="hello, arthur")
-    #
-    #     mailer.send_immediately(message)
-    #     # transaction.commit()
-    #     return HTTPFound(request.route_url('home'))
+    cc_email = os.environ['MAIL_SEND_TO']
+
+    if request.method == 'POST':
+        info = request.POST
+        tmp = """
+            First Name: {0}\n
+            Last Name: {1}\n
+            Address: {2}\n
+            {3}, {4} {5}\n
+            Phone: {6}\n
+            Email: {7}\n
+            Comment: {8}\n
+            How they found us: {9}\n
+            I am {10} age {11}, childeren in {12}\n
+            I desire {13}
+        """
+        question_2 = []
+        question_3 = []
+        question_4 = []
+        for item in list(info.keys()):
+            if 'question_2' in item:
+                question_2.append(info[item])
+            if 'question_3' in item:
+                question_3.append(info[item])
+            if 'question_4' in item:
+                question_4.append(info[item])
+
+        email_body = tmp.format(
+            info['firstName'],
+            info['lastName'],
+            info['address'],
+            info['city'],
+            info['state'],
+            info['zip'],
+            info['phone'],
+            info['email'],
+            info['comment'],
+            info['question_1'],
+            ' & '.join(str(i) for i in question_2),
+            ' & '.join(str(i) for i in question_3),
+            ' & '.join(str(i) for i in question_4),
+            info['question_5'],
+        )
+        mailer = request.mailer
+        message = Message(
+            subject="New connection card!",
+            sender="weloveboldly@gmail.com",
+            recipients=[cc_email],
+            body=email_body,
+        )
+
+        mailer.send_immediately(message)
+        # transaction.commit()
+        return HTTPFound(request.route_url('home'))
     return {
         'auth': auth,
         'main_menu': main_menu,
