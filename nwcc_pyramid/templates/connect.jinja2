@@ -1,17 +1,17 @@
 {% extends "base.jinja2" %}
 
-{% block title %}Foobank{% endblock %}
+{% block title %}Connect{% endblock %}
 
 {% block content %}
 <div class="topimg_placeholder"></div>
 <div class="topimg_placeholder"></div>
 
-<form name="connect_form" method="POST">
+<form class="connect_form" name="connect_form" method="POST">
 <div bgcolor="#FFFFFF" class="main_table">
 
-  <div>
+  <h2>
     NWCC Connection Card
-  </div>
+  </h2>
 </div>
 
 	<hr>
@@ -37,14 +37,14 @@
 
 <div >
   <div>
-		Address:<br><input type="text" maxlength="255" name="address" size="60">
+		<br>Address:<br><input class="formaddress" type="text" maxlength="255" name="address" size="60">
   </div>
 
   <div>
 
-		City:<br><input type="text" maxlength="60" name="city" size="30">
+		City:<br><input type="text" maxlength="60" name="city" size="30"><br>
 
-		State / Province<br>
+		<div>State / Province</div>
 	<select name="state">
 			<option value="">Select a State
             </option><option value="AL">Alabama
@@ -110,20 +110,20 @@
             </option><option value="QC">Quebec
             </option><option value="SK">Saskatchewan
             </option><option value="YT">Yukon Territory
-          </option></select>
+          </option></select><br>
 
-		Zip Code:<br>
+		<div>Zip Code:</div>
 	<input type="text" maxlength="12" name="zip" size="6">
   </div></div>
 
 <div >
    <div>
 
-		<span class="required">*</span>
+		<br><span class="required">*</span>
 		Phone:<br>
-            <input type="text" maxlength="30" name="phone" size="30">
-		<span class="required">*</span>
-		Email:<br>
+            <input type="text" maxlength="30" name="phone" size="30"><br>
+		<div><span class="required">*</span>
+		Email:</div>
             <input type="text" maxlength="60" name="email" size="30">
   </div>
 </div>
@@ -147,7 +147,7 @@
 </div></div>
 									<div >
   <div><div>
-		Please Check any appropriate boxes
+		<br>Please Check any appropriate boxes<br>
   </div>
   <div>
 					<input type="hidden" name="question_2_title" value="Please Check any appropriate boxes">
@@ -168,7 +168,7 @@
 
 											<div >
   <div><div>
-		Adults:
+		<br>Adults:
   </div>
   <div>
 					<input type="hidden" name="question_3_title" value="Adults:">
@@ -191,7 +191,7 @@
 
 											<div >
   <div><div>
-		Children:
+		<br>Children:
   </div>
   <div>
 					<input type="hidden" name="question_4_title" value="Children:">
@@ -212,7 +212,7 @@
 
 											<div >
   <div><div>
-	I desire:<br>
+	<br>I desire:<br>
 					<input type="hidden" name="question_5_title" value="I%20desire%3A">
 					<input type="hidden" name="question_5_type" value="dropdown">
 					<input type="hidden" name="question_5_id" value="6767">
@@ -228,17 +228,15 @@
 </div></div>
 
 
-		 <div >
-  <div><div>
-					<div align="center">
+
+					<br><center class="formsubmit">
 						<hr>
 
 						<input type="submit" name="submit" value="Submit">
-						<p><span class="required">*</span> Indicates required entry field&nbsp;&nbsp;&nbsp;&nbsp;</p>
-					</div>
+						<p><span class="required">*</span> Indicates required entry field</p>
+					</center>
 
-  </div>
-</div></div>
+
 	<input type="hidden" name="number_of_questions" value="5">
 	</form>
 

@@ -71,6 +71,26 @@ hr {
   transform: translate(-50%);
 }
 
+.connect_form {
+  margin-left: 10%;
+}
+
+.formaddress {
+  width: 90%;
+}
+
+.connect_form textarea {
+  width: 90%;
+}
+
+.connect_form div {
+  margin-top: 1rem;
+}
+
+.formsubmit {
+  margin-left: -10%;
+}
+
 .single {
   width: 6rem;
 }
