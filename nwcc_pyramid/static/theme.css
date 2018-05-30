@@ -63,6 +63,20 @@ hr {
   margin-left: 10%;
 }
 
+.podcast {
+  display: inline-block;
+}
+
+.pcast_title {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transform: translateY(-30%);
+}
+
+.pcastimg {
+  width: 1.5rem;
+}
+
 .audio_title {
   display: inline-block;
   margin-left: 1rem;

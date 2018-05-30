@@ -29,7 +29,14 @@
     <center>
 
         <h1>{{ title.title | safe }}</h1>
-
+        <div class="podcast">
+          <a href="{{ title.extra }}">
+            <img
+              class="pcastimg"
+              src="{{request.static_url('nwcc_pyramid:static/')}}{{ title.img }}">
+            <h3 class="pcast_title">{{ title.markdown | safe }}</h3>
+          </a>
+        </div>
     </center>
   {% endif %}
   {% if main %}
