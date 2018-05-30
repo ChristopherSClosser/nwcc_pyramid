@@ -486,7 +486,7 @@ hr {
   width: 3rem;
   cursor: pointer;
   position: absolute;
-  right: 0.5rem;
+  right: 1rem;
   margin-top: -1.5rem;
 }
 
@@ -517,7 +517,7 @@ hr {
     height: 50px;
     position: fixed;
     top: 0;
-    width: 98vw;
+    width: 100vw;
     z-index: 9999;
 }
 
