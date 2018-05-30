@@ -374,7 +374,7 @@ ENTRIES = [
         "category": "audio_title",
         "subcategory": "title",
         "title": "Listen to the Message",
-        "img": "itunes.png",
+        "img": "iTunes.png",
         "imgsrc": "",
         "markdown": "Get the podcast",
         "extra": "https://itunes.apple.com/us/podcast/northwest-community-church-sermon-podcast/id993016445?mt=2",

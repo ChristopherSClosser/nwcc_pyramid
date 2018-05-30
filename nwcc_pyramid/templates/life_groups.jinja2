@@ -30,7 +30,7 @@
       {% else %}
         <div class="markdown">
           <h2>{{ item.title }}</h2>
-          <img src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.imgsrc }}" alt="{{ item.title }}"><br><br>
+          <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.imgsrc }}" alt="{{ item.title }}"><br><br>
 
           {{ item.markdown|safe }}
         </div>

@@ -9,7 +9,7 @@
     <div>
       <img
         class="{{ topimg.category }}"
-        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+        src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
 
     </div>
@@ -33,7 +33,7 @@
           <a href="{{ title.extra }}">
             <img
               class="pcastimg"
-              src="{{request.static_url('nwcc_pyramid:static/')}}{{ title.img }}">
+              src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ title.img }}">
             <h3 class="pcast_title">{{ title.markdown | safe }}</h3>
           </a>
         </div>
@@ -46,7 +46,7 @@
             <a href="{{ item.extra }}" target="_blank">
               <img
                 class="single"
-                src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}">
+                src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img }}">
                 <h3 class="audio_title">{{ item.title | safe }}</h3>
             </a>
           {% endif %}
