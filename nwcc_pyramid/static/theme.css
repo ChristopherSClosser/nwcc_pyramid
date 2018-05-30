@@ -78,6 +78,10 @@ hr {
 }
 
 #inner {
+  width: 2.5rem;
+}
+
+#outer {
   width: 2.3rem;
 }
 
@@ -132,7 +136,6 @@ hr {
 
 #foursquare {
   width: 3rem;
-  margin: 0.5rem;
   margin-bottom: 1rem;
 }
 
