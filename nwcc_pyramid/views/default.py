@@ -358,16 +358,16 @@ def message_view(request):
     content = query.filter(MyModel.page == 'message').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
-    tri_img = [item for item in content if item.category == 'tri_img']
+    title = [item for item in content if item.category == 'audio_title']
     quad_info = [item for item in content if item.category == 'quad_info']
-    main = [item for item in content if item.category == 'main']
+    main = query.filter(MyModel.category == 'audio').order_by(MyModel.subcategory.desc())
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
-        'tri_img': tri_img,
+        'title': title[0],
         'quad_info': quad_info,
         'main': main,
         'steps': steps,

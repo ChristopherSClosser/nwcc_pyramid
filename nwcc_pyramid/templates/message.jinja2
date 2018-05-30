@@ -25,18 +25,27 @@
 
     </div>
   {% endif %}
+  {% if title %}
+    <center>
+
+        <h1>{{ title.title | safe }}</h1>
+
+    </center>
+  {% endif %}
   {% if main %}
     {% for item in main %}
-
-      <center>
-        <h1>{{ item.title | safe }}</h1>
-        {% if item.img %}
-          <img
-            class="single"
-            src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}">
-        {% endif %}
-        <div class="markdown">{{ item.markdown|safe }}</div>
-      </center>
+        <div class="audio">
+          {% if item.img %}
+            <a href="{{ item.extra }}" target="_blank">
+              <img
+                class="single"
+                src="{{request.static_url('nwcc_pyramid:static/')}}{{ item.img }}">
+                <h3 class="audio_title">{{ item.title | safe }}</h3>
+            </a>
+          {% endif %}
+          <div class="audio_info">{{ item.markdown|safe }}</div>
+        </div>
+        <hr style="background: lightgrey; width: 80%;">
     {% endfor %}
   {% endif %}
 {% endblock content %}
