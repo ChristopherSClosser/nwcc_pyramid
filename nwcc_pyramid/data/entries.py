@@ -382,27 +382,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "a",
-        "title": "January 7 2018<br>Pastor Joe",
-        "img": "audio_icon.png",
-        "imgsrc": "",
-        "markdown": "Coming Soon!",
-        "extra": "https://drive.google.com/open?id=1QcWGA4ZeLISTkUh81Pkz5xxO4__saWK_",
-    },
-    {
-        "page": "message",
-        "category": "audio",
-        "subcategory": "b",
-        "title": "January 21 2018<br>Pastor Mary & Pastor Joe",
-        "img": "audio_icon.png",
-        "imgsrc": "",
-        "markdown": "Coming Soon!",
-        "extra": "https://drive.google.com/open?id=1BEX1INAQzR6ekX6_JpnBpkgcm3kjtZXj",
-    },
-    {
-        "page": "message",
-        "category": "audio",
-        "subcategory": "c",
+        "subcategory": "track",
         "title": "January 28 2018<br>Pastor Joe",
         "img": "audio_icon.png",
         "imgsrc": "",
@@ -412,7 +392,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "d",
+        "subcategory": "track",
         "title": "February 11 2018<br>Pastor Joe",
         "img": "audio_icon.png",
         "imgsrc": "",
@@ -422,7 +402,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "e",
+        "subcategory": "track",
         "title": "February 18 2018<br>Pastor Mary",
         "img": "audio_icon.png",
         "imgsrc": "",
@@ -432,7 +412,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "f",
+        "subcategory": "track",
         "title": "February 25 2018<br>Pastor Joe",
         "img": "audio_icon.png",
         "imgsrc": "",
@@ -442,7 +422,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "g",
+        "subcategory": "track",
         "title": "March 4 2018<br>Pastor Mary",
         "img": "audio_icon.png",
         "imgsrc": "",
@@ -452,7 +432,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "h",
+        "subcategory": "track",
         "title": "March 18 2018<br>Pastor Mary",
         "img": "audio_icon.png",
         "imgsrc": "",
@@ -462,7 +442,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "i",
+        "subcategory": "track",
         "title": "March 25 2018<br>Pastor Joe",
         "img": "audio_icon.png",
         "imgsrc": "",
@@ -472,7 +452,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "j",
+        "subcategory": "track",
         "title": "April 1 2018<br>Pastor Mary",
         "img": "audio_icon.png",
         "imgsrc": "",
@@ -482,7 +462,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "k",
+        "subcategory": "track",
         "title": "April 8 2018<br>Pastor Joe",
         "img": "audio_icon.png",
         "imgsrc": "",
@@ -492,7 +472,7 @@ ENTRIES = [
     {
         "page": "message",
         "category": "audio",
-        "subcategory": "l",
+        "subcategory": "track",
         "title": "April 15 2018<br>Pastor Joe",
         "img": "audio_icon.png",
         "imgsrc": "",

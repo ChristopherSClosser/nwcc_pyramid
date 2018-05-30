@@ -360,7 +360,7 @@ def message_view(request):
     topimg = [item for item in content if item.category == 'topimg']
     title = [item for item in content if item.category == 'audio_title']
     quad_info = [item for item in content if item.category == 'quad_info']
-    main = query.filter(MyModel.category == 'audio').order_by(MyModel.subcategory.desc())
+    main = query.filter(MyModel.subcategory == 'track').order_by(MyModel.id.desc())
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
