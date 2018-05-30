@@ -85,6 +85,22 @@ hr {
   width: 2.3rem;
 }
 
+.spotimg {
+  width: 3rem;
+}
+
+.spotify_title {
+  display: inline-block;
+  margin-left: 0.5rem;
+  text-align: left;
+  transform: translateY(-20%);
+}
+
+.bio {
+  text-align: left;
+
+}
+
 .audio_title {
   display: inline-block;
   margin-left: 1rem;
@@ -128,6 +144,10 @@ hr {
 
 .single {
   width: 3rem;
+}
+
+.single_img {
+  width: 50%;
 }
 
 #jlc {

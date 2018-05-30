@@ -302,7 +302,7 @@ def worship_view(request):
     content = query.filter(MyModel.page == 'worship').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
-    tri_img = [item for item in content if item.category == 'tri_img']
+    title = [item for item in content if item.category == 'worship_title']
     quad_info = [item for item in content if item.category == 'quad_info']
     main = [item for item in content if item.category == 'main']
     steps = [item for item in content if item.category == 'steps']
@@ -311,7 +311,7 @@ def worship_view(request):
         'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
-        'tri_img': tri_img,
+        'title': title[0],
         'quad_info': quad_info,
         'main': main[0],
         'steps': steps,

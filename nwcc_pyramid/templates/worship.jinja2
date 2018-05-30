@@ -25,15 +25,29 @@
 
     </div>
   {% endif %}
+  {% if title %}
+    <center>
+
+        <h1>{{ title.title | safe }}</h1>
+        <div class="podcast">
+          <a href="{{ title.extra }}">
+            <img
+              class="spotimg"
+              src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ title.img }}">
+            <h3 class="spotify_title">{{ title.markdown | safe }}</h3>
+          </a>
+        </div>
+    </center>
+  {% endif %}
   {% if main %}
     <center>
       <h1>{{ main.title | safe }}</h1>
       {% if main.img %}
         <img
-          class="single"
+          class="single_img"
           src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ main.img }}">
       {% endif %}
-      <div class="markdown">{{ main.markdown|safe }}</div>
+      <div class="bio markdown">{{ main.markdown|safe }}</div>
     </center>
   {% endif %}
 {% endblock content %}
