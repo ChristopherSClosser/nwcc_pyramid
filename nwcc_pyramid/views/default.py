@@ -369,7 +369,7 @@ def message_view(request):
         'topimg': topimg[0],
         'title': title[0],
         'quad_info': quad_info,
-        'main': main,
+        'main': main[:5],
         'steps': steps,
     }
 
