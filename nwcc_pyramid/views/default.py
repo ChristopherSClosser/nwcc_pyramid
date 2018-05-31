@@ -198,6 +198,98 @@ def bible_studies_view(request):
     }
 
 
+@view_config(route_name='life_groups', renderer='../templates/life_groups.jinja2')
+def life_groups_view(request):
+    """Life groups view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'ministries').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'life_groups']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
+    }
+
+
+@view_config(route_name='military', renderer='../templates/military.jinja2')
+def military_view(request):
+    """Military view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'ministries').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'military_ministries']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
+    }
+
+
+@view_config(route_name='walk_the_walk', renderer='../templates/walk_the_walk.jinja2')
+def walk_the_walk_view(request):
+    """Walk the walk view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'ministries').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'walk_the_walk']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
+    }
+
+
+@view_config(route_name='bobs', renderer='../templates/bobs.jinja2')
+def bobs_view(request):
+    """Walk the walk view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'ministries').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    main = [item for item in content if item.category == 'bobs']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'submenu': submenu,
+        'topimg': topimg[0],
+        'main': main,
+    }
+
+
 @view_config(route_name='worship', renderer='../templates/worship.jinja2')
 def worship_view(request):
     """Worship view."""
@@ -210,7 +302,7 @@ def worship_view(request):
     content = query.filter(MyModel.page == 'worship').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
-    tri_img = [item for item in content if item.category == 'tri_img']
+    title = [item for item in content if item.category == 'worship_title']
     quad_info = [item for item in content if item.category == 'quad_info']
     main = [item for item in content if item.category == 'main']
     steps = [item for item in content if item.category == 'steps']
@@ -219,7 +311,7 @@ def worship_view(request):
         'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
-        'tri_img': tri_img,
+        'title': title[0],
         'quad_info': quad_info,
         'main': main[0],
         'steps': steps,
@@ -266,16 +358,16 @@ def message_view(request):
     content = query.filter(MyModel.page == 'message').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
-    tri_img = [item for item in content if item.category == 'tri_img']
+    title = [item for item in content if item.category == 'audio_title']
     quad_info = [item for item in content if item.category == 'quad_info']
-    main = [item for item in content if item.category == 'main']
+    main = query.filter(MyModel.subcategory == 'track').order_by(MyModel.id.desc())
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
-        'tri_img': tri_img,
+        'title': title[0],
         'quad_info': quad_info,
         'main': main,
         'steps': steps,
@@ -533,18 +625,60 @@ def connect_view(request):
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'connect_form']
-    # cc_email = os.environ['MAIL_SEND_TO']
-    # if request.method == 'POST':
-    #     mailer = request.mailer
-    #     message = Message(
-    #         subject="New connection card!",
-    #         sender="weloveboldly@gmail.com",
-    #         recipients=[cc_email],
-    #         body="hello, arthur")
-    #
-    #     mailer.send_immediately(message)
-    #     # transaction.commit()
-    #     return HTTPFound(request.route_url('home'))
+    cc_email = os.environ['MAIL_SEND_TO']
+
+    if request.method == 'POST':
+        info = request.POST
+        tmp = """
+            First Name: {0}\n
+            Last Name: {1}\n
+            Address: {2}\n
+            {3}, {4} {5}\n
+            Phone: {6}\n
+            Email: {7}\n
+            Comment: {8}\n
+            How they found us: {9}\n
+            I am {10} age {11}, childeren in {12}\n
+            I desire {13}
+        """
+        question_2 = []
+        question_3 = []
+        question_4 = []
+        for item in list(info.keys()):
+            if 'question_2' in item:
+                question_2.append(info[item])
+            if 'question_3' in item:
+                question_3.append(info[item])
+            if 'question_4' in item:
+                question_4.append(info[item])
+
+        email_body = tmp.format(
+            info['firstName'],
+            info['lastName'],
+            info['address'],
+            info['city'],
+            info['state'],
+            info['zip'],
+            info['phone'],
+            info['email'],
+            info['comment'],
+            info['question_1'],
+            ' & '.join(str(i) for i in question_2),
+            ' & '.join(str(i) for i in question_3),
+            ' & '.join(str(i) for i in question_4),
+            info['question_5'],
+        )
+        mailer = request.mailer
+        message = Message(
+            subject="New connection card!",
+            sender="weloveboldly@gmail.com",
+            recipients=[cc_email],
+            body=email_body,
+        )
+
+        mailer.send_immediately(message)
+        # transaction.commit()
+        return HTTPFound(request.route_url('home'))
     return {
         'auth': auth,
         'main_menu': main_menu,

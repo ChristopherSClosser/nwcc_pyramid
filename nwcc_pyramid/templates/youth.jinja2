@@ -9,7 +9,7 @@
     <div>
       <img
         class="{{ topimg.category }}"
-        src="{{request.static_url('nwcc_pyramid:static/')}}{{ topimg.img }}"
+        src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
 
     </div>
@@ -31,7 +31,7 @@
       {% if main.img %}
         <img
           class="single"
-          src="{{request.static_url('nwcc_pyramid:static/')}}{{ main.img }}">
+          src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ main.img }}">
       {% endif %}
     </center>
   {% endif %}

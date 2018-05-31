@@ -7,6 +7,10 @@ from .default import (
     youth_kids_view,
     go_deeper_view,
     bible_studies_view,
+    life_groups_view,
+    military_view,
+    walk_the_walk_view,
+    bobs_view,
     worship_view,
     hebrews_view,
     message_view,
@@ -35,6 +39,10 @@ def includeme(config):
     config.add_view(youth_kids_view, route_name='youth_kids')
     config.add_view(go_deeper_view, route_name='go_deeper')
     config.add_view(bible_studies_view, route_name='bible_studies')
+    config.add_view(life_groups_view, route_name='life_groups')
+    config.add_view(military_view, route_name='military')
+    config.add_view(walk_the_walk_view, route_name='walk_the_walk')
+    config.add_view(bobs_view, route_name='bobs')
     config.add_view(worship_view, route_name='worship')
     config.add_view(hebrews_view, route_name='hebrews')
     config.add_view(message_view, route_name='message')

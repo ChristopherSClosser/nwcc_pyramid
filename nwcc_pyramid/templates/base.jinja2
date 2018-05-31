@@ -8,8 +8,8 @@
       <meta name="keywords" content="weloveboldly, loveboldly, love, boldly, nwcc, nwcclakewood, northwestcommunitychurch northwestcommunitychurchlakewood, northwest, communitychurch, communitychurchlakewood, community, church, lakewood, food bank wednesdays only, foodbank wednesday only">
       <meta charset="utf-8">
 
-      <link href="{{request.static_url('nwcc_pyramid:static/theme.css')}}" rel="stylesheet">
-      <link rel="shortcut icon" href="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}" type="image/x-icon">
+      <link href="{{request.static_url('nwcc_pyramid:static/styles/theme.css')}}" rel="stylesheet">
+      <link rel="shortcut icon" href="{{request.static_url('nwcc_pyramid:static/images/nwcc_logo_color.png')}}" type="image/x-icon">
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>
@@ -25,10 +25,10 @@
       <div class="brand">
         <a href="{{request.route_url('home')}}"><img
           class="logo"
-          src="{{request.static_url('nwcc_pyramid:static/nwcc_logo_color.png')}}"
+          src="{{request.static_url('nwcc_pyramid:static/images/nwcc_logo_color.png')}}"
           alt="Northwest Community Church - Love Boldly"></a>
         <a class="brandtitle" href="{{request.route_url('home')}}"><h2>Northwest</h2><br><h3>COMMUNITY CHURCH</h3></a>
-        <div class="burger"><img src="{{request.static_url('nwcc_pyramid:static/burger.png')}}"></div>
+        <div class="burger"><img src="{{request.static_url('nwcc_pyramid:static/images/burger.png')}}"></div>
       </div>
       {% if auth %}
         <center>
@@ -67,19 +67,33 @@
       <div class="row">
         <div>
 
-          <a href="http://www.facebook.com/northwestcommunitychurchlakewood">
-            <img src="{{request.static_url('nwcc_pyramid:static/facebookgrey.png')}}"
+          <a href="http://www.facebook.com/northwestcommunitychurchlakewood" target="_blank">
+            <img src="{{request.static_url('nwcc_pyramid:static/images/facebookgrey.png')}}"
               alt="Northwest Community Church - Facebook">
           </a>
-          <a href="https://twitter.com/weloveboldly">
 
-            <img src="{{request.static_url('nwcc_pyramid:static/twitter.png')}}"
+          <a href="https://www.instagram.com/weloveboldly" target="_blank">
+
+            <img id="outer"
+              src="{{request.static_url('nwcc_pyramid:static/images/instagram-grey.png')}}"
+              alt="Northwest Community Church - Instagram">
+          </a>
+          <a href="https://twitter.com/weloveboldly" target="_blank">
+
+            <img id="inner"
+              src="{{request.static_url('nwcc_pyramid:static/images/twitter.png')}}"
               alt="Northwest Community Church - Twitter">
           </a>
-          <a href="https://www.instagram.com/weloveboldly">
+          <a href="https://itunes.apple.com/us/podcast/northwest-community-church-sermon-podcast/id993016445?mt=2" target="_blank">
 
-            <img src="{{request.static_url('nwcc_pyramid:static/instagram-grey.png')}}"
-              alt="Northwest Community Church - Instagram">
+            <img id="outer"
+              src="{{request.static_url('nwcc_pyramid:static/images/iTunes.png')}}"
+              alt="Northwest Community Church - Podcast">
+          </a>
+          <a href="https://open.spotify.com/user/121873039/playlist/5WIXziEiekojmI2h9er0xw" target="_blank">
+
+            <img src="{{request.static_url('nwcc_pyramid:static/images/spotify.png')}}"
+              alt="Northwest Community Church - Spotify">
           </a>
 
         </div>
@@ -88,11 +102,11 @@
       <div class="row">
 
         <div class="copyright">
-          <a href="https://www.foursquare.org/">
-            <img id="foursquare" src="{{request.static_url('nwcc_pyramid:static/foursquare_logo.png')}}"
+          <a href="https://www.foursquare.org/" target="_blank">
+            <img id="foursquare" src="{{request.static_url('nwcc_pyramid:static/images/foursquare_logo.png')}}"
               alt="Northwest Community Church - Facebook">
           </a>
-          <a href="https://www.instagram.com/j.l.c_photo/">
+          <a href="https://www.instagram.com/j.l.c_photo/" target="_blank">
             Photos by: J.L.C. Photography
           </a>
           &emsp; &copy; 2018 Northwest Community Church - Love boldly &emsp;
