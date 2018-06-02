@@ -23,7 +23,7 @@
 @font-face {font-family: 'Gilroy-Light';src: url('webfonts/36C056_0_0.eot');src: url('webfonts/36C056_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/MyFontsWebfontsKit/webfonts/36C056_0_0.woff2') format('woff2'),url('../fonts/MyFontsWebfontsKit/webfonts/36C056_0_0.woff') format('woff'),url('../fonts/MyFontsWebfontsKit/webfonts/36C056_0_0.ttf') format('truetype');}
 
 html {
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -37,8 +37,12 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: column;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
+}
+
+header {
+  max-width: 100%;
 }
 
 table {
@@ -912,6 +916,9 @@ footer {
    .dropdown {
      /* position: absolute; */
      text-align: left;
+   }
+   .topimg_placeholder {
+     height: 5.1rem;
    }
 
 }

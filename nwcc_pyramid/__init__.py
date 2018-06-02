@@ -16,6 +16,5 @@ def main(global_config, **settings):
     config.include('.routes')
     config.include('.views')
     config.include('.security')
-    # config.registry['mailer'] = mailer_factory_from_settings(settings)
     config.scan()
     return config.make_wsgi_app()

@@ -2,13 +2,13 @@
 
 import os
 import shutil
-from ..models import MyModel
-from ..security import is_authenticated
-from pyramid_mailer.message import Message
 from pyramid.security import remember, forget
-from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid.view import view_config, forbidden_view_config
 from pyramid.view import notfound_view_config
+from pyramid.httpexceptions import HTTPFound
+from pyramid_mailer.message import Message
+from ..models import MyModel
+from ..security import is_authenticated
 
 
 @notfound_view_config(renderer='../templates/404.jinja2')
@@ -369,7 +369,7 @@ def message_view(request):
         'topimg': topimg[0],
         'title': title[0],
         'quad_info': quad_info,
-        'main': main[:5],
+        'main': main[:8],
         'steps': steps,
     }
 
