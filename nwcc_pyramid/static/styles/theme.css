@@ -198,7 +198,7 @@ hr {
 .quad-container {
   display: inline-table;
   padding: 0;
-  width: 101vw;
+  width: 100%;
   margin-top: -2rem;
 }
 
@@ -972,9 +972,18 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1100px) {
-  #step3 {
-    left: 13.5%;
+@media only screen and (min-width: 1280px) {
+  html {
+    margin-left: 13%;
+    width: 75%;
+  }
+  .nav-down {
+    width: 75%;
+    /* margin-right: 10%; */
+  }
+
+  #homeqc {
+    width: 75%;
   }
 }
 

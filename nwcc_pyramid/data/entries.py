@@ -884,7 +884,7 @@ ENTRIES = [
         "category": "staff",
         "subcategory": "Executive Director",
         "title": "Katie Joseph",
-        "img": "",
+        "img": "katie.jpg",
         "imgsrc": "",
         "markdown": "<b>Office Phone:</b> (253) 926-2528<br><b>Email:</b> nwrabbi7@gmail.com",
         "extra": "assistant",
