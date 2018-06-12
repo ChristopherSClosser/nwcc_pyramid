@@ -233,7 +233,7 @@ ENTRIES = [
         "page": "home",
         "category": "quad_info",
         "subcategory": "q2",
-        "title": "Youth<br>&<br>Kids",
+        "title": "Youth",
         "img": "",
         "imgsrc": "",
         "markdown": "",
@@ -642,7 +642,7 @@ ENTRIES = [
     {
         "page": "ministries",
         "category": "youth_kids",
-        "subcategory": "Youth Group",
+        "subcategory": "Youth",
         "title": "menu_place_holder",
         "img": "",
         "imgsrc": "",
