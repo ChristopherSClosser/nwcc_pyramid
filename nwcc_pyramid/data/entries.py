@@ -746,7 +746,7 @@ ENTRIES = [
         "title": "",
         "img": "",
         "imgsrc": "",
-        "markdown": "<b>\"God is not through with you...\"</b> is at the heart of Northwest Community Church.<br><br><em>Whether you are:</em><br>• a new seeker looking for God<br>• or have known God, but now feel distant<br>• or you have been a faithful follower<br><br>...God is not through with you!<br><br>\"For I know the plan I have for you declares the Lord... plans to give you hope and a future\"  <a href='http://www.biblegateway.com/passage/?search=Jeremiah%2029:11&version=NIV'>Jeremiah 29:11</a><br><br> <a href='http://www.weloveboldly.com'>Pastors Mary and Joe Walsh inviting you to join us!</a>",
+        "markdown": "This concept focuses on the value that a welcoming and loving faith family provides. A value that looks a lot like our Savior’s empathetic, determined love for the lost.<br><br>A love that intentionally seeks the broken and accepts them as they are.<br>A love that loves anyone out of the dark and into the light.<br>A love that is not afraid of life’s messes.<br>A love that is transformative.<br>A love that is vibrant.<br>A love that is bold.",
         "extra": "about_us",
     },
     {
@@ -1156,7 +1156,7 @@ ENTRIES = [
         "title": "I'm New",
         "img": "",
         "imgsrc": "",
-        "markdown": "<b>Welcome to the NorthWest Community Church website!</b><br><br>We invite you to attend our church on Sundays at 10am where you will enjoy the warmth of new friendships and experience the wonderful presence of God! Please fill out our online Connection Card and let us know if we can answer any questions, or pray for any special needs you might have.  We hope you come visit us soon and consider making NorthWest your new home!<br><br>We believe that whether you are:<ul><li>a new seeker looking for God</li><li>or have known God, but now feel distant...</li><li>or you have been a faithful follower...</li></ul><center><br>\"God is not through with you!\"</center><br>\"For I know the plans I have for you declares the Lord...plans to give you hope and a future!\" Jer 29:11<br><br><a href='connect'>Fill out a Connection Card!</a>",
+        "markdown": "<b>Welcome to the NorthWest Community Church website!</b><br><br>We invite you to attend our church on Sundays at 10am where you will enjoy the warmth of new friendships and experience the wonderful presence of God! Please fill out our online <a href='connect'><u>Connection Card</u></a> and let us know if we can answer any questions, or pray for any special needs you might have.  We hope you come visit us soon and consider making NorthWest your new home!<br><br>We believe that whether you are:<ul><li>a new seeker looking for God</li><li>or have known God, but now feel distant...</li><li>or you have been a faithful follower...</li></ul><center><br>\"God is not through with you!\"</center><br>\"For I know the plans I have for you declares the Lord...plans to give you hope and a future!\" Jer 29:11<br><br><a href='connect'><u>Click here to fill out a Connection Card!</u></a>",
         "extra": "im_new",
     },
     {
