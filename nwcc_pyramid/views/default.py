@@ -386,16 +386,17 @@ def children_view(request):
     content = query.filter(MyModel.page == 'children').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
-    tri_img = [item for item in content if item.category == 'tri_img']
+    title = [item for item in content if item.subcategory == 'title']
     quad_info = [item for item in content if item.category == 'quad_info']
-    main = [item for item in content if item.category == 'main']
+    main = [item for item in content if item.category == 'children']
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
-        'tri_img': tri_img,
+        'title': title[0],
+        # 'tri_img': tri_img,
         'quad_info': quad_info,
         'main': main,
         'steps': steps,
@@ -644,7 +645,7 @@ def connect_view(request):
             Email: {7}\n
             Comment: {8}\n
             How they found us: {9}\n
-            I am {10} age {11}, childeren in {12}\n
+            I am {10} age {11}, children in {12}\n
             I desire {13}
         """
         question_2 = []
