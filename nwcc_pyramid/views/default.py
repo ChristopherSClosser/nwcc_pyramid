@@ -531,14 +531,16 @@ def staff_view(request):
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_title = [item for item in submenu if item.category == 'staff']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'staff']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
+        'menu_title': menu_title[0],
         # 'topimg': topimg[0],
-        'main': main[1],
+        'main': main,
     }
 
 
@@ -554,14 +556,16 @@ def council_view(request):
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_title = [item for item in submenu if item.category == 'council']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'council']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
+        'menu_title': menu_title[0],
         # 'topimg': topimg[0],
-        'main': main[1],
+        'main': main,
     }
 
 
