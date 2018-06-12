@@ -422,7 +422,7 @@ def foodbank_view(request):
         'main_menu': main_menu,
         # 'submenu': submenu,
         'imgtitle': title[0],
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main,
     }
 
@@ -468,7 +468,7 @@ def values_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main[1],
     }
 
@@ -491,7 +491,7 @@ def contact_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main[1],
     }
 
@@ -514,7 +514,7 @@ def mission_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main[1],
     }
 
@@ -537,8 +537,8 @@ def staff_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
-        'main': main,
+        # 'topimg': topimg[0],
+        'main': main[1],
     }
 
 
@@ -560,8 +560,8 @@ def council_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
-        'main': main,
+        # 'topimg': topimg[0],
+        'main': main[1],
     }
 
 
@@ -577,13 +577,15 @@ def beliefs_view(request):
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_title = [item for item in submenu if item.category == 'we_believe']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'we_believe']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        'menu_title': menu_title[0],
+        # 'topimg': topimg[0],
         'main': main,
     }
 
@@ -606,7 +608,7 @@ def im_new_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main[1],
     }
 
@@ -700,13 +702,15 @@ def foursquare_view(request):
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_title = [item for item in submenu if item.category == 'foursquare']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'foursquare']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        'menu_title': menu_title[0],
+        # 'topimg': topimg[0],
         'main': main,
     }
 
