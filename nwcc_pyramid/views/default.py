@@ -558,7 +558,7 @@ def council_view(request):
     submenu = [item for item in content if item.title == 'menu_place_holder']
     menu_title = [item for item in submenu if item.category == 'council']
     topimg = [item for item in content if item.category == 'topimg']
-    main = [item for item in content if item.category == 'council']
+    main = query.filter(MyModel.category == 'council').order_by(MyModel.title.asc())
     return {
         'auth': auth,
         'main_menu': main_menu,
