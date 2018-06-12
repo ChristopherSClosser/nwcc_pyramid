@@ -62,9 +62,9 @@ hr {
 }
 
 .audio {
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: 2rem;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 
 .podcast {
@@ -106,10 +106,14 @@ hr {
 }
 
 .audio_title {
-  display: inline-block;
+  /* display: inline-block;
   margin-left: 1rem;
   transform: translateY(-15%);
-  text-align: left;
+  text-align: left; */
+}
+
+.audio_info {
+  margin-bottom: 1rem;
 }
 
 .welcomecontainer {

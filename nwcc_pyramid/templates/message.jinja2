@@ -42,15 +42,34 @@
   {% if main %}
     {% for item in main %}
         <div class="audio">
+          <center>
+            <h3 class="audio_title">{{ item.title | safe }}</h3>
+            <div class="audio_info">{{ item.markdown|safe }}</div>
+          </center>
           {% if item.img %}
-            <a href="{{ item.extra }}" target="_blank">
-              <img
-                class="single"
-                src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img }}">
-                <h3 class="audio_title">{{ item.title | safe }}</h3>
-            </a>
+            <center>
+
+              <a href="{{ item.extra.split(' ')[0] }}" target="_blank">
+                <img
+                  class="single"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[0] }}">
+
+              </a>
+              <a href="{{ item.extra.split(' ')[1] }}" target="_blank">
+                <img
+                  class="single"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[1] }}">
+
+              </a>
+              <a href="{{ item.extra.split(' ')[2] }}" target="_blank">
+                <img
+                  class="single"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[2] }}">
+
+              </a>
+            </center>
           {% endif %}
-          <div class="audio_info">{{ item.markdown|safe }}</div>
+
         </div>
         <hr style="background: lightgrey; width: 80%;">
     {% endfor %}
