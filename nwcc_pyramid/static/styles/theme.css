@@ -394,6 +394,7 @@ hr {
   margin-right: -5rem;
   width: 98vw;
   height: 35rem;
+  max-width: 988px;
 }
 
 .spacer {
