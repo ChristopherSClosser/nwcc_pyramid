@@ -702,7 +702,7 @@ ENTRIES = [
     {
         "page": "foodbank",
         "category": "foodbank",
-        "subcategory": "info",
+        "subcategory": "Food Bank",
         "title": "Northwest Community Church Food Bank",
         "img": "rudolph.jpg",
         "imgsrc": "",

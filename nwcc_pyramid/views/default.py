@@ -414,14 +414,15 @@ def foodbank_view(request):
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'foodbank').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
-    # submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_content = query.filter(MyModel.page == 'ministries')
+    submenu = [item for item in menu_content if item.title == 'menu_place_holder']
     title = [item for item in content if item.subcategory == 'title']
     topimg = [item for item in content if item.category == 'topimg']
-    main = [item for item in content if item.subcategory == 'info']
+    main = [item for item in content if item.subcategory == 'Food Bank']
     return {
         'auth': auth,
         'main_menu': main_menu,
-        # 'submenu': submenu,
+        'submenu': submenu,
         'imgtitle': title[0],
         # 'topimg': topimg[0],
         'main': main,

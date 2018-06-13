@@ -432,6 +432,7 @@ hr {
 .imgtitle h1 {
   font-family: 'Gilroy-ExtraBold';
   /* text-shadow: 0 0 0.1px white; */
+  font-size: 25px;
   color: black;
   letter-spacing: -0.12rem;
   text-align: center;
