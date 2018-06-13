@@ -573,12 +573,13 @@ hr {
 }
 
 #main-nav ul {
+  font-family: 'BetmRounded-Bold';
   display: block;
   width: 10rem;
   float: right;
   list-style-type: none;
   text-align: right;
-  font-weight: bold;
+  font-weight: 100;
   background-image: linear-gradient(to right, rgba(241,241,241,0.1), rgba(221, 221, 221, 0.74), #f1f1f1, #f1f1f1);
   /* text-shadow: 0 0 1px black; */
   font-size: 17px;
