@@ -5,7 +5,7 @@
 {% block content %}
 
   <div class="topimg_placeholder"></div>
-  {% if topimg %}
+  {% if topimg.img %}
     <div>
       <img
         class="{{ topimg.category }}"
@@ -18,7 +18,7 @@
     {% for item in main %}
       {% if item.title == 'menu_place_holder' %}
         <center>
-          <h1 class="markdown">{{ item.subcategory }}</h1>
+          <h1>{{ item.subcategory }}</h1>
         </center>
       {% elif item.category == 'topimg' %}
 

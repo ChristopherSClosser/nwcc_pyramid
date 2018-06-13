@@ -30,11 +30,16 @@
       {% else %}
         <div class="markdown">
           <h2>{{ item.title }}</h2>
-          <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img }}" alt="{{ item.title }}"><br><br>
+          {% if item.img %}
+            <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img }}" alt="{{ item.title }}"><br><br>
+          {% endif %}
 
-          {{ item.markdown|safe }}
+          {{ item.markdown|safe }}<br><br>
+          {% if item.imgsrc %}
+            <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.imgsrc }}" alt="{{ item.title }}"><br><br>
+          {% endif %}
         </div>
-        <hr style="background: black;">
+        <hr style="background: lightgrey; width: 90%">
       {% endif %}
 
     {% endfor %}
