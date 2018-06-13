@@ -226,7 +226,7 @@ hr {
 .quad-container {
   display: inline-table;
   padding: 0;
-  width: 100%;
+  width: 101%;
   margin-top: -2rem;
 }
 
@@ -291,7 +291,7 @@ hr {
   font-weight: normal;
   margin-right: 1rem;
   margin-left: 1rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   /* padding-left: 2rem;
   padding-right: 2rem; */
 }
@@ -370,7 +370,7 @@ hr {
 }
 
 .program img {
-  width: 90vw;
+  width: 90%;
 }
 
 .loggedin {
@@ -410,7 +410,7 @@ hr {
 
 .imgtitle {
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   left: 1rem;
   letter-spacing: -1px;
   /* position: absolute;
@@ -445,12 +445,12 @@ hr {
 }
 
 .topimg {
-  width: 100vw;
+  width: 100%;
   z-index: -9999;
 }
 
 .tri {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   margin-top: -0.4rem;
   display: inline-block;
@@ -460,7 +460,7 @@ hr {
 }
 
 .tricontent {
-  width: 100vw;
+  width: 100%;
   margin: -2px;
   /* display: initial; */
 }
@@ -477,7 +477,7 @@ hr {
   display: flex;
   vertical-align: middle;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   /* height: 6rem; */
   border-bottom: white solid 0.1px;
   background: rgba(255, 255, 255, 0.9);
@@ -525,7 +525,7 @@ hr {
 .gallery {
     list-style-type: none;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     margin-top: 5rem;
     z-index: 999;
 }
@@ -533,7 +533,7 @@ hr {
 .gallery li img {
     display: block;
     margin: auto;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
 }
 
@@ -549,7 +549,7 @@ hr {
     height: 50px;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 9999;
 }
 
@@ -607,7 +607,7 @@ hr {
   height: fit-content;
 
   position: absolute;
-  right: 15vw;
+  right: 15%;
   padding-left: 0.5rem;
   margin-left: -.67rem;
   padding-top: .5rem;
@@ -695,6 +695,7 @@ footer {
 
   .quad-container {
     margin-top: -2rem;
+    width: 100%;
   }
 
   .quad {
@@ -740,13 +741,13 @@ footer {
     padding-top: 0;
   }
   .topimg {
-    width: 102vw;
+    width: 100%;
     z-index: -9999;
     margin-left: -1px;
   }
 
   .tri {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     margin-top: -0.4rem;
     display: inline-flex;
@@ -756,7 +757,7 @@ footer {
   }
 
   .tricontent {
-    width: 50vw;
+    width: 50%;
     margin: -2px;
   }
 
@@ -805,7 +806,7 @@ footer {
     float: right;
     margin-right: -26%;
     width: 118%;
-    margin-left: 100%;
+    /* margin-left: 100%; */
   }
 
 }
@@ -827,7 +828,7 @@ footer {
   }
 
   .imgtitle {
-    top: 4rem;
+    top: 5rem;
   }
 
   .title {
@@ -962,8 +963,7 @@ footer {
     max-width: 35%;
     position: absolute;
     margin: auto;
-    top: 30rem;
-    bottom: 50%;
+    top: 13rem;
     left: 0;
     right: 0;
     z-index: -99;
@@ -1010,30 +1010,48 @@ footer {
     /* margin-right: 10%; */
   }
 
+  .imgtitle {
+    margin-left: 13%;
+  }
+
+  .topimg {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #step3 {
+    left: 22.5%;
+  }
+
+  #steps2_5, #steps1_4 {
+    margin-right: -29%;
+    width: 119%;
+  }
+
   #homeqc {
     width: 75%;
   }
 }
 
 @media only screen and (min-width: 1500px) {
-  #step3 {
+  /* #step3 {
     left: 13%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1700px) {
   .logo_large img {
-    max-width: 26%;
+    width: 28%;
     position: absolute;
     margin: auto;
-    top: 44rem;
+    top: 14rem;
     left: 0;
     right: 0;
     z-index: -99;
   }
 
   #step3 {
-    left: 12%;
+    left: 17.5%;
   }
 
   #steps2_5 {
@@ -1042,8 +1060,8 @@ footer {
 
   #steps2_5, #steps1_4 {
     float: right;
-    margin-right: -30%;
-    width: 120%;
+    margin-right: -43%;
+    width: 140%;
   }
 
   h1 {
