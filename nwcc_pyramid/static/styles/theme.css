@@ -150,8 +150,16 @@ hr {
   margin-left: -10%;
 }
 
+.program {
+  width: 4rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  /* transform: translateY(1rem); */
+}
+
 .single {
   width: 3rem;
+  margin-bottom: 1rem;
 }
 
 .single_img {
