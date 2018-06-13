@@ -567,10 +567,10 @@ hr {
   float: right;
   list-style-type: none;
   text-align: right;
-  font-weight: bolder;
+  font-weight: bold;
   background-image: linear-gradient(to right, rgba(241,241,241,0.1), rgba(221, 221, 221, 0.74), #f1f1f1, #f1f1f1);
-  text-shadow: 0 0 1px black;
-  font-size: 16px;
+  /* text-shadow: 0 0 1px black; */
+  font-size: 17px;
   margin: auto;
   padding: 4%;
   padding-right: 1.5rem;
@@ -722,7 +722,6 @@ footer {
 
   #homeqc {
     margin-top: -30%;
-    z-index: 9999999999;
     position: absolute;
   }
 
