@@ -496,7 +496,7 @@ ENTRIES = [
         "title": "April 22 2018<br>Pastor Mary",
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
-        "markdown": "Coming Soon!",
+        "markdown": "Love of Strangers",
         "extra": "https://drive.google.com/open?id=1vwqUOYsm2Nxa3MpR4Bjq4Qwh4Gg3r4XH https://drive.google.com/open?id=1vhfsConkmHpwLxwdauQMRYut5xlkr58H https://drive.google.com/open?id=1wBiPfwNf1qRmsHUoW3hBA6nIEB6paYmy",
     },
     {
@@ -506,7 +506,7 @@ ENTRIES = [
         "title": "May 6 2018<br>Pastor Mary",
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
-        "markdown": "Coming Soon!",
+        "markdown": "PUT A STAKE IN THE GROUND",
         "extra": "https://drive.google.com/open?id=1zcRztV2qQm84a_qTPiFgz9PJtON9cwwQ https://drive.google.com/open?id=15r4T3wNG53YoPRilSwnL0kr02SLUvWYA",
     },
     {
@@ -516,7 +516,7 @@ ENTRIES = [
         "title": "May 13 2018<br>Pastor Joe",
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
-        "markdown": "Coming Soon!",
+        "markdown": "The God Who Sees Me",
         "extra": "https://drive.google.com/open?id=1tu2n6g_psoUpZXo3pLyE-NAmXefF4Nkm https://drive.google.com/open?id=15Ok_cxwitAFpx-Xjj6P_uifmN51mzYA0",
     },
     {
@@ -526,7 +526,7 @@ ENTRIES = [
         "title": "May 20 2018<br>Pastor Mary",
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
-        "markdown": "Coming Soon!",
+        "markdown": "The Powerful Door",
         "extra": "https://drive.google.com/open?id=14tWj_aKN4C7dqsBYw1pgPFQN_vT7nUIS https://drive.google.com/open?id=1AOdXl2WCFSfIRulQSDP4wpUk9yzqJQP_",
     },
     {
@@ -536,7 +536,7 @@ ENTRIES = [
         "title": "May 27 2018<br>Pastor Joe",
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
-        "markdown": "Coming Soon!",
+        "markdown": "The Door of FREEDOM John 10:9",
         "extra": "https://drive.google.com/open?id=1az7cgXOLF6U9_IHhF1DNAbezKBGsRaSI https://drive.google.com/open?id=1yyzZpB6un6BMpcg1aeoBPL6DLOHWQJX9 https://drive.google.com/open?id=1VDd3X2qQkGVNRYERMkjDby_wYO9fUJq5",
     },
     {
