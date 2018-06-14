@@ -61,10 +61,33 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
-.audio {
+.event img {
+  width: 3rem;
+}
+
+.event {
+  margin-left: 2rem;
+}
+
+.event p {
+  width: 3rem;
+  text-align: center;
   display: inline-block;
+  margin-left: -3.2rem;
+  transform: translateY(-0.2rem);
+  margin-right: 1rem;
+}
+
+.event h2 {
+  display: inline-block;
+  transform: translateY(-1rem);
+  margin-left: 1rem;
+}
+
+.audio {
+  /* display: inline-block; */
   margin-top: 2rem;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 
 .podcast {
@@ -106,10 +129,14 @@ hr {
 }
 
 .audio_title {
-  display: inline-block;
+  /* display: inline-block;
   margin-left: 1rem;
   transform: translateY(-15%);
-  text-align: left;
+  text-align: left; */
+}
+
+.audio_info {
+  margin-bottom: 1rem;
 }
 
 .welcomecontainer {
@@ -146,8 +173,16 @@ hr {
   margin-left: -10%;
 }
 
+.program {
+  width: 4rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  /* transform: translateY(1rem); */
+}
+
 .single {
   width: 3rem;
+  margin-bottom: 1rem;
 }
 
 .single_img {
@@ -189,16 +224,40 @@ hr {
   background-size: cover;
 }
 
-.q2home h2, .q4home h2 {
+.q2home h2, .q4home h2, .q3sunday h2, .q4sunday h2{
   color: #fff;
   text-shadow: #000 0px 0px 6px;
   -webkit-font-smoothing: antialiased;
 }
 
+.q1sunday {
+  z-index: 99;
+  background-image: url('../images/worship.jpg');
+  background-size: cover;
+}
+
+.q2sunday {
+  z-index: 99;
+  background-image: url('../images/he_brews.jpg');
+  background-size: cover;
+}
+
+.q3sunday {
+  z-index: 99;
+  background-image: url('../images/message.jpg');
+  background-size: cover;
+}
+
+.q4sunday {
+  z-index: 99;
+  background-image: url('../images/kids.jpg');
+  background-size: cover;
+}
+
 .quad-container {
   display: inline-table;
   padding: 0;
-  width: 101vw;
+  width: 101%;
   margin-top: -2rem;
 }
 
@@ -263,7 +322,7 @@ hr {
   font-weight: normal;
   margin-right: 1rem;
   margin-left: 1rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   /* padding-left: 2rem;
   padding-right: 2rem; */
 }
@@ -342,7 +401,7 @@ hr {
 }
 
 .program img {
-  width: 90vw;
+  width: 90%;
 }
 
 .loggedin {
@@ -362,8 +421,11 @@ hr {
 }
 
 .calendar {
-  width: 90%;
-  height: 37rem;
+  margin-left: -5rem;
+  margin-right: -5rem;
+  width: 98vw;
+  height: 35rem;
+  max-width: 988px;
 }
 
 .spacer {
@@ -382,7 +444,7 @@ hr {
 
 .imgtitle {
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   left: 1rem;
   letter-spacing: -1px;
   /* position: absolute;
@@ -391,8 +453,9 @@ hr {
 }
 
 .imgtitle h1 {
-  font-family: 'BetmRounded-ExtraBlack';
+  font-family: 'Gilroy-ExtraBold';
   /* text-shadow: 0 0 0.1px white; */
+  font-size: 25px;
   color: black;
   letter-spacing: -0.12rem;
   text-align: center;
@@ -417,12 +480,12 @@ hr {
 }
 
 .topimg {
-  width: 100vw;
+  width: 100%;
   z-index: -9999;
 }
 
 .tri {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   margin-top: -0.4rem;
   display: inline-block;
@@ -432,7 +495,7 @@ hr {
 }
 
 .tricontent {
-  width: 100vw;
+  width: 100%;
   margin: -2px;
   /* display: initial; */
 }
@@ -449,7 +512,7 @@ hr {
   display: flex;
   vertical-align: middle;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   /* height: 6rem; */
   border-bottom: white solid 0.1px;
   background: rgba(255, 255, 255, 0.9);
@@ -497,7 +560,7 @@ hr {
 .gallery {
     list-style-type: none;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     margin-top: 5rem;
     z-index: 999;
 }
@@ -505,7 +568,7 @@ hr {
 .gallery li img {
     display: block;
     margin: auto;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
 }
 
@@ -521,7 +584,7 @@ hr {
     height: 50px;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 9999;
 }
 
@@ -534,15 +597,16 @@ hr {
 }
 
 #main-nav ul {
+  font-family: 'BetmRounded-Bold';
   display: block;
   width: 10rem;
   float: right;
   list-style-type: none;
   text-align: right;
-  font-weight: bolder;
+  font-weight: 100;
   background-image: linear-gradient(to right, rgba(241,241,241,0.1), rgba(221, 221, 221, 0.74), #f1f1f1, #f1f1f1);
-  text-shadow: 0 0 1px black;
-  font-size: 16px;
+  /* text-shadow: 0 0 1px black; */
+  font-size: 17px;
   margin: auto;
   padding: 4%;
   padding-right: 1.5rem;
@@ -579,7 +643,7 @@ hr {
   height: fit-content;
 
   position: absolute;
-  right: 15vw;
+  right: 15%;
   padding-left: 0.5rem;
   margin-left: -.67rem;
   padding-top: .5rem;
@@ -667,6 +731,7 @@ footer {
 
   .quad-container {
     margin-top: -2rem;
+    width: 100%;
   }
 
   .quad {
@@ -693,7 +758,6 @@ footer {
 
   #homeqc {
     margin-top: -30%;
-    z-index: 9999999999;
     position: absolute;
   }
 
@@ -712,13 +776,13 @@ footer {
     padding-top: 0;
   }
   .topimg {
-    width: 102vw;
+    width: 100%;
     z-index: -9999;
     margin-left: -1px;
   }
 
   .tri {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     margin-top: -0.4rem;
     display: inline-flex;
@@ -728,7 +792,7 @@ footer {
   }
 
   .tricontent {
-    width: 50vw;
+    width: 50%;
     margin: -2px;
   }
 
@@ -777,7 +841,7 @@ footer {
     float: right;
     margin-right: -26%;
     width: 118%;
-    margin-left: 100%;
+    /* margin-left: 100%; */
   }
 
 }
@@ -799,7 +863,7 @@ footer {
   }
 
   .imgtitle {
-    top: 4rem;
+    top: 5rem;
   }
 
   .title {
@@ -934,8 +998,7 @@ footer {
     max-width: 35%;
     position: absolute;
     margin: auto;
-    top: 30rem;
-    bottom: 50%;
+    top: 13rem;
     left: 0;
     right: 0;
     z-index: -99;
@@ -972,31 +1035,58 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1280px) {
+  html {
+    margin-left: 13%;
+    width: 75%;
+  }
+  .nav-down {
+    width: 75%;
+    /* margin-right: 10%; */
+  }
+
+  .imgtitle {
+    margin-left: 13%;
+  }
+
+  .topimg {
+    width: 100%;
+    margin-left: 0;
+  }
+
   #step3 {
-    left: 13.5%;
+    left: 22.5%;
+  }
+
+  #steps2_5, #steps1_4 {
+    margin-right: -29%;
+    width: 119%;
+  }
+
+  #homeqc {
+    width: 75%;
   }
 }
 
 @media only screen and (min-width: 1500px) {
-  #step3 {
+  /* #step3 {
     left: 13%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1700px) {
   .logo_large img {
-    max-width: 26%;
+    width: 28%;
     position: absolute;
     margin: auto;
-    top: 44rem;
+    top: 14rem;
     left: 0;
     right: 0;
     z-index: -99;
   }
 
   #step3 {
-    left: 12%;
+    left: 17.5%;
   }
 
   #steps2_5 {
@@ -1005,8 +1095,8 @@ footer {
 
   #steps2_5, #steps1_4 {
     float: right;
-    margin-right: -30%;
-    width: 120%;
+    margin-right: -43%;
+    width: 140%;
   }
 
   h1 {

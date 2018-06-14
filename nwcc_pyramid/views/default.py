@@ -386,16 +386,17 @@ def children_view(request):
     content = query.filter(MyModel.page == 'children').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     topimg = [item for item in content if item.category == 'topimg']
-    tri_img = [item for item in content if item.category == 'tri_img']
+    title = [item for item in content if item.subcategory == 'title']
     quad_info = [item for item in content if item.category == 'quad_info']
-    main = [item for item in content if item.category == 'main']
+    main = [item for item in content if item.category == 'children']
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
-        'tri_img': tri_img,
+        'title': title[0],
+        # 'tri_img': tri_img,
         'quad_info': quad_info,
         'main': main,
         'steps': steps,
@@ -413,16 +414,17 @@ def foodbank_view(request):
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'foodbank').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
-    # submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_content = query.filter(MyModel.page == 'ministries')
+    submenu = [item for item in menu_content if item.title == 'menu_place_holder']
     title = [item for item in content if item.subcategory == 'title']
     topimg = [item for item in content if item.category == 'topimg']
-    main = [item for item in content if item.subcategory == 'info']
+    main = [item for item in content if item.subcategory == 'Food Bank']
     return {
         'auth': auth,
         'main_menu': main_menu,
-        # 'submenu': submenu,
+        'submenu': submenu,
         'imgtitle': title[0],
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main,
     }
 
@@ -468,7 +470,7 @@ def values_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main[1],
     }
 
@@ -491,7 +493,7 @@ def contact_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main[1],
     }
 
@@ -514,7 +516,7 @@ def mission_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main[1],
     }
 
@@ -531,13 +533,15 @@ def staff_view(request):
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_title = [item for item in submenu if item.category == 'staff']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'staff']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        'menu_title': menu_title[0],
+        # 'topimg': topimg[0],
         'main': main,
     }
 
@@ -554,13 +558,15 @@ def council_view(request):
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_title = [item for item in submenu if item.category == 'council']
     topimg = [item for item in content if item.category == 'topimg']
-    main = [item for item in content if item.category == 'council']
+    main = query.filter(MyModel.category == 'council').order_by(MyModel.title.asc())
     return {
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        'menu_title': menu_title[0],
+        # 'topimg': topimg[0],
         'main': main,
     }
 
@@ -577,13 +583,15 @@ def beliefs_view(request):
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_title = [item for item in submenu if item.category == 'we_believe']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'we_believe']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        'menu_title': menu_title[0],
+        # 'topimg': topimg[0],
         'main': main,
     }
 
@@ -606,7 +614,7 @@ def im_new_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': main[1],
     }
 
@@ -638,7 +646,7 @@ def connect_view(request):
             Email: {7}\n
             Comment: {8}\n
             How they found us: {9}\n
-            I am {10} age {11}, childeren in {12}\n
+            I am {10} age {11}, children in {12}\n
             I desire {13}
         """
         question_2 = []
@@ -700,13 +708,15 @@ def foursquare_view(request):
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
+    menu_title = [item for item in submenu if item.category == 'foursquare']
     topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'foursquare']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
-        'topimg': topimg[0],
+        'menu_title': menu_title[0],
+        # 'topimg': topimg[0],
         'main': main,
     }
 
@@ -745,15 +755,15 @@ def events_view(request):
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'events').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
-    # submenu = [item for item in content if item.title == 'menu_place_holder']
+    main = [item for item in content if item.category == 'events']
     topimg = [item for item in content if item.category == 'topimg']
-    # main = [item for item in content if item.category == 'foursquare']
+    events = [item for item in content if item.category == 'special_events']
     return {
         'auth': auth,
         'main_menu': main_menu,
-        # 'submenu': submenu,
+        'events': events,
         'topimg': topimg[0],
-        'main': content,
+        'main': main,
     }
 
 

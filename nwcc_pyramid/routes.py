@@ -33,3 +33,8 @@ def includeme(config):
     config.add_route('events', '/events')
     config.add_route('foodbank', '/foodbank')
     config.add_route('connect', '/connect')
+    config.add_route(
+        'external',
+        'https://calendar.google.com/calendar/htmlembed?title=NWCC+Life&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=bob97ghmfr9fpm7iqpv6t0fl1c@group.calendar.google.com&amp;color=%23856508&amp;ctz=America/Los_Angeles',
+        static=True
+    )

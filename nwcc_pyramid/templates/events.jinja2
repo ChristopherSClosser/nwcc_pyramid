@@ -5,7 +5,7 @@
 {% block content %}
 
   <div class="topimg_placeholder"></div>
-  {% if topimg %}
+  {% if topimg.img %}
     <div>
       <img
         class="{{ topimg.category }}"
@@ -18,11 +18,23 @@
     {% for item in main %}
       {% if item.title == 'menu_place_holder' %}
         <center>
-          <h1 class="markdown">{{ item.subcategory }}</h1>
+          <h1>{{ item.subcategory }}</h1>
         </center>
       {% elif item.category == 'topimg' %}
 
       {% else %}
+        {% if events %}
+          {% for event in events %}
+            <div class="event">
+              <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
+              <p>{{ event.extra|safe }}</p>
+              <h2>{{ event.title }}</h2>
+
+            </div>
+            <hr style="background: lightgrey; width: 90%">
+          {% endfor %}
+        {% endif %}
+
         <div class="markdown">
           {% if item.title == 'Google Calendar' %}
             <center>
