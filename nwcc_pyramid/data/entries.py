@@ -497,7 +497,7 @@ ENTRIES = [
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
         "markdown": "Coming Soon!",
-        "extra": "https://drive.google.com/open?id=1vwqUOYsm2Nxa3MpR4Bjq4Qwh4Gg3r4XH",
+        "extra": "https://drive.google.com/open?id=1vwqUOYsm2Nxa3MpR4Bjq4Qwh4Gg3r4XH https://drive.google.com/open?id=1vhfsConkmHpwLxwdauQMRYut5xlkr58H https://drive.google.com/open?id=1wBiPfwNf1qRmsHUoW3hBA6nIEB6paYmy",
     },
     {
         "page": "message",
@@ -507,7 +507,7 @@ ENTRIES = [
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
         "markdown": "Coming Soon!",
-        "extra": "https://drive.google.com/open?id=1zcRztV2qQm84a_qTPiFgz9PJtON9cwwQ",
+        "extra": "https://drive.google.com/open?id=1zcRztV2qQm84a_qTPiFgz9PJtON9cwwQ https://drive.google.com/open?id=15r4T3wNG53YoPRilSwnL0kr02SLUvWYA",
     },
     {
         "page": "message",
@@ -517,7 +517,7 @@ ENTRIES = [
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
         "markdown": "Coming Soon!",
-        "extra": "https://drive.google.com/open?id=1tu2n6g_psoUpZXo3pLyE-NAmXefF4Nkm",
+        "extra": "https://drive.google.com/open?id=1tu2n6g_psoUpZXo3pLyE-NAmXefF4Nkm https://drive.google.com/open?id=15Ok_cxwitAFpx-Xjj6P_uifmN51mzYA0",
     },
     {
         "page": "message",
@@ -527,7 +527,7 @@ ENTRIES = [
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
         "markdown": "Coming Soon!",
-        "extra": "https://drive.google.com/open?id=14tWj_aKN4C7dqsBYw1pgPFQN_vT7nUIS",
+        "extra": "https://drive.google.com/open?id=14tWj_aKN4C7dqsBYw1pgPFQN_vT7nUIS https://drive.google.com/open?id=1AOdXl2WCFSfIRulQSDP4wpUk9yzqJQP_",
     },
     {
         "page": "message",
@@ -537,7 +537,7 @@ ENTRIES = [
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
         "markdown": "Coming Soon!",
-        "extra": "https://drive.google.com/open?id=1az7cgXOLF6U9_IHhF1DNAbezKBGsRaSI",
+        "extra": "https://drive.google.com/open?id=1az7cgXOLF6U9_IHhF1DNAbezKBGsRaSI https://drive.google.com/open?id=1yyzZpB6un6BMpcg1aeoBPL6DLOHWQJX9 https://drive.google.com/open?id=1VDd3X2qQkGVNRYERMkjDby_wYO9fUJq5",
     },
     {
         "page": "message",
@@ -896,7 +896,7 @@ ENTRIES = [
         "title": "Katie Joseph",
         "img": "katie.jpg",
         "imgsrc": "",
-        "markdown": "<b>Office Phone:</b> (253) 926-2528<br><b>Email:</b> nwrabbi7@gmail.com",
+        "markdown": "Katie was born and raised in Tacoma, graduating from Western Washington University and going on to get a Master’s degree in Counselor Education. In 2015, she found her way to Northwest Community Church through a Craigslist ad and has been growing both professionally and spiritually ever since. Katie enjoys spending time with her family and their two dogs.<br><br><b>Office Phone:</b> (253) 926-2528<br><b>Email:</b> nwrabbi7@gmail.com",
         "extra": "assistant",
     },
     {
@@ -926,7 +926,7 @@ ENTRIES = [
         "title": "Candace Hines",
         "img": "candy_hines.jpg",
         "imgsrc": "",
-        "markdown": "",
+        "markdown": "Candace grew up in Washington and has been married to her husband, Marc, for almost 24 years. Together they have two adult children, Conner and Makenzie. She works as the office manager for her husband’s chiropractic clinic. Candace’s parents raised her to know and love Jesus, and she has carried on that tradition with her own family. She has been attending Northwest for 12 years and believes what makes it truly special are the people. They have become family to her and she relishes being able to see them every Sunday.",
         "extra": "candace_hines",
     },
     {
