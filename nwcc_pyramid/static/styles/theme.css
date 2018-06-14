@@ -61,6 +61,29 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
+.event img {
+  width: 3rem;
+}
+
+.event {
+  margin-left: 2rem;
+}
+
+.event p {
+  width: 3rem;
+  text-align: center;
+  display: inline-block;
+  margin-left: -3.2rem;
+  transform: translateY(-0.2rem);
+  margin-right: 1rem;
+}
+
+.event h2 {
+  display: inline-block;
+  transform: translateY(-1rem);
+  margin-left: 1rem;
+}
+
 .audio {
   /* display: inline-block; */
   margin-top: 2rem;

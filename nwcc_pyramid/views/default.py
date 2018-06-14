@@ -755,15 +755,15 @@ def events_view(request):
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'events').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
-    # submenu = [item for item in content if item.title == 'menu_place_holder']
+    main = [item for item in content if item.category == 'events']
     topimg = [item for item in content if item.category == 'topimg']
-    # main = [item for item in content if item.category == 'foursquare']
+    events = [item for item in content if item.category == 'special_events']
     return {
         'auth': auth,
         'main_menu': main_menu,
-        # 'submenu': submenu,
+        'events': events,
         'topimg': topimg[0],
-        'main': content,
+        'main': main,
     }
 
 
