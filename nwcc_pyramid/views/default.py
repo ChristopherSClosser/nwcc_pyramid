@@ -5,8 +5,7 @@ import shutil
 from pyramid.security import remember, forget
 from pyramid.view import view_config, forbidden_view_config
 from pyramid.view import notfound_view_config
-from pyramid.httpexceptions import HTTPFound
-from pyramid_mailer.message import Message
+from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from ..models import MyModel
 from ..security import is_authenticated
 
@@ -787,3 +786,89 @@ def logout(request):
     """."""
     headers = forget(request)
     return HTTPFound(request.route_url('home'), headers=headers)
+
+
+@view_config(
+    route_name='new',
+    renderer='../templates/entry.jinja2',
+    permission='secret',
+)
+def create_view(request):
+    """Display create a list entry."""
+    if request.POST:
+        entry = MyModel(
+            page=request.POST['page'],
+            category=request.POST['category'],
+            subcategory=request.POST['subcategory'],
+            title=request.POST['title'],
+            img=request.POST['img'],
+            imgsrc=request.POST['imgsrc'],
+            markdown=request.POST['markdown'],
+            extra=request.POST['extra'],
+        )
+        request.dbsession.add(entry)
+        return HTTPFound()
+    return {}
+
+
+@view_config(
+    route_name='delete',
+    renderer='../templates/delete.jinja2',
+    permission='secret',
+)
+def delete_view(request):
+    """."""
+    ident = int(request.matchdict['id'])
+    entry = request.dbsession.query(MyModel).get(ident)
+    if request.POST:
+        request.dbsession.delete(entry)
+        request.dbsession.flush()
+        return HTTPFound()
+    form_fill = {
+        'page': entry.page,
+        'category': entry.category,
+        'subcategory': entry.subcategory,
+        'title': entry.title,
+        'img': entry.img,
+        'imgsrc': entry.imgsrc,
+        'markdown': entry.markdown,
+        'extra': entry.extra,
+    }
+    return {'entry': form_fill}
+
+
+@view_config(
+    route_name='edit',
+    renderer='../templates/edit.jinja2',
+    permission='secret',
+)
+def update_view(request):
+    """Display the update entry."""
+    ident = int(request.matchdict['id'])
+    entry = request.dbsession.query(MyModel).get(ident)
+    if not entry:
+        raise HTTPNotFound()
+    if request.POST:
+        entry.page = request.POST['page']
+        entry.category = request.POST['category']
+        entry.subcategory = request.POST['subcategory']
+        entry.title = request.POST['title']
+        entry.img = request.POST['img']
+        entry.imgsrc = request.POST['imgsrc']
+        entry.markdown = request.POST['markdown']
+        entry.extra = request.POST['extra']
+
+        request.dbsession.flush()
+        return HTTPFound()
+
+    form_fill = {
+        'page': entry.page,
+        'category': entry.category,
+        'subcategory': entry.subcategory,
+        'title': entry.title,
+        'img': entry.img,
+        'imgsrc': entry.imgsrc,
+        'markdown': entry.markdown,
+        'extra': entry.extra,
+    }
+    return {'entry': form_fill}

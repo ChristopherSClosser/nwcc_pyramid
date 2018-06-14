@@ -28,6 +28,9 @@ from .default import (
     events_view,
     foodbank_view,
     connect_view,
+    create_view,
+    update_view,
+    delete_view,
 )
 
 
@@ -60,3 +63,6 @@ def includeme(config):
     config.add_view(events_view, route_name='events')
     config.add_view(foodbank_view, route_name='foodbank')
     config.add_view(connect_view, route_name='connect')
+    config.add_view(create_view, route_name='new')
+    config.add_view(update_view, route_name='edit')
+    config.add_view(delete_view, route_name='delete')
