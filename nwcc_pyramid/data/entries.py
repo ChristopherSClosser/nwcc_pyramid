@@ -1386,7 +1386,7 @@ ENTRIES = [
         "title": "Women's Bible Study",
         "img": "",
         "imgsrc": "",
-        "markdown": "",
+        "markdown": "Returning fall 2018!",
         "extra": "",
     },
     {
@@ -1396,7 +1396,7 @@ ENTRIES = [
         "title": "Men's Bible Study",
         "img": "",
         "imgsrc": "",
-        "markdown": "",
+        "markdown": "Returning fall 2018!",
         "extra": "",
     },
     {
