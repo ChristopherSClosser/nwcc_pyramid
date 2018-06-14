@@ -795,6 +795,8 @@ def logout(request):
 )
 def create_view(request):
     """Display create a list entry."""
+    query = request.dbsession.query(MyModel)
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     if request.POST:
         entry = MyModel(
             page=request.POST['page'],
@@ -808,7 +810,7 @@ def create_view(request):
         )
         request.dbsession.add(entry)
         return HTTPFound()
-    return {}
+    return {'main_menu': main_menu}
 
 
 @view_config(
@@ -820,6 +822,8 @@ def delete_view(request):
     """."""
     ident = int(request.matchdict['id'])
     entry = request.dbsession.query(MyModel).get(ident)
+    query = request.dbsession.query(MyModel)
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     if request.POST:
         request.dbsession.delete(entry)
         request.dbsession.flush()
@@ -834,7 +838,7 @@ def delete_view(request):
         'markdown': entry.markdown,
         'extra': entry.extra,
     }
-    return {'entry': form_fill}
+    return {'main_menu': main_menu, 'entry': form_fill}
 
 
 @view_config(
@@ -846,6 +850,8 @@ def update_view(request):
     """Display the update entry."""
     ident = int(request.matchdict['id'])
     entry = request.dbsession.query(MyModel).get(ident)
+    query = request.dbsession.query(MyModel)
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     if not entry:
         raise HTTPNotFound()
     if request.POST:
@@ -871,4 +877,4 @@ def update_view(request):
         'markdown': entry.markdown,
         'extra': entry.extra,
     }
-    return {'entry': form_fill}
+    return {'main_menu': main_menu, 'entry': form_fill}
