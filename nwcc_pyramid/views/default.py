@@ -738,7 +738,7 @@ def giving_view(request):
         'auth': auth,
         'main_menu': main_menu,
         # 'submenu': submenu,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'main': content,
     }
 
