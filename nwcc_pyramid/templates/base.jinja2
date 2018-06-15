@@ -46,9 +46,12 @@
             {% for item in main_menu %}
               <li id="{{ item.extra }}">
                 {% if auth %}
+                  {% if auth_tools %}
                     {% for img in auth_tools[0].img.split(' ') %}
                       <img id="{{ img.split('.')[0] }}" src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
                     {% endfor %}
+                  {% endif %}
+
                 {% endif %}
 
                 <a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.title }}</a>
