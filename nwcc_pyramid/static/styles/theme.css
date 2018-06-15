@@ -614,7 +614,7 @@ hr {
   padding-bottom: 1rem;
   list-style: none;
   flex: none;
-  margin-right: -8px;
+  margin-right: 8px;
 }
 
 .arrow-down {
@@ -989,7 +989,7 @@ footer {
 
 @media only screen and (min-width: 834px) {
   #homeqc {
-    margin-top: -26vh;
+    margin-top: -14rem;
     z-index: 9999999999;
     position: absolute;
   }
