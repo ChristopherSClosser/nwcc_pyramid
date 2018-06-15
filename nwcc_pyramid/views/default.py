@@ -39,7 +39,9 @@ def home_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(MyModel).filter(MyModel.category == 'admin').all()
     except KeyError:
+        auth_tools = []
         pass
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'home').all()
@@ -55,6 +57,7 @@ def home_view(request):
         'tri_img': tri_img,
         'quad_info': quad_info,
         'steps': steps,
+        'auth_tools': auth_tools,
     }
 
 

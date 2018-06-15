@@ -1,6 +1,16 @@
 ENTRIES = [
     {
         "page": "",
+        "category": "admin",
+        "subcategory": "tools",
+        "title": "Images",
+        "img": "add.png edit.png delete.png",
+        "imgsrc": "",
+        "markdown": "",
+        "extra": "",
+    },
+    {
+        "page": "",
         "category": "main_menu",
         "subcategory": "base",
         "title": "Home",

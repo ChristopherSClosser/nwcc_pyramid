@@ -44,7 +44,15 @@
           <ul id="nav">
             <hr>
             {% for item in main_menu %}
-              <li id="{{ item.extra }}"><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.title }}</a></li><hr>
+              <li id="{{ item.extra }}">
+                {% if auth %}
+                    {% for img in auth_tools[0].img.split(' ') %}
+                      <img id="{{ img.split('.')[0] }}" src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                    {% endfor %}
+                {% endif %}
+
+                <a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.title }}</a>
+              </li><hr>
 
             {% endfor %}
 

@@ -61,6 +61,16 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
+#delete {
+  margin-right: 1rem;
+}
+
+#nav img {
+  width: 0.8rem;
+  float: left;
+  margin-left: 0.4rem;
+}
+
 .event img {
   width: 3rem;
 }
@@ -599,7 +609,7 @@ hr {
 #main-nav ul {
   font-family: 'BetmRounded-Bold';
   display: block;
-  width: 10rem;
+  /* width: 10rem; */
   float: right;
   list-style-type: none;
   text-align: right;
@@ -608,7 +618,7 @@ hr {
   /* text-shadow: 0 0 1px black; */
   font-size: 17px;
   margin: auto;
-  padding: 4%;
+  padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: .85rem;
   padding-bottom: 1rem;
@@ -990,7 +1000,7 @@ footer {
 @media only screen and (min-width: 834px) {
   #homeqc {
     margin-top: -14rem;
-    z-index: 9999999999;
+    /* z-index: 9999999999; */
     position: absolute;
   }
 
