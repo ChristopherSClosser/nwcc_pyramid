@@ -154,11 +154,11 @@ hr {
 }
 
 .welcometxt {
-  font-family: 'Gilroy-Light';
+  font-family: 'Gilroy-ExtraBold';
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 100;
   position: absolute;
-  top: 10%;
+  top: 4rem;
   left: 50%;
   transform: translate(-50%);
 }
@@ -764,6 +764,7 @@ footer {
   .welcomeimg {
     margin-top: -1rem;
     margin-bottom: 5rem;
+    max-height: 34rem;
   }
 
   #homeqc {
@@ -786,9 +787,10 @@ footer {
     padding-top: 0;
   }
   .topimg {
-    width: 100%;
+    /* width: 100%; */
     z-index: -9999;
     margin-left: -1px;
+
   }
 
   .tri {

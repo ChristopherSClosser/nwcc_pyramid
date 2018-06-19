@@ -1176,7 +1176,7 @@ ENTRIES = [
         "title": "I'm New",
         "img": "",
         "imgsrc": "",
-        "markdown": "<b>Welcome to the NorthWest Community Church website!</b><br><br>We invite you to attend our church on Sundays at 10am where you will enjoy the warmth of new friendships and experience the wonderful presence of God! Please fill out our online <a href='connect'><u>Connection Card</u></a> and let us know if we can answer any questions, or pray for any special needs you might have.  We hope you come visit us soon and consider making NorthWest your new home!<br><br>We believe that whether you are:<ul><li>a new seeker looking for God</li><li>or have known God, but now feel distant...</li><li>or you have been a faithful follower...</li></ul><center><br>\"God is not through with you!\"</center><br>\"For I know the plans I have for you declares the Lord...plans to give you hope and a future!\" Jer 29:11<br><br><a href='connect'><u>Click here to fill out a Connection Card!</u></a>",
+        "markdown": "<b>Welcome to the NorthWest Community Church website!</b><br><br>We invite you to attend our church on Sundays at 10am where you will enjoy the warmth of new friendships and experience the wonderful presence of God! Please fill out our online <a href='connect'><u>Connection Card</u></a> and let us know if we can answer any questions, or pray for any special needs you might have.  We hope you come visit us soon and consider making NorthWest your new home!<br><br>We believe that whether you are:<ul><li>Hot messes. Have it all togethers.</li><li>Addicts. Achievers. Introverts. Extroverts.</li><li>Democrats. Republicans. Custodians. Executives.</li><li>Prostitutes. Preachers. Homosexuals. Hetrosexuals.</li><li>And even non-Seahhawks fans.</li></ul><center><h2>All are accepted!</h2></center><br><br><a href='connect'><u>Click here to fill out a Connection Card!</u></a>",
         "extra": "im_new",
     },
     {
@@ -1336,7 +1336,7 @@ ENTRIES = [
         "title": "Google Calendar",
         "img": "",
         "imgsrc": "https://calendar.google.com/calendar/htmlembed?title=NWCC+Life&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=bob97ghmfr9fpm7iqpv6t0fl1c@group.calendar.google.com&amp;color=%23856508&amp;ctz=America/Los_Angeles",
-        "markdown": "",
+        "markdown": "Click here for our Google Calendar",
         "extra": "events",
     },
     {
@@ -1614,7 +1614,7 @@ ENTRIES = [
         "category": "children",
         "subcategory": "Teacher",
         "title": "Janett Llamasurain",
-        "img": "llama.jpg",
+        "img": "janett.jpg",
         "imgsrc": "",
         "markdown": "",
         "extra": "llama",
