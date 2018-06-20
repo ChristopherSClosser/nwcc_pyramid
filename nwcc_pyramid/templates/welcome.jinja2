@@ -10,6 +10,7 @@
   {% if topimg %}
     <div>
       <img
+      
         class="{{ topimg.category }}"
         src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">

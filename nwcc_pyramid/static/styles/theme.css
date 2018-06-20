@@ -767,12 +767,20 @@ footer {
   .welcomeimg {
     margin-top: -1rem;
     margin-bottom: 5rem;
-    max-height: 34rem;
+    max-height: 25rem;
   }
 
   .welcometxt {
-    margin-top: -50%;
-    margin-bottom: 13%;
+    margin-top: -51%;
+    margin-bottom: 10%;
+  }
+
+  #sundaytopimg {
+    margin-top: -13rem;
+  }
+
+  #sundayqc {
+    margin-top: -3rem;
   }
 
   #homeqc {
