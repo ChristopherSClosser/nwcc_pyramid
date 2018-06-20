@@ -827,7 +827,7 @@ footer {
     max-width: 25%;
     position: absolute;
     margin: auto;
-    top: 11rem;
+    top: 22rem;
     /* bottom: 50%; */
     left: 0;
     right: 0;
@@ -863,7 +863,7 @@ footer {
     max-width: 35%;
     position: absolute;
     margin: auto;
-    top: 17rem;
+    top: 28rem;
     /* bottom: 50%; */
     left: 0;
     right: 0;
@@ -1010,7 +1010,7 @@ footer {
     max-width: 35%;
     position: absolute;
     margin: auto;
-    top: 13rem;
+    top: 24rem;
     left: 0;
     right: 0;
     z-index: -99;
@@ -1091,7 +1091,7 @@ footer {
     width: 28%;
     position: absolute;
     margin: auto;
-    top: 14rem;
+    top: 24rem;
     left: 0;
     right: 0;
     z-index: -99;
