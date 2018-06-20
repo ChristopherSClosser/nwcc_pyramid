@@ -1035,6 +1035,15 @@ footer {
     font-size: x-large;
   }
 
+  .event img {
+    width: 4rem;
+  }
+
+  .event p {
+    width: 5rem;
+    margin-left: -4.8rem;
+  }
+
   #homeqc {
     margin-top: -14rem;
     /* z-index: 9999999999; */
@@ -1099,6 +1108,14 @@ footer {
     font-size: xx-large;
   }
 
+  .event img {
+    width: 5.5rem;
+  }
+
+  .event p {
+    width: 7rem;
+    margin-left: -6.7rem;
+  }
 
   html {
     margin-left: 13%;
