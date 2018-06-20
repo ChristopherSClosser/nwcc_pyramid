@@ -38,10 +38,8 @@
         <div class="markdown">
           {% if item.title == 'Google Calendar' %}
             <center>
-              <iframe
-                class="calendar"
-                src="https://calendar.google.com/calendar/htmlembed?title=NWCC+Life&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=bob97ghmfr9fpm7iqpv6t0fl1c@group.calendar.google.com&amp;color=%23856508&amp;ctz=America/Los_Angeles">
-              </iframe>
+              <a href="{{ item.imgsrc }}"><h2>{{ item.markdown }}</h2>
+
             </center>
           {% endif %}
           {% if item.img %}

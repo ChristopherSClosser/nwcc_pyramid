@@ -1,0 +1,23 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+<div class="topimg_placeholder"></div>
+
+<section class="markdown">
+  <form method="POST">
+    <h3>Are You Sure?<br>This Entry Will Be Permanently Deleted!</h3>
+    <input type="submit" name="delete" value="YES DELETE ENTRY"/>
+  </form><br>
+  <p>Page: {{ entry.page }}</p>
+  <p>Category: {{ entry.category }}</p>
+  <p>Subcategory: {{ entry.subcategory }}</p>
+  <p>Title: {{ entry.title }}</p>
+  <p>Image file name: {{ entry.img }}</p>
+  <p>Image source: {{ entry.imgsrc }}</p>
+  <p>Markdown: {{ entry.markdown|safe }}</p>
+
+  <p>Extra: {{ entry.extra }}</p>
+  <hr><br>
+</section>
+
+{% endblock %}

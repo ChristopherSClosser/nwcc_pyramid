@@ -3,18 +3,21 @@
 {% block title %}Sunday Mornings{% endblock %}
 
 {% block content %}
-
+<div class="topimg_placeholder"></div>
   {% if topimg %}
+  <center>
     <div>
       <img
+        id="sundaytopimg"
         class="{{ topimg.category }}"
         src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
 
     </div>
+  </center>
   {% endif %}
   {% if quad_info %}
-    <div class="quad-container">
+    <div id="sundayqc" class="quad-container">
       {% for item in quad_info %}
         <a class="quad" href="{{request.route_url('home')}}{{ item.extra }}">
           <div class="{{ item.subcategory }}sunday"><h2>{{ item.title | safe }}</h2></div>

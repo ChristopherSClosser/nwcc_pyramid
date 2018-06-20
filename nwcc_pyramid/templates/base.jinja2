@@ -44,7 +44,18 @@
           <ul id="nav">
             <hr>
             {% for item in main_menu %}
-              <li id="{{ item.extra }}"><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.title }}</a></li><hr>
+              <li id="{{ item.extra }}">
+                {% if auth %}
+                  {% if auth_tools %}
+                    {% for img in auth_tools[0].img.split(' ') %}
+                      <img id="{{ img.split('.')[0] }}" src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                    {% endfor %}
+                  {% endif %}
+
+                {% endif %}
+
+                <a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.title }}</a>
+              </li><hr>
 
             {% endfor %}
 
@@ -110,6 +121,7 @@
           <a href="https://www.instagram.com/j.l.c_photo/" target="_blank">
             Photos by: J.L.C. Photography
           </a>
+          &emsp; Webmaster - Chris Closser &emsp;<br><br>
           &emsp; &copy; 2018 Northwest Community Church - Love boldly &emsp;
 
         </div>
