@@ -1044,6 +1044,30 @@ footer {
     margin-left: -4.8rem;
   }
 
+  .pcastimg {
+    width: 2.5rem;
+  }
+
+  .spotimg {
+    width: 4rem;
+  }
+
+  .row img {
+    width: 2.5rem;
+  }
+
+  #outer {
+    width: 3rem;
+  }
+
+  #inner {
+    width: 3.3rem;
+  }
+
+  #foursquare {
+    width: 4rem;
+  }
+
   #homeqc {
     margin-top: -14rem;
     /* z-index: 9999999999; */
@@ -1092,6 +1116,14 @@ footer {
 }
 
 @media only screen and (min-width: 1280px) {
+  .dropexp {
+    margin-bottom: -2rem;
+  }
+
+  .burger img {
+    width: 4rem;
+  }
+
   .content {
     font-size: xx-large;
   }
