@@ -157,10 +157,12 @@ hr {
   font-family: 'Gilroy-ExtraBold';
   font-size: 4rem;
   font-weight: 100;
-  position: absolute;
-  top: 4rem;
-  left: 50%;
-  transform: translate(-50%);
+  margin-top: -40%;
+  margin-bottom: 10%;
+  /* position: absolute; */
+  /* top: 4rem; */
+  /* left: 50%; */
+  /* transform: translate(-50%); */
 }
 
 .connect_form {
@@ -490,7 +492,8 @@ hr {
 }
 
 .topimg {
-  width: 100%;
+  max-width: 100%;
+
   z-index: -9999;
 }
 
@@ -767,9 +770,14 @@ footer {
     max-height: 34rem;
   }
 
+  .welcometxt {
+    margin-top: -50%;
+    margin-bottom: 13%;
+  }
+
   #homeqc {
     margin-top: -30%;
-    position: absolute;
+    /* position: absolute; */
   }
 
   .logo_large {
@@ -787,9 +795,10 @@ footer {
     padding-top: 0;
   }
   .topimg {
-    /* width: 100%; */
+    width: 100%;
     z-index: -9999;
     margin-left: -1px;
+    /* max-height: 350px; */
 
   }
 
@@ -999,11 +1008,37 @@ footer {
 
 }
 
+@media only screen and (min-width: 800px) {
+  .welcomeimg {
+    max-height: 480px;
+  }
+
+  .welcometxt {
+    margin-top: -25rem;
+  }
+}
+
 @media only screen and (min-width: 834px) {
+  .content {
+    font-size: x-large;
+  }
+
+  .copyright {
+    font-size: medium;
+  }
+
+  .imgtitle h1 {
+    font-size: xx-large;
+  }
+
+  #main-nav ul {
+    font-size: x-large;
+  }
+
   #homeqc {
     margin-top: -14rem;
     /* z-index: 9999999999; */
-    position: absolute;
+    /* position: absolute; */
   }
 
   .logo_large img {
@@ -1048,6 +1083,23 @@ footer {
 }
 
 @media only screen and (min-width: 1280px) {
+  .content {
+    font-size: xx-large;
+  }
+
+  .copyright {
+    font-size: large;
+  }
+
+  .imgtitle h1 {
+    font-size: -webkit-xxx-large;
+  }
+
+  #main-nav ul {
+    font-size: xx-large;
+  }
+
+
   html {
     margin-left: 13%;
     width: 75%;
@@ -1062,7 +1114,7 @@ footer {
   }
 
   .topimg {
-    width: 100%;
+    /* width: 100%; */
     margin-left: 0;
   }
 
@@ -1076,7 +1128,7 @@ footer {
   }
 
   #homeqc {
-    width: 75%;
+    width: 100%;
   }
 }
 

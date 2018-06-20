@@ -5,6 +5,7 @@
 {% block content %}
 <div class="topimg_placeholder"></div>
   {% if topimg %}
+  <center>
     <div>
       <img
         class="{{ topimg.category }}"
@@ -12,6 +13,7 @@
         alt="{{ topimg.title }}">
 
     </div>
+  </center>
   {% endif %}
   {% if quad_info %}
     <div class="quad-container">
