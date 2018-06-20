@@ -158,7 +158,7 @@ hr {
   font-size: 4rem;
   font-weight: 100;
   margin-top: -40%;
-  margin-bottom: 10%;
+  margin-bottom: 3rem;
   /* position: absolute; */
   /* top: 4rem; */
   /* left: 50%; */
@@ -270,7 +270,7 @@ hr {
   display: inline-table;
   padding: 0;
   width: 101%;
-  margin-top: -2rem;
+  /* margin-top: -2rem; */
 }
 
 .quad h2 {
