@@ -843,7 +843,7 @@ ENTRIES = [
         "page": "about",
         "category": "staff",
         "subcategory": "Lead Pastors",
-        "title": "Pastor Joe and Pastor Mary Walsh",
+        "title": "Pastor Joseph and Pastor Mary Walsh",
         "img": "joe_mary.jpg",
         "imgsrc": "",
         "markdown": "Pastors Joseph and Mary Walsh both grew up in Northern Minnesota. Mary was raised on a dairy farm and Joseph grew up in an iron mining community. They met at Bible camp in their teen years and discovered they both had a heart to serve God in ministry. Mary attended Northwestern College and later joined Joseph at North Central Bible College in Minneapolis.<br><br>Joseph and Mary were married in 1979. They began full-time ministry in St. Paul, Minnesota, where they served at Bethel Christian Fellowship for over 8 years. The Walshs relocated to Washington in 1991 and have served two other churches before being called to start Northwest Community Church in 2001.<br><br>Pastors Joseph and Mary have two married daughters and two grandchildren.",
