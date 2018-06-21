@@ -31,7 +31,6 @@
 
       {% else %}
         <div class="markdown">
-          <h2>{{ item.title }}</h2>
           {% if item.img %}
             <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img }}" alt="{{ item.title }}"><br><br>
           {% endif %}

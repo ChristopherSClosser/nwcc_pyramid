@@ -138,7 +138,7 @@ def youth_kids_view(request):
         'auth': auth,
         'main_menu': main_menu,
         'content': content,
-        'topimg': topimg[0],
+        # 'topimg': topimg[0],
         'tri_img': tri_img,
         'quad_info': quad_info,
         'main': main[0],
