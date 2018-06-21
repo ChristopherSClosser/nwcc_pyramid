@@ -376,7 +376,7 @@ ENTRIES = [
         "title": "He-brews boldly",
         "img": "",
         "imgsrc": "",
-        "markdown": "Coming Soon!",
+        "markdown": "Northwest prides itself on welcoming others into our church family and making them feel at home. The time spent in the foyer before and after the service getting to know a new visitor or sharing the latest news with an old friend over a cup of coffee is invaluable.<br><br>He-brews Boldly provides that opportunity for fellowship!",
         "extra": "",
     },
     {
