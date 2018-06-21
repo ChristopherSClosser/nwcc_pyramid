@@ -33,6 +33,7 @@ def includeme(config):
     config.add_route('events', '/events')
     config.add_route('foodbank', '/foodbank')
     config.add_route('connect', '/connect')
+    config.add_route('first_impressions', '/first_impressions')
     config.add_route('new', '/entry/new-entry')
     config.add_route('edit', '/entry/{id:\d+}/edit-entry')
     config.add_route('delete', '/entry/{id:\d+}/delete-entry')

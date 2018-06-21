@@ -431,6 +431,37 @@ def foodbank_view(request):
     }
 
 
+@view_config(route_name='first_impressions', renderer='../templates/first_impressions.jinja2')
+def first_impressions_view(request):
+    """First impressions view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    submenu = [item for item in content if item.title == 'menu_place_holder']
+    topimg = [item for item in content if item.category == 'topimg']
+    title = [item for item in content if item.subcategory == 'title']
+    quad_info = [item for item in content if item.category == 'quad_info']
+    main = [item for item in content if item.category == 'first_impressions']
+    steps = [item for item in content if item.category == 'steps']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'content': content,
+        'submenu': submenu,
+        # 'topimg': topimg[0],
+        # 'title': title[0],
+        # 'tri_img': tri_img,
+        # 'quad_info': quad_info,
+        'main': main,
+        'steps': steps,
+    }
+
+
 @view_config(route_name='about', renderer='../templates/about.jinja2')
 def about_view(request):
     """About view."""
