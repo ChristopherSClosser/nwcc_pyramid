@@ -537,7 +537,7 @@ ENTRIES = [
         "img": "audio_icon.png program_icon.png handout_icon.png",
         "imgsrc": "",
         "markdown": "The Powerful Door",
-        "extra": "https://drive.google.com/open?id=14tWj_aKN4C7dqsBYw1pgPFQN_vT7nUIS https://drive.google.com/open?id=1AOdXl2WCFSfIRulQSDP4wpUk9yzqJQP_",
+        "extra": "https://drive.google.com/open?id=14tWj_aKN4C7dqsBYw1pgPFQN_vT7nUIS https://drive.google.com/open?id=1AOdXl2WCFSfIRulQSDP4wpUk9yzqJQP_ https://drive.google.com/open?id=12h21WWMq7KOvecAjy--0g7nRe2e24v37",
     },
     {
         "page": "message",
