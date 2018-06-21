@@ -1186,7 +1186,7 @@ ENTRIES = [
         "title": "",
         "img": "",
         "imgsrc": "",
-        "markdown": "Add info...",
+        "markdown": "<h3>Please meet the team leaders who work hard to make your time at Northwest Church delicious, inviting and efficient:<h3>",
         "extra": "first_impressions",
     },
     {
@@ -1313,10 +1313,10 @@ ENTRIES = [
         "page": "giving",
         "category": "giving",
         "subcategory": "Giving",
-        "title": "Online Giving",
+        "title": "",
         "img": "",
         "imgsrc": "",
-        "markdown": "<a href=\"http://www.easytithe.com/dl/?uid=nort1040208\" target='_blank'>Click Here to Give Online</a>",
+        "markdown": "Thank you for being part of the miracle of Northwest Church.  Your faithful giving allows us to reach people for Jesus Christ.  As you financially support this ministry, you help us reach the NextGen youth; equip single adults; strengthen marriages; assist people through grief; and train and equip people to share their Jesus story more effectively.  Your giving makes it happen!<br><br> Thank-you for your obedience to God’s Word by the giving of your tithe and your sacrificially offerings.<br><br>‘Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver.’ 2 Cor. 9:7<br><br><a href=\"https://www.easytithe.com/dl/?uid=nort1040208\" target='_blank'><b>Click Here to Give Online</b></a>",
         "extra": "giving",
     },
     {
@@ -1327,6 +1327,16 @@ ENTRIES = [
         "img": "easy_tithe.jpg",
         "imgsrc": "",
         "markdown": "",
+        "extra": "giving",
+    },
+    {
+        "page": "giving",
+        "category": "giving",
+        "subcategory": "Giving",
+        "title": "",
+        "img": "",
+        "imgsrc": "",
+        "markdown": "<h2>Please check out the following partnerships Northwest Church has with Fred Meyer Store and Amazon Smile.</h2>",
         "extra": "giving",
     },
     {
@@ -1376,7 +1386,7 @@ ENTRIES = [
         "title": "Google Calendar",
         "img": "",
         "imgsrc": "",
-        "markdown": "<a href='https://www.google.com/calendar/embed?title=NWCC%20Life&height=600&wkst=1&bgcolor=%23FFFFFF&src=bob97ghmfr9fpm7iqpv6t0fl1c%40group.calendar.google.com&color=%23856508&ctz=America%2FLos_Angeles'>Click here for our Google Calendar</a>",
+        "markdown": "<a href='https://www.google.com/calendar/embed?title=NWCC%20Life&height=600&wkst=1&bgcolor=%23FFFFFF&src=bob97ghmfr9fpm7iqpv6t0fl1c%40group.calendar.google.com&color=%23856508&ctz=America%2FLos_Angeles' target='_blank'>Click here for our Google Calendar</a>",
         "extra": "events",
     },
     {
