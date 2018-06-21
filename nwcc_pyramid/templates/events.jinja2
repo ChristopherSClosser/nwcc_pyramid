@@ -38,7 +38,7 @@
         <div class="markdown">
           {% if item.title == 'Google Calendar' %}
             <center>
-              <a href="{{ item.imgsrc }}"><h2>{{ item.markdown }}</h2>
+              <h2>{{ item.markdown | safe }}</h2>
 
             </center>
           {% endif %}
