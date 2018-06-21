@@ -706,7 +706,7 @@ ENTRIES = [
         "title": "Northwest Community Church Food Bank",
         "img": "rudolph.jpg",
         "imgsrc": "",
-        "markdown": "Food bank is held every Wednesday beginning at 4:00pm at the Lakewood Boy's and Girl's Club Hope Center pavillion.<br>Please contact the church office at (253) 926-2528 for further information.",
+        "markdown": "Outreach is one of our core values, which is why Northwest believes in the importance of investing in our community. The Food Bank allows us to be the hands and feet of Jesus to our neighbors each week as we provide food, clothing and household items to those in need.<br><br>Food bank is held every Wednesday beginning at 4:00pm at the Lakewood Boy's and Girl's Club Hope Center pavillion.<br><br>Please contact the church office at (253) 926-2528 for further information.",
         "extra": "Chris Rudolph - Food bank lead",
     },
     {
