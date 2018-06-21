@@ -334,7 +334,7 @@ hr {
   font-weight: normal;
   margin-right: 1rem;
   margin-left: 1rem;
-  margin-top: 4rem;
+  margin-top: 0rem;
   /* padding-left: 2rem;
   padding-right: 2rem; */
 }
@@ -844,7 +844,7 @@ footer {
     max-width: 25%;
     position: absolute;
     margin: auto;
-    top: 22rem;
+    top: 18rem;
     /* bottom: 50%; */
     left: 0;
     right: 0;
@@ -880,7 +880,7 @@ footer {
     max-width: 35%;
     position: absolute;
     margin: auto;
-    top: 28rem;
+    top: 24rem;
     /* bottom: 50%; */
     left: 0;
     right: 0;
@@ -1086,7 +1086,7 @@ footer {
     max-width: 35%;
     position: absolute;
     margin: auto;
-    top: 24rem;
+    top: 20rem;
     left: 0;
     right: 0;
     z-index: -99;
