@@ -856,7 +856,7 @@ ENTRIES = [
         "title": "Waid Hoyt",
         "img": "waid.jpg",
         "imgsrc": "",
-        "markdown": "Waid Hoyt grew up in Tacoma, WA and was bit by the music bug early in life. It wasn't long before he found a passion for music in school, playing in various concert/symphonic & jazz bands through his scholastic years. He has served as a member of multiple worship teams over the last 15 years. Waid came to NWCC in 2013 and has been co-leading worship the past since that time. More recently, he began taking over the worship director role in 2017.<br><br>In 2013 when God called him to NWCC, it was a natural fit to become a part of the worship team. Music has always been at the core of his passions and in that he finds a deep connection with God through worship & praise music. His heart is to provide a place for other musicians to grow in their skill and in their relationship with Jesus in worship music.",
+        "markdown": "Waid grew up in Tacoma, WA and was bit by the music bug early in life. He discovered a passion for music in school, playing in various concert/symphonic & jazz bands through his scholastic years.<br><br>His love for music was transformed into a love for worship of Jesus Christ when he accepted Him as his personal Lord and Savior. His greatest desire is to lead others into the presence of Jesus where real life- transformation takes place.<br><br>Waid came to NWCC in 2013 and joined the worship team immediately. Recently he moved into the role of Lead Worship Director.<br><br>He is married with two delightful boys.",
         "extra": "music_director",
     },
     {
@@ -1487,6 +1487,16 @@ ENTRIES = [
         "img": "paul_robertson.jpg",
         "imgsrc": "",
         "markdown": "Going Deeper is a weekly Bible study which meets in the conference room each Wednesday morning from 11:00 to 12:30.  This is an interactive study which allows for each person to share comments and ask questions.  The lessons are designed to carefully and prayerfully consider each verse or verses to find the meaning and how it might apply to our personal lives.  We often cross reference with like verses or passages of scripture to look for a deeper meaning.<br><br>This is a friendly welcoming time in which friends can openly share concerns, questions, prayer request and victories.  It is a time to look deep into God’s Word and find resources to help us Go Deeper in our Christian lives.  A place where we can feel safe, loved and supported in our walk with each other and with our Lord.<br><br>There is always a warm welcome a hot cup of coffee and more often than not a plate of freshly baked cookies.<br><br><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Paul Robertson</span>, Chaplain</td></tr><tr><th>Phone:</th><td>(253) 381-3464</td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>&nbsp;</td><td>Lakewood, WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood+WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table>",
+        "extra": "",
+    },
+    {
+        "page": "ministries",
+        "category": "life_groups",
+        "subcategory": "main",
+        "title": "",
+        "img": "",
+        "imgsrc": "",
+        "markdown": "Here at Northwest Church, personal spiritual growth and connection with other Christ-followers is a high priority.  Life Groups are groups from 4 to 20 that meet once a week or bi-weekly in homes and experience friendship over dessert or a meal and look deeper into the truths from the Bible together in a discussion format.  Praying for one another and the day to day situations of life, is a vital part of this time together as well.<br><br>Check out the current Life Groups below, visit a couple, and see what fits!<br><br>Welcome to the family!",
         "extra": "",
     },
     {
