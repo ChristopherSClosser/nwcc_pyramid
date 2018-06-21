@@ -1655,8 +1655,8 @@ ENTRIES = [
         "subcategory": "bobs",
         "title": "Band of Brothers & Sisters (BOBS)",
         "img": "bobs.jpg",
-        "imgsrc": "",
-        "markdown": "A Help Ministry - Practical Service for Northwest Families<br><br>Please contact the Church Office at (253) 926-2528 or Russell Ivy at (253) 370-6398",
+        "imgsrc": "russel.jpg",
+        "markdown": "BOB’S is an acronym for ‘<b>B</b>and <b>O</b>f <b>B</b>rothers and <b>S</b>isters’ and Russell Ivy is our leader.  This ministry assists elderly, those with physical challenges, and shut-ins with small, practical jobs – ie: sweeping a roof; moving a wood pile, fixing a broken window, changing oil on a car etc.<br><br>Please contact the Church Office at (253) 926-2528 or<br> Russell Ivy at (253) 370-6398",
         "extra": "",
     },
     {
