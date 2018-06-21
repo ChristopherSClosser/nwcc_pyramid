@@ -1130,6 +1130,7 @@ footer {
 
   .burger img {
     width: 4rem;
+    margin-top: -2rem;
   }
 
   .content {

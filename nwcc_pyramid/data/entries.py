@@ -334,7 +334,7 @@ ENTRIES = [
         "category": "topimg",
         "subcategory": "",
         "title": "Love boldly",
-        "img": "img_2146.jpg",
+        "img": "worship_top.jpg",
         "imgsrc": "",
         "markdown": "",
         "extra": "",
