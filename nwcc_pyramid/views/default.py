@@ -912,3 +912,26 @@ def update_view(request):
         'extra': entry.extra,
     }
     return {'main_menu': main_menu, 'entry': form_fill}
+
+
+@view_config(renderer='json', route_name='api')
+def api_view(request):
+    """Display entries as json."""
+    query = request.dbsession.query(MyModel)
+    entries = query.order_by(MyModel.id.asc()).all()
+    return {
+        'entries': [
+            {
+                'id': entry.id,
+                'page': entry.page,
+                'category': entry.category,
+                'subcategory': entry.subcategory,
+                'title': entry.title,
+                'img': entry.img,
+                'imgsrc': entry.imgsrc,
+                'markdown': entry.markdown,
+                'extra': entry.extra,
+            }
+            for entry in entries
+        ]
+    }
