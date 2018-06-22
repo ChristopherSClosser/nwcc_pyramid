@@ -236,7 +236,7 @@ hr {
   background-size: cover;
 }
 
-.q2home h2, .q4home h2, .q3sunday h2, .q4sunday h2{
+.q2home h2, .q4home h2, .q2sunday h2, .q3sunday h2{
   color: #fff;
   text-shadow: #000 0px 0px 6px;
   -webkit-font-smoothing: antialiased;
@@ -248,19 +248,19 @@ hr {
   background-size: cover;
 }
 
-.q2sunday {
+.q4sunday {
   z-index: 99;
   background-image: url('../images/he_brews.jpg');
   background-size: cover;
 }
 
-.q3sunday {
+.q2sunday {
   z-index: 99;
   background-image: url('../images/message.jpg');
   background-size: cover;
 }
 
-.q4sunday {
+.q3sunday {
   z-index: 99;
   background-image: url('../images/kids.jpg');
   background-size: cover;
