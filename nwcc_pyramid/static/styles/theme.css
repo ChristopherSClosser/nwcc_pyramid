@@ -876,6 +876,10 @@ footer {
 }
 
 @media only screen and (min-width: 739px) {
+  .quad-container {
+    margin-top: 0rem;
+  }
+
   .logo_large img {
     max-width: 35%;
     position: absolute;
@@ -1077,7 +1081,7 @@ footer {
   }
 
   #homeqc {
-    margin-top: -14rem;
+    margin-top: 0rem;
     /* z-index: 9999999999; */
     /* position: absolute; */
   }
