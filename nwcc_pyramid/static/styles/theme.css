@@ -151,6 +151,7 @@ hr {
 
 .welcomecontainer {
   position: relative;
+  z-index: -999999;
 }
 
 .welcometxt {
@@ -267,7 +268,7 @@ hr {
 }
 
 .quad-container {
-  display: inline-table;
+  display: flex;
   padding: 0;
   width: 101%;
   /* margin-top: -2rem; */

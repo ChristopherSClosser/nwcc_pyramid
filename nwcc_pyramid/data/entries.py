@@ -376,7 +376,7 @@ ENTRIES = [
         "title": "He-brews boldly",
         "img": "",
         "imgsrc": "",
-        "markdown": "Northwest prides itself on welcoming others into our church family and making them feel at home. The time spent in the foyer before and after the service getting to know a new visitor or sharing the latest news with an old friend over a cup of coffee is invaluable.<br><br>He-brews Boldly provides that opportunity for fellowship!",
+        "markdown": "Northwest prides itself on welcoming others into our church family and making them feel at home. The time spent in the foyer before and after the service getting to know a new visitor or sharing the latest news with an old friend over a cup of coffee is invaluable.<br><br>He-brews Boldly provides that opportunity for fellowship!<br><br>Thanks to John & Janell Simmons for their passion for Jesus coffee.",
         "extra": "",
     },
     {
@@ -586,7 +586,7 @@ ENTRIES = [
         "title": "Youth",
         "img": "waid_brittnae.jpg",
         "imgsrc": "",
-        "markdown": "<h2>Youth at NWCC</h2>Northwest Youth Group has monthly events where ‘crazy fun’ happens. They also meet the 2nd & 4th Tuesday of every month @ 7PM at THE HOPE CENTER, where a whole lot of laughter, worship music and discussion about the love of God takes place.<br><br><table><h2>Waid and Brittnae Hoyt, Youth Directors</h2><tr><th>Email:</th><td><a href=\"mailto:waidhoyt@gmail.com\">waidhoyt@gmail.com</a></td></tr><tr><th>Phone:</th><td>(253) 222-9594 &amp; (253) 988-7655</td></tr><tr><th>Facebook:</th><td><a href=\"https://www.facebook.com/groups/nwccyouth/\" target=\"_blank\">facebook.com/groups/nwccyouth</a></td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>&nbsp;</td><td>Lakewood , WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood++WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></table>",
+        "markdown": "<h2>Youth at NWCC</h2>Northwest Youth Group has monthly events where ‘crazy fun’ happens. They also meet the 2nd & 4th Tuesday of every month @ 7PM at THE HOPE CENTER, where a whole lot of laughter, worship music and discussion about the love of God takes place.<br><br><table><h2>Waid & Brittnae Hoyt, Youth Directors</h2><h3>John & Janell Simmons, Assistant Youth Leaders<tr><th>Email:</th><td><a href=\"mailto:waidhoyt@gmail.com\">waidhoyt@gmail.com</a></td></tr><tr><th>Phone:</th><td>(253) 222-9594 &amp; (253) 988-7655</td></tr><tr><th>Facebook:</th><td><a href=\"https://www.facebook.com/groups/nwccyouth/\" target=\"_blank\">facebook.com/groups/nwccyouth</a></td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>&nbsp;</td><td>Lakewood , WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood++WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></table>",
         "extra": "",
     },
     {
