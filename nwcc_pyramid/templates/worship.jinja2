@@ -41,14 +41,5 @@
       </div>
     </center>
   {% endif %}
-  {% if main %}
-    <center>
-      <h3>{{ main.title | safe }}</h3>
-      {% if main.img %}
-        <img
-          class="single_img"
-          src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ main.img }}">
-      {% endif %}
-    </center>
-  {% endif %}
+  
 {% endblock content %}

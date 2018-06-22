@@ -1616,7 +1616,7 @@ ENTRIES = [
         "title": "Sunday Morning Adult Bible Classes",
         "img": "adult.jpg",
         "imgsrc": "",
-        "markdown": "<h3>RETURNING IN SEPTEMBER 2018!</h3><br>Come and enjoy an interactive “GOING DEEPER” adult class on Sunday mornings from 9AM to 10AM.<br><br>We have gifted, knowledgeable teachers that address diverse topics for 4 to 8 weeks.<br><br>Here are just a few of the recent class titles:<ul><li>I Don’t Have Enough Faith to Be an Atheist</li><li>Love Boldly 101</li><li>Sitting at the Rabbi’s Feet</li><li>Ephesians Comes to Life</li></ul>",
+        "markdown": "Come and enjoy an interactive “GOING DEEPER” adult class on Sunday mornings from 9AM to 10AM.<br><br>We have gifted, knowledgeable teachers that address diverse topics for 4 to 8 weeks.<br><br>Here are just a few of the recent class titles:<ul><li>I Don’t Have Enough Faith to Be an Atheist</li><li>Love Boldly 101</li><li>Sitting at the Rabbi’s Feet</li><li>Ephesians Comes to Life</li></ul>",
         "extra": "",
     },
     {
