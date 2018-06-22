@@ -550,26 +550,6 @@ ENTRIES = [
         "extra": "https://drive.google.com/open?id=1az7cgXOLF6U9_IHhF1DNAbezKBGsRaSI https://drive.google.com/open?id=1yyzZpB6un6BMpcg1aeoBPL6DLOHWQJX9 https://drive.google.com/open?id=1VDd3X2qQkGVNRYERMkjDby_wYO9fUJq5",
     },
     {
-        "page": "message",
-        "category": "main",
-        "subcategory": "handout",
-        "title": "Sermon Handouts",
-        "img": "",
-        "imgsrc": "",
-        "markdown": "Coming Soon!",
-        "extra": "",
-    },
-    {
-        "page": "message",
-        "category": "main",
-        "subcategory": "program",
-        "title": "Sunday Program",
-        "img": "",
-        "imgsrc": "",
-        "markdown": "Coming Soon!",
-        "extra": "",
-    },
-    {
         "page": "children",
         "category": "topimg",
         "subcategory": "",
@@ -1196,7 +1176,7 @@ ENTRIES = [
         "title": "Chris Rudolph",
         "img": "rudolph.jpg",
         "imgsrc": "",
-        "markdown": "Hospitality lead",
+        "markdown": "Hospitality",
         "extra": "first_impressions",
     },
     {
@@ -1206,7 +1186,7 @@ ENTRIES = [
         "title": "Marge Ray",
         "img": "marge.jpg",
         "imgsrc": "",
-        "markdown": "Head Greeter?",
+        "markdown": "Greeter",
         "extra": "first_impressions",
     },
     {
@@ -1216,7 +1196,7 @@ ENTRIES = [
         "title": "Ed Abram",
         "img": "ed.jpg",
         "imgsrc": "",
-        "markdown": "Head Usher",
+        "markdown": "Usher",
         "extra": "first_impressions",
     },
     {
@@ -1576,7 +1556,7 @@ ENTRIES = [
         "title": "Summit - South Hill Life Group",
         "img": "",
         "imgsrc": "southillslide.png",
-        "markdown": "Please join us at the Melvard Home on the 1st and 3rd Sundays of the month 5:00 to 7:00 p.m.  Child care will be provided!! Please bring a dish to share.<br><br>Lead by Ken and Cindy Cnossen and assisted by Amy Wingerter, this is going to be a time to go deeper into Sunday's sermon, while enjoying fun and fellowship with an amazing group of people!<br><br>It is our hope to provide a place where you can be encouraged, share life events, engage in deep, meaningful discussions, and be challenged by learning and growing deeper in your relationship with Christ. We offer a place to connect and be united with others beyond the Sunday morning walls of Northwest Community Church. We hope to build long-lasting relationships and be a light to the community where we gather.<br><br>Ken and Cindy Cnossen<br><br><table><tbody><tr><td style=\"padding-right:20px;\"><div><a href=\"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=5908+124th+St.+Ct.+E.+,+Puyallyp,+WA+98373&amp;z=16\" target=\"_blank\"><img src=\"https://maps.googleapis.com/maps/api/staticmap?center=5908 124th St. Ct. E. ,Puyallyp,WA&amp;zoom=12&amp;size=300x180&amp;markers=color:blue|5908 124th St. Ct. E. ,Puyallyp,WA&amp;maptype=roadmap&amp;sensor=true&amp;key=AIzaSyAWz4naVapxCeD9t8gsPg9B62d8YtGV8fs\"></a></div></td></table><br><br><table><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Bryan and Dana Melvard</span>, Summit/South Hill Life Group Host</td></tr><tr><th>Phone:</th><td>(253) 334-5723</td></tr><tr><th>Address:</th><td>5908 124th St. Ct. E. </td></tr><tr><td>&nbsp;</td><td>Puyallyp, WA 98373</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=5908+124th+St.+Ct.+E.+++Puyallyp+WA+98373\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table></td></tr></tbody></table><br><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Ken and Cindy Cnossen</span>, Summit/South Hill Life Group Leaders</td></tr><tr><th>&emsp;Email:</th><td><a href=\"mailto:Cindy_Cnossen@yahoo.com &amp; ken_cnossen@yahoo.com\">&emsp;Cindy_Cnossen@yahoo.com &amp; ken_cnossen@yahoo.com</a></td></tr><tr><th>&emsp;Phone:</th><td>&emsp;(253) 297-1618</td></tr></tbody></table><br><br><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Amy Wingerter</span>, Summit/South Hill Life Group Assistant Leader</td></tr><tr><th>Phone:</th><td>(253) 970-0124</td></tr></tbody></table>",
+        "markdown": "Please join us at the Melvard Home on the 1st and 3rd Sundays of the month 5:00 to 7:00 p.m.  Child care will be provided!! Please bring a dish to share.<br><br>Lead by Ken and Cindy Cnossen and assisted by Amy Wingerter, this is going to be a time to go deeper into Sunday's sermon, while enjoying fun and fellowship with an amazing group of people!<br><br>It is our hope to provide a place where you can be encouraged, share life events, engage in deep, meaningful discussions, and be challenged by learning and growing deeper in your relationship with Christ. We offer a place to connect and be united with others beyond the Sunday morning walls of Northwest Community Church. We hope to build long-lasting relationships and be a light to the community where we gather.<br><br>Ken and Cindy Cnossen<br><br><table><tbody><tr><td style=\"padding-right:20px;\"><div><a href=\"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=5908+124th+St.+Ct.+E.+,+Puyallyp,+WA+98373&amp;z=16\" target=\"_blank\"><img src=\"https://maps.googleapis.com/maps/api/staticmap?center=5908 124th St. Ct. E. ,Puyallyp,WA&amp;zoom=12&amp;size=300x180&amp;markers=color:blue|5908 124th St. Ct. E. ,Puyallyp,WA&amp;maptype=roadmap&amp;sensor=true&amp;key=AIzaSyAWz4naVapxCeD9t8gsPg9B62d8YtGV8fs\"></a></div></td></table><br><br><table><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Bryan and Dana Melvard</span>, Summit/South Hill Life Group Host</td></tr><tr><th>Phone:</th><td>(253) 334-5723</td></tr><tr><th>Address:</th><td>5908 124th St. Ct. E. </td></tr><tr><td>&nbsp;</td><td>Puyallyp, WA 98373</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=5908+124th+St.+Ct.+E.+++Puyallyp+WA+98373\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table></td></tr></tbody></table><br><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Ken and Cindy Cnossen</span>, Summit/South Hill Life Group Leaders</td></tr><tr><th>&emsp;Email:</th><td><a href=\"mailto:Cindy_Cnossen@yahoo.com &amp; ken_cnossen@yahoo.com\">&emsp;Cindy_Cnossen@yahoo.com &amp; ken_cnossen@yahoo.com</a></td></tr><tr><th>&emsp;Phone:</th><td>&emsp;(253) 297-1618</td></tr></tbody></table>",
         "extra": "",
     },
     {
@@ -1586,7 +1566,7 @@ ENTRIES = [
         "title": "Tacoma Life Group",
         "img": "mike_sally.jpg",
         "imgsrc": "tacomagroupslide.png",
-        "markdown": "<h2>Please call Mike @<br>(253)318-0015 for the address.</h2><br><br>The 2017 Vision of the North Tacoma Life Group is to grow in our understanding of biblical truths and to share those truths with people we come in contact with in our daily routines. With solid biblical principles and an open mind, we provide a place to listen to what others have to say, engage others as they search out these truths and come to the knowledge of who Jesus is in their lives.<br><br>May the God of Hope fill you with all the joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit.<br><br>Mike and Sally Bryan",
+        "markdown": "<h2>Please call Mike @<br>(253)318-0015 for the address.</h2><br><br>The 2017 Vision of the North Tacoma Life Group is to grow in our understanding of biblical truths and to share those truths with people we come in contact with in our daily routines. With solid biblical principles and an open mind, we provide a place to listen to what others have to say, engage others as they search out these truths and come to the knowledge of who Jesus is in their lives.<br><br>Mike and Sally Bryan",
         "extra": "",
     },
     {
@@ -1641,16 +1621,6 @@ ENTRIES = [
     },
     {
         "page": "ministries",
-        "category": "children",
-        "subcategory": "children",
-        "title": "Children's Church",
-        "img": "children.png",
-        "imgsrc": "",
-        "markdown": "At Northwest Community Church we choose to create an exciting and interactive enviroment for children so the Word can come alive! We use Explore the Bible curriculum, that is designed to teach your children all about each book of the Bible in a fun and exciting way!<br><br><h2>Vision for Children:</h2> - that they will know Christ<br> - understand His Word<br> - grow in their own spiritual walk<br> - be able to share the love of Christ with others<br><br><h2>Mission:</h2> - to meet children at their level of development<br> - to teach them the love of Christ and the joy of His forgiveness and salvation<br> - to help them learn the truth of His Word<br> - to encourage their growth within the body of Believers<br><table><tbody><tr><td style=\"padding-right:20px;\"></td><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">DeAnna Morrow</span>, Children's Church Director</td></tr><tr><th>Email:</th><td><a href=\"mailto:nwrabbi7@gmail.com\">nwrabbi7@gmail.com</a></td></tr><tr><th>Phone:</th><td>(253) 926-2528</td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>&nbsp;</td><td>Lakewood , WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood++WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table></td></tr></tbody></table>",
-        "extra": "",
-    },
-    {
-        "page": "ministries",
         "category": "bobs",
         "subcategory": "bobs",
         "title": "Band of Brothers & Sisters (BOBS)",
@@ -1676,7 +1646,7 @@ ENTRIES = [
         "title": "DeAnna Morrow",
         "img": "deanna.jpg",
         "imgsrc": "",
-        "markdown": "At Northwest Community Church we choose to create an exciting and interactive enviroment for children so the Word can come alive! We use Explore the Bible curriculum, that is designed to teach your children all about each book of the Bible in a fun and exciting way!<br><br><h2>Vision for Children:</h2> - that they will know Christ<br> - understand His Word<br> - grow in their own spiritual walk<br> - be able to share the love of Christ with others<br><br><h2>Mission:</h2> - to meet children at their level of development<br> - to teach them the love of Christ and the joy of His forgiveness and salvation<br> - to help them learn the truth of His Word<br> - to encourage their growth within the body of Believers",
+        "markdown": "At Northwest Community Church we choose to create an exciting and interactive enviroment for children so the Word can come alive! We use Explore the Bible curriculum, that is designed to teach your children all about each book of the Bible in a fun and exciting way!<br><br><h2>Vision for Children:</h2><ul><li>that they will know Christ</li><li>understand His Word</li><li>grow in their own spiritual walk</li><li>be able to share the love of Christ with others</li></ul><h2>Mission:</h2><ul><li>to meet children at their level of development</li><li>to teach them the love of Christ and the joy of His forgiveness and salvation</li><li>to help them learn the truth of His Word</li><li>to encourage their growth within the body of Believers</li></ul>",
         "extra": "childrens_director",
     },
     {
