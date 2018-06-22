@@ -33,6 +33,7 @@ from .default import (
     update_view,
     delete_view,
     api_view,
+    means_view,
 )
 
 
@@ -70,3 +71,4 @@ def includeme(config):
     config.add_view(update_view, route_name='edit')
     config.add_view(delete_view, route_name='delete')
     config.add_view(api_view, route_name='api')
+    config.add_view(means_view, route_name='means')

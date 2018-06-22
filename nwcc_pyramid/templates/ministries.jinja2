@@ -28,6 +28,8 @@
         </ul>
       {% endif %}
     </div>
+    {% if steps %}
+    <a href="{{request.route_url('means')}}">
 
     {% for step in steps %}
       {% if step.subcategory == 'title' %}
@@ -87,6 +89,8 @@
       {% endif %}
     {% endfor %}
   </div>
+  </a>
+  {% endif %}
   {% if quad_info %}
     <div class="quad-container">
       {% for item in quad_info %}

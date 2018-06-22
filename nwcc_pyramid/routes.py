@@ -38,3 +38,4 @@ def includeme(config):
     config.add_route('edit', '/entry/{id:\d+}/edit-entry')
     config.add_route('delete', '/entry/{id:\d+}/delete-entry')
     config.add_route('api', '/api-v1')
+    config.add_route('means', 'means')

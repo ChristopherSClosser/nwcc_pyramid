@@ -104,6 +104,10 @@ hr {
   display: inline-block;
 }
 
+#lbmeans {
+  max-width: 100%;
+}
+
 .pcast_title {
   display: inline-block;
   margin-left: 0.5rem;

@@ -508,6 +508,29 @@ def values_view(request):
     }
 
 
+@view_config(route_name='means', renderer='../templates/means.jinja2')
+def means_view(request):
+    """Love boldly means view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+    except KeyError:
+        pass
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'about').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    # submenu = [item for item in content if item.title == 'menu_place_holder']
+    # topimg = [item for item in content if item.category == 'topimg']
+    # main = [item for item in content if item.category == 'core_values']
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        # 'submenu': submenu,
+        # 'topimg': topimg[0],
+        # 'main': main[1],
+    }
+
+
 @view_config(route_name='contact', renderer='../templates/contact.jinja2')
 def contact_view(request):
     """Contact view."""
