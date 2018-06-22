@@ -38,8 +38,9 @@
           {% if item.img %}
             <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img }}" alt="{{ item.title }}"><br><br>
           {% endif %}
-
-          {{ item.markdown|safe }}
+          <div>
+            {{ item.markdown|safe }}
+          </div>
         </div>
         <hr style="background: lightgrey; width: 90%">
       {% endif %}

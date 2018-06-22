@@ -10,7 +10,7 @@
         class="{{ topimg.category }}"
         src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
-    
+
     </div>
   {% endif %}
   {% if main %}
@@ -23,12 +23,14 @@
 
       {% else %}
         <div class="markdown">
+
+          <h3>{{ item.title }}</h3>
+          {{ item.markdown|safe }}
           {% if item.img %}
             <center><img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img }}" alt="{{ item.title }}"></center>
           {% endif %}
-          <h3>{{ item.title }}</h3>
-          {{ item.markdown|safe }}
         </div>
+        <hr style="background: lightgrey; width: 90%">
       {% endif %}
 
     {% endfor %}

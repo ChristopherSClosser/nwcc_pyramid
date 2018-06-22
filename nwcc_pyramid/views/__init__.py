@@ -23,6 +23,7 @@ from .default import (
     council_view,
     beliefs_view,
     im_new_view,
+    first_impressions_view,
     foursquare_view,
     giving_view,
     events_view,
@@ -31,6 +32,8 @@ from .default import (
     create_view,
     update_view,
     delete_view,
+    api_view,
+    means_view,
 )
 
 
@@ -58,6 +61,7 @@ def includeme(config):
     config.add_view(council_view, route_name='council')
     config.add_view(beliefs_view, route_name='beliefs')
     config.add_view(im_new_view, route_name='im_new')
+    config.add_view(first_impressions_view, route_name='first_impressions')
     config.add_view(foursquare_view, route_name='foursquare')
     config.add_view(giving_view, route_name='giving')
     config.add_view(events_view, route_name='events')
@@ -66,3 +70,5 @@ def includeme(config):
     config.add_view(create_view, route_name='new')
     config.add_view(update_view, route_name='edit')
     config.add_view(delete_view, route_name='delete')
+    config.add_view(api_view, route_name='api')
+    config.add_view(means_view, route_name='means')

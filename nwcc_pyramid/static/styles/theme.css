@@ -104,6 +104,10 @@ hr {
   display: inline-block;
 }
 
+#lbmeans {
+  max-width: 100%;
+}
+
 .pcast_title {
   display: inline-block;
   margin-left: 0.5rem;
@@ -151,6 +155,7 @@ hr {
 
 .welcomecontainer {
   position: relative;
+  z-index: -999999;
 }
 
 .welcometxt {
@@ -198,7 +203,7 @@ hr {
 }
 
 .single_img {
-  width: 50%;
+  width: 30%;
 }
 
 #jlc {
@@ -236,7 +241,7 @@ hr {
   background-size: cover;
 }
 
-.q2home h2, .q4home h2, .q3sunday h2, .q4sunday h2{
+.q2home h2, .q4home h2, .q2sunday h2, .q3sunday h2{
   color: #fff;
   text-shadow: #000 0px 0px 6px;
   -webkit-font-smoothing: antialiased;
@@ -248,26 +253,26 @@ hr {
   background-size: cover;
 }
 
-.q2sunday {
+.q4sunday {
   z-index: 99;
   background-image: url('../images/he_brews.jpg');
   background-size: cover;
 }
 
-.q3sunday {
+.q2sunday {
   z-index: 99;
   background-image: url('../images/message.jpg');
   background-size: cover;
 }
 
-.q4sunday {
+.q3sunday {
   z-index: 99;
   background-image: url('../images/kids.jpg');
   background-size: cover;
 }
 
 .quad-container {
-  display: inline-table;
+  display: flex;
   padding: 0;
   width: 101%;
   /* margin-top: -2rem; */
@@ -334,7 +339,7 @@ hr {
   font-weight: normal;
   margin-right: 1rem;
   margin-left: 1rem;
-  margin-top: 4rem;
+  margin-top: 0rem;
   /* padding-left: 2rem;
   padding-right: 2rem; */
 }
@@ -764,6 +769,11 @@ footer {
 
 
 @media only screen and (min-width: 545px) {
+  #step5, #step4 {
+    position: absolute;
+    margin-top: -3rem;
+  }
+
   .welcomeimg {
     margin-top: -1rem;
     margin-bottom: 5rem;
@@ -844,7 +854,7 @@ footer {
     max-width: 25%;
     position: absolute;
     margin: auto;
-    top: 22rem;
+    top: 18rem;
     /* bottom: 50%; */
     left: 0;
     right: 0;
@@ -876,11 +886,15 @@ footer {
 }
 
 @media only screen and (min-width: 739px) {
+  .quad-container {
+    margin-top: 0rem;
+  }
+
   .logo_large img {
     max-width: 35%;
     position: absolute;
     margin: auto;
-    top: 28rem;
+    top: 24rem;
     /* bottom: 50%; */
     left: 0;
     right: 0;
@@ -1077,7 +1091,7 @@ footer {
   }
 
   #homeqc {
-    margin-top: -14rem;
+    margin-top: 0rem;
     /* z-index: 9999999999; */
     /* position: absolute; */
   }
@@ -1086,7 +1100,7 @@ footer {
     max-width: 35%;
     position: absolute;
     margin: auto;
-    top: 24rem;
+    top: 20rem;
     left: 0;
     right: 0;
     z-index: -99;
@@ -1124,12 +1138,19 @@ footer {
 }
 
 @media only screen and (min-width: 1280px) {
+  .arrow-down {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid black;
+  }
+
   .dropexp {
     margin-bottom: -2rem;
   }
 
   .burger img {
     width: 4rem;
+    margin-top: -2rem;
   }
 
   .content {
@@ -1200,7 +1221,7 @@ footer {
     width: 28%;
     position: absolute;
     margin: auto;
-    top: 24rem;
+    top: 20rem;
     left: 0;
     right: 0;
     z-index: -99;
