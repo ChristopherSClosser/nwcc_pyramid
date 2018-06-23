@@ -20,7 +20,7 @@ def includeme(config):
     config.add_route('children', '/children')
     config.add_route('login', '/login')
     config.add_route('logout', '/logout')
-    config.add_route('about', '/about_us')
+    # config.add_route('about', '/about_us')
     config.add_route('values', '/values')
     config.add_route('contact', '/contact')
     config.add_route('mission', '/mission_statement')

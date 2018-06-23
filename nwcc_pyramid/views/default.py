@@ -462,27 +462,27 @@ def first_impressions_view(request):
     }
 
 
-@view_config(route_name='about', renderer='../templates/about.jinja2')
-def about_view(request):
-    """About view."""
-    auth = False
-    try:
-        auth = request.cookies['auth_tkt']
-    except KeyError:
-        pass
-    query = request.dbsession.query(MyModel)
-    content = query.filter(MyModel.page == 'about').all()
-    main_menu = query.filter(MyModel.subcategory == 'base').all()
-    submenu = [item for item in content if item.title == 'menu_place_holder']
-    topimg = [item for item in content if item.category == 'topimg']
-    main = [item for item in content if item.category == 'main']
-    return {
-        'auth': auth,
-        'main_menu': main_menu,
-        'submenu': submenu,
-        'topimg': topimg[0],
-        'main': main[0],
-    }
+# @view_config(route_name='about', renderer='../templates/about.jinja2')
+# def about_view(request):
+#     """About view."""
+#     auth = False
+#     try:
+#         auth = request.cookies['auth_tkt']
+#     except KeyError:
+#         pass
+#     query = request.dbsession.query(MyModel)
+#     content = query.filter(MyModel.page == 'about').all()
+#     main_menu = query.filter(MyModel.subcategory == 'base').all()
+#     submenu = [item for item in content if item.title == 'menu_place_holder']
+#     topimg = [item for item in content if item.category == 'topimg']
+#     main = [item for item in content if item.category == 'main']
+#     return {
+#         'auth': auth,
+#         'main_menu': main_menu,
+#         'submenu': submenu,
+#         'topimg': topimg[0],
+#         'main': main[0],
+#     }
 
 
 @view_config(route_name='values', renderer='../templates/values.jinja2')
