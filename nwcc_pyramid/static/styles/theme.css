@@ -272,9 +272,9 @@ hr {
 }
 
 .quad-container {
-  display: flex;
+  display: inline-block;
   padding: 0;
-  width: 101%;
+  width: 100%;
   /* margin-top: -2rem; */
 }
 
@@ -748,6 +748,7 @@ footer {
 
 
   .quad-container {
+    display: flex;
     margin-top: -2rem;
     width: 100%;
   }
