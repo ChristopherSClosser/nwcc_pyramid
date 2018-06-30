@@ -580,6 +580,16 @@ ENTRIES = [
         "extra": "https://drive.google.com/open?id=1chEBJOa0xPJ9cZcZIJX5RA1-s0i70FbS https://drive.google.com/open?id=1Ee52NKH3twOgeQornKMPpadBhfbdf-lN https://drive.google.com/open?id=1XJMPijMZUyF4zRK7K6KEXte6WBSQeKSK",
     },
     {
+        "page": "message",
+        "category": "audio",
+        "subcategory": "track",
+        "title": "June 24 2018<br>Pastor Mary & Youth",
+        "img": "audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc": "",
+        "markdown": "Door of New Beginnings - Youth Take-Over",
+        "extra": "https://drive.google.com/open?id=14BoySEZ5pn3pmBc2M8CeOKDZuarrAtZl https://drive.google.com/open?id=1TmNEkA_kaDIwKFbnGpUKlXNP_3lvvucJ https://drive.google.com/open?id=112O1f-sUkADtQ-3QFF2N_DkCHCc1_2v_",
+    },
+    {
         "page": "children",
         "category": "topimg",
         "subcategory": "",
