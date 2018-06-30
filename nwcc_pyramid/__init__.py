@@ -1,7 +1,6 @@
 """Init Pyramid WSGI application."""
 import os
 from pyramid.config import Configurator
-# from pyramid_mailer import mailer_factory_from_settings
 
 
 def main(global_config, **settings):
