@@ -1,13 +1,13 @@
 """Interstate Sales Views."""
 
 import os
-import shutil
 from pyramid.security import remember, forget
 from pyramid.view import view_config, forbidden_view_config
 from pyramid.view import notfound_view_config
 from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from ..models import MyModel
 from ..security import is_authenticated
+from pyramid_mailer.message import Message
 
 
 @notfound_view_config(renderer='../templates/404.jinja2')
@@ -741,14 +741,10 @@ def connect_view(request):
         )
 
         mailer.send_immediately(message)
-        # transaction.commit()
         return HTTPFound(request.route_url('home'))
     return {
         'auth': auth,
         'main_menu': main_menu,
-        # 'submenu': submenu,
-        # 'topimg': topimg[0],
-        # 'main': main[1],
     }
 
 
@@ -765,14 +761,12 @@ def foursquare_view(request):
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     menu_title = [item for item in submenu if item.category == 'foursquare']
-    topimg = [item for item in content if item.category == 'topimg']
     main = [item for item in content if item.category == 'foursquare']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'submenu': submenu,
         'menu_title': menu_title[0],
-        # 'topimg': topimg[0],
         'main': main,
     }
 
@@ -788,14 +782,9 @@ def giving_view(request):
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'giving').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
-    # submenu = [item for item in content if item.title == 'menu_place_holder']
-    topimg = [item for item in content if item.category == 'topimg']
-    # main = [item for item in content if item.category == 'foursquare']
     return {
         'auth': auth,
         'main_menu': main_menu,
-        # 'submenu': submenu,
-        # 'topimg': topimg[0],
         'main': content,
     }
 
@@ -827,6 +816,8 @@ def events_view(request):
 @forbidden_view_config(renderer='../templates/nonentry.jinja2')
 def login(request):
     """Login view."""
+    query = request.dbsession.query(MyModel)
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
     if request.method == 'GET':
         return {}
     if request.method == 'POST':
@@ -836,6 +827,7 @@ def login(request):
             headers = remember(request, username)
             return HTTPFound(request.route_url('home'), headers=headers)
         return {'res': 'Username or Password Entered Incorrect'}
+    return {'main_menu': main_menu}
 
 
 @view_config(route_name='logout')
