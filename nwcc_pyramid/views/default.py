@@ -884,7 +884,7 @@ def delete_view(request):
     if request.POST:
         request.dbsession.delete(entry)
         request.dbsession.flush()
-        return HTTPFound()
+        return HTTPFound(request.route_url('home'))
     form_fill = {
         'page': entry.page,
         'category': entry.category,
