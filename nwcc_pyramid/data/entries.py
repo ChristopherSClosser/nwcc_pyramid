@@ -4,7 +4,7 @@ ENTRIES = [
         "category": "admin",
         "subcategory": "tools",
         "title": "Images",
-        "img": "add.png edit.png delete.png",
+        "img": "edit.png delete.png",
         "imgsrc": "",
         "markdown": "",
         "extra": "",

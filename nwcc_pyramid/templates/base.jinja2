@@ -52,7 +52,10 @@
                 {% if auth %}
                   {% if auth_tools %}
                     {% for img in auth_tools[0].img.split(' ') %}
-                      <img id="{{ img.split('.')[0] }}" src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                      <a href="{{request.route_url('home')}}entry/{{ item.id }}/{{ img.split('.')[0] }}-entry">
+                        <img id="{{ img.split('.')[0] }}"
+                          src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                      </a>
                     {% endfor %}
                   {% endif %}
 
