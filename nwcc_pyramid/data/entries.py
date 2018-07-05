@@ -160,13 +160,13 @@ ENTRIES = [
         "extra": "",
     },
     {
-        "page": "home",
-        "category": "tri_info",
-        "subcategory": "first_tri_info",
-        "title": "<b>Join us on Sundays at 10am<br>Northwest Community Church</b>",
+        "page": "sundays",
+        "category": "info",
+        "subcategory": "main",
+        "title": "<b>Join us on Sundays at 10am</b>",
         "img": "",
         "imgsrc": "https://maps.googleapis.com/maps/api/staticmap?center=10402+Kline+St+SW,Lakewood,WA&zoom=12&size=278x150&markers=color:blue|10402+Kline+St+SW,Lakewood,WA&maptype=roadmap&sensor=false&key=AIzaSyAWz4naVapxCeD9t8gsPg9B62d8YtGV8fs",
-        "markdown": "10402 Kline St SW<br>at the HOPE Center<br>Lakewood, WA 98499<br>(253) 926-2528<br><a href='mailto:nwrabbi7@gmail.com'>nwrabbi7@gmail.com</a>",
+        "markdown": "10402 Kline St SW<br>at the HOPE Center<br>Lakewood, WA 98499<br><br>(253) 926-2528<br><a href='mailto:nwrabbi7@gmail.com'>nwrabbi7@gmail.com</a>",
         "extra": "",
     },
     {

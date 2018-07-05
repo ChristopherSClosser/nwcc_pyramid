@@ -28,6 +28,11 @@
     </div>
   {% endif %}
   {% if main %}
-      <div class="markdown">{{ main.markdown|safe }}</div>
+    <center>
+      <div class="markdown">
+        <h2>{{ main.title|safe }}</h2>
+        {{ main.markdown|safe }}
+      </div>
+    </center>
   {% endif %}
 {% endblock content %}
