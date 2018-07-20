@@ -12,7 +12,9 @@
           class="welcomeimg {{ topimg.category }}"
           src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
           alt="{{ topimg.title }}">
-        <center><h1 class="welcometxt">WELCOME</h1>
+        <center>
+
+          <h1 class="welcometxt">WELCOME</h1>
           {% if auth %}
             {% if auth_tools %}
               {% for img in auth_tools[0].img.split(' ') %}
@@ -31,23 +33,23 @@
   {% if quad_info %}
     <div id="homeqc" class="quad-container">
       {% for item in quad_info %}
+        {% if auth %}
+
+          <div class="{{ item.subcategory }}tools">
+            {% if auth_tools %}
+              {% for img in auth_tools[0].img.split(' ') %}
+                <a href="{{request.route_url('home')}}entry/{{ item.id }}/{{ img.split('.')[0] }}-entry">
+                  <img id="{{ img.split('.')[0] }}" class="quad{{ img.split('.')[0] }}"
+                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                </a>
+              {% endfor %}
+            {% endif %}
+          </div>
+        {% endif %}
 
         <a class="quad" href="{{request.route_url('home')}}{{ item.extra }}">
           <div class="{{ item.subcategory }}home">
-            <h2>{{ item.title | safe }}
-              {% if auth %}
-                <div class="quadtools">
-                  {% if auth_tools %}
-                    {% for img in auth_tools[0].img.split(' ') %}
-                      <a href="{{request.route_url('home')}}entry/{{ item.id }}/{{ img.split('.')[0] }}-entry">
-                        <img id="{{ img.split('.')[0] }}" class="quad{{ img.split('.')[0] }}"
-                          src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
-                      </a>
-                    {% endfor %}
-                  {% endif %}
-                </div>
-              {% endif %}
-            </h2>
+            <h2>{{ item.title | safe }}</h2>
           </div>
         </a>
 

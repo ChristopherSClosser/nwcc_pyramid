@@ -61,16 +61,15 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
-.quadtools {
+.q1tools, .q2tools, .q3tools, .q4tools {
   z-index: 999;
+  width: 0;
+  display: inherit;
 }
 
-.quaddelete {
-
-}
-
-.quadedit {
-
+.quaddelete, .quadedit {
+  margin: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 #delete {
@@ -80,6 +79,7 @@ hr {
 
 #edit {
   width: 1rem;
+  margin-right: 0.5rem;
 }
 
 #nav img {
