@@ -75,10 +75,12 @@ hr {
 #delete {
   margin-right: 1rem;
   width: 1rem;
+  height: 1rem;
 }
 
 #edit {
   width: 1rem;
+  height: 1rem;
   margin-right: 0.5rem;
 }
 
