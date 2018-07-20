@@ -95,7 +95,7 @@ def sundays_view(request):
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
-    steps = [item for item in content if item.category == 'steps']
+    main = [item for item in content if item.subcategory == 'main']
     return {
         'auth': auth,
         'main_menu': main_menu,
@@ -103,7 +103,7 @@ def sundays_view(request):
         'topimg': topimg[0],
         'tri_img': tri_img,
         'quad_info': quad_info,
-        'steps': steps,
+        'main': main[0],
     }
 
 

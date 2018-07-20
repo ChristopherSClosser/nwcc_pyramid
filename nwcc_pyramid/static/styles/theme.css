@@ -61,8 +61,25 @@ hr {
   /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
+.quadtools {
+  z-index: 999;
+}
+
+.quaddelete {
+
+}
+
+.quadedit {
+
+}
+
 #delete {
   margin-right: 1rem;
+  width: 1rem;
+}
+
+#edit {
+  width: 1rem;
 }
 
 #nav img {
@@ -1065,6 +1082,8 @@ footer {
   .event p {
     width: 5rem;
     margin-left: -4.8rem;
+    line-height: 1.2rem;
+    transform: translateY(-0.5rem);
   }
 
   .pcastimg {
@@ -1177,6 +1196,7 @@ footer {
   .event p {
     width: 7rem;
     margin-left: -6.7rem;
+    line-height: 1.7rem;
   }
 
   html {
