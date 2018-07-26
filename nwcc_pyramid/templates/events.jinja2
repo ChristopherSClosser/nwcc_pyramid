@@ -41,7 +41,7 @@
                 <div class="event">
                   <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
                   <p>{{ event.extra|safe }}</p>
-                  <h2>{{ event.title }}</h2>
+                  <h2>{{ event.title|safe }}</h2>
 
                 </div>
               </a>
@@ -50,7 +50,7 @@
               <div class="event">
                 <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
                 <p>{{ event.extra|safe }}</p>
-                <h2>{{ event.title }}</h2>
+                <h2>{{ event.title|safe }}</h2>
 
               </div>
               <hr style="background: lightgrey; width: 90%">
