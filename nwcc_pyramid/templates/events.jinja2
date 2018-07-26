@@ -36,13 +36,27 @@
               {% endif %}
 
             {% endif %}
-            <div class="event">
-              <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
-              <p>{{ event.extra|safe }}</p>
-              <h2>{{ event.title }}</h2>
+            {% if event.imgsrc %}
+              <a href="{{ event.imgsrc }}">
+                <div class="event">
+                  <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
+                  <p>{{ event.extra|safe }}</p>
+                  <h2>{{ event.title }}</h2>
 
-            </div>
-            <hr style="background: lightgrey; width: 90%">
+                </div>
+              </a>
+              <hr style="background: lightgrey; width: 90%">
+            {% else %}
+              <div class="event">
+                <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
+                <p>{{ event.extra|safe }}</p>
+                <h2>{{ event.title }}</h2>
+
+              </div>
+              <hr style="background: lightgrey; width: 90%">
+            {% endif %}
+
+
           {% endfor %}
         {% endif %}
 
