@@ -173,8 +173,11 @@ def bible_studies_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'ministries').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -187,6 +190,7 @@ def bible_studies_view(request):
         'submenu': submenu,
         'topimg': topimg[0],
         'main': main,
+        'auth_tools': auth_tools,
     }
 
 
@@ -322,8 +326,11 @@ def message_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'message').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -341,6 +348,7 @@ def message_view(request):
         'quad_info': quad_info,
         'main': main[:8],
         'steps': steps,
+        'auth_tools': auth_tools,
     }
 
 
@@ -558,8 +566,11 @@ def beliefs_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -572,6 +583,7 @@ def beliefs_view(request):
         'submenu': submenu,
         'menu_title': menu_title[0],
         'main': main,
+        'auth_tools': auth_tools,
     }
 
 
@@ -716,8 +728,11 @@ def events_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'events').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -730,6 +745,7 @@ def events_view(request):
         'events': events,
         'topimg': topimg[0],
         'main': main,
+        'auth_tools': auth_tools,
     }
 
 
@@ -858,7 +874,6 @@ def api_view(request):
     return {
         'entries': [
             {
-                'id': entry.id,
                 'page': entry.page,
                 'category': entry.category,
                 'subcategory': entry.subcategory,

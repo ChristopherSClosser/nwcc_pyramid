@@ -25,13 +25,38 @@
       {% else %}
         {% if events %}
           {% for event in events %}
-            <div class="event">
-              <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
-              <p>{{ event.extra|safe }}</p>
-              <h2>{{ event.title }}</h2>
+            {% if auth %}
+              {% if auth_tools %}
+                {% for img in auth_tools[0].img.split(' ') %}
+                  <a href="{{request.route_url('home')}}entry/{{ event.id }}/{{ img.split('.')[0] }}-entry">
+                    <img id="{{ img.split('.')[0] }}"
+                      src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                  </a>
+                {% endfor %}
+              {% endif %}
 
-            </div>
-            <hr style="background: lightgrey; width: 90%">
+            {% endif %}
+            {% if event.imgsrc %}
+              <a href="{{ event.imgsrc }}">
+                <div class="event">
+                  <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
+                  <p>{{ event.extra|safe }}</p>
+                  <h2>{{ event.title|safe }}</h2>
+
+                </div>
+              </a>
+              <hr style="background: lightgrey; width: 90%">
+            {% else %}
+              <div class="event">
+                <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
+                <p>{{ event.extra|safe }}</p>
+                <h2>{{ event.title|safe }}</h2>
+
+              </div>
+              <hr style="background: lightgrey; width: 90%">
+            {% endif %}
+
+
           {% endfor %}
         {% endif %}
 
