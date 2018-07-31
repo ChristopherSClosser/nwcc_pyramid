@@ -1,2 +1,3 @@
-# nwcc-pyramid
-Northwest Community Church Website
+# Northwest Community Church Website
+
+### [weloveboldly.com](https://weloveboldly.com)
