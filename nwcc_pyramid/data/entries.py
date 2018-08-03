@@ -1483,7 +1483,7 @@ ENTRIES = [
         "page": "events",
         "category": "special_events",
         "subcategory": "Events",
-        "title": "Outside Service",
+        "title": "Outside Service & Baptisms",
         "img": "event_icon.png",
         "imgsrc": "",
         "markdown": "",
