@@ -582,8 +582,10 @@ hr {
 .logo {
   flex: 0.4;
   vertical-align: middle;
-  width: 4rem;
+  width: 2.5rem;
   z-index: 9999999;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .burger img {
@@ -946,7 +948,7 @@ footer {
   }
 
   .logo {
-    width: 5rem;
+    width: 3rem;
   }
 
   .brandtitle {
