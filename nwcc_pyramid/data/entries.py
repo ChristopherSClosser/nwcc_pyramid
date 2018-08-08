@@ -620,6 +620,16 @@ ENTRIES = [
         "extra": "https://drive.google.com/open?id=1asGA4oGCsFxJuHdBqzOhdYDKGJSYYHnC https://drive.google.com/open?id=1o9moky5HgkVGTfEAS1DS-wMCGCgvaQfJ",
     },
     {
+        "page": "message",
+        "category": "audio",
+        "subcategory": "track",
+        "title": "August 5 2018<br>Dr. Mark Hines",
+        "img": "audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc": "",
+        "markdown": "Grace",
+        "extra": "https://drive.google.com/open?id=13WTwjrB6EC96OT-c1CMHNvvIiaoK_tSn",
+    },
+    {
         "page": "children",
         "category": "topimg",
         "subcategory": "",
