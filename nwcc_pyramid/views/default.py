@@ -8,7 +8,7 @@ from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid_mailer.message import Message
 from ..models import MyModel
 from ..security import is_authenticated
-# from datetime import datetime
+from datetime import datetime
 
 
 @notfound_view_config(renderer='../templates/404.jinja2')
@@ -796,7 +796,7 @@ def create_view(request):
             imgsrc=request.POST['imgsrc'],
             markdown=request.POST['markdown'],
             extra=request.POST['extra'],
-            date=request.POST['date'],
+            date=datetime.strptime(request.POST['date'], '%b %d %Y'),
         )
         request.dbsession.add(entry)
         return HTTPFound()
