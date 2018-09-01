@@ -8,6 +8,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "",
@@ -18,6 +19,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "",
@@ -28,6 +30,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "welcome",
+        "date": "Jan 1 2000",
     },
     {
         "page": "",
@@ -38,6 +41,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "sundays",
+        "date": "Jan 1 2000",
     },
     {
         "page": "",
@@ -48,6 +52,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "youth_kids",
+        "date": "Jan 1 2000",
     },
     {
         "page": "",
@@ -58,6 +63,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "events",
+        "date": "Jan 1 2000",
     },
     {
         "page": "",
@@ -68,6 +74,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "go_deeper",
+        "date": "Jan 1 2000",
     },
     {
         "page": "",
@@ -78,6 +85,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "giving",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -88,6 +96,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -98,6 +107,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "Northwest Community Church | Boldly transforming lives with the love of Christ.",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -108,6 +118,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "We are so glad you’re here!<br>We are an accepting bunch<br>that loves on you just<br>as you are.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -118,6 +129,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "We love getting to know<br>you and we’re here to<br>support you. No matter what.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -128,6 +140,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "We love helping you find<br>clarity in who God is, who<br>you are in Christ, and what<br>role you have in His story.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -138,6 +151,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "We love to help you mature<br>your identity, your<br>understanding, and your<br>everyday growth in Christ.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -148,6 +162,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Learn to love others in your<br>life the way Christ loves you:<br>unconditionally and boldy!",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -158,6 +173,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "sundays",
@@ -168,6 +184,7 @@ ENTRIES = [
         "imgsrc": "https://maps.googleapis.com/maps/api/staticmap?center=10402+Kline+St+SW,Lakewood,WA&zoom=12&size=278x150&markers=color:blue|10402+Kline+St+SW,Lakewood,WA&maptype=roadmap&sensor=false&key=AIzaSyAWz4naVapxCeD9t8gsPg9B62d8YtGV8fs",
         "markdown": "10402 Kline St SW<br>at the HOPE Center<br>Lakewood, WA 98499<br><br>(253) 926-2528<br><a href='mailto:nwrabbi7@gmail.com'>nwrabbi7@gmail.com</a>",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -178,6 +195,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -188,6 +206,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "How would you like the opportunity for a new beginning? Fresh starts don't begin with a change of circumstances- a new job, new location, or new relationship- they begin with a change of heart. God specializes in clean slates and fresh states. We invite you to join us as we discover ways to live the rest of our lives the best they can be!<br><br>EVERY SUNDAY MORNING AT 10:00AM<br><br><ul><li>Nursery, Children's and Teen Programs</li><li>Contemporary worship, Messages for \"everyday\" life</li><li>Life Groups, Celebrate Recovery, and Bible Studies</li><li>Coffee and Starbuck's goodies every Sunday</li></ul>",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -198,6 +217,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -208,6 +228,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -218,6 +239,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -228,6 +250,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -238,6 +261,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "sundays",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -248,6 +272,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "youth_kids",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -258,6 +283,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "events",
+        "date": "Jan 1 2000",
     },
     {
         "page": "home",
@@ -268,6 +294,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "go_deeper",
+        "date": "Jan 1 2000",
     },
     {
         "page": "welcome",
@@ -278,6 +305,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "sundays",
@@ -288,6 +316,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "sundays",
@@ -298,6 +327,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "worship",
+        "date": "Jan 1 2000",
     },
     {
         "page": "sundays",
@@ -308,6 +338,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "message",
+        "date": "Jan 1 2000",
     },
     {
         "page": "sundays",
@@ -318,6 +349,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "children",
+        "date": "Jan 1 2000",
     },
     {
         "page": "sundays",
@@ -328,6 +360,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "hebrews",
+        "date": "Jan 1 2000",
     },
     {
         "page": "worship",
@@ -338,6 +371,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "worship",
@@ -348,6 +382,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Spotify playlist - NWCC Worship<br>Listen to the songs we play",
         "extra": "https://open.spotify.com/user/121873039/playlist/5WIXziEiekojmI2h9er0xw",
+        "date": "Jan 1 2000",
     },
     {
         "page": "worship",
@@ -358,6 +393,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Waid Hoyt grew up in Tacoma, WA and was bit by the music bug early in life. It wasn't long before he found a passion for music in school, playing in various concert/symphonic & jazz bands through his scholastic years. He has served as a member of multiple worship teams over the last 15 years. Waid came to NWCC in 2013 and has been co-leading worship the past since that time. More recently, he began taking over the worship director role in 2017.<br><br>In 2013 when God called him to NWCC, it was a natural fit to become a part of the worship team. Music has always been at the core of his passions and in that he finds a deep connection with God through worship & praise music. His heart is to provide a place for other musicians to grow in their skill and in their relationship with Jesus in worship music.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "hebrews",
@@ -368,6 +404,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "hebrews",
@@ -378,6 +415,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Northwest prides itself on welcoming others into our church family and making them feel at home. The time spent in the foyer before and after the service getting to know a new visitor or sharing the latest news with an old friend over a cup of coffee is invaluable.<br><br>He-brews Boldly provides that opportunity for fellowship!<br><br>Thanks to John & Janell Simmons for their passion for Jesus coffee.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -388,6 +426,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -398,6 +437,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Get the podcast",
         "extra": "https://itunes.apple.com/us/podcast/northwest-community-church-sermon-podcast/id993016445?mt=2",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -408,6 +448,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=1uYPisWrRssAEPfBCFaLGu30tySc_TSxt",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -418,6 +459,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=1pzN435vxebVWQInf8pHjTcPUlVOYp0uV",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -428,6 +470,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=19RXdHnJDj7nyTwsil-bFs13y1w3PmZFg",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -438,6 +481,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=1R15pBtglwCkWOK2H63t0obUBTISn_hsB",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -448,6 +492,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=1Nhfv8mmi5QUk4Q6Gr5uQWGvZci6rxYa7",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -458,6 +503,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=1A39o_STSr26egvKLz4je1tgI74oAR-XY",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -468,6 +514,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=1CwENDnZvxYc7V8y-ezK9LaDLXJCEVxux",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -478,6 +525,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=12AYmqN7u62630EOtVarT1MLJIttpOwTg",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -488,6 +536,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=1vGHiq3ZJg64wr36DVdKVog0jh8XCUAKE",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -498,6 +547,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "https://drive.google.com/open?id=16cqdXiPTSMelmezTlJmmdvBNf782Ja6y",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -508,6 +558,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Love of Strangers",
         "extra": "https://drive.google.com/open?id=1vwqUOYsm2Nxa3MpR4Bjq4Qwh4Gg3r4XH https://drive.google.com/open?id=1vhfsConkmHpwLxwdauQMRYut5xlkr58H https://drive.google.com/open?id=1wBiPfwNf1qRmsHUoW3hBA6nIEB6paYmy",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -518,6 +569,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "PUT A STAKE IN THE GROUND",
         "extra": "https://drive.google.com/open?id=1zcRztV2qQm84a_qTPiFgz9PJtON9cwwQ https://drive.google.com/open?id=15r4T3wNG53YoPRilSwnL0kr02SLUvWYA",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -528,6 +580,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The God Who Sees Me",
         "extra": "https://drive.google.com/open?id=1tu2n6g_psoUpZXo3pLyE-NAmXefF4Nkm https://drive.google.com/open?id=15Ok_cxwitAFpx-Xjj6P_uifmN51mzYA0",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -538,6 +591,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The Powerful Door",
         "extra": "https://drive.google.com/open?id=14tWj_aKN4C7dqsBYw1pgPFQN_vT7nUIS https://drive.google.com/open?id=1AOdXl2WCFSfIRulQSDP4wpUk9yzqJQP_ https://drive.google.com/open?id=12h21WWMq7KOvecAjy--0g7nRe2e24v37",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -548,6 +602,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The Door of FREEDOM John 10:9",
         "extra": "https://drive.google.com/open?id=1az7cgXOLF6U9_IHhF1DNAbezKBGsRaSI https://drive.google.com/open?id=1yyzZpB6un6BMpcg1aeoBPL6DLOHWQJX9 https://drive.google.com/open?id=1VDd3X2qQkGVNRYERMkjDby_wYO9fUJq5",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -558,6 +613,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "DOOR OF MIRACLES",
         "extra": "https://drive.google.com/open?id=1Z8q3VcVqB8OWSwQGEW5HaC7NPm3YSlMc https://drive.google.com/open?id=1h8Y-T6P1gaRGeXC-Amo0UBkRooR5Tc1N https://drive.google.com/open?id=1HLjvHeT4c2gZGuE9nl6jTkXblxaeCtAb",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -568,6 +624,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Where the Spirit of the Lord is...",
         "extra": "https://drive.google.com/open?id=1Xerwa_aBAileelEvz2lcyv1qptAz-3zj https://drive.google.com/open?id=1iyYb0VyLmLV2HDpgGZeQpFpf_M0fK4vB https://drive.google.com/open?id=1xv28Z3HFlsfnvh0JeSV6_AmMBHEqjJxe",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -578,6 +635,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The Door of Integrity",
         "extra": "https://drive.google.com/open?id=1chEBJOa0xPJ9cZcZIJX5RA1-s0i70FbS https://drive.google.com/open?id=1Ee52NKH3twOgeQornKMPpadBhfbdf-lN https://drive.google.com/open?id=1XJMPijMZUyF4zRK7K6KEXte6WBSQeKSK",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -588,6 +646,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Door of New Beginnings - Youth Take-Over",
         "extra": "https://drive.google.com/open?id=14BoySEZ5pn3pmBc2M8CeOKDZuarrAtZl https://drive.google.com/open?id=1TmNEkA_kaDIwKFbnGpUKlXNP_3lvvucJ https://drive.google.com/open?id=112O1f-sUkADtQ-3QFF2N_DkCHCc1_2v_",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -598,6 +657,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The Door of Transformation",
         "extra": "https://drive.google.com/open?id=1lVfcvMmKMH6bZACIf_WVDcLZAEP1L-s9 https://drive.google.com/open?id=157NVoT1VcUO2HULPwpl1JSOx20RgJoOU https://drive.google.com/open?id=1zFAVFfAo2uFTjsopZUjYP63zaCMMMOaf",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -608,6 +668,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The Door of Prayer",
         "extra": "https://drive.google.com/open?id=110cGxgjZLTaq3RGNyQR_hi02bAk8cwY_ https://drive.google.com/open?id=1eO2EX3XWQV6Uxh_9tllZSI2u0xqHHtnq https://drive.google.com/open?id=1TSshO3IV9SDq6RqlVUsuSkIGxFn68m1Z",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -618,6 +679,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The Door of the Throne Room",
         "extra": "https://drive.google.com/open?id=1asGA4oGCsFxJuHdBqzOhdYDKGJSYYHnC https://drive.google.com/open?id=1o9moky5HgkVGTfEAS1DS-wMCGCgvaQfJ",
+        "date": "Jan 1 2000",
     },
     {
         "page": "message",
@@ -628,6 +690,29 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Grace",
         "extra": "https://drive.google.com/open?id=13WTwjrB6EC96OT-c1CMHNvvIiaoK_tSn",
+        "date": "Jan 1 2000",
+    },
+    {
+        "page": "message",
+        "category": "audio",
+        "subcategory": "track",
+        "title": "August 19 2018<br>Pastor Joseph",
+        "img": "audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc": "",
+        "markdown": "He is on the Move",
+        "extra": "https://drive.google.com/open?id=15JlWvMJEXSmb4qvnwr3OffhXERQ2OLW4",
+        "date": "Jan 1 2000",
+    },
+    {
+        "page": "message",
+        "category": "audio",
+        "subcategory": "track",
+        "title": "August 27 2018<br>Pastor Mary",
+        "img": "audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc": "",
+        "markdown": "End Times",
+        "extra": "https://drive.google.com/open?id=16IXKfNqv0Y-TH39tf2gFKQTzqPPCu0Ne",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -638,6 +723,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -648,6 +734,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Coming Soon!",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "youth_kids",
@@ -658,6 +745,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "youth_kids",
@@ -668,6 +756,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<h2>NextGen Youth</h2>Northwest Youth Group has monthly events where ‘crazy fun’ happens.<br><br><b>NextGen Deeper</b> meets the 2nd & 4th Tuesday of every month @ 7PM at THE HOPE CENTER, where a whole lot of laughter, worship music and discussion about the love of God takes place.<br><br><a href='/events'><u>Click here for Events!</u></a><br><br><table><h2>Waid & Brittnae Hoyt, Youth Directors</h2><h3>John & Janell Simmons, Assistant Youth Leaders<tr><th>Email:</th><td><a href=\"mailto:waidhoyt@gmail.com\">waidhoyt@gmail.com</a></td></tr><tr><th>Phone:</th><td>(253) 222-9594 &amp; (253) 988-7655</td></tr><tr><th>Facebook:</th><td><a href=\"https://www.facebook.com/groups/nwccyouth/\" target=\"_blank\"><u>facebook.com/groups/nwccyouth</u></a></td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>&nbsp;</td><td>Lakewood , WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood++WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></table>",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -678,6 +767,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -688,6 +778,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -698,6 +789,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "foodbank",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -708,6 +800,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "bible_studies",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -718,6 +811,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "life_groups",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -728,6 +822,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "military",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -738,6 +833,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "bobs",
+        "date": "Jan 1 2000",
     },
     {
         "page": "foodbank",
@@ -748,6 +844,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "foodbank",
@@ -758,6 +855,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "foodbank",
@@ -768,6 +866,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Outreach is one of our core values, which is why Northwest believes in the importance of investing in our community. The Food Bank allows us to be the hands and feet of Jesus to our neighbors each week as we provide food, clothing and household items to those in need.<br><br>Food bank is held every Wednesday beginning at 4:00pm at the Lakewood Boy's and Girl's Club Hope Center pavillion.<br><br>Please contact the church office at (253) 926-2528 for further information.",
         "extra": "Chris Rudolph - Food bank lead",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -778,6 +877,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -788,6 +888,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "This concept focuses on the value that a welcoming and loving faith family provides. A value that looks a lot like our Savior’s empathetic, determined love for the lost.<br><br>A love that intentionally seeks the broken and accepts them as they are.<br>A love that loves anyone out of the dark and into the light.<br>A love that is not afraid of life’s messes.<br>A love that is transformative.<br>A love that is vibrant.<br>A love that is bold.",
         "extra": "about_us",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -798,6 +899,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "im_new",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -808,6 +910,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "first_impressions",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -818,6 +921,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "mission_statement",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -828,6 +932,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "values",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -838,6 +943,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "what_we_believe",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -848,6 +954,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "foursquare",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -858,6 +965,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "staff",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -868,6 +976,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "council",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -878,6 +987,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "contact",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -888,6 +998,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "1. Contemporary, heartfelt worship where God's presence is experienced.<br><br>2. Relevant and applicable preaching.<br><br>3. Focus on prayer - \"crying out to God for His power!\"<br><br>4. Excellence in assimilation, greeting ministry, follow-up on each visitor, and networking their friends and relatives.<br><br>5. Emphasis on small group ministries - Home Life Groups.<br><br>6. Effective \"out-reach\" and evangelism. Through large group activities, Halloween outreach, Christmas concert etc... and personal invitation to church small groups.<br><br>7. Discipleship is vital. We are to present every person mature in Christ (accomplished through small and specialized groups).<br><br>8. Preparing people for ministry through the discovery of their spiritual gifts.<br><br>9. To reproduce ourselves through church planting.<br><br>10. To be highly involved in missions and world evangelism through short-term missions and support of Foursquare Missions.",
         "extra": "values",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -898,6 +1009,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<h2>Our office hours:</h2><br>Monday: CLOSED<br><em>Please Note: Our Pastors need a weekly day of rest and have designated Mondays for this purpose. Contacting them only in emergencies is greatly appreciated.</em><br><br>Tuesday: 9:00 – 5:00<br>  (CLOSED from 12:00 – 1:00)<br><br>Wednesday: BY APPOINTMENT ONLY<br><br>Thursday: 9:00 – 5:00<br>  (CLOSED from 12:00 – 1:00)<br><br>Friday: 9:00 – 12:00 BY APPOINTMENT ONLY<br>1:00 – 5:00<br><br><br><b>Church Address (Hope Center)</b><br>10402 Kline St SW<br>Lakewood, WA 98499<br><br><b>Office Address (Hope Center)</b><br>10402 Kline St SW #103<br>Lakewood, WA 98499<br><b>Phone:</b> (253) 926-2528<br><b>Email:</b> <a href='mailto:nwrabbi7@gmail.com'>nwrabbi7@gmail.com</a>",
         "extra": "contact",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -908,6 +1020,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "We exist to encourage and transform the lives of people through: contemporary, Spirit-filled worship; relevant messages, and excellence in children, youth and life groups.",
         "extra": "mission_statement",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -918,6 +1031,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Pastors Joseph and Mary Walsh both grew up in Northern Minnesota. Mary was raised on a dairy farm and Joseph grew up in an iron mining community. They met at Bible camp in their teen years and discovered they both had a heart to serve God in ministry. Mary attended Northwestern College and later joined Joseph at North Central Bible College in Minneapolis.<br><br>Joseph and Mary were married in 1979. They began full-time ministry in St. Paul, Minnesota, where they served at Bethel Christian Fellowship for over 8 years. The Walshs relocated to Washington in 1991 and have served two other churches before being called to start Northwest Community Church in 2001.<br><br>Pastors Joseph and Mary have two married daughters and two grandchildren.",
         "extra": "lead_pastors",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -928,6 +1042,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Waid grew up in Tacoma, WA and was bit by the music bug early in life. He discovered a passion for music in school, playing in various concert/symphonic & jazz bands through his scholastic years.<br><br>His love for music was transformed into a love for worship of Jesus Christ when he accepted Him as his personal Lord and Savior. His greatest desire is to lead others into the presence of Jesus where real life- transformation takes place.<br><br>Waid came to NWCC in 2013 and joined the worship team immediately. Recently he moved into the role of Lead Worship Director.<br><br>He is married with two delightful boys.",
         "extra": "music_director",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -938,6 +1053,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "DeAnna Morrow was raised in a military household, but considers herself a Washington native. She is a mom to her beautiful daughter Jaiden and they are both very involved with Northwest.<br><br>DeAnna shares that even when her family was not plugged into a home church she always felt the presence of God with them, and knew one day they would find their forever church home. Fourteen years ago they found it in Northwest, and DeAnna is now singing on the worship team, producing on Sunday mornings, assisting with Women’s Ministry activities, in addition to being the Director of Children’s Ministry. DeAnna is a servant leader and her love for the Lord knows no boundaries.",
         "extra": "childrens_director",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -948,6 +1064,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Waid & Brittnae both grew up in Tacoma, WA and lived in the Pierce County area all their lives, now calling Puyallup, WA their home. They have served on staff as the Youth Directors since 2015.<br><br>Both were part of a youth group as teens and found those years crucial in their faith. They have a heart to see this generation meet and fall in love with Jesus Christ, building a foundation for their lives of love & hope in Him.<br><br>Northwest Youth Group has monthly events where ‘crazy fun’ happens. They also meet the 2nd & 4th Tuesday of every month @ 7PM at THE HOPE CENTER, where a whole lot of laughter, worship music and discussion about the love of God takes place.<br><br>They have two adorable little boys.<br><br><b>CHECK IT OUT on Facebook:</b><a href=\"https://www.facebook.com/groups/nwccyouth/\" target=\"_blank\"> facebook.com/groups/nwccyouth</a>",
         "extra": "youth_directors",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -958,6 +1075,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Katie was born and raised in Tacoma, graduating from Western Washington University and going on to get a Master’s degree in Counselor Education. In 2015, she found her way to Northwest Community Church through a Craigslist ad and has been growing both professionally and spiritually ever since. Katie enjoys spending time with her family and their two dogs.<br><br><b>Office Phone:</b> (253) 926-2528<br><b>Email:</b> nwrabbi7@gmail.com",
         "extra": "assistant",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -968,6 +1086,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Chris was born and raised in Northern California.  He came to Washington in June of 1999 and served for 6 years in the U.S. Air Force stationed at McChord Air Force Base.<br><br>He is married and has two wonderful sons. Chris met Jesus at age 13 when his buddy invited him to a youth group event. He does remember his great-grandmother ‘making’ him go to church as a boy, though.<br><br>His passion is ‘to make things better, easier and quicker for people’. He likes ‘fixing stuff’.",
         "extra": "assistant",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -978,6 +1097,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Donna was born in Holly Hill, Florida and grew up in Port Hueneme, California. After high school, she continued her education earning an MBA.  Later she and her family relocated to Steilacoom, Washington in 2004.<br><br>She is married and has two handsome, adult sons and two very adorable dogs.<br><br>She accepted Jesus Christ around age 17. She came to Northwest Church in 2005 and has served in various ministries ever since. She is a gifted women’s Bible study teacher; guide to “Walk the Walk” ministry and a faithful servant to B.O.B.’s ministry.<br><br>Donna is passionate about putting ‘hands and feet’ to serving others. She loves and ‘lives’ the following quote from Einstein: “Only a life lived for others is a life worthwhile.”",
         "extra": "donna_herting",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -988,6 +1108,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Matt was born and raised in Jefferson City, Missouri.  His service in the U.S. Army brought him to DuPont, Washington in March 2003.<br><br>He is married and a father to two incredible adult children. He served in the military for 21 years and retired as a Lt. Col.  He has an MBA and currently works as a Network Solutions Manager.<br><br>Matt accepted Jesus Christ in August of 2000. He is passionate about ministering to hurting people in practical, tangible ways.  He has a deep desire to help young soldiers, see their marriages thrive and their families strengthened.",
         "extra": "matt_vanderfeltz",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -998,6 +1119,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Candace grew up in Washington and has been married to her husband, Marc, for almost 24 years. Together they have two adult children, Conner and Makenzie. She works as the office manager for her husband’s chiropractic clinic. Candace’s parents raised her to know and love Jesus, and she has carried on that tradition with her own family. She has been attending Northwest for 12 years and believes what makes it truly special are the people. They have become family to her and she relishes being able to see them every Sunday.",
         "extra": "candace_hines",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1008,6 +1130,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Trisha was born in Shakopee, Minnesota and relocated with her family to Tacoma, Washington in 1991. She is married, has one son, 3 dogs, and one cat!<br><br>She accepted Jesus at age 6 and has ‘literally’ been raised in church as both of her parents are pastors.<br><br>She has a Master’s Degree in Marriage & Family Therapy and currently works as a Children’s Behavioral Therapist.<br><br>Trisha is passionate about; ‘peanut butter and chocolate, Russian Blue cats, people, being a mom and playing with her son’.",
         "extra": "trish_merwin",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1018,6 +1141,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Born and raised in Puyallup, Washington, Bryan knows what to do and where to go for fun! He is married, has two children and is the ‘coolest’ grandpa to four delightful grandkids.<br><br> He has been a part of Northwest Church for the last 6 years. He met Jesus in Jr. High but really came to know Him fourteen years ago.  In addition to Jesus being his passion, he also loves working in the garden, cooking, and raising ‘other people’s kids’.  (That would be through foster care ministry.)",
         "extra": "bryan_melvard",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1028,6 +1152,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The Bible is God-inspired.<br>(<a href=\"http://www.biblegateway.com/passage/?search=2%20Timothy%203:16-17&amp;version=NIV\" target=\"_blank\">2 Timothy 3:16-17</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1038,6 +1163,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Man was created in the image of God, but that by voluntary disobedience he fell from perfection.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Romans%205:12&amp;version=NIV\" target=\"_blank\">Romans 5:12</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1048,6 +1174,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "We have no righteousness and must come to God pleading the righteousness of Christ.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Ephesians%202:8&amp;version=NIV\" target=\"_blank\">Ephesians 2:8</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1058,6 +1185,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "It is the will of God that we be sanctified daily, growing constantly in the faith.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Hebrews%206:1&amp;version=NIV\" target=\"_blank\">Hebrews 6:1</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1068,6 +1196,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The Baptism with the Holy Spirit is to endue the believer with power; and that His incoming is after the same manner as in Bible days.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Acts%202:4&amp;version=NIV\" target=\"_blank\">Acts 2:4</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1078,6 +1207,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The experience and daily walk of the believer should never lead him into extremes of fanaticism.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Philippians%204:5&amp;version=NIV\" target=\"_blank\">Philippians 4:5</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1088,6 +1218,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The second coming of Christ is personal and imminent.<br>(<a href=\"http://www.biblegateway.com/passage/?search=I%20Thessalonians%204:16-%2017&amp;version=NIV\" target=\"_blank\">I Thessalonians 4:16- 17</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1098,6 +1229,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Rulers should be upheld at all times except in things opposed to the will of God.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Romans%2013:1-5&amp;version=NIV\" target=\"_blank\">Romans 13:1-5</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1108,6 +1240,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Heaven is the glorious eternal home of born-again believers.<br>(<a href=\"http://www.biblegateway.com/passage/?search=John%2014:1-3&amp;version=NIV\" target=\"_blank\">John 14:1-3</a>; <a href=\"http://www.biblegateway.com/passage/?search=Revelation%207:15-17&amp;version=NIV\" target=\"_blank\">Revelation 7:15-17</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1118,6 +1251,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Soul winning is the most important responsibility of the Church.<br>(<a href=\"http://www.biblegateway.com/passage/?search=James%205:20&amp;version=NIV\" target=\"_blank\">James 5:20</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1128,6 +1262,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The method ordained of God for the support and spread of His cause is by giving of tithes and free-will offerings.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Malachi%203:10&amp;version=NIV\" target=\"_blank\">Malachi 3:10</a>;&nbsp;<a href=\"http://www.biblegateway.com/passage/?search=2%20Corinthians%209:7&amp;version=NIV\" target=\"_blank\"> 2 Corinthians 9:7</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1138,6 +1273,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "God is Triune: Father, Son and Holy Spirit.<br>(<a href=\"http://www.biblegateway.com/passage/?search=2%20Corinthians%2013:14&amp;version=NIV\" target=\"_blank\">2 Corinthians 13:14</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1148,6 +1284,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "While we were yet sinners Christ died for us, signing the pardon of all who believe on Him. <br>(<a href=\"http://www.biblegateway.com/passage/?search=John%203:16&amp;version=NIV\" target=\"_blank\">John 3:16</a>; <a href=\"http://www.biblegateway.com/passage/?search=Romans%205:8&amp;version=NIV\" target=\"_blank\">Romans 5:8</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1158,6 +1295,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Upon sincere repentance, and a whole-hearted acceptance of Christ, we are justified before God.<br>(<a href=\"http://www.biblegateway.com/passage/?search=I%20John%201:9&amp;version=NIV\" target=\"_blank\">I John 1:9</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1168,6 +1306,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Baptism by immersion is an outward sign of an inward work.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Mathew%2028:19&amp;version=NIV\" target=\"_blank\">Matt. 28:19</a>)<br>We believe in the commemoration of the Lord's Supper by the symbolic use of the bread and juice of the vine.<br>(<a href=\"http://www.biblegateway.com/passage/?search=I%20Corinthians%2011:24-25&amp;version=NIV\" target=\"_blank\">I Corinthians 11:24-25</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1178,6 +1317,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "It is the will of God that we walk in the Spirit daily.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Ephesians%204:30-32&amp;version=NIV\" target=\"_blank\">Ephesians 4:30-32</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1188,6 +1328,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "The Holy Spirit has gifts to bestow upon the Christian; and that we should show spiritual fruit as evidence of a Spirit-filled life.<br>(<a href=\"http://www.biblegateway.com/passage/?search=I%20Corinthians%2012:1-11&amp;version=NIV\" target=\"_blank\">I Corinthians 12:1-11</a>; <a href=\"http://www.biblegateway.com/passage/?search=Galatians%205:22&amp;version=NIV\" target=\"_blank\">Galatians 5:22</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1198,6 +1339,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Divine healing is the power of Christ to heal the physically sick in answer to the prayer of faith.<br>(<a href=\"http://www.biblegateway.com/passage/?search=James%205:14-16&amp;version=NIV\" target=\"_blank\">James 5:14-16</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1208,6 +1350,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "It is our sacred duty to identify ourselves with the visible Body of Christ.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Acts%2016:5&amp;version=NIV\" target=\"_blank\">Acts 16:5</a>; <a href=\"http://www.biblegateway.com/passage/?search=Hebrews%2010:25&amp;version=NIV\" target=\"_blank\">Hebrews 10:25</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1218,6 +1361,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "All shall stand some day before the judgment seat of God, and there receive eternal life or death.<br>(<a href=\"http://www.biblegateway.com/passage/?search=2%20Corinthians%205:10&amp;version=NIV\" target=\"_blank\">2 Corinthians 5:10</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1228,6 +1372,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Hell is the place of eternal torment for all who reject Christ as the Savior.<br>(<a href=\"http://www.biblegateway.com/passage/?search=Revelation%2020:10-15&amp;version=NIV\" target=\"_blank\">Revelation 20:10 -15</a>)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1238,6 +1383,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<b>Welcome to the Northwest Community Church website!</b><br><br>We invite you to attend our church on Sundays at 10am where you will enjoy the warmth of new friendships and experience the wonderful presence of God! Please fill out our online <a href='connect'><u>Connection Card</u></a> and let us know if we can answer any questions, or pray for any special needs you might have. <br><br>We believe that whether you are:<ul style='list-style-type: none;'><li>a new seeker looking for God...</li><li>or have known God, but now feel distant...</li><li>or you have been a faithful follower...</li><li>He will meet you right where you are at.</li></ul><br>The heart of our church is to 	love boldly	.... All races, all ages, all backgrounds. You matter to us.<br><br>We hope you come visit us soon and consider making Northwest your new home!<br><br><a href='connect'><u>Click here to fill out a Connection Card!</u></a>",
         "extra": "im_new",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1248,6 +1394,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<h3>Please meet the team leaders who work hard to make your time at Northwest Church delicious, inviting and efficient:<h3>",
         "extra": "first_impressions",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1258,6 +1405,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Usher",
         "extra": "first_impressions",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1268,6 +1416,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Greeter",
         "extra": "first_impressions",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1278,6 +1427,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Schedule Coordinator",
         "extra": "first_impressions",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1288,6 +1438,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Hospitality",
         "extra": "first_impressions",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1298,6 +1449,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Northwest Community Church is a Foursquare Church. The Foursquare Church meets in living rooms, stadiums and everywhere in between.We spread God's love from Alabama to Zimbabwe, introducing the world to Jesus Christ:the Savior, Baptizer, Healer and Soon-Coming King.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1308,6 +1460,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<em>The meaning behind it</em><br><br>\"Foursquare\" is a Biblical term used of the tabernacle in the Book of Exodus, of the Temple of the Lord in Ezekiel 40:47, and of Heaven, as described in the book of the Revelation",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1318,6 +1471,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1328,6 +1482,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "\"But He was wounded for our transgressions, He was bruised for our iniquities; the chastisement for our peace was upon Him...\" –Isaiah 53:5 (Titus 2:14, Isaiah 55:7, Hebrews 7:25, Isaiah 1:18)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1338,6 +1493,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "\"For John truly baptized with water, but you shall be baptized with the Holy Spirit... you shall receive power when the Holy Spirit has come upon you; and you shall be witnesses to Me in Jerusalem, and in all Judea and Samaria, and to the ends of the earth.\" –Acts 1:5,8 (John 14:16-17, Acts 2:4, Acts 8:17, Acts 10:44-46, 1 Corinthians 3:16)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1348,6 +1504,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "\"He Himself took our infirmities and bore our sicknesses...\" –Matthew 8:17 (Mark 16:17-18, Matthew 9:5-6, Acts 4:29-30)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "about",
@@ -1358,6 +1515,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "\"For the Lord Himself will descend from heaven with a shout... the dead in Christ will rise first. Then we who are alive and remain shall be caught up together with them in the clouds to meet the Lord in the air. And thus we shall always be with the Lord.\" –1 Thessalonians 4:16-17 (Titus 2:12-13, Matthew 24:36-44, Hebrews 9:28, Luke 19:13, Luke 12:35-37)",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "giving",
@@ -1368,6 +1526,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "giving",
@@ -1378,6 +1537,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "giving",
+        "date": "Jan 1 2000",
     },
     {
         "page": "giving",
@@ -1388,6 +1548,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Thank you for being part of the miracle of Northwest Church.  Your faithful giving allows us to reach people for Jesus Christ.  As you financially support this ministry, you help us reach the NextGen youth; equip single adults; strengthen marriages; assist people through grief; and train and equip people to share their Jesus story more effectively... and that's just the beginning.  Your giving makes it happen!<br><br> Thank-you for your obedience to God’s Word by the giving of your tithe and your sacrificially offerings.<br><br>‘Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver.’ 2 Cor. 9:7<br><br><a href=\"https://www.easytithe.com/dl/?uid=nort1040208\" target='_blank'><b>Click Here to Give Online</b></a>",
         "extra": "giving",
+        "date": "Jan 1 2000",
     },
     {
         "page": "giving",
@@ -1398,6 +1559,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "giving",
+        "date": "Jan 1 2000",
     },
     {
         "page": "giving",
@@ -1408,6 +1570,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<h2>Please check out the following partnerships Northwest Church has with Fred Meyer Store and Amazon Smile.</h2>",
         "extra": "giving",
+        "date": "Jan 1 2000",
     },
     {
         "page": "giving",
@@ -1418,6 +1581,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<center><strong><u>YOU CAN HELP</u><br>NORTHWEST COMMUNITY CHURCH<br>EARN DONATIONS JUST BY SHOPPING WITH YOUR FRED MEYER REWARDS CARD!</strong></Center><br><br>Fred Meyer is donating $2.5 million per year to non-profits in Alaska, Idaho, Oregon and Washington, based on where their customers tell them to give. Here’s how the program works:<br><br><ul><li>Sign up for the Community Rewards program by linking your Fred Meyer Rewards Card to Northwest Community Church at<a href='http://www.fredmeyer.com/communityrewards' target='_blank'> www.fredmeyer.com/communityrewards.</a> You can search for us by our name or by our non-profit number <strong><u>94619</u></strong>. Then, every time&nbsp;you shop and use your Rewards Card, you are helping Northwest Community Church earn a donation!</li><li>You still earn your Rewards Points, Fuel Points, and Rebates, just as you do today.</li><li>If you do not have a Rewards Card, they are available at the Customer Service desk of any Fred Meyer store.</li></ul><br>For more information, please visit <a href='http://www.fredmeyer.com/communityrewards' target='_blank'>www.fredmeyer.com/communityrewards.</a>",
         "extra": "giving",
+        "date": "Jan 1 2000",
     },
     {
         "page": "giving",
@@ -1428,6 +1592,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<center>When you shop at Amazon Smile, Amazon will donate 0.5% of your qualifying purchases! Link your Amazon account to <strong><u>Steilacoom Foursquare Church in Lakewood!</u></strong></center>",
         "extra": "giving",
+        "date": "Jan 1 2000",
     },
     {
         "page": "events",
@@ -1438,6 +1603,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "events",
@@ -1448,6 +1614,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "events",
+        "date": "Jan 1 2000",
     },
     {
         "page": "events",
@@ -1458,16 +1625,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<a href='https://www.google.com/calendar/embed?title=NWCC%20Life&height=600&wkst=1&bgcolor=%23FFFFFF&src=bob97ghmfr9fpm7iqpv6t0fl1c%40group.calendar.google.com&color=%23856508&ctz=America%2FLos_Angeles' target='_blank'>Click here for our Google Calendar</a>",
         "extra": "events",
-    },
-    {
-        "page": "events",
-        "category": "special_events",
-        "subcategory": "Events",
-        "title": "Outside Service<br>& Baptisms",
-        "img": "event_icon.png",
-        "imgsrc": "",
-        "markdown": "",
-        "extra": "Aug<br>19",
+        "date": "Jan 1 2000",
     },
     {
         "page": "events",
@@ -1478,6 +1636,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "Sep<br>9",
+        "date": "Sep 9 2018",
     },
     {
         "page": "events",
@@ -1488,6 +1647,7 @@ ENTRIES = [
         "imgsrc": "https://drive.google.com/open?id=18shtnIOVBBGCVHGRyEiR_IaciuGNA7Jd",
         "markdown": "",
         "extra": "Oct<br>5-6",
+        "date": "Oct 5 2018",
     },
     {
         "page": "events",
@@ -1498,6 +1658,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "Oct<br>7",
+        "date": "Oct 7 2018",
     },
     {
         "page": "events",
@@ -1508,6 +1669,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "Nov<br>18",
+        "date": "Nov 18 2018",
     },
     {
         "page": "events",
@@ -1518,6 +1680,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "Dec<br>16",
+        "date": "Dec 16 2018",
     },
     {
         "page": "events",
@@ -1528,6 +1691,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "Dec<br>24",
+        "date": "Dec 24 2018",
     },
     {
         "page": "ministries",
@@ -1538,6 +1702,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "EVERY WEDNESDAY STARTING AT 4:00PM<br>PLEASE CONTACT THE CHURCH OFFICE AT<br>(253) 926-2528 WITH QUESTIONS",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1548,6 +1713,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "It’s all about ‘going deeper’ in relationship with Jesus Christ.  A morning and evening Bible Study is offered for women from September through June.  It’s an awesome interactive time where great friendships are formed and life changing insights from the Word of God are experienced.<br><br>Additional opportunities for connecting and growing are experienced throughout the year through retreats, teas, and fun activities.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1558,6 +1724,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "This Fall a NEW men’s Bible study will begin giving an opportunity for building friendships and gaining new Biblical principles to bring exciting and needed to change to your life.<br><br>It’s an awesome interactive time where great friendships are formed and life changing insights from the Word of God are experienced.<br><br>Additional opportunities for connecting and growing are experienced throughout the year through retreats, breakfasts and fun activities.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1568,6 +1735,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Going Deeper is a weekly Bible study which meets in the conference room each Wednesday morning from 11:00 to 12:30.  This is an interactive study which allows for each person to share comments and ask questions.  The lessons are designed to carefully and prayerfully consider each verse or verses to find the meaning and how it might apply to our personal lives.  We often cross reference with like verses or passages of scripture to look for a deeper meaning.<br><br>This is a friendly welcoming time in which friends can openly share concerns, questions, prayer request and victories.  It is a time to look deep into God’s Word and find resources to help us Go Deeper in our Christian lives.  A place where we can feel safe, loved and supported in our walk with each other and with our Lord.<br><br>There is always a warm welcome a hot cup of coffee and more often than not a plate of freshly baked cookies.<br><br><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Paul Robertson</span>, Chaplain</td></tr><tr><th>Phone:</th><td>(253) 381-3464</td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>&nbsp;</td><td>Lakewood, WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood+WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table>",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1578,6 +1746,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Here at Northwest Church, personal spiritual growth and connection with other Christ-followers is a high priority.  Life Groups are groups from 4 to 20 that meet once a week or bi-weekly in homes and experience friendship over dessert or a meal and look deeper into the truths from the Bible together in a discussion format.  Praying for one another in the day to day situations of life, is a vital part of this time together as well.<br><br>Check out the current Life Groups below, visit a couple, and see what fits!<br><br>Welcome to the family!",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1588,6 +1757,7 @@ ENTRIES = [
         "imgsrc": "dupontgroupslide.png",
         "markdown": "Single, married, young or old...you are invited to join us as we walk out life together.  Enjoy coffee and a delicious dessert and a periodic potluck here and there.  The atmosphere is informal and very interactive.  If you are looking for meaningful fun...this is it!<br><br><b>Matt VanderFeltz, DuPont Life Group Co-Leader<br>Phone:</b> (253) 905-3706",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1598,6 +1768,7 @@ ENTRIES = [
         "imgsrc": "southillslide.png",
         "markdown": "Friendship, food and interactive Bible study is a recipe for success!  Wherever you are at in your walk with God, you will fit in here.  No judging, no gossiping, no pretense...this group is REAL. Come check us out and let’s grow in Christ together.<br><br>We meet at the Melvard Home on the 1st and 3rd Sundays of the month 5:00 to 7:00 p.m. Child care will be provided!! Please bring a dish to share.<br><br><table><tbody><tr><td style=\"padding-right:20px;\"><div><a href=\"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=5908+124th+St.+Ct.+E.+,+Puyallyp,+WA+98373&amp;z=16\" target=\"_blank\"><img src=\"https://maps.googleapis.com/maps/api/staticmap?center=5908 124th St. Ct. E. ,Puyallyp,WA&amp;zoom=12&amp;size=300x180&amp;markers=color:blue|5908 124th St. Ct. E. ,Puyallyp,WA&amp;maptype=roadmap&amp;sensor=true&amp;key=AIzaSyAWz4naVapxCeD9t8gsPg9B62d8YtGV8fs\"></a></div></td></table><br><br><table><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Bryan and Dana Melvard</span>, Summit/South Hill Life Group Host</td></tr><tr><th>Phone:</th><td>(253) 334-5723</td></tr><tr><th>Address:</th><td>5908 124th St. Ct. E. </td></tr><tr><td>&nbsp;</td><td>Puyallyp, WA 98373</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=5908+124th+St.+Ct.+E.+++Puyallyp+WA+98373\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table></td></tr></tbody></table><br><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Ken and Cindy Cnossen</span>, Summit/South Hill Life Group Leaders</td></tr><tr><th>&emsp;Email:</th><td><a href=\"mailto:Cindy_Cnossen@yahoo.com &amp; ken_cnossen@yahoo.com\">&emsp;Cindy_Cnossen@yahoo.com &amp; ken_cnossen@yahoo.com</a></td></tr><tr><th>&emsp;Phone:</th><td>&emsp;(253) 297-1618</td></tr></tbody></table>",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1608,6 +1779,7 @@ ENTRIES = [
         "imgsrc": "tacomagroupslide.png",
         "markdown": "<h2>Please call Mike @<br>(253)318-0015 for the address.</h2><br><br>The 2017 Vision of the North Tacoma Life Group is to grow in our understanding of biblical truths and to share those truths with people we come in contact with in our daily routines. With solid biblical principles and an open mind, we provide a place to listen to what others have to say, engage others as they search out these truths and come to the knowledge of who Jesus is in their lives.<br><br>Mike and Sally Bryan",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1618,6 +1790,7 @@ ENTRIES = [
         "imgsrc": "matt_trish.jpg",
         "markdown": "Our deepest desire is to develop relationships of trust no matter where a person's walk in life stands, ultimately uniting everyone as a family in Christ.  Northwest Community Church will help build a foundation that fosters Christ-centered daily living and equips service members and their families with a purpose-filled life following Jesus.  We also strive to surround our families of deployed soldiers by praying for and serving them while their husbands or wives are away.<br><br>As our service members and families prepare for deployments, move to new duty stations, and/or separate from the service, it's our heartfelt commitment to walk shoulder to shoulder with them during these challenging times.  Ultimately, we want to send service members and families off fully prepared to live for His glory, encouraging our soldiers to be warriors for Christ.<br><br>If you (or friends and family) are in the military and would be interested in attending our events or seeking support because of difficult times please contact Matt and Trish VanderFeltz at <a href=\"mailto:mtvanderfeltz@comcast.net;\">mtvanderfeltz@comcast.net</a>",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1628,6 +1801,7 @@ ENTRIES = [
         "imgsrc": "trish_v.jpg",
         "markdown": "Please join us on the 2nd and 4th Wednesdays of the month from 6:30-8:00 PM in the Church Office studying the book \"Stronger\" written by Angela Thomas.<br><br>When we meet we discuss topics related to military wives as a mother and a spouse. Please feel free to invite a friend.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1638,6 +1812,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "We enjoy getting together for BBQs.  Military families and veterans within our church family extend personal invites, which opens the opportunity to meet new families. Activities for the whole family.",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1648,6 +1823,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "Come and enjoy an interactive “GOING DEEPER” adult class on Sunday mornings from 9AM to 10AM.<br><br>We have gifted, knowledgeable teachers that address diverse topics for 4 to 8 weeks.<br><br>Here are just a few of the recent class titles:<ul><li>I Don’t Have Enough Faith to Be an Atheist</li><li>Love Boldly 101</li><li>Sitting at the Rabbi’s Feet</li><li>Ephesians Comes to Life</li></ul>",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1658,6 +1834,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "<h2>Every 2nd and 4th Tuesday at 7:00 PM at the Hope Center<br><br>Great games, tasty snacks, cool friends, and AWESOME STUDY!</h2><hr><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Waid and Brittnae Hoyt</span>, Youth Directors</td></tr><tr><th>Phone:</th><td>253-222-9594</td></tr><tr><th>Website:</th><td><a href=\"https://www.facebook.com/groups/nwccyouth/\" target=\"_blank\">facebook.com/groups/nwccyouth</a></td></tr><tr><th>Address:</th><td>10402 Kline St SW</td></tr><tr><td>&nbsp;</td><td>Lakewood, WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+St+SW++Lakewood+WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table>",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "ministries",
@@ -1668,6 +1845,7 @@ ENTRIES = [
         "imgsrc": "russel.jpg",
         "markdown": "B.O.B.S. is an acronym for ‘<b>B</b>and <b>O</b>f <b>B</b>rothers and <b>S</b>isters’ and Russell Ivy is our leader.  This ministry assists elderly, those with physical challenges, and shut-ins with small, practical jobs – ie: sweeping a roof; moving a wood pile, fixing a broken window, changing oil on a car etc.<br><br>Please contact the Church Office at (253) 926-2528 or<br> Russell Ivy at (253) 370-6398",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -1678,6 +1856,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -1688,6 +1867,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "At Northwest Community Church we choose to create an exciting and interactive enviroment for children so the Word can come alive! We use Explore the Bible curriculum, that is designed to teach your children all about each book of the Bible in a fun and exciting way!<br><br><h2>Vision for Children:</h2><ul><li>that they will know Christ</li><li>understand His Word</li><li>grow in their own spiritual walk</li><li>be able to share the love of Christ with others</li></ul><h2>Mission:</h2><ul><li>to meet children at their level of development</li><li>to teach them the love of Christ and the joy of His forgiveness and salvation</li><li>to help them learn the truth of His Word</li><li>to encourage their growth within the body of Believers</li></ul>",
         "extra": "childrens_director",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -1698,6 +1878,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "trish_merwin",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -1708,6 +1889,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "cheri_merwin",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -1718,6 +1900,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "dr_marc",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -1728,6 +1911,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "candace_hines",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -1738,6 +1922,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "noel_herman",
+        "date": "Jan 1 2000",
     },
     {
         "page": "children",
@@ -1748,5 +1933,6 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "llama",
+        "date": "Jan 1 2000",
     },
 ]

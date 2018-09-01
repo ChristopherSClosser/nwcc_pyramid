@@ -17,6 +17,7 @@ from ..models import (
     )
 from ..models import MyModel
 from ..data.entries import ENTRIES
+from datetime import datetime
 
 
 def usage(argv):
@@ -53,6 +54,7 @@ def main(argv=sys.argv):
                 imgsrc=entry['imgsrc'],
                 markdown=entry['markdown'],
                 extra=entry['extra'],
+                date=datetime.strptime(entry['date'], '%b %d %Y'),
             )
             many_entries.append(new_entry)
         dbsession.add_all(many_entries)

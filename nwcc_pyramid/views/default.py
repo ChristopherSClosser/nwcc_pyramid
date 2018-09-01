@@ -8,6 +8,7 @@ from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid_mailer.message import Message
 from ..models import MyModel
 from ..security import is_authenticated
+from datetime import datetime
 
 
 @notfound_view_config(renderer='../templates/404.jinja2')
@@ -734,7 +735,9 @@ def events_view(request):
     except KeyError:
         auth_tools = []
     query = request.dbsession.query(MyModel)
-    content = query.filter(MyModel.page == 'events').all()
+    content = query.filter(
+        MyModel.page == 'events'
+    ).order_by(MyModel.date.asc())
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     main = [item for item in content if item.category == 'events']
     topimg = [item for item in content if item.category == 'topimg']
@@ -793,6 +796,7 @@ def create_view(request):
             imgsrc=request.POST['imgsrc'],
             markdown=request.POST['markdown'],
             extra=request.POST['extra'],
+            date=datetime.strptime(request.POST['date'], '%b %d %Y'),
         )
         request.dbsession.add(entry)
         return HTTPFound()
@@ -823,6 +827,7 @@ def delete_view(request):
         'imgsrc': entry.imgsrc,
         'markdown': entry.markdown,
         'extra': entry.extra,
+        'date': entry.date,
     }
     return {'main_menu': main_menu, 'entry': form_fill}
 
@@ -849,6 +854,7 @@ def update_view(request):
         entry.imgsrc = request.POST['imgsrc']
         entry.markdown = request.POST['markdown']
         entry.extra = request.POST['extra']
+        entry.date = request.POST['date']
 
         request.dbsession.flush()
         return HTTPFound()
@@ -862,6 +868,7 @@ def update_view(request):
         'imgsrc': entry.imgsrc,
         'markdown': entry.markdown,
         'extra': entry.extra,
+        'date': entry.date,
     }
     return {'main_menu': main_menu, 'entry': form_fill}
 
@@ -882,6 +889,7 @@ def api_view(request):
                 'imgsrc': entry.imgsrc,
                 'markdown': entry.markdown,
                 'extra': entry.extra,
+                'date': entry.date.isoformat(),
             }
             for entry in entries
         ]

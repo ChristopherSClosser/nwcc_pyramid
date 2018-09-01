@@ -4,8 +4,8 @@ from sqlalchemy import (
     Column,
     Integer,
     Text,
+    Date
 )
-
 from .meta import Base
 
 
@@ -22,6 +22,7 @@ class MyModel(Base):
     imgsrc = Column(Text)
     markdown = Column(Text)
     extra = Column(Text)
+    date = Column(Date)
 
 
 # Index('my_index', MyModel.name, unique=True, mysql_length=255)
