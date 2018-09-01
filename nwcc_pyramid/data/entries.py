@@ -1486,8 +1486,9 @@ ENTRIES = [
         "title": "Back to School Chopped",
         "img": "event_icon.png",
         "imgsrc": "",
-        "markdown": "Sep 9 2018",
+        "markdown": "",
         "extra": "Sep<br>9",
+        "date": "Sep 9 2018",
     },
     {
         "page": "events",
@@ -1496,8 +1497,9 @@ ENTRIES = [
         "title": "Unplug & Re-charge<br>Fall Womens Retreat",
         "img": "event_icon.png",
         "imgsrc": "https://drive.google.com/open?id=18shtnIOVBBGCVHGRyEiR_IaciuGNA7Jd",
-        "markdown": "Oct 5 2018",
+        "markdown": "",
         "extra": "Oct<br>5-6",
+        "date": "Oct 5 2018",
     },
     {
         "page": "events",
@@ -1506,8 +1508,9 @@ ENTRIES = [
         "title": "Caramel Apple Sunday",
         "img": "event_icon.png",
         "imgsrc": "",
-        "markdown": "Oct 7 2018",
+        "markdown": "",
         "extra": "Oct<br>7",
+        "date": "Oct 7 2018",
     },
     {
         "page": "events",
@@ -1518,6 +1521,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "Nov<br>18",
+        "date": "Nov 18 2018",
     },
     {
         "page": "events",
@@ -1528,6 +1532,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "Dec<br>16",
+        "date": "Dec 16 2018",
     },
     {
         "page": "events",
@@ -1538,6 +1543,7 @@ ENTRIES = [
         "imgsrc": "",
         "markdown": "",
         "extra": "Dec<br>24",
+        "date": "Dec 24 2018",
     },
     {
         "page": "ministries",

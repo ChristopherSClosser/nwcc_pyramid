@@ -8,6 +8,7 @@ from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid_mailer.message import Message
 from ..models import MyModel
 from ..security import is_authenticated
+# from datetime import datetime
 
 
 @notfound_view_config(renderer='../templates/404.jinja2')
@@ -734,7 +735,9 @@ def events_view(request):
     except KeyError:
         auth_tools = []
     query = request.dbsession.query(MyModel)
-    content = query.filter(MyModel.page == 'events').all()
+    content = query.filter(
+        MyModel.page == 'events'
+    ).order_by(MyModel.date.asc())
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     main = [item for item in content if item.category == 'events']
     topimg = [item for item in content if item.category == 'topimg']
