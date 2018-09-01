@@ -796,6 +796,7 @@ def create_view(request):
             imgsrc=request.POST['imgsrc'],
             markdown=request.POST['markdown'],
             extra=request.POST['extra'],
+            date=request.POST['date'],
         )
         request.dbsession.add(entry)
         return HTTPFound()
@@ -826,6 +827,7 @@ def delete_view(request):
         'imgsrc': entry.imgsrc,
         'markdown': entry.markdown,
         'extra': entry.extra,
+        'date': entry.date,
     }
     return {'main_menu': main_menu, 'entry': form_fill}
 
@@ -852,6 +854,7 @@ def update_view(request):
         entry.imgsrc = request.POST['imgsrc']
         entry.markdown = request.POST['markdown']
         entry.extra = request.POST['extra']
+        entry.date = request.POST['date']
 
         request.dbsession.flush()
         return HTTPFound()
@@ -865,6 +868,7 @@ def update_view(request):
         'imgsrc': entry.imgsrc,
         'markdown': entry.markdown,
         'extra': entry.extra,
+        'date': entry.date,
     }
     return {'main_menu': main_menu, 'entry': form_fill}
 
@@ -885,6 +889,7 @@ def api_view(request):
                 'imgsrc': entry.imgsrc,
                 'markdown': entry.markdown,
                 'extra': entry.extra,
+                'date': entry.date.isoformat(),
             }
             for entry in entries
         ]
