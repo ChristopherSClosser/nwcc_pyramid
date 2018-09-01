@@ -6,7 +6,6 @@ from sqlalchemy import (
     Text,
     Date
 )
-
 from .meta import Base
 
 
