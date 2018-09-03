@@ -741,7 +741,8 @@ def events_view(request):
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     main = [item for item in content if item.category == 'events']
     topimg = [item for item in content if item.category == 'topimg']
-    events = [item for item in content if item.category == 'special_events']
+    current = [item for item in content if item.category == 'special_events']
+    events = [item for item in current if item.date > datetime.now().date()]
     return {
         'auth': auth,
         'main_menu': main_menu,
