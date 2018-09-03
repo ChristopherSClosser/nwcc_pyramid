@@ -1,6 +1,7 @@
 """NWCC Views."""
 
 import os
+from datetime import datetime
 from pyramid.security import remember, forget
 from pyramid.view import view_config, forbidden_view_config
 from pyramid.view import notfound_view_config
@@ -8,7 +9,6 @@ from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid_mailer.message import Message
 from ..models import MyModel
 from ..security import is_authenticated
-from datetime import datetime
 
 
 @notfound_view_config(renderer='../templates/404.jinja2')
