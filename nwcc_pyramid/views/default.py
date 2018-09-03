@@ -882,6 +882,7 @@ def api_view(request):
     return {
         'entries': [
             {
+                'id': entry.id,
                 'page': entry.page,
                 'category': entry.category,
                 'subcategory': entry.subcategory,
