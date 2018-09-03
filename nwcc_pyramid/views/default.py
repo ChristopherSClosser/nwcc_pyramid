@@ -1,6 +1,7 @@
 """NWCC Views."""
 
 import os
+from datetime import datetime
 from pyramid.security import remember, forget
 from pyramid.view import view_config, forbidden_view_config
 from pyramid.view import notfound_view_config
@@ -8,7 +9,6 @@ from pyramid.httpexceptions import HTTPNotFound, HTTPFound
 from pyramid_mailer.message import Message
 from ..models import MyModel
 from ..security import is_authenticated
-from datetime import datetime
 
 
 @notfound_view_config(renderer='../templates/404.jinja2')
@@ -741,7 +741,8 @@ def events_view(request):
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     main = [item for item in content if item.category == 'events']
     topimg = [item for item in content if item.category == 'topimg']
-    events = [item for item in content if item.category == 'special_events']
+    current = [item for item in content if item.category == 'special_events']
+    events = [item for item in current if item.date > datetime.now().date()]
     return {
         'auth': auth,
         'main_menu': main_menu,
@@ -854,7 +855,7 @@ def update_view(request):
         entry.imgsrc = request.POST['imgsrc']
         entry.markdown = request.POST['markdown']
         entry.extra = request.POST['extra']
-        entry.date = request.POST['date']
+        entry.date = datetime.strptime(request.POST['date'], '%b %d %Y'),
 
         request.dbsession.flush()
         return HTTPFound()
@@ -881,6 +882,7 @@ def api_view(request):
     return {
         'entries': [
             {
+                'id': entry.id,
                 'page': entry.page,
                 'category': entry.category,
                 'subcategory': entry.subcategory,

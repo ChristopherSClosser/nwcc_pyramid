@@ -1,3 +1,5 @@
+"""Init database."""
+
 import os
 import sys
 import transaction
