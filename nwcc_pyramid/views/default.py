@@ -854,7 +854,7 @@ def update_view(request):
         entry.imgsrc = request.POST['imgsrc']
         entry.markdown = request.POST['markdown']
         entry.extra = request.POST['extra']
-        entry.date = request.POST['date']
+        entry.date = datetime.strptime(request.POST['date'], '%b %d %Y'),
 
         request.dbsession.flush()
         return HTTPFound()
