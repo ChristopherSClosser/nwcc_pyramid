@@ -742,7 +742,7 @@ def events_view(request):
     main = [item for item in content if item.category == 'events']
     topimg = [item for item in content if item.category == 'topimg']
     current = [item for item in content if item.category == 'special_events']
-    events = [item for item in current if item.date >= datetime.now().date()]
+    events = [item for item in current if item.date > datetime.now().date()]
     return {
         'auth': auth,
         'main_menu': main_menu,
@@ -797,7 +797,7 @@ def create_view(request):
             imgsrc=request.POST['imgsrc'],
             markdown=request.POST['markdown'],
             extra=request.POST['extra'],
-            date=datetime(request.POST['date']),
+            date=datetime.strptime(request.POST['date'], '%b %d %Y'),
         )
         request.dbsession.add(entry)
         return HTTPFound()
@@ -855,7 +855,7 @@ def update_view(request):
         entry.imgsrc = request.POST['imgsrc']
         entry.markdown = request.POST['markdown']
         entry.extra = request.POST['extra']
-        entry.date = datetime(request.POST['date']),
+        entry.date = datetime.strptime(request.POST['date'], '%b %d %Y'),
 
         request.dbsession.flush()
         return HTTPFound()
@@ -869,7 +869,7 @@ def update_view(request):
         'imgsrc': entry.imgsrc,
         'markdown': entry.markdown,
         'extra': entry.extra,
-        'date': entry.date,
+        'date': datetime.strptime(entry.date, '%b %d %Y'),
     }
     return {'main_menu': main_menu, 'entry': form_fill}
 
@@ -891,7 +891,7 @@ def api_view(request):
                 'imgsrc': entry.imgsrc,
                 'markdown': entry.markdown,
                 'extra': entry.extra,
-                'date': entry.date.isoformat(),
+                'date': datetime.strptime(entry.date, '%b %d %Y'),
             }
             for entry in entries
         ]
