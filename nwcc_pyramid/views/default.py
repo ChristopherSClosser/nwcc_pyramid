@@ -797,7 +797,7 @@ def create_view(request):
             imgsrc=request.POST['imgsrc'],
             markdown=request.POST['markdown'],
             extra=request.POST['extra'],
-            date=datetime.strptime(request.POST['date'], '%b %d %Y'),
+            date=datetime.datetime(request.POST['date']),
         )
         request.dbsession.add(entry)
         return HTTPFound()
@@ -855,7 +855,7 @@ def update_view(request):
         entry.imgsrc = request.POST['imgsrc']
         entry.markdown = request.POST['markdown']
         entry.extra = request.POST['extra']
-        entry.date = datetime.strptime(request.POST['date'], '%b %d %Y'),
+        entry.date = datetime.datetime(request.POST['date']),
 
         request.dbsession.flush()
         return HTTPFound()
