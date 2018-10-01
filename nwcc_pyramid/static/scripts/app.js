@@ -68,7 +68,7 @@ $(function(){
 
   $('.dropdown-content').hide();
 
-  $('.burger').on('touchstart click', function(){
+  $('.burger').on('click', function(){
     if ($('nav').is(':hidden')){
       $('#main-nav').slideDown('fast');
     } else {
@@ -90,7 +90,7 @@ $(function(){
   });
 
   // displays dropdown list on click for mobile
-  $('.dropdown').on('touchstart click', function(){
+  $('.dropdown').on('click', function(){
     if ($('.dropdown-content').is(':hidden')){
       // $('#project-list').animate({width: 'toggle'},350);
       $('.dropdown-content').slideDown();
@@ -100,7 +100,7 @@ $(function(){
   });
 
   // displays project list on click for mobile
-  $('.dropdown2').on('touchstart click', function(){
+  $('.dropdown2').on('click', function(){
     if ($('.dropdown-content2').is(':hidden')){
       // $('#project-list').animate({width: 'toggle'},350);
       $('.dropdown-content2').slideDown();
