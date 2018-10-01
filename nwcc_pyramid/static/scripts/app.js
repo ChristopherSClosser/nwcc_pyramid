@@ -2,8 +2,8 @@
 
 $(function(){
   // Keep track of last scroll
-  var lastScroll = 0;
-  var userScrolled = false;
+  let lastScroll = 0;
+  let userScrolled = false;
 
   $(window).scroll(function(event){
     userScrolled = true;
@@ -12,7 +12,7 @@ $(function(){
     if (userScrolled) {
 
       // Sets the current scroll position
-      var st = $(this).scrollTop();
+      let st = $(this).scrollTop();
       // Determines up-or-down scrolling
       if (st > lastScroll){
         // function call for downward-scrolling
