@@ -869,7 +869,7 @@ def update_view(request):
         'imgsrc': entry.imgsrc,
         'markdown': entry.markdown,
         'extra': entry.extra,
-        'date': datetime.strptime(entry.date, '%b %d %Y'),
+        'date': entry.date.strftime('%b %d %Y'),
     }
     return {'main_menu': main_menu, 'entry': form_fill}
 
@@ -891,7 +891,7 @@ def api_view(request):
                 'imgsrc': entry.imgsrc,
                 'markdown': entry.markdown,
                 'extra': entry.extra,
-                'date': datetime.strptime(entry.date, '%b %d %Y'),
+                'date': entry.date.strftime('%b %d %Y'),
             }
             for entry in entries
         ]
