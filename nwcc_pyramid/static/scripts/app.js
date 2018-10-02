@@ -69,10 +69,10 @@ $(function(){
   $('.dropdown-content').hide();
 
   $('.burger').on('click', function(){
-    if ($('nav').is(':hidden')){
-      $('#main-nav').slideDown('fast');
-    } else {
+    if ($('nav').is(':visible')){
       $('#main-nav').slideUp('fast');
+    } else {
+      $('#main-nav').slideDown('fast');
     }
   });
 
