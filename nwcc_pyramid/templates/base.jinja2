@@ -110,7 +110,7 @@
               src="{{request.static_url('nwcc_pyramid:static/images/twitter.png')}}"
               alt="Northwest Community Church - Twitter">
           </a>
-          <a href="https://itunes.apple.com/us/podcast/northwest-community-church-sermon-podcast/id993016445?mt=2" target="_blank">
+          <a href="{{request.route_url('message')}}">
 
             <img id="outer"
               src="{{request.static_url('nwcc_pyramid:static/images/iTunes.png')}}"
@@ -149,6 +149,9 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js" integrity="sha384-aBL3Lzi6c9LNDGvpHkZrrm3ZVsIwohDD7CDozL0pk8FwCrfmV7H9w8j3L7ikEv6h" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script src="{{request.static_url('nwcc_pyramid:static/scripts/app.js')}}"></script>
 </html>

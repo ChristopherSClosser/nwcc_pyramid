@@ -742,7 +742,7 @@ def events_view(request):
     main = [item for item in content if item.category == 'events']
     topimg = [item for item in content if item.category == 'topimg']
     current = [item for item in content if item.category == 'special_events']
-    events = [item for item in current if item.date >= datetime.now().date()]
+    events = [item for item in current if item.date > datetime.now().date()]
     return {
         'auth': auth,
         'main_menu': main_menu,
@@ -869,7 +869,7 @@ def update_view(request):
         'imgsrc': entry.imgsrc,
         'markdown': entry.markdown,
         'extra': entry.extra,
-        'date': entry.date,
+        'date': entry.date.strftime('%b %d %Y'),
     }
     return {'main_menu': main_menu, 'entry': form_fill}
 
@@ -891,7 +891,7 @@ def api_view(request):
                 'imgsrc': entry.imgsrc,
                 'markdown': entry.markdown,
                 'extra': entry.extra,
-                'date': entry.date.isoformat(),
+                'date': entry.date.strftime('%b %d %Y'),
             }
             for entry in entries
         ]
