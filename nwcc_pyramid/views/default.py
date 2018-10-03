@@ -347,7 +347,7 @@ def message_view(request):
         'content': content,
         'title': title[0],
         'quad_info': quad_info,
-        'main': main[:8],
+        'main': main[:12],
         'steps': steps,
         'auth_tools': auth_tools,
     }
