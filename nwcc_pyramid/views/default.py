@@ -207,7 +207,9 @@ def life_groups_view(request):
     except KeyError:
         pass
     query = request.dbsession.query(MyModel)
-    content = query.filter(MyModel.page == 'ministries').all()
+    content = query.filter(
+        MyModel.page == 'ministries'
+    ).order_by(MyModel.id.asc())
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     submenu = [item for item in content if item.title == 'menu_place_holder']
     topimg = [item for item in content if item.category == 'topimg']
