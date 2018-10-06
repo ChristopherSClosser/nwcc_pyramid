@@ -45,7 +45,7 @@
       {% if auth %}
         <center>
         <div class="loggedin">
-          You Are Logged in as Administrator | <a href="{{request.route_url('new')}}">ADD A NEW RECORD</a>
+          You Are Logged in as Administrator | <a href="{{request.route_url('new')}}">ADD A NEW RECORD</a> | <a href="{{request.route_url('logout')}}">LOGOUT</a>
         </div>
         </center>
       {% endif %}
