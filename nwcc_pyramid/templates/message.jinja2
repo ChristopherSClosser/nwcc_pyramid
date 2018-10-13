@@ -59,25 +59,31 @@
           </center>
           {% if item.img %}
             <center>
+              {% if item.extra.split(' ')[0] %}
+                <a href="{{ item.extra.split(' ')[0] }}" target="_blank">
+                  <img
+                    class="single"
+                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[0] }}">
 
-              <a href="{{ item.extra.split(' ')[0] }}" target="_blank">
-                <img
-                  class="single"
-                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[0] }}">
+                </a>
+              {% endif %}
+              {% if item.extra.split(' ')[1] %}
+                <a href="{{ item.extra.split(' ')[1] }}" target="_blank">
+                  <img
+                    class="program"
+                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[1] }}">
 
-              </a>
-              <a href="{{ item.extra.split(' ')[1] }}" target="_blank">
-                <img
-                  class="program"
-                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[1] }}">
+                </a>
+              {% endif %}
+              {% if item.extra.split(' ')[2] %}
+                <a href="{{ item.extra.split(' ')[2] }}" target="_blank">
+                  <img
+                    class="single"
+                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[2] }}">
 
-              </a>
-              <a href="{{ item.extra.split(' ')[2] }}" target="_blank">
-                <img
-                  class="single"
-                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[2] }}">
+                </a>
+              {% endif %}
 
-              </a>
             </center>
           {% endif %}
 
