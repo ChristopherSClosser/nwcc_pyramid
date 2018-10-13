@@ -1,3 +1,5 @@
+"""NWCC app tests."""
+
 import unittest
 import transaction
 
