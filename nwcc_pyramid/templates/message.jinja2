@@ -3,7 +3,7 @@
 {% block title %}Message{% endblock %}
 
 {% block content %}
-<div class="topimg_placeholder"></div>
+  <div class="topimg_placeholder"></div>
 
   {% if topimg %}
     <div>
@@ -14,6 +14,7 @@
 
     </div>
   {% endif %}
+
   {% if quad_info %}
     <div class="quad-container">
       {% for item in quad_info %}
@@ -25,6 +26,7 @@
 
     </div>
   {% endif %}
+
   {% if title %}
     <center>
 
@@ -39,8 +41,10 @@
         </div> -->
     </center>
   {% endif %}
+
   {% if main %}
     {% for item in main %}
+
       {% if auth %}
         {% if auth_tools %}
           {% for img in auth_tools[0].img.split(' ') %}
@@ -52,43 +56,46 @@
         {% endif %}
 
       {% endif %}
-        <div class="audio">
+
+      <div class="audio">
+        <center>
+          <h3 class="audio_title">{{ item.title | safe }}</h3>
+          <div class="audio_info">{{ item.markdown|safe }}</div>
+        </center>
+
+        {% if item.img %}
           <center>
-            <h3 class="audio_title">{{ item.title | safe }}</h3>
-            <div class="audio_info">{{ item.markdown|safe }}</div>
+            {% if item.extra.split(' ')[0] %}
+              <a href="{{ item.extra.split(' ')[0] }}" target="_blank">
+                <img
+                  class="single"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[0] }}">
+
+              </a>
+            {% endif %}
+
+            {% if item.extra.split(' ')[1] %}
+              <a href="{{ item.extra.split(' ')[1] }}" target="_blank">
+                <img
+                  class="program"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[1] }}">
+
+              </a>
+            {% endif %}
+
+            {% if item.extra.split(' ')[2] %}
+              <a href="{{ item.extra.split(' ')[2] }}" target="_blank">
+                <img
+                  class="single"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[2] }}">
+
+              </a>
+            {% endif %}
           </center>
-          {% if item.img %}
-            <center>
-              {% if item.extra.split(' ')[0] %}
-                <a href="{{ item.extra.split(' ')[0] }}" target="_blank">
-                  <img
-                    class="single"
-                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[0] }}">
+        {% endif %}
+      </div>
 
-                </a>
-              {% endif %}
-              {% if item.extra.split(' ')[1] %}
-                <a href="{{ item.extra.split(' ')[1] }}" target="_blank">
-                  <img
-                    class="program"
-                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[1] }}">
-
-                </a>
-              {% endif %}
-              {% if item.extra.split(' ')[2] %}
-                <a href="{{ item.extra.split(' ')[2] }}" target="_blank">
-                  <img
-                    class="single"
-                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img.split(' ')[2] }}">
-
-                </a>
-              {% endif %}
-
-            </center>
-          {% endif %}
-
-        </div>
-        <hr style="background: lightgrey; width: 80%;">
+      <hr style="background: lightgrey; width: 80%;">
     {% endfor %}
   {% endif %}
 {% endblock content %}
