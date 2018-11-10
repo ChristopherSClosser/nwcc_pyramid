@@ -5,10 +5,13 @@
 
 Version: *1.1*
 
+<br>
+
 ### Author
 ---
 #### &ensp;&ensp; [Chris Closser](https://github.com/ChristopherSClosser/nwcc_pyramid)
-<br><br>
+
+<br>
 
 ### Dependencies
 ---
