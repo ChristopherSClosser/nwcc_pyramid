@@ -7,7 +7,7 @@ Version: *1.1*
 
 ### Author
 ---
-* [Chris Closser](https://github.com/ChristopherSClosser/nwcc_pyramid)
+#### &ensp;&ensp; [Chris Closser](https://github.com/ChristopherSClosser/nwcc_pyramid)
 
 ### Dependencies
 ---
