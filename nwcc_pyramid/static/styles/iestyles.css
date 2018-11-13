@@ -767,7 +767,6 @@ footer {
 
 @media only screen and (min-width: 512px) {
 
-
   .quad-container {
     display: flex;
     margin-top: -2rem;
@@ -816,6 +815,7 @@ footer {
   }
 
   #homeqc {
+    display: none;
     /* margin-top: -30%; */
     /* position: absolute; */
   }
@@ -986,6 +986,7 @@ footer {
     line-height: 1rem;
     font-weight: bold;
   }
+
   #steps2_5 {
     margin-top: 11rem;
   }
@@ -1000,56 +1001,18 @@ footer {
     margin-top: 1rem;
     margin-bottom: 4rem;
   }
-  /* #dropdown-content {
-    margin-top: 0.1rem;
-    padding-top: 0.2rem;
-    margin-right: 0rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-shadow: none;
-    width: fit-content;
-  }
-    #main-nav {
-        display: inline-block;
-        height: .5em;
-        float: right;
-        width: 100vw;
-    }
-    #main-nav ul {
-        display: inline-block;
-        background: none;
-        font-size: 20px;
-        text-align: center;
-        margin-top: -1px;
-        padding: 0;
-        vertical-align: middle;
-        width: 100vw;
-        background: white;
-        height: 2.5rem;
-    }
-    #main-nav li {
-        display: inline;
-        list-style-type: none;
-        margin-top: .1rem;
-        margin-right: 2%;
-    }
-    .hidden hr {
-        display: none;
-    }
-    .burger {
-     display: none;
-    } */
-    .dropdown a {
-     padding-right: 2rem;
-   }
-   .dropdown {
-     /* position: absolute; */
-     text-align: left;
-   }
-   .topimg_placeholder {
-     height: 5.1rem;
-   }
 
+  .dropdown a {
+    padding-right: 2rem;
+  }
+
+  .dropdown {
+    text-align: left;
+  }
+
+  .topimg_placeholder {
+    height: 5.1rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
