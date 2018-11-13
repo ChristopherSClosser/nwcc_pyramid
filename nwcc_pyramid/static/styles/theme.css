@@ -1284,3 +1284,10 @@ footer {
     font-size: 3.5rem;
   }
 }
+
+/* Media query for IE10+ CSS styles */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* Gotta figure out what to do here
+    - it looks like the only issue is with the home page
+      - home page elements as follows... */
+}
