@@ -747,15 +747,13 @@ footer {
   .brand h2 {
     font-size: xx-large;
     flex: 4;
-    /* line-height: 1.8rem; */
     padding-top: 0;
   }
+
   .topimg {
     width: 100%;
     z-index: -9999;
     margin-left: -1px;
-    /* max-height: 350px; */
-
   }
 
   .tri {
@@ -764,6 +762,7 @@ footer {
     margin-top: -0.4rem;
     display: inline-flex;
   }
+
   .tri img {
     /* max-width: 33.3%; */
   }
@@ -793,7 +792,6 @@ footer {
     position: absolute;
     margin: auto;
     top: 18rem;
-    /* bottom: 50%; */
     left: 0;
     right: 0;
     z-index: -99;
@@ -818,12 +816,11 @@ footer {
     float: right;
     margin-right: -26%;
     width: 118%;
-    /* margin-left: 100%; */
   }
-
 }
 
 @media only screen and (min-width: 739px) {
+
   .quad-container {
     margin-top: 0rem;
   }
@@ -833,7 +830,6 @@ footer {
     position: absolute;
     margin: auto;
     top: 24rem;
-    /* bottom: 50%; */
     left: 0;
     right: 0;
     z-index: -99;
@@ -851,16 +847,17 @@ footer {
     font-size: 3rem;
     margin-bottom: -2rem;
   }
+
   h1 {
     /* font-size: 1.5rem; */
   }
+
   .burger {
     margin-right: 2rem;
   }
+
   .brand h2 {
     font-size: -webkit-xxx-large;
-    /* line-height: 3.7rem; */
-    /* padding-top: 0.3rem; */
   }
 
   .logo {
@@ -902,6 +899,7 @@ footer {
     line-height: 1rem;
     font-weight: bold;
   }
+
   #steps2_5 {
     margin-top: 11rem;
   }
@@ -916,59 +914,22 @@ footer {
     margin-top: 1rem;
     margin-bottom: 4rem;
   }
-  /* #dropdown-content {
-    margin-top: 0.1rem;
-    padding-top: 0.2rem;
-    margin-right: 0rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-shadow: none;
-    width: fit-content;
-  }
-    #main-nav {
-        display: inline-block;
-        height: .5em;
-        float: right;
-        width: 100vw;
-    }
-    #main-nav ul {
-        display: inline-block;
-        background: none;
-        font-size: 20px;
-        text-align: center;
-        margin-top: -1px;
-        padding: 0;
-        vertical-align: middle;
-        width: 100vw;
-        background: white;
-        height: 2.5rem;
-    }
-    #main-nav li {
-        display: inline;
-        list-style-type: none;
-        margin-top: .1rem;
-        margin-right: 2%;
-    }
-    .hidden hr {
-        display: none;
-    }
-    .burger {
-     display: none;
-    } */
-    .dropdown a {
-     padding-right: 2rem;
-   }
-   .dropdown {
-     /* position: absolute; */
-     text-align: left;
-   }
-   .topimg_placeholder {
-     height: 5.1rem;
-   }
 
+  .dropdown a {
+    padding-right: 2rem;
+  }
+
+  .dropdown {
+    text-align: left;
+  }
+
+  .topimg_placeholder {
+    height: 5.1rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
+
   .welcomeimg {
     max-height: 480px;
   }
@@ -979,6 +940,7 @@ footer {
 }
 
 @media only screen and (min-width: 834px) {
+
   .content {
     font-size: x-large;
   }
@@ -1032,8 +994,6 @@ footer {
 
   #homeqc {
     margin-top: 0rem;
-    /* z-index: 9999999999; */
-    /* position: absolute; */
   }
 
   .logo_large img {
@@ -1058,26 +1018,20 @@ footer {
 }
 
 @media only screen and (min-width: 950px) {
-  /* .logo_large img {
-    max-width: 60%;
-    position: absolute;
-    margin: auto;
-    top: 12rem;
-    left: 0;
-    right: 0;
-    z-index: -99;
-  } */
+
   #steps2_5, #steps1_4 {
     float: right;
     margin-right: -29vw;
     width: 118%;
   }
+
   #step3 {
     left: 14.5%;
   }
 }
 
 @media only screen and (min-width: 1280px) {
+
   .arrow-down {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
@@ -1125,7 +1079,6 @@ footer {
   }
   .nav-down {
     width: 75%;
-    /* margin-right: 10%; */
   }
 
   .imgtitle {
@@ -1133,7 +1086,6 @@ footer {
   }
 
   .topimg {
-    /* width: 100%; */
     margin-left: 0;
   }
 
@@ -1152,9 +1104,7 @@ footer {
 }
 
 @media only screen and (min-width: 1500px) {
-  /* #step3 {
-    left: 13%;
-  } */
+
 }
 
 @media only screen and (min-width: 1700px) {
@@ -1207,7 +1157,7 @@ footer {
     - it looks like the only issue is with the home page
       - home page elements as follows... */
 
-  /* If IE is in high contrast - looks more normal -  */
+  /* If IE is in high contrast - looks more normal - */
   html {
     -ms-high-contrast-adjust: none;
     background: white;
