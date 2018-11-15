@@ -16,15 +16,11 @@ $(function(){
       // Determines up-or-down scrolling
       if (st > lastScroll){
         // function call for downward-scrolling
-        // $('.ckata').hide();
-        // $('.linked').hide();
         $('header').slideUp('fast');
       }
       else {
         // function call for upward-scrolling
         $('header').slideDown('fast');
-        // $('.ckata').fadeIn('fast');
-        // $('.linked').fadeIn('fast');
       }
       // Updates scroll position
       lastScroll = st;
@@ -108,29 +104,5 @@ $(function(){
       $('.dropdown-content2').slideUp();
     }
   });
-
-  // handles projects to display
-  // $('.dropdown-content').on('click', function(e){
-  //   e.preventDefault();
-  //   $('.github').fadeOut();
-  //   $('.gallery').fadeOut();
-  //   $('.me').fadeOut();
-  //
-  //   if (e.target.id === 'all'){
-  //     $('section').fadeIn();
-  //     $('content').fadeIn();
-  //   }else{
-  //     $('content').hide();
-  //     let $select = (e.target.text);
-  //     projectView.projectFilter($select);
-  //     $('section').fadeIn();
-  //   }
-  //
-  //   $('.dropdown-content').slideUp('fast');
-  //
-  //   if (window.innerWidth <= 739){
-  //     $('#main-nav').slideUp('fast');
-  //   }
-  // });
 });
 // localStorage.removeItem(key);
