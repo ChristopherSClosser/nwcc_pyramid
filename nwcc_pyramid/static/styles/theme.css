@@ -1290,4 +1290,20 @@ footer {
   /* Gotta figure out what to do here
     - it looks like the only issue is with the home page
       - home page elements as follows... */
+
+  #homeqc {
+    display: none;
+  }
+
+  .quad-container {
+    /* display: flex; */
+    /* -ms-flex: 1; */
+    /* margin-top: -2rem; */
+    /* width: 100%; */
+  }
+}
+
+/* ...or this */
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* if the first one doesn't work */
 }
