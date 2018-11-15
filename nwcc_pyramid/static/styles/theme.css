@@ -1292,8 +1292,12 @@ footer {
       - home page elements as follows... */
 
   #homeqc {
-    z-index: 9999999999;
+    z-index: 99999999999999999999999;
     /* display: none; */
+  }
+
+  welcomeimg {
+    z-index: -999999999999999999999999
   }
 
   .quad-container {
