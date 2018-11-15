@@ -1,10 +1,3 @@
-/* @font-face {
-  font-family: 'Betm Rounded';
-  src: url('./static/fonts/Typesketchbook-BetmRounded-Regular.otf') format('otf'),
-  font-weight: normal;
-  font-style: normal;
-} */
-/* @import url('https://www.gfxfile.com/3vc/betm.7z'); */
 
 @import url("//hello.myfonts.net/count/367f56");
 @import url("//hello.myfonts.net/count/367f61");
@@ -58,7 +51,6 @@ hr {
   border: 0;
   height: 1px;
   background-color: white;
-  /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
 .q1tools, .q2tools, .q3tools, .q4tools {
@@ -85,7 +77,6 @@ hr {
 }
 
 #nav img {
-  /* width: 0.8rem; */
   float: left;
   margin-left: 0.4rem;
 }
@@ -114,9 +105,7 @@ hr {
 }
 
 .audio {
-  /* display: inline-block; */
   margin-top: 2rem;
-  /* margin-left: 10%; */
 }
 
 .podcast {
@@ -158,14 +147,6 @@ hr {
 
 .bio {
   text-align: left;
-
-}
-
-.audio_title {
-  /* display: inline-block;
-  margin-left: 1rem;
-  transform: translateY(-15%);
-  text-align: left; */
 }
 
 .audio_info {
@@ -174,7 +155,6 @@ hr {
 
 .welcomecontainer {
   position: relative;
-  /* z-index: -9; */
 }
 
 .welcometxt {
@@ -183,10 +163,6 @@ hr {
   font-weight: 100;
   margin-top: -40%;
   margin-bottom: 3rem;
-  /* position: absolute; */
-  /* top: 4rem; */
-  /* left: 50%; */
-  /* transform: translate(-50%); */
 }
 
 .connect_form {
@@ -213,7 +189,6 @@ hr {
   width: 4rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  /* transform: translateY(1rem); */
 }
 
 .single {
@@ -239,7 +214,6 @@ hr {
   background-color: white;
   background-image: url('../images/sunday_morning.jpg');
   background-size: cover;
-  /* background: linear-gradient(135deg, #34761e 0%,#34761e 41%,#2d595a 100%); */
 }
 
 .q2home {
@@ -294,7 +268,6 @@ hr {
   display: inline-block;
   padding: 0;
   width: 100%;
-  /* margin-top: -2rem; */
 }
 
 .quad h2 {
@@ -310,7 +283,6 @@ hr {
   height: 8rem;
   text-align: center;
   width: 52%;
-  /* border: solid 1px black; */
 }
 
 .overlay {
@@ -344,7 +316,6 @@ hr {
 
 .overlay h3 {
   position: absolute;
-  /* margin: auto; */
   top: 0;
   left: 0;
   right: 0;
@@ -359,18 +330,10 @@ hr {
   margin-right: 1rem;
   margin-left: 1rem;
   margin-top: 0rem;
-  /* padding-left: 2rem;
-  padding-right: 2rem; */
-}
-
-.logo_large {
-  /* padding-left: 2rem;
-  padding-right: 2rem; */
 }
 
 .logo_large img {
   max-width: 60%;
-
 }
 
 #sublinks {
@@ -422,7 +385,6 @@ hr {
   font-family: 'BetmRounded-Bold';
   font-weight: 100;
   margin-bottom: 0.2rem;
-  /* letter-spacing: 0em; */
 }
 
 .steps p {
@@ -483,14 +445,10 @@ hr {
   top: 4rem;
   left: 1rem;
   letter-spacing: -1px;
-  /* position: absolute;
-  margin-top: -26%; */
-  /* margin-left: 1rem; */
 }
 
 .imgtitle h1 {
   font-family: 'Gilroy-ExtraBold';
-  /* text-shadow: 0 0 0.1px white; */
   font-size: 25px;
   color: black;
   letter-spacing: -0.12rem;
@@ -517,7 +475,6 @@ hr {
 
 .topimg {
   max-width: 100%;
-
   z-index: -9999;
 }
 
@@ -527,6 +484,7 @@ hr {
   margin-top: -0.4rem;
   display: inline-block;
 }
+
 .tri img {
   max-width: 100%;
 }
@@ -534,11 +492,9 @@ hr {
 .tricontent {
   width: 100%;
   margin: -2px;
-  /* display: initial; */
 }
 
 .tri_img {
-  /* height: -webkit-fill-available; */
 }
 
 .tricontent div {
@@ -550,7 +506,6 @@ hr {
   vertical-align: middle;
   align-items: center;
   width: 100%;
-  /* height: 6rem; */
   border-bottom: white solid 0.1px;
   background: rgba(255, 255, 255, 0.9);
   line-height: 1.3rem;
@@ -611,10 +566,6 @@ hr {
     background-repeat: no-repeat;
 }
 
-/* .mySlides {
-    display: none;
-} */
-
 .hidden {
     display: none;
 }
@@ -638,13 +589,11 @@ hr {
 #main-nav ul {
   font-family: 'BetmRounded-Bold';
   display: block;
-  /* width: 10rem; */
   float: right;
   list-style-type: none;
   text-align: right;
   font-weight: 100;
   background-image: linear-gradient(to right, rgba(241,241,241,0.1), rgba(221, 221, 221, 0.74), #f1f1f1, #f1f1f1);
-  /* text-shadow: 0 0 1px black; */
   font-size: 17px;
   margin: auto;
   padding-left: 1.5rem;
@@ -671,16 +620,12 @@ hr {
 }
 
 .dropdown {
-  /* float: left; */
   overflow: hidden;
-  /* position: absolute; */
-  /* text-align: left; */
 }
 
 #dropdown-content {
   width: fit-content;
   height: fit-content;
-
   position: absolute;
   right: 15%;
   padding-left: 0.5rem;
@@ -690,9 +635,7 @@ hr {
   background-color: #f1f1f1;
   text-align: left;
   color: #81766a;
-  /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  /* z-index: 99999; */
   max-height: 249px;
   overflow-y: : scroll;
   overflow-x: hidden;
@@ -719,40 +662,22 @@ footer {
 }
 
 .content {
-  /* width: 100%; */
   flex: 1 0 auto;
   margin-left: 0rem;
   margin-right: 0rem;
-  /* display: grid; */
 }
 
 @media only screen and (min-width: 320px) {
+
     body {
       -webkit-text-size-adjust: 100%;
     }
-    .sublinks {
-      /* width: max-content; */
-      /* margin-top: -2rem; */
-    }
-    /* .steps {
-      width: 30%;
-      letter-spacing: -1px;
-      font-size: 11px;
-      display: inline-table;
-    } */
-
 }
 
 @media only screen and (min-width: 400px) {
-  .brand h2 {
-    /* font-size: x-large; */
-  }
+
   .burger {
     font-size: 62px;
-    /* margin-top: 2.5rem; */
-  }
-  .sublinks {
-    /* margin-top: -2rem; */
   }
 
   #step3 {
@@ -762,11 +687,9 @@ footer {
   .steps_container {
     margin-left: 5%;
   }
-
 }
 
 @media only screen and (min-width: 512px) {
-
 
   .quad-container {
     display: flex;
@@ -780,15 +703,13 @@ footer {
     height: 11rem;
     text-align: center;
     width: 25%;
-    /* border: solid 1px black; */
   }
 
   .quad h2 {
     font-size: 28px;
     line-height: 2.5rem;
   }
-
-
+}
 
 @media only screen and (min-width: 545px) {
   #step5, #step4 {
@@ -813,11 +734,6 @@ footer {
 
   #sundayqc {
     margin-top: -3rem;
-  }
-
-  #homeqc {
-    /* margin-top: -30%; */
-    /* position: absolute; */
   }
 
   .logo_large {
@@ -1291,6 +1207,7 @@ footer {
     - it looks like the only issue is with the home page
       - home page elements as follows... */
 
+  /* If IE is in high contrast - looks more normal -  */
   html {
     -ms-high-contrast-adjust: none;
     background: white;
@@ -1303,9 +1220,4 @@ footer {
   .quad-container {
     -ms-flex: 1;
   }
-}
-
-/* ...or this */
-@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* if the first one doesn't work */
 }
