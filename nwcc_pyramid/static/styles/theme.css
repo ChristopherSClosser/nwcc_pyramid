@@ -1291,6 +1291,10 @@ footer {
     - it looks like the only issue is with the home page
       - home page elements as follows... */
 
+  html {
+    -ms-high-contrast-adjust: none;
+  }
+
   #homeqc {
     /* z-index: 99999999999999999999999; */
     /* display: none; */
