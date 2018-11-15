@@ -1292,12 +1292,13 @@ footer {
       - home page elements as follows... */
 
   #homeqc {
-    display: none;
+    z-index: 9999999999;
+    /* display: none; */
   }
 
   .quad-container {
     /* display: flex; */
-    /* -ms-flex: 1; */
+    -ms-flex: 1;
     /* margin-top: -2rem; */
     /* width: 100%; */
   }
