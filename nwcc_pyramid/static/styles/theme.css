@@ -1293,26 +1293,15 @@ footer {
 
   html {
     -ms-high-contrast-adjust: none;
-  }
-
-  #homeqc {
-    /* z-index: 99999999999999999999999; */
-    /* display: none; */
-  }
-
-  .welcomeimg {
-    /* z-index: -999999999999999999999999; */
+    background: white;
   }
 
   .quad {
-    z-index: 999999999999999;
+    z-index: 999999999;
   }
 
   .quad-container {
-    /* display: flex; */
     -ms-flex: 1;
-    /* margin-top: -2rem; */
-    /* width: 100%; */
   }
 }
 
