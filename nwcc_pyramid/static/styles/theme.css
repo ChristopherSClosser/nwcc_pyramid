@@ -1163,6 +1163,14 @@ footer {
     background: white;
   }
 
+  .welcomeimg {
+    z-index: -99999999999;
+  }
+
+  #homeqc {
+    z-index: 999999999;
+  }
+
   .quad {
     z-index: 999999999;
   }
