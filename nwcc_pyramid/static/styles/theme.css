@@ -1163,7 +1163,7 @@ footer {
     background: white;
   }
 
-  .welcomeimg {
+  .welcomecontainer {
     z-index: -99999999999;
   }
 
@@ -1172,10 +1172,11 @@ footer {
   }
 
   .quad {
-    z-index: 999999999;
+    z-index: 999999999999999;
   }
 
   .quad-container {
     -ms-flex: 1;
+    z-index: 999999999;
   }
 }
