@@ -209,6 +209,14 @@ hr {
   margin-bottom: 1rem;
 }
 
+#homeqc {
+  z-index: 9999999999999999;
+}
+
+.quad {
+  z-index: 9999999999999999;
+}
+
 .q1home {
   z-index: 9;
   background-color: white;
