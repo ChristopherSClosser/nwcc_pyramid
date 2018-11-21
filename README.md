@@ -5,13 +5,6 @@
 
 ### `Version:` *`1.9.3`*
 
-<br>
-
-### Author
----
-#### &ensp;&ensp; [Chris Closser](https://github.com/ChristopherSClosser/nwcc_pyramid)
-
-<br>
 
 ### Dependencies
 ---
@@ -95,4 +88,10 @@ This project is licensed under Apache License - see the LICENSE.md file for deta
 ### Acknowledgements
 ---
 
-*This README was generated using [writeme.](https://github.com/chelseadole/write-me)*
+### &ensp;&ensp; Author
+
+#### &ensp;&ensp; [Chris Closser](https://github.com/ChristopherSClosser/nwcc_pyramid)
+
+<br>
+
+&ensp;&ensp; *This README was generated using [writeme.](https://github.com/chelseadole/write-me)*
