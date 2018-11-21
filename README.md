@@ -3,7 +3,7 @@
 ### [weloveboldly.com](https://weloveboldly.com)
 ---
 
-Version: *1.1*
+Version: *1.9.3*
 
 <br>
 
@@ -27,7 +27,7 @@ Version: *1.1*
 * models
 * authorization
 * message
-* Pyramid
+* pyramid
 
 ### Getting Started
 ---

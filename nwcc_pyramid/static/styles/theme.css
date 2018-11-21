@@ -710,7 +710,7 @@ footer {
     display: inline-grid;
     height: 11rem;
     text-align: center;
-    width: 25%;
+    width: 24.999999%;
   }
 
   .quad h2 {
@@ -761,7 +761,6 @@ footer {
   .topimg {
     width: 100%;
     z-index: -9999;
-    margin-left: -1px;
   }
 
   .tri {
