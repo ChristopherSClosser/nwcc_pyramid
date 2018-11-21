@@ -209,6 +209,14 @@ hr {
   margin-bottom: 1rem;
 }
 
+#homeqc {
+  z-index: 9999999999999999;
+}
+
+.quad {
+  z-index: 9999999999999999;
+}
+
 .q1home {
   z-index: 9;
   background-color: white;
@@ -702,7 +710,7 @@ footer {
     display: inline-grid;
     height: 11rem;
     text-align: center;
-    width: 25%;
+    width: 24.999999%;
   }
 
   .quad h2 {
@@ -753,7 +761,6 @@ footer {
   .topimg {
     width: 100%;
     z-index: -9999;
-    margin-left: -1px;
   }
 
   .tri {
@@ -1163,11 +1170,20 @@ footer {
     background: white;
   }
 
-  .quad {
+  .welcomecontainer {
+    z-index: -99999999999;
+  }
+
+  #homeqc {
     z-index: 999999999;
+  }
+
+  .quad {
+    z-index: 999999999999999;
   }
 
   .quad-container {
     -ms-flex: 1;
+    z-index: 999999999;
   }
 }
