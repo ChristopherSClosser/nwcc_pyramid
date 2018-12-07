@@ -200,6 +200,10 @@ hr {
   width: 30%;
 }
 
+#store {
+  font-size: large;
+}
+
 #jlc {
   width: 1.5rem;
 }
@@ -214,7 +218,7 @@ hr {
 }
 
 .quad {
-  z-index: 9999999999999999;
+  /* z-index: 9999999999999999; */
 }
 
 .q1home {
@@ -1021,6 +1025,10 @@ footer {
     float: right;
     margin-right: -30%;
     width: 122%;
+  }
+
+  #store {
+    font-size: x-large;
   }
 }
 
