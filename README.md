@@ -3,7 +3,7 @@
 ### [weloveboldly.com](https://weloveboldly.com)
 ---
 
-### &ensp;&ensp; `Version:` *`1.9.4`*
+### &ensp;&ensp; `Version:` *`1.9.5`*
 
 
 ### Dependencies
