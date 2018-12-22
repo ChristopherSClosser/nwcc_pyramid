@@ -36,6 +36,7 @@ def home_view(request):
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'home').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
+    specialimg = [item for item in content if item.category == 'specialimg']
     topimg = [item for item in content if item.category == 'topimg']
     tri_img = [item for item in content if item.category == 'tri_img']
     quad_info = [item for item in content if item.category == 'quad_info']
@@ -43,6 +44,7 @@ def home_view(request):
     return {
         'auth': auth,
         'main_menu': main_menu,
+        'specialimg': specialimg[0],
         'topimg': topimg[0],
         'tri_img': tri_img,
         'quad_info': quad_info,
