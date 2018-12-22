@@ -4,12 +4,12 @@
 
 {% block content %}
   {% if specialimg %}
-    {% if specialimg.img %}
+    {% if specialimg[0].img %}
       <div class="topimg_placeholder"></div>
       <div class="specialimg">
         <img
           class="special"
-          src="{{request.static_url('nwcc_pyramid:static/images/')}}{{specialimg.img}}"
+          src="{{request.static_url('nwcc_pyramid:static/images/')}}{{specialimg[0].img}}"
           alt="{{specialimg.title}}">
 
       </div>
