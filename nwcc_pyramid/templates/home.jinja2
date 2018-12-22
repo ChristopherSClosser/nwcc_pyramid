@@ -3,6 +3,14 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+  {% if specialimg %}
+    <div class="specialimg">
+      <img
+        class="special"
+        src="{{request.static_url('nwcc_pyramid:static/images/')}}{{specialimg.img}}"
+        alt="{{specialimg.title}}"
+    </div>
+  {% endif %}
   {% if topimg %}
     <div class="welcomecontainer">
 
