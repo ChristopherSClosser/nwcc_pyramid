@@ -3,17 +3,20 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-  {% if specialimg.img %}
-    <div class="topimg_placeholder"></div>
-    <div class="specialimg">
-      <img
-        class="special"
-        src="{{request.static_url('nwcc_pyramid:static/images/')}}{{specialimg.img}}"
-        alt="{{specialimg.title}}">
+  {% if specialimg %}
+    {% if specialimg.img %}
+      <div class="topimg_placeholder"></div>
+      <div class="specialimg">
+        <img
+          class="special"
+          src="{{request.static_url('nwcc_pyramid:static/images/')}}{{specialimg.img}}"
+          alt="{{specialimg.title}}">
 
-    </div>
+      </div>
 
+    {% endif %}
   {% endif %}
+
   {% if topimg %}
     <div class="welcomecontainer">
 
