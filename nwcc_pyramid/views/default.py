@@ -44,7 +44,7 @@ def home_view(request):
     return {
         'auth': auth,
         'main_menu': main_menu,
-        'specialimg': specialimg,
+        'specialimg': specialimg[0],
         'topimg': topimg[0],
         'tri_img': tri_img,
         'quad_info': quad_info,

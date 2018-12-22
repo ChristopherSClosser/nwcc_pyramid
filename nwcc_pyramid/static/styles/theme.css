@@ -162,7 +162,11 @@ hr {
 }
 
 .special {
-  
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 28rem;
+  margin-top: 1rem;
 }
 
 .welcometxt {
@@ -710,6 +714,10 @@ footer {
 }
 
 @media only screen and (min-width: 512px) {
+  .special {
+    height: 25rem;
+    margin-top: 2rem;
+  }
 
   .quad-container {
     display: flex;
@@ -840,6 +848,10 @@ footer {
 
 @media only screen and (min-width: 739px) {
 
+  .special {
+    margin-top: 3rem;
+  }
+
   .quad-container {
     margin-top: 0rem;
   }
@@ -949,6 +961,10 @@ footer {
 
 @media only screen and (min-width: 800px) {
 
+  .special {
+    height: 30rem;
+  }
+
   .welcomeimg {
     max-height: 480px;
   }
@@ -1054,6 +1070,11 @@ footer {
 }
 
 @media only screen and (min-width: 1280px) {
+
+  .special {
+    width: 75%;
+    height: 30rem;
+  }
 
   .arrow-down {
     border-left: 15px solid transparent;
