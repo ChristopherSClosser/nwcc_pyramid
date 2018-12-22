@@ -4,6 +4,7 @@
 
 {% block content %}
   {% if specialimg %}
+    <div class="topimg_placeholder"></div>
     <div class="specialimg">
       <img
         class="special"
@@ -11,6 +12,7 @@
         alt="{{specialimg.title}}">
 
     </div>
+
   {% endif %}
   {% if topimg %}
     <div class="welcomecontainer">
