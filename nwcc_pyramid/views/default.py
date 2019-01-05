@@ -743,7 +743,8 @@ def events_view(request):
         MyModel.page == 'events'
     ).order_by(MyModel.date.asc())
     main_menu = query.filter(MyModel.subcategory == 'base').all()
-    main = [item for item in content if item.category == 'events']
+    main = [item for item in content if item.title == 'menu_place_holder']
+    goog = [item for item in content if item.title == 'Google Calendar']
     topimg = [item for item in content if item.category == 'topimg']
     current = [item for item in content if item.category == 'special_events']
     events = [item for item in current if item.date > datetime.now().date()]
@@ -752,7 +753,8 @@ def events_view(request):
         'main_menu': main_menu,
         'events': events,
         'topimg': topimg[0],
-        'main': main,
+        'main': main[0],
+        'goog': goog[0],
         'auth_tools': auth_tools,
     }
 
