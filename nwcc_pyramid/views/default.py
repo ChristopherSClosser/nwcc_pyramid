@@ -40,26 +40,24 @@ def search_view(request):
         auth_tools = []
 
     query = request.dbsession.query(MyModel).all()
+    content = query.filter(MyModel.page == 'message').all()
+    title = [item for item in content if item.category == 'audio_title']
     main_menu = query.filter(MyModel.subcategory == 'base').all()
-    res = []
+    main = []
     if search:
         for item in query:
             for key, val in vars(item).items():
                 if search.lower() in str(key).lower() or search.lower() in str(val).lower():
-                    if item not in res:
-                        res.append(item)
-    subcategories = []
-    for item in res:
-        if item.subcategory not in subcategories:
-            subcategories.append(item.subcategory)
+                    if item not in main:
+                        main.append(item)
 
     return {
         'auth': auth,
         'auth_tools': auth_tools,
-        'res': res,
+        'main': main,
         'search': search,
-        'subcategories': subcategories,
         'main_menu': main_menu,
+        'title': title[0],
     }
 
 
