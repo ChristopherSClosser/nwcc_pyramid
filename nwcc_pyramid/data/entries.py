@@ -182,7 +182,7 @@ ENTRIES = [
         "title":"<b>Join us on Sundays at 10am</b>",
         "img":"",
         "imgsrc":"https://maps.googleapis.com/maps/api/staticmap?center=10402+Kline+St+SW,Lakewood,WA&zoom=12&size=278x150&markers=color:blue|10402+Kline+St+SW,Lakewood,WA&maptype=roadmap&sensor=false&key=AIzaSyAWz4naVapxCeD9t8gsPg9B62d8YtGV8fs",
-        "markdown":"10402 Kline St SW<br>at the HOPE Center<br>Lakewood, WA 98499<br><br>(253) 926-2528<br><a href='mailto:nwrabbi7@gmail.com'>nwrabbi7@gmail.com</a>",
+        "markdown":"10402 Kline St SW<br>at the HOPE Center<br>Lakewood, WA 98499<br><br><a href=\"tel:12532962528\">(253) 926-2528</a><br><a href='mailto:nwrabbi7@gmail.com'>nwrabbi7@gmail.com</a>",
         "extra":"",
         "date":"Jan 01 2000"
     },
@@ -711,7 +711,7 @@ ENTRIES = [
         "img":"audio_icon.png program_icon.png handout_icon.png",
         "imgsrc":"",
         "markdown":"The Past and The Future #1",
-        "extra":"https://drive.google.com/open?id=16IXKfNqv0Y-TH39tf2gFKQTzqPPCu0Ne https://drive.google.com/open?id=1nXOKqaqZRB0kKKCHmigljMeLfwWtoKSa",
+        "extra":"https://drive.google.com/open?id=16IXKfNqv0Y-TH39tf2gFKQTzqPPCu0Ne https://drive.google.com/open?id=1nXOKqaqZRB0kKKCHmigljMeLfwWtoKSa https://drive.google.com/open?id=12BxzXGsHiOL9xmSbj00EMfRkzYscBGsy",
         "date":"Aug 26 2018"
     },
     {
@@ -754,7 +754,7 @@ ENTRIES = [
         "title":"Youth",
         "img":"waid_brittnae.jpg",
         "imgsrc":"",
-        "markdown":"<h2>NextGen Youth</h2>Northwest Youth Group has monthly events where \u2018crazy fun\u2019 happens.<br><br><b>NextGen Deeper</b> meets the 2nd & 4th Tuesday of every month @ 7PM at THE HOPE CENTER, where a whole lot of laughter, worship music and discussion about the love of God takes place.<br><br><a href='/events'><u>Click here for Events!</u></a><br><br><table><h2>Waid & Brittnae Hoyt, Youth Directors</h2><h3>John & Janell Simmons, Assistant Youth Leaders<tr><th>Email:</th><td><a href=\"mailto:waidhoyt@gmail.com\">waidhoyt@gmail.com</a></td></tr><tr><th>Phone:</th><td>(253) 222-9594 &amp; (253) 988-7655</td></tr><tr><th>Facebook:</th><td><a href=\"https://www.facebook.com/groups/nwccyouth/\" target=\"_blank\"><u>facebook.com/groups/nwccyouth</u></a></td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>&nbsp;</td><td>Lakewood , WA 98499</td></tr><tr><td>&nbsp;</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood++WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></table>",
+        "markdown":"<h2>NextGen Youth</h2>Northwest Youth Group has monthly events where \u2018crazy fun\u2019 happens.<br><br><b>NextGen Deeper</b> meets the 2nd & 4th Tuesday of every month @ 7PM at THE HOPE CENTER, where a whole lot of laughter, worship music and discussion about the love of God takes place.<br><br><a href='/events'><u>Click here for Events!</u></a><br><br><table><h2>Waid & Brittnae Hoyt, Youth Directors</h2><h3>John & Janell Simmons, Assistant Youth Leaders<tr><th>Email:</th><td><a href=\"mailto:waidhoyt@gmail.com\">waidhoyt@gmail.com</a></td></tr><tr><th>Phone:</th><td><a href=\"tel:253-222-9594\">(253) 222-9594</a> & <a href=\"tel:253-686-5488\">(253) 686-5488</a></td></tr><tr><th>Facebook:</th><td><a href=\"https://www.facebook.com/groups/nwccyouth/\" target=\"_blank\"><u>facebook.com/groups/nwccyouth</u></a></td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>\u00a0</td><td>Lakewood , WA 98499</td></tr><tr><td>\u00a0</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood++WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></table>",
         "extra":"",
         "date":"Jan 01 2000"
     },
@@ -1686,9 +1686,9 @@ ENTRIES = [
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
-        "title":"Christmas Eve Service",
+        "title":"Christmas Eve Service<br>6 to 7 pm",
         "img":"event_icon.png",
-        "imgsrc":"",
+        "imgsrc":"https://drive.google.com/open?id=1E9DcNukJx5ZbJCHjC7X5RlBt-hrhlHFL",
         "markdown":"",
         "extra":"Dec<br>24",
         "date":"Dec 24 2018"
@@ -1965,8 +1965,8 @@ ENTRIES = [
         "img":"event_icon.png",
         "imgsrc":"",
         "markdown":"",
-        "extra":"Jan<br>25-26",
-        "date":"Jan 26 2019"
+        "extra":"Jan<br>11-12",
+        "date":"Jan 13 2019"
     },
     {
         "page":"events",
@@ -2009,7 +2009,7 @@ ENTRIES = [
         "img":"audio_icon.png program_icon.png handout_icon.png",
         "imgsrc":"",
         "markdown":"Defending Our Faith",
-        "extra":"https://drive.google.com/open?id=1ny1ufiNqyFQ7YPKHJZ9jB9XICaJx8ShC https://drive.google.com/open?id=1_jR_nWIHQj4-qwzuLsM3qgC4ITYfa-zW",
+        "extra":"https://drive.google.com/open?id=1ny1ufiNqyFQ7YPKHJZ9jB9XICaJx8ShC https://drive.google.com/open?id=1_jR_nWIHQj4-qwzuLsM3qgC4ITYfa-zW https://drive.google.com/open?id=16k7_KX6IFq3JrnqbxNtvlVl_2c_iGvRL",
         "date":"Sep 09 2018"
     },
     {
@@ -2031,7 +2031,7 @@ ENTRIES = [
         "img":"audio_icon.png program_icon.png handout_icon.png",
         "imgsrc":"",
         "markdown":"Signs: What is to Come<br>The Past and The Future #3",
-        "extra":"https://drive.google.com/open?id=12iNAcv9ebu-kbyVo77tjIsa13FIRrbQx https://drive.google.com/open?id=11uzyN7f72viWLkPh6Bro2lU3MbpDYL7R",
+        "extra":"https://drive.google.com/open?id=12iNAcv9ebu-kbyVo77tjIsa13FIRrbQx https://drive.google.com/open?id=11uzyN7f72viWLkPh6Bro2lU3MbpDYL7R https://drive.google.com/open?id=1CJ_fJflTxDy8bO87sGlrjAdSfwHVufFf",
         "date":"Sep 16 2018"
     },
     {
@@ -2042,7 +2042,7 @@ ENTRIES = [
         "img":"audio_icon.png program_icon.png handout_icon.png",
         "imgsrc":"",
         "markdown":"The Writings on the Wall<br>The Past and The Future #4",
-        "extra":"https://drive.google.com/open?id=1SwlapDWNu_alpqnBJyZLh2bANsw8aSYF https://drive.google.com/open?id=14EtGhWpGX8sYvmDUqSxmcTM6JkVNddV-",
+        "extra":"https://drive.google.com/open?id=1SwlapDWNu_alpqnBJyZLh2bANsw8aSYF https://drive.google.com/open?id=14EtGhWpGX8sYvmDUqSxmcTM6JkVNddV- https://drive.google.com/open?id=1wvvYVy1bX5_cRcsWLChhqmPUiRMNasZb",
         "date":"Sep 23 2018"
     },
     {
@@ -2097,7 +2097,293 @@ ENTRIES = [
         "img":"audio_icon.png program_icon.png handout_icon.png",
         "imgsrc":"",
         "markdown":"When Armageddon Gets Personal<br>The Past and The Future #5",
-        "extra":"https://drive.google.com/open?id=1L-Lmgn9igAykaVtzheHPFSmzW6SP2YJu https://drive.google.com/open?id=1K7kTtj9IcVYaTtpicAHScjWsl7pN8cCn",
+        "extra":"https://drive.google.com/open?id=1L-Lmgn9igAykaVtzheHPFSmzW6SP2YJu https://drive.google.com/open?id=1K7kTtj9IcVYaTtpicAHScjWsl7pN8cCn https://drive.google.com/open?id=11e80D4xIbOBbIa_8nP6zuXaVzuE1njBY",
         "date":"Sep 30 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"October 7 2018<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Go Boldly<br>Boldly #1",
+        "extra":"https://drive.google.com/open?id=1XIZlEbWd7OQv88GBe0T5_WYxzJLK3G4E https://drive.google.com/open?id=18dX76rAMWRoa08HZ4-IZD3JdlSJCfe4b https://drive.google.com/open?id=1OuAT77F5zducN_OYo6NJrii8RuR8AZyZ",
+        "date":"Oct 07 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Men\u2019s Big Bold Breakfast<br>8 am",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Oct<br>27",
+        "date":"Oct 27 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Young Adults<br>Spooner Farms Festival",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Oct<br>20",
+        "date":"Oct 20 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"October 14 2018<br>Pastor Mary",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Pray Boldly<br>Boldly #2",
+        "extra":"https://drive.google.com/open?id=1656uBNwaM-X3pTeSZvfhAixQg7PYQOic https://drive.google.com/open?id=1-wVcfzj9FWp01qVU1q5goWL6zO0LaOZK https://drive.google.com/open?id=1Ib62Yu_QHIIhwFubzqVcPo2zabqo-Oqh",
+        "date":"Oct 14 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"October 21 2018<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Encourage Boldly<br>Boldly #3",
+        "extra":"https://drive.google.com/open?id=1tV5ET2mMl9_I0HJ6RdJUlJ8G31PrjJP6 https://drive.google.com/open?id=142BHPjuNqS4b3Op6iswf5w63vRtdhG6k https://drive.google.com/open?id=1V1uVk1zC9h7yvmTF80WxBxg58Thc7Wft",
+        "date":"Oct 21 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Harvest Celebration Potluck<br>Following Service",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Oct<br>28",
+        "date":"Oct 28 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"\"I've Got a Bible\"<br>Sunday",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Nov<br>25",
+        "date":"Nov 25 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Women's Christmas Tea<br>1 pm $15.00",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=1drW_t5ph29w3e86vPK0vJyeYLUQq4ZRg",
+        "markdown":"",
+        "extra":"Dec<br>1",
+        "date":"Dec 01 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"October 28 2018<br>Pastor Mary",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Jailbreak - Stand Boldly<br>Boldly #4",
+        "extra":"https://drive.google.com/open?id=19i62oA5TK2EwNI9YYqwlJWnkDaNfLXXf https://drive.google.com/open?id=12XjdrSNDvgVZeRb6mI16d1ApjV7dU81I https://drive.google.com/open?id=1_AlbXN4gKGLFQ5Y_ZMPe0V6yXL66Yt4Z",
+        "date":"Oct 28 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"November 4 2018<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Love Boldly<br>Boldly #5",
+        "extra":"https://drive.google.com/open?id=1fpeNHsWEneCiwXxfDFk-aw_Bi-JmJPkq https://drive.google.com/open?id=1GHIroayhh-Jt5CvZSevCPF09Tzerb3An https://drive.google.com/open?id=15K41VZKsduuYzjP1TcDTi2iAUK8YiTUn",
+        "date":"Nov 04 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Triple Bacon<br>Big Bold Breakfast<br>9 am $5.00",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=1n8_DcG6QBcpUJpbS-H1mOOYhit28TF-O",
+        "markdown":"",
+        "extra":"Dec<br>1",
+        "date":"Dec 01 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Wear Your Christmas<br>Sweater Sunday",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Dec<br>2",
+        "date":"Dec 02 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Christmas Around<br>the World",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Dec<br>9",
+        "date":"Dec 09 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Welcome 2019<br>Service",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Dec<br>30",
+        "date":"Dec 30 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"November 11 2018<br>Pastor Mary",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Surrender Boldly<br>Boldly #6",
+        "extra":"https://drive.google.com/open?id=1ors1HF5kBsWnFhXGoQXCn2ZHCjwwzRBa https://drive.google.com/open?id=17v0v1d6lqqyAphK2oIwNgFOo99zy0fnr https://drive.google.com/open?id=1lD5oie17OjuGQa4iopK3xuD30STSAoGB",
+        "date":"Nov 11 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"November 18 2018<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Sacrifice Boldly<br>Boldly #7",
+        "extra":"https://drive.google.com/open?id=18fUr6Eo7uky1sWvQBQpSOoSV52lGRBZB https://drive.google.com/open?id=1axH6JE9cSRSRkct-rSxVbQiHQKYNgz0U https://drive.google.com/open?id=1pTLm9Hg5prQJ1Hs3L25Ch9o5gQMGAf86",
+        "date":"Nov 18 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"November 25 2018<br>Pastor Mary",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Believe Boldly<br>Boldly #8",
+        "extra":"https://drive.google.com/open?id=1UnLYGpt1tDagDHpJ7UzpO0H2BZhBmmga https://drive.google.com/open?id=1Kg5yB2uVdZV2xKKsl91LBxy_AYYBr69H https://drive.google.com/open?id=1wcR223vf29sVdbY_5bHDiuZNstucQw78",
+        "date":"Nov 25 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"December 2 2018<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"The Light<br>Shine #1",
+        "extra":"https://drive.google.com/open?id=1MwWWUt2LFMwcoaWBFgDMV_fPtjNWbret https://drive.google.com/open?id=10gaA3eQhxMbUHetC-kFUoItzuoeq1DXw https://drive.google.com/open?id=1fFtFzO4GekFPvPFEXt-lNz_poYuMxafO",
+        "date":"Dec 02 2018"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"December 9 2018<br>Pastor Mary",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Getting There from Here<br>Shine #2",
+        "extra":"https://drive.google.com/open?id=1W8N0iREii_2aNrVttUFXUUirQgfLUHSY https://drive.google.com/open?id=1JOzux16RRDkEhxsQGPhgTT4Ro2Xy4SiC https://drive.google.com/open?id=1UfyZ983jLutpKN2dZ6qzeT2GcCFqq30-",
+        "date":"Dec 09 2018"
+    },
+    {
+        "page":"home",
+        "category":"specialimg",
+        "subcategory":"",
+        "title":"Christmas Eve Service 6 to 7 pm",
+        "img":"",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"",
+        "date":"Jan 01 2000"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"December 23 2018<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"HOPE: The Light<br>in the Darkness<br>Shine #3",
+        "extra":"https://drive.google.com/open?id=10PBEGeB9ITnJm3Mli1ZAiNC91D_cZHzk https://drive.google.com/open?id=1e5OV8y81FhPHIFo6kO75VOPkfnsHOzTC https://drive.google.com/open?id=1PwF11IXscTHzwylz8xio1SGmTC5FAz9n",
+        "date":"Dec 23 2018"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"NEW<br>Lakewood Life Group begins",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Jan<br>9",
+        "date":"Jan 09 2019"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Rooted II Discipleship Program",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=1dB6rGfg0kXGI7avUuv7vzMwk-CZHtdqh",
+        "markdown":"",
+        "extra":"Jan<br>13",
+        "date":"Jan 14 2019"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"NextGen Lock In",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=144PXB9rDutFWaFkTMzWJM7Rk7UMJy8Vn",
+        "markdown":"",
+        "extra":"Jan<br>19",
+        "date":"Jan 19 2019"
+    },
+    {
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"NWCC Chili Cook Off",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=1cOaP35zg0ovQNfg8VgyT6qgV5JpC5CA9",
+        "markdown":"",
+        "extra":"Jan<br>20",
+        "date":"Jan 20 2019"
+    },
+    {
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"January 6 2019<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Unlocking the Relationship<br>Prayer #1",
+        "extra":"https://drive.google.com/open?id=1ut5MyIuLC7Mjoeln0_aFTejBsi4_C1s8 https://drive.google.com/open?id=1ZKZNiYDcygbieqiDL90sP77mCzOodxmt https://drive.google.com/open?id=1qBMDTQ2hD6wkjBmq4XXRLCv42oboqKlw",
+        "date":"Jan 06 2019"
     }
 ]
