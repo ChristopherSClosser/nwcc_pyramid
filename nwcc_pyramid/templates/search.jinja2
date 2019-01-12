@@ -29,6 +29,13 @@
     </center>
   {% endif %}
 
+  <div>
+    <form class="" action="search" method="post">
+      <input type="text" name="search" maxlength="25" value="" style="width: 15rem; float: right; position: absolute; margin-top: .75rem; margin-left: .75rem;">
+      <input style="margin-top: .75rem; margin-left: 17rem; width: 6rem; left: 18rem;" type="submit" value="Search"}>
+    </form>
+  </div>
+
   {% if search %}
     <h3>Your search results for: {{ search }}</h3>
 
