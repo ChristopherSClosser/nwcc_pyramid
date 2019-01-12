@@ -39,7 +39,7 @@ def search_view(request):
     except KeyError:
         auth_tools = []
 
-    query = request.dbsession.query(MyModel).all()
+    query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'message').all()
     title = [item for item in content if item.category == 'audio_title']
     main_menu = query.filter(MyModel.subcategory == 'base').all()
