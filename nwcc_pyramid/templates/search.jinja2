@@ -42,6 +42,11 @@
       <h3 id="leftxt">Your search results for <u>{{ search }}</u>:</h3>
     </div>
     <hr style="background: lightgrey; width: 80%;">
+  {% else %}
+    <div class="markdown">
+      <h3 id="leftxt">No search parameter entered.</h3>
+    </div>
+    <hr style="background: lightgrey; width: 80%;">
   {% endif %}
 
   {% if main %}
@@ -102,11 +107,13 @@
   {% else %}
 
     <div class="markdown">
-      <h4 id="leftxt">The search returned no results...
-        <br>&emsp; &emsp;Use partial, full, and multiple words.
-        <br>&emsp; &emsp;Try to use three or more characters.
-        <br>&emsp; &emsp;For dates use this format: mmm d yyyy.
-      </h4>
+      <h3 id="leftxt">The search returned no results...
+        <h4>
+          &emsp; &emsp; &emsp;Use partial, full, and multiple words.<br>
+          &emsp; &emsp; &emsp;Try to use three or more characters.<br>
+          &emsp; &emsp; &emsp;For dates use this format: mmm d yyyy.
+        </h4>
+      </h3>
     </div>
 
   {% endif %}
