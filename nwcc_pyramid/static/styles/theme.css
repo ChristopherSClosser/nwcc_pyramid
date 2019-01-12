@@ -126,6 +126,10 @@ hr {
   border-radius: 0.3rem;
 }
 
+#leftxt {
+  padding-left: 4%;
+}
+
 .podcast {
   display: inline-block;
 }
