@@ -11,6 +11,11 @@ from ..models import MyModel
 from ..security import is_authenticated
 
 
+def without_keys(obj, *keys):
+    """Filter out keys for search."""
+    return dict(filter(lambda key_value: key_value[0] not in keys,obj.__dict__.items()))
+
+
 @notfound_view_config(renderer='../templates/404.jinja2')
 def notfound_view(request):
     """."""
@@ -49,11 +54,22 @@ def search_view(request):
     main = []
     if search:
         for item in content:
-            for key, val in vars(item).items():
+            # Send model, exluding info -- for better results #
+            res = without_keys(
+                item,
+                'id',
+                'extra',
+                'page',
+                'category',
+                'subcategory',
+                'img',
+                'imgsrc',
+                '_sa_instance_state'
+            )
+            for key, val in res.items():
                 if search.lower() in str(key).lower() or search.lower() in str(val).lower():
                     if item not in main:
                         main.append(item)
-
     return {
         'auth': auth,
         'auth_tools': auth_tools,
