@@ -22,6 +22,47 @@ def notfound_view(request):
     }
 
 
+@view_config(route_name='search', renderer='../templates/search.jinja2')
+def search_view(request):
+    """Search view."""
+    auth = False
+    search = ''
+    try:
+        search = request.POST['search']
+    except KeyError:
+        pass
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
+
+    query = request.dbsession.query(MyModel).all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    res = []
+    if search:
+        for item in query:
+            for key, val in vars(item).items():
+                if search.lower() in str(key).lower() or search.lower() in str(val).lower():
+                    if item not in res:
+                        res.append(item)
+    subcategories = []
+    for item in res:
+        if item.subcategory not in subcategories:
+            subcategories.append(item.subcategory)
+
+    return {
+        'auth': auth,
+        'auth_tools': auth_tools,
+        'res': res,
+        'search': search,
+        'subcategories': subcategories,
+        'main_menu': main_menu,
+    }
+
+
 @view_config(route_name='home', renderer='../templates/home.jinja2')
 def home_view(request):
     """Home view."""
