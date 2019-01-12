@@ -40,12 +40,15 @@ def search_view(request):
         auth_tools = []
 
     query = request.dbsession.query(MyModel)
-    content = query.filter(MyModel.page == 'message').all()
-    title = [item for item in content if item.category == 'audio_title']
+    title = query.filter(MyModel.category == 'audio_title').all()
+    content = query.filter(
+        MyModel.subcategory == 'track'
+    ).order_by(MyModel.id.desc())
     main_menu = query.filter(MyModel.subcategory == 'base').all()
+
     main = []
     if search:
-        for item in query:
+        for item in content:
             for key, val in vars(item).items():
                 if search.lower() in str(key).lower() or search.lower() in str(val).lower():
                     if item not in main:

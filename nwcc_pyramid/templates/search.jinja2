@@ -29,7 +29,7 @@
   {% endif %}
 
   <center>
-    <div>
+    <div id="searchform">
       <form class="" action="search" method="post">
         <input id="searchinput" type="text" name="search" maxlength="25" value="">
         <input id="searchsubmit" type="submit" value="Search"}>
@@ -39,7 +39,7 @@
 
   {% if search %}
     <div class="markdown">
-      <h3 id="leftxt">Your search results for: {{ search }}</h3>
+      <h3 id="leftxt">Your search results for <u>{{ search }}</u>:</h3>
     </div>
     <hr style="background: lightgrey; width: 80%;">
   {% endif %}
@@ -100,7 +100,13 @@
       <hr style="background: lightgrey; width: 80%;">
     {% endfor %}
   {% else %}
-  <h3>The search returned no results.</h3>
+
+    <div class="markdown">
+      <h3 id="leftxt">The search returned no results...
+        <br>&emsp; &emsp;You can use partial, full, and multiple words.
+        <br>&emsp; &emsp;For dates use this format: mmm d yyyy
+      </h3>
+    </div>
 
   {% endif %}
 

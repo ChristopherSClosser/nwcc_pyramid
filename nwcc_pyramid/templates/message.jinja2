@@ -43,13 +43,14 @@
   {% endif %}
 
   <center>
-    <div>
+    <div id="searchform">
       <form class="" action="search" method="post">
         <input id="searchinput" type="text" name="search" maxlength="25" value="">
         <input id="searchsubmit" type="submit" value="Search"}>
       </form>
     </div>
   </center>
+  <hr style="background: lightgrey; width: 80%;">
 
   {% if main %}
     {% for item in main %}
