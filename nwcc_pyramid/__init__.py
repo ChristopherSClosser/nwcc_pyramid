@@ -1,4 +1,4 @@
-"""Init Pyramid WSGI application."""
+"""Init Pyramid WSGI application.."""
 import os
 from pyramid.config import Configurator
 

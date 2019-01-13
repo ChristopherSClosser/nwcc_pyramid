@@ -1,6 +1,5 @@
-{% extends "base.jinja2" %}
-
-{% block title %}Message{% endblock %}
+{% extends 'base.jinja2' %}
+{% block title %}Search Results{% endblock %}
 
 {% block content %}
   <div class="topimg_placeholder"></div>
@@ -15,30 +14,17 @@
     </div>
   {% endif %}
 
-  {% if quad_info %}
-    <div class="quad-container">
-      {% for item in quad_info %}
-        <a class="quad" href="{{request.route_url('home')}}{{ item.extra }}">
-          <div class="{{ item.subcategory }}"><h2>{{ item.title | safe }}</h2></div>
-        </a>
-
-      {% endfor %}
-
-    </div>
-  {% endif %}
-
   {% if title %}
     <center>
-
-        <h1>{{ title.title | safe }}</h1>
-        <!-- <div class="podcast">
-          <a href="{{ title.extra }}">
-            <img
-              class="pcastimg"
-              src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ title.img }}">
-            <h3 class="pcast_title">{{ title.markdown | safe }}</h3>
-          </a>
-        </div> -->
+      <h1>{{ title.title | safe }}</h1>
+      <!-- <div class="podcast">
+        <a href="{{ title.extra }}">
+          <img
+            class="pcastimg"
+            src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ title.img }}">
+          <h3 class="pcast_title">{{ title.markdown | safe }}</h3>
+        </a>
+      </div> -->
     </center>
   {% endif %}
 
@@ -50,6 +36,18 @@
       </form>
     </div>
   </center>
+
+  {% if search %}
+    <div class="markdown">
+      <h3 id="leftxt">Your search results for <u>{{ search }}</u>:</h3>
+    </div>
+    <hr style="background: lightgrey; width: 80%;">
+  {% else %}
+    <div class="markdown">
+      <h3 id="leftxt">No search parameter entered.</h3>
+    </div>
+    <hr style="background: lightgrey; width: 80%;">
+  {% endif %}
 
   {% if main %}
     {% for item in main %}
@@ -106,5 +104,18 @@
 
       <hr style="background: lightgrey; width: 80%;">
     {% endfor %}
+  {% else %}
+
+    <div class="markdown">
+      <h3 id="leftxt">The search returned no results...
+        <h4>
+          &emsp; &emsp; &emsp;Use partial, full, and multiple words.<br>
+          &emsp; &emsp; &emsp;Try to use three or more characters.<br>
+          &emsp; &emsp; &emsp;For dates use this format: yyyy-mm-dd.
+        </h4>
+      </h3>
+    </div>
+
   {% endif %}
-{% endblock content %}
+
+{% endblock  %}

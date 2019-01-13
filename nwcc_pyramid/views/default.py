@@ -11,6 +11,11 @@ from ..models import MyModel
 from ..security import is_authenticated
 
 
+def without_keys(obj, *keys):
+    """Filter out keys for search."""
+    return dict(filter(lambda key_value: key_value[0] not in keys,obj.__dict__.items()))
+
+
 @notfound_view_config(renderer='../templates/404.jinja2')
 def notfound_view(request):
     """."""
@@ -19,6 +24,59 @@ def notfound_view(request):
     request.response.status = 404
     return {
         'main_menu': main_menu,
+    }
+
+
+@view_config(route_name='search', renderer='../templates/search.jinja2')
+def search_view(request):
+    """Search view."""
+    auth = False
+    search = ''
+    try:
+        search = request.POST['search']
+    except KeyError:
+        pass
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
+
+    query = request.dbsession.query(MyModel)
+    title = query.filter(MyModel.category == 'audio_title').all()
+    content = query.filter(
+        MyModel.subcategory == 'track'
+    ).order_by(MyModel.id.desc())
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+
+    main = []
+    if search:
+        for item in content:
+            # Send model, exluding info -- for better results #
+            res = without_keys(
+                item,
+                'id',
+                'extra',
+                'page',
+                'category',
+                'subcategory',
+                'img',
+                'imgsrc',
+                '_sa_instance_state'
+            )
+            for key, val in res.items():
+                if search.lower() in str(key).lower() or search.lower() in str(val).lower():
+                    if item not in main:
+                        main.append(item)
+    return {
+        'auth': auth,
+        'auth_tools': auth_tools,
+        'main': main,
+        'search': search,
+        'main_menu': main_menu,
+        'title': title[0],
     }
 
 

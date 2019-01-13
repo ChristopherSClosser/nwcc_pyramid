@@ -108,6 +108,32 @@ hr {
   margin-top: 2rem;
 }
 
+#searchinput {
+  width: 15rem;
+  position: absolute;
+  margin-top: .75rem;
+  margin-left: .75rem;
+  border-radius: 0.3rem;
+}
+
+#searchsubmit {
+  font-family: inherit;
+  font-size: large;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-left: 17rem;
+  width: 6rem;
+  border-radius: 0.3rem;
+}
+
+#searchform {
+  
+}
+
+#leftxt {
+  padding-left: 4%;
+}
+
 .podcast {
   display: inline-block;
 }
