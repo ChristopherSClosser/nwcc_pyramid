@@ -426,18 +426,20 @@ def children_view(request):
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'children').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
-    topimg = [item for item in content if item.category == 'topimg']
+    curriculum = [item for item in content if item.title == 'curriculum']
     title = [item for item in content if item.subcategory == 'title']
-    quad_info = [item for item in content if item.category == 'quad_info']
-    main = [item for item in content if item.category == 'children']
+    director = [item for item in content if item.extra == 'childrens_director']
+    main = query.filter(
+        MyModel.category == 'children'
+    ).order_by(MyModel.id.asc())
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
         'main_menu': main_menu,
         'content': content,
-        'topimg': topimg[0],
         'title': title[0],
-        'quad_info': quad_info,
+        'curriculum': curriculum[0],
+        'director': director[0],
         'main': main,
         'steps': steps,
     }

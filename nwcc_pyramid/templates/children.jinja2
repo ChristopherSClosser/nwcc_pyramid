@@ -6,12 +6,25 @@
 <div class="topimg_placeholder"></div>
 <center><h1>{{ title.title }}</h1></center>
 
+  {% if curriculum %}
+    <div class="markdown">
+      <center>
+        <a href="{{ curriculum.extra }}">
+          <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ curriculum.img }}" alt="{{ curriculum.title }}"><br>
+          {{ curriculum.markdown|safe }}
+        </a>
+      </center>
+    </div><hr style="background: lightgrey; width: 90%">
+  {% endif %}
 
   {% if main %}
     {% for item in main %}
-      {% if item.title == 'menu_place_holder' %}
+      {% if item.title == 'curriculum' %}
+
+      {% elif item.title == 'menu_place_holder' %}
 
       {% else %}
+
         <div class="markdown">
           <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img }}" alt="{{ item.title }}">
           <h2>{{ item.title }}</h2>
