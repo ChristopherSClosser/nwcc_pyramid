@@ -22,6 +22,13 @@
 
       {% elif item.title == 'menu_place_holder' %}
 
+      {% elif item.extra == 'childrens_director' %}
+        <div class="markdown">
+          <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ item.img }}" alt="{{ item.title }}">
+          <h2>{{ item.title }}</h2>
+          {{ item.subcategory }}<br><br>
+          {{ item.markdown|safe }}
+        </div><hr style="background: lightgrey; width: 90%">
       {% else %}
 
         <div class="markdown">
