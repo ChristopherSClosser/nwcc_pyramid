@@ -15,6 +15,7 @@
   {% endif %}
   {% if main %}
     {% for item in main %}
+
       {% if item.title == 'menu_place_holder' %}
         <center>
           <h1 class="markdown">{{ item.subcategory }}</h1>
@@ -23,6 +24,17 @@
 
       {% else %}
         <div class="markdown">
+          {% if auth %}
+            {% if auth_tools %}
+              {% for img in auth_tools[0].img.split(' ') %}
+                <a href="{{request.route_url('home')}}entry/{{ item.id }}/{{ img.split('.')[0] }}-entry">
+                  <img id="{{ img.split('.')[0] }}"
+                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                </a>
+              {% endfor %}
+            {% endif %}
+
+          {% endif %}
 
           <h3>{{ item.title }}</h3>
           {{ item.markdown|safe }}
