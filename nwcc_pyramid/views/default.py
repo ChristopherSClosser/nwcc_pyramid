@@ -658,8 +658,11 @@ def im_new_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -667,6 +670,7 @@ def im_new_view(request):
     main = [item for item in content if item.category == 'im_new']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'main': main[1],
