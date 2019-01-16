@@ -17,22 +17,11 @@
     </div><hr style="background: lightgrey; width: 90%">
   {% endif %}
 
-  {% if director %}
-    <div class="markdown">
-      <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ director.img }}" alt="{{ director.title }}">
-      <h2>{{ director.title }}</h2>
-      {{ director.subcategory }}<br><br>
-      {{ director.markdown|safe }}
-    </div><hr style="background: lightgrey; width: 90%">
-  {% endif %}
-
   {% if main %}
     {% for item in main %}
       {% if item.title == 'curriculum' %}
 
       {% elif item.title == 'menu_place_holder' %}
-
-      {% elif item.extra == 'childrens_director' %}
 
       {% else %}
 

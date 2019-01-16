@@ -429,7 +429,9 @@ def children_view(request):
     curriculum = [item for item in content if item.title == 'curriculum']
     title = [item for item in content if item.subcategory == 'title']
     director = [item for item in content if item.extra == 'childrens_director']
-    main = [item for item in content if item.category == 'children']
+    main = query.filter(
+        MyModel.category == 'children'
+    ).order_by(MyModel.id.asc())
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
