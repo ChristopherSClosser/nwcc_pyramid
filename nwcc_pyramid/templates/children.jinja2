@@ -19,12 +19,10 @@
 
   {% if director %}
     <div class="markdown">
-      <center>
-        <a href="{{ director.extra }}">
-          <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ director.img }}" alt="{{ director.title }}"><br>
-          {{ director.markdown|safe }}
-        </a>
-      </center>
+      <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ director.img }}" alt="{{ director.title }}">
+      <h2>{{ director.title }}</h2>
+      {{ director.subcategory }}<br><br>
+      {{ director.markdown|safe }}
     </div><hr style="background: lightgrey; width: 90%">
   {% endif %}
 
