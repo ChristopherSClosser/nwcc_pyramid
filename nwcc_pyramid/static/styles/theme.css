@@ -127,7 +127,7 @@ hr {
 }
 
 #searchform {
-  
+
 }
 
 #leftxt {
@@ -488,6 +488,7 @@ hr {
   margin-top: -0.6rem;
   list-style: none;
   width: 200px;
+  background-image: linear-gradient(to right, rgba(241,241,241,0.1), rgba(221, 221, 221, 0.74), #f1f1f1, #f1f1f1);
 }
 
 .imgtitle {
