@@ -17,7 +17,20 @@
           {% for item in submenu %}
             {% if item.subcategory %}
 
-              <li><a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
+              <li>
+                {% if auth %}
+                  {% if auth_tools %}
+                    {% for img in auth_tools[0].img.split(' ') %}
+                      <a href="{{request.route_url('home')}}entry/{{ item.id }}/{{ img.split('.')[0] }}-entry">
+                        <img id="{{ img.split('.')[0] }}"
+                          src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                      </a>
+                    {% endfor %}
+                  {% endif %}
+
+                {% endif %}
+                <a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}
+              </li></a><hr>
             {% endif %}
           {% endfor %}
           </ul>
@@ -31,6 +44,17 @@
 
       {% else %}
         <div class="markdown">
+          {% if auth %}
+            {% if auth_tools %}
+              {% for img in auth_tools[0].img.split(' ') %}
+                <a href="{{request.route_url('home')}}entry/{{ item.id }}/{{ img.split('.')[0] }}-entry">
+                  <img id="{{ img.split('.')[0] }}"
+                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                </a>
+              {% endfor %}
+            {% endif %}
+
+          {% endif %}
           {% if item.title %}
             <h2>{{ item.title }}</h2>
           {% endif %}
