@@ -7,11 +7,25 @@
 
   {% if topimg %}
     <div>
+
       <img
         id="sundaytopimg"
         class="{{ topimg.category }}"
         src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
         alt="{{ topimg.title }}">
+      <center>
+        {% if auth %}
+          {% if auth_tools %}
+            {% for img in auth_tools[0].img.split(' ') %}
+              <a href="{{request.route_url('home')}}entry/{{ topimg.id }}/{{ img.split('.')[0] }}-entry">
+                <img id="{{ img.split('.')[0] }}"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+              </a>
+            {% endfor %}
+          {% endif %}
+
+        {% endif %}
+      </center>
 
     </div>
   {% endif %}
@@ -29,6 +43,17 @@
   {% if title %}
     <center>
       <div class="markdown">
+        {% if auth %}
+          {% if auth_tools %}
+            {% for img in auth_tools[0].img.split(' ') %}
+              <a href="{{request.route_url('home')}}entry/{{ title.id }}/{{ img.split('.')[0] }}-entry">
+                <img id="{{ img.split('.')[0] }}"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+              </a>
+            {% endfor %}
+          {% endif %}
+
+        {% endif %}
         <h1>{{ title.title | safe }}</h1>
       </div>
       <div class="podcast">
@@ -41,5 +66,5 @@
       </div>
     </center>
   {% endif %}
-  
+
 {% endblock content %}
