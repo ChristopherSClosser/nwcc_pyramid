@@ -13,16 +13,26 @@ from ..security import is_authenticated
 
 def without_keys(obj, *keys):
     """Filter out keys for search."""
-    return dict(filter(lambda key_value: key_value[0] not in keys,obj.__dict__.items()))
+    return dict(filter(lambda key_value: key_value[0] not in keys, obj.__dict__.items()))
 
 
 @notfound_view_config(renderer='../templates/404.jinja2')
 def notfound_view(request):
     """."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     request.response.status = 404
     return {
+        'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
     }
 
@@ -117,8 +127,11 @@ def welcome_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'welcome').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -131,6 +144,7 @@ def welcome_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'content': content,
         'submenu': submenu,
@@ -148,8 +162,11 @@ def sundays_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'sundays').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -159,6 +176,7 @@ def sundays_view(request):
     main = [item for item in content if item.subcategory == 'main']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
@@ -174,8 +192,11 @@ def youth_kids_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'youth_kids').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -185,6 +206,7 @@ def youth_kids_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'content': content,
         'tri_img': tri_img,
@@ -200,8 +222,11 @@ def go_deeper_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'ministries').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -214,6 +239,7 @@ def go_deeper_view(request):
     steps = [item for item in steps_info if item.category == 'steps']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'content': content,
@@ -264,8 +290,11 @@ def life_groups_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(
         MyModel.page == 'ministries'
@@ -276,6 +305,7 @@ def life_groups_view(request):
     main = [item for item in content if item.category == 'life_groups']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
@@ -289,8 +319,11 @@ def military_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'ministries').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -299,6 +332,7 @@ def military_view(request):
     main = [item for item in content if item.category == 'military_ministries']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
@@ -312,8 +346,11 @@ def bobs_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'ministries').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -322,6 +359,7 @@ def bobs_view(request):
     main = [item for item in content if item.category == 'bobs']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'topimg': topimg[0],
@@ -335,8 +373,11 @@ def worship_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'worship').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -347,6 +388,7 @@ def worship_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'content': content,
         'topimg': topimg[0],
@@ -363,8 +405,11 @@ def hebrews_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'hebrews').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -374,6 +419,7 @@ def hebrews_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'content': content,
         'tri_img': tri_img,
@@ -421,8 +467,11 @@ def children_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'children').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -435,6 +484,7 @@ def children_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'content': content,
         'title': title[0],
@@ -451,8 +501,11 @@ def foodbank_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'foodbank').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -464,6 +517,7 @@ def foodbank_view(request):
     main = [item for item in content if item.subcategory == 'Food Bank']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'imgtitle': title[0],
@@ -480,8 +534,11 @@ def first_impressions_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -490,6 +547,7 @@ def first_impressions_view(request):
     steps = [item for item in content if item.category == 'steps']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'content': content,
         'submenu': submenu,
@@ -504,8 +562,11 @@ def values_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -513,6 +574,7 @@ def values_view(request):
     main = [item for item in content if item.category == 'core_values']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'main': main[1],
@@ -525,12 +587,16 @@ def means_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
     }
 
@@ -541,8 +607,11 @@ def contact_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -550,6 +619,7 @@ def contact_view(request):
     main = [item for item in content if item.category == 'contact']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'main': main[1],
@@ -562,8 +632,11 @@ def mission_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -571,6 +644,7 @@ def mission_view(request):
     main = [item for item in content if item.category == 'mission_statement']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'main': main[1],
@@ -583,8 +657,11 @@ def staff_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -593,6 +670,7 @@ def staff_view(request):
     main = [item for item in content if item.category == 'staff']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'menu_title': menu_title[0],
@@ -606,8 +684,11 @@ def council_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -618,6 +699,7 @@ def council_view(request):
     ).order_by(MyModel.title.asc())
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'menu_title': menu_title[0],
@@ -654,12 +736,15 @@ def beliefs_view(request):
 
 @view_config(route_name='im_new', renderer='../templates/im_new.jinja2')
 def im_new_view(request):
-    """What we believe view."""
+    """I'm new view."""
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -667,6 +752,7 @@ def im_new_view(request):
     main = [item for item in content if item.category == 'im_new']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'main': main[1],
@@ -679,8 +765,11 @@ def connect_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     cc_email = os.environ['MAIL_SEND_TO']
@@ -739,6 +828,7 @@ def connect_view(request):
         return HTTPFound(request.route_url('home'))
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
     }
 
@@ -752,8 +842,11 @@ def foursquare_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'about').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
@@ -762,6 +855,7 @@ def foursquare_view(request):
     main = [item for item in content if item.category == 'foursquare']
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'submenu': submenu,
         'menu_title': menu_title[0],
@@ -775,13 +869,17 @@ def giving_view(request):
     auth = False
     try:
         auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
     except KeyError:
-        pass
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'giving').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     return {
         'auth': auth,
+        'auth_tools': auth_tools,
         'main_menu': main_menu,
         'main': content,
     }
@@ -851,6 +949,14 @@ def logout(request):
 )
 def create_view(request):
     """Display create a list entry."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
     query = request.dbsession.query(MyModel)
     main_menu = query.filter(MyModel.subcategory == 'base').all()
     if request.POST:
@@ -867,7 +973,11 @@ def create_view(request):
         )
         request.dbsession.add(entry)
         return HTTPFound()
-    return {'main_menu': main_menu}
+    return {
+        'auth': auth,
+        'auth_tools': auth_tools,
+        'main_menu': main_menu
+    }
 
 
 @view_config(
@@ -877,6 +987,14 @@ def create_view(request):
 )
 def delete_view(request):
     """."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
     ident = int(request.matchdict['id'])
     entry = request.dbsession.query(MyModel).get(ident)
     query = request.dbsession.query(MyModel)
@@ -896,7 +1014,12 @@ def delete_view(request):
         'extra': entry.extra,
         'date': entry.date,
     }
-    return {'main_menu': main_menu, 'entry': form_fill}
+    return {
+        'auth': auth,
+        'auth_tools': auth_tools,
+        'main_menu': main_menu,
+        'entry': form_fill
+    }
 
 
 @view_config(
@@ -906,6 +1029,14 @@ def delete_view(request):
 )
 def update_view(request):
     """Display the update entry."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
     ident = int(request.matchdict['id'])
     entry = request.dbsession.query(MyModel).get(ident)
     query = request.dbsession.query(MyModel)
@@ -937,7 +1068,12 @@ def update_view(request):
         'extra': entry.extra,
         'date': entry.date.strftime('%b %d %Y'),
     }
-    return {'main_menu': main_menu, 'entry': form_fill}
+    return {
+        'auth': auth,
+        'auth_tools': auth_tools,
+        'main_menu': main_menu,
+        'entry': form_fill
+    }
 
 
 @view_config(renderer='json', route_name='api')

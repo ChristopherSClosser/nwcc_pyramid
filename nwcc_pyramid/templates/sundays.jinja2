@@ -19,6 +19,19 @@
   {% if quad_info %}
     <div id="sundayqc" class="quad-container">
       {% for item in quad_info %}
+        {% if auth %}
+
+          <div class="{{ item.subcategory }}tools">
+            {% if auth_tools %}
+              {% for img in auth_tools[0].img.split(' ') %}
+                <a href="{{request.route_url('home')}}entry/{{ item.id }}/{{ img.split('.')[0] }}-entry">
+                  <img id="{{ img.split('.')[0] }}" class="quad{{ img.split('.')[0] }}"
+                    src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+                </a>
+              {% endfor %}
+            {% endif %}
+          </div>
+        {% endif %}
         <a class="quad" href="{{request.route_url('home')}}{{ item.extra }}">
           <div class="{{ item.subcategory }}sunday"><h2>{{ item.title | safe }}</h2></div>
         </a>
@@ -30,6 +43,17 @@
   {% if main %}
     <center>
       <div class="markdown">
+        {% if auth %}
+          {% if auth_tools %}
+            {% for img in auth_tools[0].img.split(' ') %}
+              <a href="{{request.route_url('home')}}entry/{{ main.id }}/{{ img.split('.')[0] }}-entry">
+                <img id="{{ img.split('.')[0] }}"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+              </a>
+            {% endfor %}
+          {% endif %}
+
+        {% endif %}
         <h2>{{ main.title|safe }}</h2>
         {{ main.markdown|safe }}
       </div>

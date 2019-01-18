@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="topimg_placeholder"></div>
-
+<div class="topimg_placeholder"></div>
   {% if topimg %}
     <div>
       <img
@@ -26,6 +26,17 @@
     </div>
   {% endif %}
   {% if main %}
+    {% if auth %}
+      {% if auth_tools %}
+        {% for img in auth_tools[0].img.split(' ') %}
+          <a href="{{request.route_url('home')}}entry/{{ main.id }}/{{ img.split('.')[0] }}-entry">
+            <img id="{{ img.split('.')[0] }}"
+              src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+          </a>
+        {% endfor %}
+      {% endif %}
+
+    {% endif %}
     <center>
       <h1>{{ main.title | safe }}</h1>
       {% if main.img %}

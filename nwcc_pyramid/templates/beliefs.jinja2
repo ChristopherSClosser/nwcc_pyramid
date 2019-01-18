@@ -35,12 +35,14 @@
               {% endif %}
 
             {% endif %}
-            <a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}</li></a><hr>
+            <a href="{{request.route_url('home')}}{{ item.extra }}">{{ item.subcategory }}
+          </li></a><hr>
         {% endif %}
       {% endfor %}
       </ul>
     {% endif %}
   </div>
+
   {% if main %}
     {% for item in main %}
       {% if item.title == 'menu_place_holder' %}
