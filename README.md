@@ -45,7 +45,9 @@ Now now that you have cloned your repo and changed directories into the project,
 `$ pip install -r requirements.txt`
 ##### *Serving Locally*
 Once you have cloned the application and installed the requirements, you can serve the project on your local machine by executing this command at the root level of your application, at the same level as `development.ini` and `production.ini`.
+
 `$ pserve development.ini`
+
 Once you have executed this command, open your browser, and go to `localhost:6543/`.
 ### Test Suite
 ---
