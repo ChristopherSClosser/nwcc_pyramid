@@ -29,6 +29,7 @@ def includeme(config):
     config.add_route('foursquare', '/foursquare')
     config.add_route('giving', '/giving')
     config.add_route('events', '/events')
+    config.add_route('youth_events', '/youth_events')
     config.add_route('foodbank', '/foodbank')
     config.add_route('connect', '/connect')
     config.add_route('first_impressions', '/first_impressions')
