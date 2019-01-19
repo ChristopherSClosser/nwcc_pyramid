@@ -885,6 +885,38 @@ def giving_view(request):
     }
 
 
+@view_config(route_name='youth_events', renderer='../templates/youth_events.jinja2')
+def youth_events_view(request):
+    """Youth events view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
+    query = request.dbsession.query(MyModel)
+    content = query.filter(
+        MyModel.page == 'events'
+    ).order_by(MyModel.date.asc())
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    main = [item for item in content if item.title == 'menu_place_holder']
+    goog = [item for item in content if item.title == 'Google Calendar']
+    topimg = [item for item in content if item.category == 'topimg']
+    current = [item for item in content if item.subcategory == 'youth_events']
+    events = [item for item in current if item.date >= datetime.now().date()]
+    return {
+        'auth': auth,
+        'main_menu': main_menu,
+        'events': events,
+        'topimg': topimg[0],
+        'main': main[0],
+        'goog': goog[0],
+        'auth_tools': auth_tools,
+    }
+
+
 @view_config(route_name='events', renderer='../templates/events.jinja2')
 def events_view(request):
     """Events' view."""
