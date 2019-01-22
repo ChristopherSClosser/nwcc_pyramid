@@ -1,0 +1,74 @@
+{% extends "base.jinja2" %}
+
+{% block title %}NextGen Youth Events{% endblock %}
+
+{% block content %}
+
+  <div class="topimg_placeholder"></div>
+  {% if topimg.img %}
+    <div>
+      <img
+        class="{{ topimg.category }}"
+        src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
+        alt="{{ topimg.title }}">
+
+    </div>
+  {% endif %}
+
+  <center>
+    <h1>NextGen Youth Events</h1>
+    <h3><a href="{{request.route_url('events')}}">click here for all events.</a></h3>
+  </center>
+
+  {% if events %}
+    {% for event in events %}
+      {% if auth %}
+        {% if auth_tools %}
+          {% for img in auth_tools[0].img.split(' ') %}
+            <a href="{{request.route_url('home')}}entry/{{ event.id }}/{{ img.split('.')[0] }}-entry">
+              <img id="{{ img.split('.')[0] }}"
+                src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+            </a>
+          {% endfor %}
+        {% endif %}
+
+      {% endif %}
+      {% if event.imgsrc %}
+        <a href="{{ event.imgsrc }}" target="_blank">
+          <div class="event">
+            <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
+            <p>{{ event.extra|safe }}</p>
+            <h2>{{ event.title|safe }}</h2>
+
+          </div>
+        </a>
+        <hr style="background: lightgrey; width: 90%">
+      {% else %}
+        <div class="event">
+          <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ event.img }}" alt="{{ event.title }}">
+          <p>{{ event.extra|safe }}</p>
+          <h2>{{ event.title|safe }}</h2>
+
+        </div>
+        <hr style="background: lightgrey; width: 90%">
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if goog %}
+
+    <div class="markdown">
+      {% if goog.title == 'Google Calendar' %}
+        <center>
+          <h2>{{ goog.markdown | safe }}</h2>
+
+        </center>
+      {% endif %}
+      {% if goog.img %}
+        <center><img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ goog.img }}" alt="{{ goog.title }}"></center>
+      {% endif %}
+    </div>
+
+  {% endif %}
+
+{% endblock content %}
