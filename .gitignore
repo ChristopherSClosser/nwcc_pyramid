@@ -9,7 +9,6 @@ __pycache__/
 layout.jinja2
 html.html
 mytemplate.jinja2
-entries.py
 
 # Distribution / packaging
 .Python
