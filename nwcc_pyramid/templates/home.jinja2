@@ -16,18 +16,29 @@
 
     {% endif %}
   {% endif %}
+  <div class="welcomecontainer">
+    <ul class="gallery" id="slider">
+      <li><img class="mySlides welcomeimg" src="{{request.static_url('nwcc_pyramid:static/images/')}}worship_top.jpg" alt="Worship at NWCC" /></li>
+      <li><img class="mySlides welcomeimg" src="{{request.static_url('nwcc_pyramid:static/images/')}}free.jpg" alt="I am free" /></li>
+      <li><img class="mySlides welcomeimg" id="size" src="{{request.static_url('nwcc_pyramid:static/images/')}}welcome.png" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+    </ul>
+  </div>
 
   {% if topimg %}
     <div class="welcomecontainer">
 
+
       <a href="{{request.route_url('welcome')}}">
 
+
+        <!--
         <img
           class="welcomeimg {{ topimg.category }}"
           src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
           alt="{{ topimg.title }}">
-        <center>
+        -->
 
+        <center>
           <h1 class="welcometxt">WELCOME</h1>
           {% if auth %}
             {% if auth_tools %}
