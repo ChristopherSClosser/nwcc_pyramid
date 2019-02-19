@@ -523,7 +523,7 @@ div#homeqc {
 }
 
 .topimg_placeholder {
-  height: 4rem;
+  height: 3.5rem;
 }
 
 .hometopimg {
@@ -773,6 +773,10 @@ footer {
 }
 
 @media only screen and (min-width: 545px) {
+  .topimg_placeholder {
+    height: 4.5rem;
+  }
+
   #step5, #step4 {
     position: absolute;
     margin-top: -3rem;
@@ -988,7 +992,7 @@ footer {
   }
 
   .topimg_placeholder {
-    height: 5.1rem;
+    height: 6.1rem;
   }
 }
 
