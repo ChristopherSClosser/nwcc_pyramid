@@ -155,7 +155,7 @@ hr {
 }
 
 div#homeqc {
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 #inner {
@@ -531,6 +531,7 @@ div#homeqc {
 }
 
 .topimg {
+  margin-top: -1rem;
   max-width: 100%;
   z-index: -9999;
 }
@@ -609,30 +610,32 @@ div#homeqc {
 }
 
 .gallery {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-    margin-top: 5rem;
-    z-index: 999;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 999;
 }
 
 .gallery li img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    background-repeat: no-repeat;
+  display: block;
+  margin: auto;
+  max-height: 14rem;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .nav-down {
-    height: 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .nav-up {
@@ -751,6 +754,9 @@ footer {
     height: 25rem;
     margin-top: 2rem;
   } */
+  .gallery li img {
+    max-height: 16rem;
+  }
 
   .quad-container {
     display: flex;
@@ -775,6 +781,10 @@ footer {
 @media only screen and (min-width: 545px) {
   .topimg_placeholder {
     height: 4.5rem;
+  }
+
+  .gallery li img {
+    max-height: 18rem;
   }
 
   #step5, #step4 {
@@ -887,6 +897,10 @@ footer {
 
   .special {
     margin-top: 0rem;
+  }
+
+  .gallery li img {
+    max-height: 22rem;
   }
 
   .quad-container {
@@ -1002,6 +1016,10 @@ footer {
     height: 40rem;
   }
 
+  .gallery li img {
+    max-height: 24rem;
+  }
+
   .welcomeimg {
     max-height: 480px;
   }
@@ -1095,6 +1113,10 @@ footer {
 
 @media only screen and (min-width: 950px) {
 
+  .gallery li img {
+    max-height: 30rem;
+  }
+
   #steps2_5, #steps1_4 {
     float: right;
     margin-right: -29vw;
@@ -1103,6 +1125,12 @@ footer {
 
   #step3 {
     left: 14.5%;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .gallery li img {
+    max-height: 36rem;
   }
 }
 
