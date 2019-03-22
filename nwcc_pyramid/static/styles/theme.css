@@ -531,7 +531,7 @@ div#homeqc {
 }
 
 .topimg {
-  margin-top: -1rem;
+  margin-top: 0;
   max-width: 100%;
   z-index: -9999;
 }
