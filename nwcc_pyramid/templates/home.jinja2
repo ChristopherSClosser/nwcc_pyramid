@@ -19,11 +19,10 @@
   <div class="welcomecontainer">
     <div class="topimg_placeholder"></div>
     <ul class="gallery" id="slider">
-      <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1nZ96_kSR-Bd-jTLrjOhit6DIT_fwtgIO" alt="Welcome to Northwest Community Church - Love boldy" /></li>
-      <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=15vOkZVbTOp_G84kZiT3nehvlqb7pUuH2" alt="Welcome to Northwest Community Church - Love boldy" /></li>
-      <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1ezM0bxt70BDOau6S_MXOMhsIVpH8Db6r" alt="Welcome to Northwest Community Church - Love boldy" /></li>
-      <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1tbsAOAJ_Js-F2anY9-YNq78EFXNsTTF8" alt="Welcome to Northwest Community Church - Love boldy" /></li>
-      <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1sB0Jto4B1eLba6xBz2ofNCj9Fe5Xuu-R" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+      <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1N8PK3KVW_U2IPLvx15784ztJBLY9am-3" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+      <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1h4f1J8LUyHff3ouhrSZWNqKPzGgY138G" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+      <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1UHWitcVUqN2AuyQGeG-nUDT4MMLKNKz_" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+      <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=15oVvdwstwPA8noCS1lZ69ezB8W7E9zCc" alt="Welcome to Northwest Community Church - Love boldy" /></li>
     </ul>
   </div>
 
@@ -34,6 +33,7 @@
       <a href="{{request.route_url('welcome')}}">
 
         <img
+          id="welcomeimage"
           class="welcomeimg {{ topimg.category }}"
           src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
           alt="{{ topimg.title }}">
