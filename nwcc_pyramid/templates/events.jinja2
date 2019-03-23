@@ -5,6 +5,21 @@
 {% block content %}
 
   <div class="topimg_placeholder"></div>
+  {% if events %}
+    <div class="welcomecontainer">
+      <ul class="gallery" id="slider">
+
+        {% for item in events %}
+          {% if item.imgsrc %}
+            <li><img class="mySlides welcomeimg" src="{{ item.imgsrc | replace("open", "uc") }}" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+          {% endif %}
+
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+
   {% if topimg.img %}
     <div>
       <img
@@ -74,7 +89,7 @@
         <center><img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ goog.img }}" alt="{{ goog.title }}"></center>
       {% endif %}
     </div>
-      
+
   {% endif %}
 
 {% endblock content %}

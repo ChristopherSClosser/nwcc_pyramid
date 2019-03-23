@@ -1,6 +1,7 @@
 
 ENTRIES = [
     {
+        "id":1,
         "page":"",
         "category":"admin",
         "subcategory":"tools",
@@ -12,6 +13,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":2,
         "page":"",
         "category":"main_menu",
         "subcategory":"base",
@@ -23,6 +25,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":3,
         "page":"",
         "category":"main_menu",
         "subcategory":"base",
@@ -34,6 +37,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":4,
         "page":"",
         "category":"main_menu",
         "subcategory":"base",
@@ -45,6 +49,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":5,
         "page":"",
         "category":"main_menu",
         "subcategory":"base",
@@ -56,6 +61,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":6,
         "page":"",
         "category":"main_menu",
         "subcategory":"base",
@@ -67,6 +73,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":7,
         "page":"",
         "category":"main_menu",
         "subcategory":"base",
@@ -78,6 +85,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":8,
         "page":"",
         "category":"main_menu",
         "subcategory":"base",
@@ -89,6 +97,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":9,
         "page":"home",
         "category":"steps",
         "subcategory":"title",
@@ -100,6 +109,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":10,
         "page":"home",
         "category":"steps",
         "subcategory":"logo_large",
@@ -111,6 +121,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":11,
         "page":"home",
         "category":"steps",
         "subcategory":"step1",
@@ -122,6 +133,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":12,
         "page":"home",
         "category":"steps",
         "subcategory":"step2",
@@ -133,6 +145,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":13,
         "page":"home",
         "category":"steps",
         "subcategory":"step3",
@@ -144,6 +157,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":14,
         "page":"home",
         "category":"steps",
         "subcategory":"step4",
@@ -155,6 +169,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":15,
         "page":"home",
         "category":"steps",
         "subcategory":"step5",
@@ -166,6 +181,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":16,
         "page":"home",
         "category":"tri_info",
         "subcategory":"second_tri_info",
@@ -177,6 +193,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":17,
         "page":"sundays",
         "category":"info",
         "subcategory":"main",
@@ -188,6 +205,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":18,
         "page":"home",
         "category":"tri_info",
         "subcategory":"second_tri_info",
@@ -199,6 +217,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":19,
         "page":"home",
         "category":"tri_info",
         "subcategory":"third_tri_info",
@@ -210,6 +229,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":20,
         "page":"home",
         "category":"topimg",
         "subcategory":"",
@@ -221,6 +241,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":21,
         "page":"home",
         "category":"tri_img",
         "subcategory":"first_tri_img",
@@ -232,6 +253,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":22,
         "page":"home",
         "category":"tri_img",
         "subcategory":"second_tri_img",
@@ -243,6 +265,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":23,
         "page":"home",
         "category":"tri_img",
         "subcategory":"third_tri_img",
@@ -254,6 +277,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":24,
         "page":"home",
         "category":"quad_info",
         "subcategory":"q1",
@@ -265,6 +289,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":25,
         "page":"home",
         "category":"quad_info",
         "subcategory":"q2",
@@ -276,6 +301,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":26,
         "page":"home",
         "category":"quad_info",
         "subcategory":"q3",
@@ -287,6 +313,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":27,
         "page":"home",
         "category":"quad_info",
         "subcategory":"q4",
@@ -298,6 +325,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":28,
         "page":"welcome",
         "category":"topimg",
         "subcategory":"",
@@ -309,6 +337,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":29,
         "page":"sundays",
         "category":"topimg",
         "subcategory":"",
@@ -320,6 +349,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":30,
         "page":"sundays",
         "category":"quad_info",
         "subcategory":"q1",
@@ -331,6 +361,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":31,
         "page":"sundays",
         "category":"quad_info",
         "subcategory":"q2",
@@ -342,6 +373,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":32,
         "page":"sundays",
         "category":"quad_info",
         "subcategory":"q3",
@@ -353,6 +385,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":33,
         "page":"sundays",
         "category":"quad_info",
         "subcategory":"q4",
@@ -364,6 +397,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":34,
         "page":"worship",
         "category":"topimg",
         "subcategory":"",
@@ -375,6 +409,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":35,
         "page":"worship",
         "category":"worship_title",
         "subcategory":"title",
@@ -386,6 +421,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":36,
         "page":"worship",
         "category":"main",
         "subcategory":"bio",
@@ -397,6 +433,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":37,
         "page":"hebrews",
         "category":"topimg",
         "subcategory":"",
@@ -408,6 +445,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":38,
         "page":"hebrews",
         "category":"main",
         "subcategory":"",
@@ -419,6 +457,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":39,
         "page":"message",
         "category":"topimg",
         "subcategory":"",
@@ -430,10 +469,11 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":40,
         "page":"message",
         "category":"audio_title",
         "subcategory":"title",
-        "title":"Listen to the Message<br><h2>Theme: \"I Can Leap Over Walls\"</h2>",
+        "title":"Listen to the Message",
         "img":"iTunes.png",
         "imgsrc":"",
         "markdown":"Get the podcast",
@@ -441,6 +481,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":51,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -452,6 +493,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":52,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -463,6 +505,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":53,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -474,6 +517,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":54,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -485,6 +529,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":55,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -496,6 +541,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":56,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -507,6 +553,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":57,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -518,6 +565,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":58,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -529,6 +577,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":59,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -540,6 +589,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":60,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -551,6 +601,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":61,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -562,6 +613,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":62,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -573,6 +625,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":63,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -584,6 +637,7 @@ ENTRIES = [
         "date":"Aug 05 2018"
     },
     {
+        "id":64,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -595,6 +649,7 @@ ENTRIES = [
         "date":"Aug 19 2018"
     },
     {
+        "id":65,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -606,6 +661,7 @@ ENTRIES = [
         "date":"Aug 26 2018"
     },
     {
+        "id":66,
         "page":"children",
         "category":"topimg",
         "subcategory":"",
@@ -617,6 +673,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":67,
         "page":"children",
         "category":"main",
         "subcategory":"",
@@ -628,6 +685,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":68,
         "page":"youth_kids",
         "category":"topimg",
         "subcategory":"",
@@ -639,17 +697,19 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":69,
         "page":"youth_kids",
         "category":"main",
         "subcategory":"",
         "title":"Youth",
         "img":"waid_brittnae.jpg",
         "imgsrc":"",
-        "markdown":"<h2>NextGen Youth</h2>Northwest Youth Group has monthly events where \u2018crazy fun\u2019 happens.<br><br><b>NextGen Deeper</b> meets the 2nd & 4th Tuesday of every month @ 7PM at THE HOPE CENTER, where a whole lot of laughter, worship music and discussion about the love of God takes place.<br><br><a href='/events'><u>Click here for Events!</u></a><br><br><table><h2>Waid & Brittnae Hoyt, Youth Directors</h2><h3>John & Janell Simmons, Assistant Youth Leaders<tr><th>Email:</th><td><a href=\"mailto:waidhoyt@gmail.com\">waidhoyt@gmail.com</a></td></tr><tr><th>Phone:</th><td><a href=\"tel:253-222-9594\">(253) 222-9594</a> & <a href=\"tel:253-686-5488\">(253) 686-5488</a></td></tr><tr><th>Facebook:</th><td><a href=\"https://www.facebook.com/groups/nwccyouth/\" target=\"_blank\"><u>facebook.com/groups/nwccyouth</u></a></td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>\u00a0</td><td>Lakewood , WA 98499</td></tr><tr><td>\u00a0</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood++WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></table>",
+        "markdown":"<h2>NextGen Youth</h2>Northwest Youth Group has monthly events where \u2018crazy fun\u2019 happens.<br><br><b>NextGen Deeper</b> meets the 2nd & 4th Tuesday of every month @ 7PM at THE HOPE CENTER, where a whole lot of laughter, worship music and discussion about the love of God takes place.<br><br><a href='/youth_events'><u>Click here for Events!</u></a><br><br><table><h2>Waid & Brittnae Hoyt, Youth Directors</h2><h3>John & Janell Simmons, Assistant Youth Leaders<tr><th>Email:</th><td><a href=\"mailto:waidhoyt@gmail.com\">waidhoyt@gmail.com</a></td></tr><tr><th>Phone:</th><td><a href=\"tel:253-222-9594\">(253) 222-9594</a> & <a href=\"tel:253-686-5488\">(253) 686-5488</a></td></tr><tr><th>Facebook:</th><td><a href=\"https://www.facebook.com/groups/nwccyouth/\" target=\"_blank\"><u>facebook.com/groups/nwccyouth</u></a></td></tr><tr><th>Address:</th><td>10402 Kline Street SW</td></tr><tr><td>\u00a0</td><td>Lakewood , WA 98499</td></tr><tr><td>\u00a0</td><td><a href=\"http://maps.google.com/maps?q=10402+Kline+Street+SW++Lakewood++WA+98499\" target=\"_blank\">click here for map/directions</a></td></tr></table>",
         "extra":"",
         "date":"Jan 01 2000"
     },
     {
+        "id":70,
         "page":"ministries",
         "category":"topimg",
         "subcategory":"",
@@ -661,6 +721,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":71,
         "page":"ministries",
         "category":"main",
         "subcategory":"",
@@ -672,6 +733,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":72,
         "page":"ministries",
         "category":"foodbank",
         "subcategory":"Northwest Foodbank",
@@ -683,6 +745,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":73,
         "page":"ministries",
         "category":"bible_studies",
         "subcategory":"Bible Studies",
@@ -694,6 +757,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":74,
         "page":"ministries",
         "category":"life_groups",
         "subcategory":"Life Groups",
@@ -705,6 +769,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":75,
         "page":"ministries",
         "category":"military",
         "subcategory":"Military",
@@ -716,6 +781,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":76,
         "page":"ministries",
         "category":"bobs",
         "subcategory":"B.O.B.S.",
@@ -727,6 +793,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":77,
         "page":"foodbank",
         "category":"topimg",
         "subcategory":"",
@@ -738,6 +805,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":78,
         "page":"foodbank",
         "category":"foodbank",
         "subcategory":"title",
@@ -749,6 +817,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":79,
         "page":"foodbank",
         "category":"foodbank",
         "subcategory":"Food Bank",
@@ -760,6 +829,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":80,
         "page":"about",
         "category":"topimg",
         "subcategory":"",
@@ -771,6 +841,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":81,
         "page":"about",
         "category":"main",
         "subcategory":"About Us",
@@ -782,6 +853,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":82,
         "page":"about",
         "category":"im_new",
         "subcategory":"I'm New",
@@ -793,6 +865,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":83,
         "page":"about",
         "category":"first_impressions",
         "subcategory":"First Impressions",
@@ -804,6 +877,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":84,
         "page":"about",
         "category":"mission_statement",
         "subcategory":"Mission Statement",
@@ -815,6 +889,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":85,
         "page":"about",
         "category":"core_values",
         "subcategory":"Core Values",
@@ -826,6 +901,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":86,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -837,6 +913,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":87,
         "page":"about",
         "category":"foursquare",
         "subcategory":"The Foursquare Church",
@@ -848,6 +925,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":88,
         "page":"about",
         "category":"staff",
         "subcategory":"Staff",
@@ -859,6 +937,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":89,
         "page":"about",
         "category":"council",
         "subcategory":"Council",
@@ -870,6 +949,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":90,
         "page":"about",
         "category":"contact",
         "subcategory":"Contact Us",
@@ -881,6 +961,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":91,
         "page":"about",
         "category":"core_values",
         "subcategory":"Core Values",
@@ -892,6 +973,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":92,
         "page":"about",
         "category":"contact",
         "subcategory":"Contact Us",
@@ -903,6 +985,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":93,
         "page":"about",
         "category":"mission_statement",
         "subcategory":"Mission Statement",
@@ -914,6 +997,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":94,
         "page":"about",
         "category":"staff",
         "subcategory":"Lead Pastors",
@@ -925,6 +1009,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":95,
         "page":"about",
         "category":"staff",
         "subcategory":"Worship Director",
@@ -936,6 +1021,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":96,
         "page":"about",
         "category":"staff",
         "subcategory":"Children's Church Director",
@@ -947,6 +1033,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":97,
         "page":"about",
         "category":"staff",
         "subcategory":"Youth Directors",
@@ -958,6 +1045,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":98,
         "page":"about",
         "category":"staff",
         "subcategory":"Executive Director",
@@ -969,6 +1057,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":99,
         "page":"about",
         "category":"staff",
         "subcategory":"Building Supervisor",
@@ -980,6 +1069,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":100,
         "page":"about",
         "category":"council",
         "subcategory":"Council Member",
@@ -991,6 +1081,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":101,
         "page":"about",
         "category":"council",
         "subcategory":"Council Member",
@@ -1002,6 +1093,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":102,
         "page":"about",
         "category":"council",
         "subcategory":"Council Member",
@@ -1013,6 +1105,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":103,
         "page":"about",
         "category":"council",
         "subcategory":"Council Member",
@@ -1024,6 +1117,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":104,
         "page":"about",
         "category":"council",
         "subcategory":"Council Member",
@@ -1035,6 +1129,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":105,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1046,6 +1141,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":106,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1057,6 +1153,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":107,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1068,6 +1165,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":108,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1079,6 +1177,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":109,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1090,6 +1189,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":110,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1101,6 +1201,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":111,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1112,6 +1213,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":112,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1123,6 +1225,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":113,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1134,6 +1237,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":114,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1145,6 +1249,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":115,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1156,6 +1261,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":116,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1167,6 +1273,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":117,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1178,6 +1285,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":118,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1189,6 +1297,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":119,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1200,6 +1309,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":120,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1211,6 +1321,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":121,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1222,6 +1333,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":122,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1233,6 +1345,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":123,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1244,6 +1357,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":124,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1255,6 +1369,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":125,
         "page":"about",
         "category":"we_believe",
         "subcategory":"What We Believe",
@@ -1266,6 +1381,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":126,
         "page":"about",
         "category":"im_new",
         "subcategory":"I'm New",
@@ -1277,6 +1393,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":127,
         "page":"about",
         "category":"first_impressions",
         "subcategory":"info",
@@ -1288,6 +1405,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":128,
         "page":"about",
         "category":"first_impressions",
         "subcategory":"main",
@@ -1299,6 +1417,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":129,
         "page":"about",
         "category":"first_impressions",
         "subcategory":"main",
@@ -1310,6 +1429,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":130,
         "page":"about",
         "category":"first_impressions",
         "subcategory":"main",
@@ -1321,6 +1441,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":131,
         "page":"about",
         "category":"first_impressions",
         "subcategory":"main",
@@ -1332,6 +1453,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":132,
         "page":"about",
         "category":"foursquare",
         "subcategory":"The Foursquare Church",
@@ -1343,6 +1465,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":133,
         "page":"about",
         "category":"foursquare",
         "subcategory":"The Foursquare Church",
@@ -1354,6 +1477,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":134,
         "page":"about",
         "category":"foursquare",
         "subcategory":"The Foursquare Church",
@@ -1365,6 +1489,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":135,
         "page":"about",
         "category":"foursquare",
         "subcategory":"The Foursquare Church",
@@ -1376,6 +1501,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":136,
         "page":"about",
         "category":"foursquare",
         "subcategory":"The Foursquare Church",
@@ -1387,6 +1513,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":137,
         "page":"about",
         "category":"foursquare",
         "subcategory":"The Foursquare Church",
@@ -1398,6 +1525,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":138,
         "page":"about",
         "category":"foursquare",
         "subcategory":"The Foursquare Church",
@@ -1409,6 +1537,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":139,
         "page":"giving",
         "category":"topimg",
         "subcategory":"Giving",
@@ -1420,6 +1549,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":140,
         "page":"giving",
         "category":"giving",
         "subcategory":"Giving",
@@ -1431,6 +1561,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":141,
         "page":"giving",
         "category":"giving",
         "subcategory":"Giving",
@@ -1442,6 +1573,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":142,
         "page":"giving",
         "category":"giving",
         "subcategory":"Giving",
@@ -1453,6 +1585,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":143,
         "page":"giving",
         "category":"giving",
         "subcategory":"Giving",
@@ -1464,6 +1597,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":144,
         "page":"giving",
         "category":"giving",
         "subcategory":"Giving",
@@ -1475,6 +1609,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":145,
         "page":"giving",
         "category":"giving",
         "subcategory":"Giving",
@@ -1486,6 +1621,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":146,
         "page":"events",
         "category":"topimg",
         "subcategory":"Events",
@@ -1497,6 +1633,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":147,
         "page":"events",
         "category":"events",
         "subcategory":"Events",
@@ -1508,6 +1645,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":148,
         "page":"events",
         "category":"events",
         "subcategory":"Events",
@@ -1519,6 +1657,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":149,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1530,6 +1669,7 @@ ENTRIES = [
         "date":"Sep 09 2018"
     },
     {
+        "id":150,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1541,6 +1681,7 @@ ENTRIES = [
         "date":"Oct 06 2018"
     },
     {
+        "id":151,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1552,6 +1693,7 @@ ENTRIES = [
         "date":"Oct 07 2018"
     },
     {
+        "id":152,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1563,6 +1705,7 @@ ENTRIES = [
         "date":"Nov 18 2018"
     },
     {
+        "id":153,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1574,6 +1717,7 @@ ENTRIES = [
         "date":"Dec 16 2018"
     },
     {
+        "id":154,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1585,6 +1729,7 @@ ENTRIES = [
         "date":"Dec 24 2018"
     },
     {
+        "id":155,
         "page":"ministries",
         "category":"foodbank",
         "subcategory":"main",
@@ -1596,6 +1741,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":156,
         "page":"ministries",
         "category":"bible_studies",
         "subcategory":"womens",
@@ -1607,6 +1753,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":157,
         "page":"ministries",
         "category":"bible_studies",
         "subcategory":"mens",
@@ -1618,6 +1765,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":158,
         "page":"ministries",
         "category":"bible_studies",
         "subcategory":"deeper",
@@ -1629,6 +1777,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":159,
         "page":"ministries",
         "category":"life_groups",
         "subcategory":"main",
@@ -1640,39 +1789,43 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":160,
         "page":"ministries",
         "category":"life_groups",
         "subcategory":"dupont",
         "title":"DuPont Life Group",
         "img":"matt_trish.jpg",
-        "imgsrc":"dupontgroupslide.png",
+        "imgsrc":"",
         "markdown":"Single, married, young or old...you are invited to join us as we walk out life together.  Enjoy coffee and a delicious dessert and a periodic potluck here and there.  The atmosphere is informal and very interactive.  If you are looking for meaningful fun...this is it!<br><br><b>Matt VanderFeltz, DuPont Life Group Co-Leader<br>Phone:</b><a href=\"tel:12539053706\"> (253) 905-3706</a>",
         "extra":"",
         "date":"Jan 01 2000"
     },
     {
+        "id":161,
         "page":"ministries",
         "category":"life_groups",
         "subcategory":"southill",
         "title":"Summit - South Hill Life Group",
         "img":"",
-        "imgsrc":"southillslide.png",
+        "imgsrc":"",
         "markdown":"Friendship, food and interactive Bible study is a recipe for success!  Wherever you are at in your walk with God, you will fit in here.  No judging, no gossiping, no pretense...this group is REAL. Come check us out and let\u2019s grow in Christ together.<br><br>We meet at the Melvard Home on the 1st and 3rd Sundays of the month 5:00 to 7:00 p.m. Child care will be provided!! Please bring a dish to share.<br><br><table><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Bryan and Dana Melvard</span>, Summit/South Hill Life Group Host</td></tr><tr><th>Phone:</th><td><a href=\"tel:12533345723\">(253) 334-5723</td></tr><tr><th>Address:</th><td>6320 112th St. E.</td></tr><tr><td>\u00a0</td><td>Puyallyp, WA 98373</td></tr><tr><td>\u00a0</td><td><a href=\"http://maps.google.com/maps?q=6320+112th+St.+E.+++Puyallup+WA+98373\" target=\"_blank\">click here for map/directions</a></td></tr></tbody></table></td></tr></tbody></table><br><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"contact-info-table\"><tbody><tr><td colspan=\"2\" style=\"padding-left:0;\"><span class=\"ci-title\">Ken and Cindy Cnossen</span>, Summit/South Hill Life Group Leaders</td></tr><tr><th>\u2003Email:</th><td><a href=\"mailto:Cindy_Cnossen@yahoo.com & ken_cnossen@yahoo.com\">\u2003Cindy_Cnossen@yahoo.com & ken_cnossen@yahoo.com</a></td></tr><tr><th>\u2003Phone:</th><td><a href=\"tel:12532971618\">\u2003(253) 297-1618</td></tr></tbody></table>",
         "extra":"",
         "date":"Jan 01 2000"
     },
     {
+        "id":162,
         "page":"ministries",
         "category":"life_groups",
         "subcategory":"tacoma",
         "title":"Tacoma Life Group",
         "img":"mike_sally.jpg",
-        "imgsrc":"tacomagroupslide.png",
+        "imgsrc":"",
         "markdown":"<h2>Please call Mike @<br><a href=\"tel:12533180015\">(253)318-0015 for the address.</h2><br><br>The 2017 Vision of the North Tacoma Life Group is to grow in our understanding of biblical truths and to share those truths with people we come in contact with in our daily routines. With solid biblical principles and an open mind, we provide a place to listen to what others have to say, engage others as they search out these truths and come to the knowledge of who Jesus is in their lives.<br><br>Mike and Sally Bryan",
         "extra":"",
         "date":"Jan 02 2000"
     },
     {
+        "id":163,
         "page":"ministries",
         "category":"military_ministries",
         "subcategory":"Military Ministries",
@@ -1684,6 +1837,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":164,
         "page":"ministries",
         "category":"military_ministries",
         "subcategory":"warriorwives",
@@ -1695,6 +1849,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":165,
         "page":"ministries",
         "category":"military_ministries",
         "subcategory":"bbq",
@@ -1706,17 +1861,19 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":166,
         "page":"ministries",
         "category":"bible_studies",
         "subcategory":"adult",
-        "title":"Sunday Morning Adult Bible Classes",
-        "img":"adult.jpg",
+        "title":"Sunday Morning Adult Bible Classes Coming Soon",
+        "img":"",
         "imgsrc":"",
-        "markdown":"Come and enjoy an interactive \u201cGOING DEEPER\u201d adult class on Sunday mornings from 9AM to 10AM.<br><br>We have gifted, knowledgeable teachers that address diverse topics for 4 to 8 weeks.<br><br>Here are just a few of the recent class titles:<ul><li>I Don\u2019t Have Enough Faith to Be an Atheist</li><li>Love Boldly 101</li><li>Sitting at the Rabbi\u2019s Feet</li><li>Ephesians Comes to Life</li></ul>",
+        "markdown":"We will be offering an interactive \u201cGOING DEEPER\u201d adult class on Sunday mornings from 9AM to 10AM.<br><br>We have gifted, knowledgeable teachers that address diverse topics for 4 to 8 weeks.<br><br>Here are just a few of the recent class titles:<ul><li>I Don\u2019t Have Enough Faith to Be an Atheist</li><li>Love Boldly 101</li><li>Sitting at the Rabbi\u2019s Feet</li><li>Ephesians Comes to Life</li></ul>",
         "extra":"",
         "date":"Jan 01 2000"
     },
     {
+        "id":167,
         "page":"ministries",
         "category":"youth_kids",
         "subcategory":"jr_sr_high",
@@ -1728,6 +1885,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":168,
         "page":"ministries",
         "category":"bobs",
         "subcategory":"bobs",
@@ -1739,6 +1897,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":169,
         "page":"children",
         "category":"title",
         "subcategory":"title",
@@ -1750,6 +1909,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":170,
         "page":"children",
         "category":"children",
         "subcategory":"Children's Church Director",
@@ -1761,6 +1921,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":171,
         "page":"children",
         "category":"children",
         "subcategory":"Teacher",
@@ -1772,6 +1933,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":172,
         "page":"children",
         "category":"children",
         "subcategory":"Teacher",
@@ -1783,6 +1945,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":173,
         "page":"children",
         "category":"children",
         "subcategory":"Teacher",
@@ -1794,6 +1957,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":174,
         "page":"children",
         "category":"children",
         "subcategory":"Teacher",
@@ -1805,6 +1969,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":175,
         "page":"children",
         "category":"children",
         "subcategory":"Teacher",
@@ -1816,6 +1981,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":176,
         "page":"children",
         "category":"children",
         "subcategory":"Teacher",
@@ -1827,6 +1993,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":177,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1838,6 +2005,7 @@ ENTRIES = [
         "date":"Sep 22 2018"
     },
     {
+        "id":179,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1849,6 +2017,7 @@ ENTRIES = [
         "date":"Sep 26 2018"
     },
     {
+        "id":181,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1860,6 +2029,7 @@ ENTRIES = [
         "date":"Jan 13 2019"
     },
     {
+        "id":182,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1871,6 +2041,7 @@ ENTRIES = [
         "date":"Sep 11 2018"
     },
     {
+        "id":183,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1882,6 +2053,7 @@ ENTRIES = [
         "date":"Sep 16 2018"
     },
     {
+        "id":184,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -1893,6 +2065,7 @@ ENTRIES = [
         "date":"Sep 02 2018"
     },
     {
+        "id":185,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -1904,6 +2077,7 @@ ENTRIES = [
         "date":"Sep 09 2018"
     },
     {
+        "id":186,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1915,6 +2089,7 @@ ENTRIES = [
         "date":"Sep 14 2018"
     },
     {
+        "id":187,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -1926,6 +2101,7 @@ ENTRIES = [
         "date":"Sep 16 2018"
     },
     {
+        "id":188,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -1937,6 +2113,7 @@ ENTRIES = [
         "date":"Sep 23 2018"
     },
     {
+        "id":189,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1948,6 +2125,7 @@ ENTRIES = [
         "date":"Oct 14 2018"
     },
     {
+        "id":190,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1959,6 +2137,7 @@ ENTRIES = [
         "date":"Oct 18 2018"
     },
     {
+        "id":191,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1970,6 +2149,7 @@ ENTRIES = [
         "date":"Nov 06 2018"
     },
     {
+        "id":192,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -1981,6 +2161,7 @@ ENTRIES = [
         "date":"Dec 16 2018"
     },
     {
+        "id":193,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -1992,6 +2173,7 @@ ENTRIES = [
         "date":"Sep 30 2018"
     },
     {
+        "id":194,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2003,6 +2185,7 @@ ENTRIES = [
         "date":"Oct 07 2018"
     },
     {
+        "id":195,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2014,6 +2197,7 @@ ENTRIES = [
         "date":"Oct 27 2018"
     },
     {
+        "id":196,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2025,6 +2209,7 @@ ENTRIES = [
         "date":"Oct 20 2018"
     },
     {
+        "id":197,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2036,6 +2221,7 @@ ENTRIES = [
         "date":"Oct 14 2018"
     },
     {
+        "id":198,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2047,6 +2233,7 @@ ENTRIES = [
         "date":"Oct 21 2018"
     },
     {
+        "id":199,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2058,6 +2245,7 @@ ENTRIES = [
         "date":"Oct 28 2018"
     },
     {
+        "id":200,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2069,6 +2257,7 @@ ENTRIES = [
         "date":"Nov 25 2018"
     },
     {
+        "id":201,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2080,6 +2269,7 @@ ENTRIES = [
         "date":"Dec 01 2018"
     },
     {
+        "id":202,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2091,6 +2281,7 @@ ENTRIES = [
         "date":"Oct 28 2018"
     },
     {
+        "id":203,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2102,6 +2293,7 @@ ENTRIES = [
         "date":"Nov 04 2018"
     },
     {
+        "id":204,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2113,6 +2305,7 @@ ENTRIES = [
         "date":"Dec 01 2018"
     },
     {
+        "id":205,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2124,6 +2317,7 @@ ENTRIES = [
         "date":"Dec 02 2018"
     },
     {
+        "id":206,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2135,6 +2329,7 @@ ENTRIES = [
         "date":"Dec 09 2018"
     },
     {
+        "id":207,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2146,6 +2341,7 @@ ENTRIES = [
         "date":"Dec 30 2018"
     },
     {
+        "id":208,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2157,6 +2353,7 @@ ENTRIES = [
         "date":"Nov 11 2018"
     },
     {
+        "id":209,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2168,6 +2365,7 @@ ENTRIES = [
         "date":"Nov 18 2018"
     },
     {
+        "id":210,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2179,6 +2377,7 @@ ENTRIES = [
         "date":"Nov 25 2018"
     },
     {
+        "id":211,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2190,6 +2389,7 @@ ENTRIES = [
         "date":"Dec 02 2018"
     },
     {
+        "id":212,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2201,6 +2401,7 @@ ENTRIES = [
         "date":"Dec 09 2018"
     },
     {
+        "id":213,
         "page":"home",
         "category":"specialimg",
         "subcategory":"",
@@ -2212,6 +2413,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":214,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2223,6 +2425,7 @@ ENTRIES = [
         "date":"Dec 23 2018"
     },
     {
+        "id":215,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2234,6 +2437,7 @@ ENTRIES = [
         "date":"Jan 09 2019"
     },
     {
+        "id":216,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2245,9 +2449,10 @@ ENTRIES = [
         "date":"Jan 14 2019"
     },
     {
+        "id":217,
         "page":"events",
         "category":"special_events",
-        "subcategory":"youth_events",
+        "subcategory":"Events",
         "title":"NextGen Lock In",
         "img":"event_icon.png",
         "imgsrc":"https://drive.google.com/open?id=144PXB9rDutFWaFkTMzWJM7Rk7UMJy8Vn",
@@ -2256,6 +2461,7 @@ ENTRIES = [
         "date":"Jan 19 2019"
     },
     {
+        "id":218,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2267,6 +2473,7 @@ ENTRIES = [
         "date":"Jan 20 2019"
     },
     {
+        "id":219,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2278,6 +2485,7 @@ ENTRIES = [
         "date":"Jan 06 2019"
     },
     {
+        "id":220,
         "page":"children",
         "category":"children",
         "subcategory":"",
@@ -2289,6 +2497,7 @@ ENTRIES = [
         "date":"Jan 01 2000"
     },
     {
+        "id":221,
         "page":"message",
         "category":"audio",
         "subcategory":"track",
@@ -2296,14 +2505,15 @@ ENTRIES = [
         "img":"audio_icon.png program_icon.png handout_icon.png",
         "imgsrc":"",
         "markdown":"The Devil Can\u2019t Have My Home<br>Payer #2",
-        "extra":"https://drive.google.com/open?id=12EjXwo__sgKpgCW1v52NnGMLkEFAguzg https://drive.google.com/open?id=108byEvQPQh2U21qRHzKxmkT81psKgM_y",
+        "extra":"https://drive.google.com/open?id=12EjXwo__sgKpgCW1v52NnGMLkEFAguzg https://drive.google.com/open?id=108byEvQPQh2U21qRHzKxmkT81psKgM_y https://drive.google.com/open?id=1Jqw9YzN57p2htPWJdPCeqijjEYxP1EUx",
         "date":"Jan 13 2019"
     },
     {
+        "id":222,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
-        "title":"Chocolate Sunday",
+        "title":"Chocolate Sunday<br><br>NWCC Goes to Prayer @ 6:00pm",
         "img":"event_icon.png",
         "imgsrc":"",
         "markdown":"",
@@ -2311,6 +2521,7 @@ ENTRIES = [
         "date":"Feb 10 2019"
     },
     {
+        "id":223,
         "page":"events",
         "category":"special_events",
         "subcategory":"Events",
@@ -2319,6 +2530,234 @@ ENTRIES = [
         "imgsrc":"",
         "markdown":"",
         "extra":"Mar<br>17",
+        "date":"Mar 17 2019"
+    },
+    {
+        "id":224,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"youth_events",
+        "title":"NextGen Deeper Bible Study<br><div class=\"markdown\">Every 2nd & 4th Tuesdays<br>7pm at The Hope Center<br>ALL MIDDLE & H.S. STUDENTS!</div>",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"<small><small>2<sup>nd</sup>&4<sup>th</sup></small></small><br>Tue",
+        "date":"Jan 01 2030"
+    },
+    {
+        "id":225,
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"January 20 2019<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Praying Together<br>Prayer #3",
+        "extra":"https://drive.google.com/open?id=1IGgkJXdCZx_hWr8Ei1Osc4RUOwqtKRVs https://drive.google.com/open?id=1eiByhtg6OMKRzi-qJz90QUqin5x3p1zO https://drive.google.com/open?id=1HnPhgQy7USAuSICy6QC0cfc2-ViH-m85",
+        "date":"Jan 20 2019"
+    },
+    {
+        "id":226,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Lakewood Life Group @ 6pm",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Jan<br>30",
+        "date":"Jan 30 2019"
+    },
+    {
+        "id":227,
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"January 27 2019<br>Pastor Mary",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"The Walls Come<br>Tumblin\u2019 Down<br>Prayer #4",
+        "extra":"https://drive.google.com/open?id=14eIzj_97Nq6_nehvNczF7O83OPWHhtSz https://drive.google.com/open?id=1yjFlKyku4nb_dg4E9nPAXC3LUMbRzKqq https://drive.google.com/open?id=1BkgKFq4zkwjqevRkGG-XzbfkISi9yFB9",
+        "date":"Jan 27 2019"
+    },
+    {
+        "id":228,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Men's Big & Bold<br>Breakfast @ 8am",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=1tbsAOAJ_Js-F2anY9-YNq78EFXNsTTF8",
+        "markdown":"",
+        "extra":"Feb<br>16",
+        "date":"Feb 16 2019"
+    },
+    {
+        "id":229,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Tacoma Life Group @ 6:00pm",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Jan<br>31",
+        "date":"Jan 31 2019"
+    },
+    {
+        "id":230,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Puyallup Life Group @ 6:00pm",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Feb<br>3",
+        "date":"Feb 03 2019"
+    },
+    {
+        "id":231,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Worship Team Retreat",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=1lk3e4MKMcKGR9SznZ_K7S2tuOFjSisCe",
+        "markdown":"",
+        "extra":"Mar<br>1-2",
+        "date":"Mar 02 2019"
+    },
+    {
+        "id":232,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Annual Meeting @ 7:00pm<br>Chief Leschi A",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=1BqTVosIPQRWuEL38PQYBUXTU-bCxP9ri",
+        "markdown":"",
+        "extra":"Mar<br>13",
+        "date":"Mar 13 2019"
+    },
+    {
+        "id":233,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Love Wins<br><div class=\"markdown\">Easter Celebration<br>Eggstravaganza &<br>Easter Kids Party</div>",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Apr<br>21",
+        "date":"Apr 21 2019"
+    },
+    {
+        "id":234,
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"February 3 2019<br>Pastor Mary",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Churches Unleashed!<br>Prayer #5",
+        "extra":"https://drive.google.com/open?id=10KTz-4w8NrhcCq5M_jqHdmqEV7A5OJSR https://drive.google.com/open?id=10U2tM5GlgFwc6V76f-qsUSGheYYSLexx https://drive.google.com/open?id=1ywFa5-Irmz1_2W_sA6g1BejXGS2leHMy",
+        "date":"Feb 03 2019"
+    },
+    {
+        "id":235,
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"February 17 2019<br>Pastor Mary",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Different Faces of Prayer<br>Prayer #6",
+        "extra":"https://drive.google.com/open?id=1UdiddtF6dE1TAlEpSrq4_iFCxH6tEnZi https://drive.google.com/open?id=1rUV3oPLfwOE_g-jy1Q4x6_QZqfAGEJ6j https://drive.google.com/open?id=1CA1NqyY2JmclURmNsxbeK7LD4rdQ8lpu",
+        "date":"Feb 17 2019"
+    },
+    {
+        "id":236,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Men's Big & Bold Breakfast<br>8:00am",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=1cshPRfcY2w3sOvOVuEEOVyha3QBjlQHN",
+        "markdown":"",
+        "extra":"Mar<br>16",
+        "date":"Mar 16 2019"
+    },
+    {
+        "id":237,
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"March 3 2019<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Forgiven People Forgive<br>Forgiven #2",
+        "extra":"https://drive.google.com/open?id=1X2ESyFvtCIMHsY9ewBJMD9gs6Msvg-Hn https://drive.google.com/open?id=1_EnUqPYC8etnOhQdB4zU5NeZq9xkzpWt",
+        "date":"Mar 03 2019"
+    },
+    {
+        "id":238,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Daylight Savings Time",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Mar<br>10",
+        "date":"Mar 10 2019"
+    },
+    {
+        "id":239,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Women\u2019s AM Bible Study<br>begins @ 10:00am",
+        "img":"event_icon.png",
+        "imgsrc":"",
+        "markdown":"",
+        "extra":"Mar<br>12",
+        "date":"Mar 12 2019"
+    },
+    {
+        "id":240,
+        "page":"events",
+        "category":"special_events",
+        "subcategory":"Events",
+        "title":"Women\u2019s Spring Luncheon<br>12:00pm",
+        "img":"event_icon.png",
+        "imgsrc":"https://drive.google.com/open?id=1tbsAOAJ_Js-F2anY9-YNq78EFXNsTTF8",
+        "markdown":"",
+        "extra":"Apr<br>6",
+        "date":"Apr 06 2019"
+    },
+    {
+        "id":241,
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"March 10 2019<br>Pastor Mary",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Let. It. Go.<br>Forgiven #3",
+        "extra":"https://drive.google.com/open?id=12qv7nUF3ITR4aSEeKyyGZ2Z3BCv8OJb- https://drive.google.com/open?id=1GEkCqHLVk-61p-OGYZ2C9ie3wOGCnD0k",
+        "date":"Mar 10 2019"
+    },
+    {
+        "id":242,
+        "page":"message",
+        "category":"audio",
+        "subcategory":"track",
+        "title":"March 17 2019<br>Pastor Joseph",
+        "img":"audio_icon.png program_icon.png handout_icon.png",
+        "imgsrc":"",
+        "markdown":"Forgiving Family<br>Forgiven #4",
+        "extra":"https://drive.google.com/open?id=1yn7kqmRL_kKD5-lh0AbHLAMrRrlCNm38 https://drive.google.com/open?id=1HnWXJr5HQ6OM_4GEUnp-FGffhopS76db",
         "date":"Mar 17 2019"
     }
 ]
