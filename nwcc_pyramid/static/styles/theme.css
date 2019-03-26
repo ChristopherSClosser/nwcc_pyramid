@@ -155,7 +155,7 @@ hr {
 }
 
 div#homeqc {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 #inner {
@@ -761,7 +761,7 @@ footer {
 
   .quad-container {
     display: flex;
-    margin-top: -2rem;
+    margin-top: -0.3rem;
     width: 100%;
   }
 
@@ -782,6 +782,10 @@ footer {
 @media only screen and (min-width: 545px) {
   .topimg_placeholder {
     height: 4.5rem;
+  }
+
+  .quad-container {
+    margin-top: -5.4rem;
   }
 
   .gallery li img {
@@ -905,7 +909,7 @@ footer {
   }
 
   .quad-container {
-    margin-top: 0rem;
+    margin-top: -5.4rem;
   }
 
   .logo_large img {
@@ -1088,7 +1092,11 @@ footer {
   }
 
   #homeqc {
-    margin-top: 0rem;
+    /* margin-top: 0rem; */
+  }
+
+  .quad-container {
+    margin-top: -5.6rem;
   }
 
   .logo_large img {
