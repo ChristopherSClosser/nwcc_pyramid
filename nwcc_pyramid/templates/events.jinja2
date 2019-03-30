@@ -5,6 +5,23 @@
 {% block content %}
 
   <div class="topimg_placeholder"></div>
+  {% if events %}
+    <div class="welcomecontainer">
+      <ul class="gallery" id="slider">
+        <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1h4f1J8LUyHff3ouhrSZWNqKPzGgY138G" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+        <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1UHWitcVUqN2AuyQGeG-nUDT4MMLKNKz_" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+        <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=15oVvdwstwPA8noCS1lZ69ezB8W7E9zCc" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+        {% for item in events %}
+          {% if item.imgsrc %}
+            <li><img class="mySlides welcomeimg" src="{{ item.imgsrc | replace("open", "uc") }}" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+          {% endif %}
+
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+
   {% if topimg.img %}
     <div>
       <img
@@ -74,7 +91,7 @@
         <center><img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ goog.img }}" alt="{{ goog.title }}"></center>
       {% endif %}
     </div>
-      
+
   {% endif %}
 
 {% endblock content %}

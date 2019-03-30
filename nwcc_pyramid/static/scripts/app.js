@@ -38,7 +38,8 @@ $(function () {
     transition_speed	= 400,
     simple_slideshow	= $('#slider'),
     listItems	= simple_slideshow.children('li'),
-    listLen	= listItems.length, i	= 0,
+    listLen	= listItems.length,
+    i	= 0,
 
     changeList = function () {
       listItems.eq(i).fadeOut(transition_speed, function () {
@@ -85,7 +86,7 @@ $(function(){
     }
   });
 
-  // displays dropdown list on click for mobile
+  // displays dropdown list on click
   $('.dropdown').on('click', function(){
     if ($('.dropdown-content').is(':hidden')){
       // $('#project-list').animate({width: 'toggle'},350);
@@ -95,7 +96,7 @@ $(function(){
     }
   });
 
-  // displays project list on click for mobile
+  // displays dropdown list on click
   $('.dropdown2').on('click', function(){
     if ($('.dropdown-content2').is(':hidden')){
       // $('#project-list').animate({width: 'toggle'},350);
