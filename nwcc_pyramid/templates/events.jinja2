@@ -10,7 +10,7 @@
       <ul class="gallery" id="slider">
         <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1bLM8r3SM_NQXmwFFSwS0SZQqK5tZpyRZ" alt="Welcome to Northwest Community Church - Love boldy" /></li>
         <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1LfopoCfcOvct0FyLJ0gs3WIZMEXMvn-K" alt="Welcome to Northwest Community Church - Love boldy" /></li>
-        <li><img class="mySlides welcomeimg" src="https://drive.google.com/uc?id=1tSf8a4azyWi-ExFe1JWuDiOC7b83gWQu" alt="Welcome to Northwest Community Church - Love boldy" /></li>
+        
         {% for item in events %}
           {% if item.imgsrc %}
             <li><img class="mySlides welcomeimg" src="{{ item.imgsrc | replace("open", "uc") }}" alt="Welcome to Northwest Community Church - Love boldy" /></li>
