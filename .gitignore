@@ -9,6 +9,7 @@ __pycache__/
 layout.jinja2
 html.html
 mytemplate.jinja2
+*.sqlite
 
 # Distribution / packaging
 .Python
