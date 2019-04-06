@@ -16,7 +16,7 @@ requires = [
     'pyramid_retry',
     'pyramid_tm',
     'SQLAlchemy',
-    'psycopg2',
+    'psycopg2-binary <= 2.8',
     'transaction',
     'zope.sqlalchemy',
     'waitress',
@@ -32,7 +32,7 @@ tests_require = [
 
 setup(
     name='nwcc_pyramid',
-    version='2.0',
+    version='2.1.4',
     description='nwcc_pyramid',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
