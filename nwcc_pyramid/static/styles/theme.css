@@ -103,7 +103,7 @@ hr {
 .event h2 {
   display: inline-block;
   transform: translateY(-1rem);
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 
 .audio {
@@ -759,6 +759,14 @@ footer {
     /* max-height: 16rem; */
   }
 
+  /* .event {
+    margin-left: 2rem;
+  } */
+
+  .event h2 {
+    margin-left: 1rem;
+  }
+
   .quad-container {
     display: flex;
     margin-top: -0.3rem;
@@ -786,7 +794,7 @@ footer {
 
   div#homeqc {
     margin-top: -0.7rem;
-  } 
+  }
 
   .quad-container {
     margin-top: -5.4rem;
