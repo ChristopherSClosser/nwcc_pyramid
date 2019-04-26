@@ -18,7 +18,7 @@
   {% endif %}
 
   {% if topimg %}
-    <div class="topimg_placeholder"></div>
+    <!--<div class="topimg_placeholder"></div>-->
     <div class="welcomecontainer">
 
       <a href="{{request.route_url('welcome')}}">
@@ -26,11 +26,11 @@
         <img
           id="welcomeimage"
           class="welcomeimg {{ topimg.category }}"
-          src="{{request.static_url('nwcc_pyramid:static/images/')}}easterbanner.jpg"
+          src="{{request.static_url('nwcc_pyramid:static/images/')}}welcome.png"
           alt="{{ topimg.title }}">
 
         <center>
-          <!--<h1 class="welcometxt">WELCOME</h1>-->
+          <h1 class="welcometxt">WELCOME</h1>
           {% if auth %}
             {% if auth_tools %}
               {% for img in auth_tools[0].img.split(' ') %}
