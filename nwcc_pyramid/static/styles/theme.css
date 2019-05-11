@@ -811,8 +811,8 @@ footer {
 
   .welcomeimg {
     margin-top: 0;
-    /* margin-bottom: 5rem; */
-    /* max-height: 25rem; */
+    margin-bottom: 5rem;
+    max-height: 25rem;
   }
 
   .welcometxt {
@@ -911,6 +911,10 @@ footer {
 }
 
 @media only screen and (min-width: 739px) {
+
+  .welcometxt {
+    margin-top: -47%;
+  }
 
   .special {
     margin-top: 0rem;
