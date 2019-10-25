@@ -833,6 +833,36 @@ def connect_view(request):
     }
 
 
+@view_config(route_name='volunteer', renderer='../templates/volunteer.jinja2')
+def volunteer_view(request):
+    """Volunteer view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'volunteer').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    tri_img = [item for item in content if item.category == 'tri_img']
+    quad_info = [item for item in content if item.category == 'quad_info']
+    main = [item for item in content if item.category == 'main']
+    steps = [item for item in content if item.category == 'steps']
+    return {
+        'auth': auth,
+        'auth_tools': auth_tools,
+        'main_menu': main_menu,
+        'content': content,
+        'tri_img': tri_img,
+        'quad_info': quad_info,
+        'main': main[0],
+        'steps': steps,
+    }
+
+
 @view_config(
     route_name='foursquare',
     renderer='../templates/foursquare.jinja2'
