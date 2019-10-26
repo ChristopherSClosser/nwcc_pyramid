@@ -105,5 +105,21 @@ $(function(){
       $('.dropdown-content2').slideUp();
     }
   });
+
+  //displays volunteer Confirmation and email
+  $('#continue').on('click', function(){
+    if($('#confirm').is(':hidden')){
+      $('#confirm').show();
+    }
+  });
+
+  $('#confirm').on('click', function(){
+    if($('#volemail').is(':hidden')){
+      $('#volemail').show();
+    }
+  });
+
 });
+
+
 // localStorage.removeItem(key);

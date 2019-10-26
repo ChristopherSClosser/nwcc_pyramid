@@ -5,15 +5,72 @@
 {% block content %}
 <div class="topimg_placeholder"></div>
 
-  {% if topimg %}
-    <div>
-      <img
-        class="{{ topimg.category }}"
-        src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ topimg.img }}"
-        alt="{{ topimg.title }}">
-
+  <div class="markdown">
+    <a href="https://leader.foursquare.org/Prod/FoursquareLeader/Content/Resources/Child_and_Youth_Protection_Training_Series.aspx" id="volunteervids" target="_blank">
+      click here for video training
+    </a>
+    <br>
+    <br>
+    <p id="continue">after completing all four videos return here and click to continue</p>
+    <div class="hidden" id="confirm">
+      I have completed all four vieos <br><b>Confirm</b>
     </div>
-  {% endif %}
+  </div>
+
+  <form class="volemail hidden" id="volemail" method="POST">
+    <div bgcolor="#FFFFFF" class="main_table">
+
+      <h2>
+        NWCC Volunteer Training Confirmation
+      </h2>
+    </div>
+
+  	<hr>
+
+    <div>
+  		<input type="hidden" name="formid" value="1119">
+  		<input type="hidden" name="formpin" value="CSNJ">
+    </div>
+
+
+  	<div>
+        <span class="required">*</span>
+  	      First Name:<br>
+  				<input type="text" maxlength="60" name="firstName" size="30" required>
+    </div>
+    <div>
+        <span class="required">*</span>
+  	      Last Name:<br>
+  				<input type="text" maxlength="60" name="lastName" size="30" required>
+    </div>
+
+
+
+
+    <div>
+       <div>
+
+    		<br><span class="required">*</span>
+    		Phone:<br>
+                <input type="text" maxlength="30" name="phone" size="30" required><br>
+    		<div><span class="required">*</span>
+    		Email:</div>
+                <input type="text" maxlength="60" name="email" size="30" required>
+      </div>
+    </div>
+
+
+
+
+
+  					<br><center class="formsubmit">
+  						<hr>
+
+  						<input type="submit" name="submit" value="Submit">
+  						<p><span class="required">*</span> Indicates required entry field</p>
+  					</center>
+
+  </form>
 
   {% if main %}
     <center>

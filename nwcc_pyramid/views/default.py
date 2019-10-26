@@ -847,10 +847,37 @@ def volunteer_view(request):
     query = request.dbsession.query(MyModel)
     content = query.filter(MyModel.page == 'volunteer').all()
     main_menu = query.filter(MyModel.subcategory == 'base').all()
-    tri_img = [item for item in content if item.category == 'tri_img']
-    quad_info = [item for item in content if item.category == 'quad_info']
     main = [item for item in content if item.category == 'main']
-    steps = [item for item in content if item.category == 'steps']
+    cc_email = os.environ['MAIL_SEND_TO']
+
+    if request.method == 'POST':
+        info = request.POST
+        tmp = """
+            I have completed viewing the required Child and Youth Protection Training Series.\n
+            First Name: {0}\n
+            Last Name: {1}\n
+            Phone: {2}\n
+            Email: {3}\n
+        """
+
+        email_body = tmp.format(
+            info['firstName'],
+            info['lastName'],
+            info['phone'],
+            info['email'],
+        )
+
+        mailer = request.mailer
+        message = Message(
+            subject="New volunteer!",
+            sender="weloveboldly@gmail.com",
+            recipients=[cc_email],
+            body=email_body,
+        )
+
+        mailer.send_immediately(message)
+        return HTTPFound(request.route_url('home'))
+
     return {
         'auth': auth,
         'auth_tools': auth_tools,
