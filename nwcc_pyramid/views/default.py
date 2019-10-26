@@ -883,10 +883,7 @@ def volunteer_view(request):
         'auth_tools': auth_tools,
         'main_menu': main_menu,
         'content': content,
-        'tri_img': tri_img,
-        'quad_info': quad_info,
         'main': main[0],
-        'steps': steps,
     }
 
 
