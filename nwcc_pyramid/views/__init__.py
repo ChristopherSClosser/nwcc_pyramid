@@ -34,6 +34,7 @@ from .default import (
     api_view,
     means_view,
     search_view,
+    volunteer_view,
 )
 
 
@@ -72,3 +73,4 @@ def includeme(config):
     config.add_view(api_view, route_name='api')
     config.add_view(means_view, route_name='means')
     config.add_view(search_view, route_name='search')
+    config.add_view(volunteer_view, route_name='volunteer')

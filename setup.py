@@ -32,7 +32,7 @@ tests_require = [
 
 setup(
     name='nwcc_pyramid',
-    version='2.1.6',
+    version='2.1.8',
     description='nwcc_pyramid',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[

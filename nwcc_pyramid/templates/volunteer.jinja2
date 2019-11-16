@@ -1,0 +1,107 @@
+{% extends "base.jinja2" %}
+
+{% block title %}Volunteers{% endblock %}
+
+{% block content %}
+<div class="topimg_placeholder"></div>
+
+  <center>
+    <div class="markdown">
+      <h2>
+        Volunteer Training
+      </h2>
+      <a href="https://leader.foursquare.org/Prod/FoursquareLeader/Content/Resources/Child_and_Youth_Protection_Training_Series.aspx" id="volunteervids" target="_blank">
+        click here for video training
+      </a>
+      <br>
+      <br>
+      <p id="volcontinue1">After completing all four videos return here and click continue</p>
+      <a href="" class="hidden" id="volcontinue" onclick="return false;">
+        <br><button id="buttons"><b>continue</b></button>
+      </a>
+      <a href="" class="hidden" id="confirm" onclick="return false;">
+        <br>I have completed all four videos <br><br><button id="buttons"><b>confirm</b></button>
+      </a>
+    </div>
+  </center>
+
+  <form class="volemail hidden" id="volemail" method="POST">
+    <div bgcolor="#FFFFFF" class="main_table">
+
+      <h2>
+        NWCC Volunteer Training Confirmation
+      </h2>
+    </div>
+
+  	<hr>
+
+    <div>
+  		<input type="hidden" name="formid" value="1119">
+  		<input type="hidden" name="formpin" value="CSNJ">
+    </div>
+
+
+  	<div>
+        <span class="required">*</span>
+  	      First Name:<br>
+  				<input type="text" maxlength="60" name="firstName" size="30" required>
+    </div>
+    <div>
+        <span class="required">*</span>
+  	      Last Name:<br>
+  				<input type="text" maxlength="60" name="lastName" size="30" required>
+    </div>
+
+
+
+
+    <div>
+       <div>
+
+    		<br><span class="required">*</span>
+    		Phone:<br>
+                <input type="text" maxlength="30" name="phone" size="30" required><br>
+    		<div><span class="required">*</span>
+    		Email:</div>
+                <input type="text" maxlength="60" name="email" size="30" required>
+      </div>
+    </div>
+
+
+
+
+
+  					<br><center class="formsubmit">
+  						<hr>
+
+  						<input type="submit" name="submit" value="Submit">
+  						<p><span class="required">*</span> Indicates required entry field</p>
+  					</center>
+
+  </form>
+
+  {% if main %}
+    <center>
+      <div class="markdown">
+        {% if auth %}
+          {% if auth_tools %}
+            {% for img in auth_tools[0].img.split(' ') %}
+              <a href="{{request.route_url('home')}}entry/{{ main.id }}/{{ img.split('.')[0] }}-entry">
+                <img id="{{ img.split('.')[0] }}"
+                  src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ img }}">
+              </a>
+            {% endfor %}
+          {% endif %}
+
+        {% endif %}<br>
+        <h2>{{ main.title }}</h2>
+        {{ main.markdown|safe }}
+      </div>
+      {% if main.img %}
+        <img
+
+          src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ main.img }}">
+      {% endif %}
+    </center>
+  {% endif %}
+{% endblock content %}

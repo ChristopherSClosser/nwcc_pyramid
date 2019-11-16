@@ -833,6 +833,59 @@ def connect_view(request):
     }
 
 
+@view_config(route_name='volunteer', renderer='../templates/volunteer.jinja2')
+def volunteer_view(request):
+    """Volunteer view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'volunteer').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    main = [item for item in content if item.category == 'main']
+    cc_email = os.environ['MAIL_SEND_TO']
+
+    if request.method == 'POST':
+        info = request.POST
+        tmp = """
+            I have completed viewing the required Child and Youth Protection Training Series.\n
+            First Name: {0}\n
+            Last Name: {1}\n
+            Phone: {2}\n
+            Email: {3}\n
+        """
+
+        email_body = tmp.format(
+            info['firstName'],
+            info['lastName'],
+            info['phone'],
+            info['email'],
+        )
+
+        mailer = request.mailer
+        message = Message(
+            subject="New volunteer!",
+            sender="weloveboldly@gmail.com",
+            recipients=[cc_email],
+            body=email_body,
+        )
+
+        mailer.send_immediately(message)
+        return HTTPFound(request.route_url('home'))
+
+    return {
+        'auth': auth,
+        'auth_tools': auth_tools,
+        'main_menu': main_menu,
+        'content': content,
+    }
+
+
 @view_config(
     route_name='foursquare',
     renderer='../templates/foursquare.jinja2'

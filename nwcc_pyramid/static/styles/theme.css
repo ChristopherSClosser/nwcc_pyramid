@@ -601,6 +601,14 @@ div#homeqc {
   margin-right: 0.5rem;
 }
 
+#buttons {
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #33751d;
+  border-radius: 0.3rem;
+  border-style: none;
+}
+
 .burger img {
   width: 3rem;
   cursor: pointer;
@@ -633,7 +641,7 @@ div#homeqc {
 
 .nav-down {
   height: 50px;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 9999;

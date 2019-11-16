@@ -1,5 +1,7 @@
 'use strict';
 
+// Hide main nav on scroll down
+/*
 $(function(){
   // Keep track of last scroll
   let lastScroll = 0;
@@ -30,6 +32,7 @@ $(function(){
     // delay...
   }, 600);
 });
+*/
 
 // displays gallery imgs in slide show format
 $(function () {
@@ -105,5 +108,30 @@ $(function(){
       $('.dropdown-content2').slideUp();
     }
   });
+
+  //displays volunteer Confirmation and email
+  $('#volunteervids').on('click', function(){
+    if($('#volcontinue').is(':hidden')){
+      $('#volcontinue').show();
+    }
+  });
+
+  $('#volcontinue').on('click', function(){
+    if($('#confirm').is(':hidden')){
+      $('#volcontinue1').hide();
+      $('#volcontinue').hide();
+      $('#confirm').show();
+    }
+  });
+
+  $('#confirm').on('click', function(){
+    if($('#volemail').is(':hidden')){
+      $('#confirm').hide();
+      $('#volemail').show();
+    }
+  });
+
 });
+
+
 // localStorage.removeItem(key);
