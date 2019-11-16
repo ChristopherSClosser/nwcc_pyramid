@@ -116,7 +116,7 @@ $(function(){
     }
   });
 
-  $('#continue').on('click', function(){
+  $('#volcontinue').on('click', function(){
     if($('#confirm').is(':hidden')){
       $('#confirm').show();
     }
