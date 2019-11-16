@@ -118,12 +118,14 @@ $(function(){
 
   $('#volcontinue').on('click', function(){
     if($('#confirm').is(':hidden')){
+      $('#volcontinue').hide();
       $('#confirm').show();
     }
   });
 
   $('#confirm').on('click', function(){
     if($('#volemail').is(':hidden')){
+      $('#confirm').hide();
       $('#volemail').show();
     }
   });
