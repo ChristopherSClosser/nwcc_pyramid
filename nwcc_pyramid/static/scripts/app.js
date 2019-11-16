@@ -118,6 +118,7 @@ $(function(){
 
   $('#volcontinue').on('click', function(){
     if($('#confirm').is(':hidden')){
+      $('#volcontinue1').hide();
       $('#volcontinue').hide();
       $('#confirm').show();
     }
