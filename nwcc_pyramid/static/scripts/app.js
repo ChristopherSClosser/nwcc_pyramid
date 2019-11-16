@@ -110,6 +110,12 @@ $(function(){
   });
 
   //displays volunteer Confirmation and email
+  $('#volunteervids').on('click', function(){
+    if($('#volcontinue').is(':hidden')){
+      $('#volcontinue').show();
+    }
+  });
+
   $('#continue').on('click', function(){
     if($('#confirm').is(':hidden')){
       $('#confirm').show();
