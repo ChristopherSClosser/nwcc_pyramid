@@ -1,0 +1,28 @@
+>>>>  <--- *Other changes noted in commit messages*
+
+
+2.1.8
+---
+
+>Python version update 3.6.9
+
+--------------------------------------------
+
+2.0
+---
+
+>Python version update 3.6.8
+
+--------------------------------------------
+
+1.9.4
+---
+
+>Python version update 3.6.7
+
+--------------------------------------------
+
+1.0
+---
+
+>Initial release
