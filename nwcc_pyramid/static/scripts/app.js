@@ -1,5 +1,7 @@
 'use strict';
 
+// Hide main nav on scroll down
+/*
 $(function(){
   // Keep track of last scroll
   let lastScroll = 0;
@@ -30,6 +32,7 @@ $(function(){
     // delay...
   }, 600);
 });
+*/
 
 // displays gallery imgs in slide show format
 $(function () {

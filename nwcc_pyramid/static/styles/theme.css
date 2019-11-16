@@ -633,7 +633,7 @@ div#homeqc {
 
 .nav-down {
   height: 50px;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 9999;
