@@ -1,5 +1,11 @@
 <-- Other changes noted in commit messages -->
 
+2.1.10
+---
+
+Python version update 3.6.10
+
+--------------------------------------------
 
 2.1.8
 ---
