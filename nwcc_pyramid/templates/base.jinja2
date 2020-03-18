@@ -40,6 +40,11 @@
         <a class="brandtitle" href="{{request.route_url('home')}}"><h2>Northwest</h2><br><h3>COMMUNITY CHURCH</h3></a>
         <div class="burger"><img src="{{request.static_url('nwcc_pyramid:static/images/burger.png')}}"></div>
       </div>
+      <center>
+        <div id="news" class="loggedin">
+          <a href="{{request.route_url('news')}}">Click Here for Updates on COVID-19</a> | <a href="https://www.youtube.com/channel/UCIjgg71raP7NHHfImDUYjVA">Click Here for YouTube Live Stream</a> 
+        </div>
+      </center>
       {% if auth %}
         <center>
         <div class="loggedin">

@@ -40,3 +40,4 @@ def includeme(config):
     config.add_route('means', 'means')
     config.add_route('search', '/search')
     config.add_route('volunteer', '/volunteer')
+    config.add_route('news', '/news')

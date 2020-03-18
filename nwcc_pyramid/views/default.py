@@ -938,6 +938,28 @@ def giving_view(request):
     }
 
 
+@view_config(route_name='news', renderer='../templates/news.jinja2')
+def news_view(request):
+    """News view."""
+    auth = False
+    try:
+        auth = request.cookies['auth_tkt']
+        auth_tools = request.dbsession.query(
+            MyModel
+        ).filter(MyModel.category == 'admin').all()
+    except KeyError:
+        auth_tools = []
+    query = request.dbsession.query(MyModel)
+    content = query.filter(MyModel.page == 'news').all()
+    main_menu = query.filter(MyModel.subcategory == 'base').all()
+    return {
+        'auth': auth,
+        'auth_tools': auth_tools,
+        'main_menu': main_menu,
+        'main': content,
+    }
+
+
 @view_config(route_name='youth_events', renderer='../templates/youth_events.jinja2')
 def youth_events_view(request):
     """Youth events view."""

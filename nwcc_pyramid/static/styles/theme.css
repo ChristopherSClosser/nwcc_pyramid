@@ -458,6 +458,10 @@ div#homeqc {
   width: 90%;
 }
 
+#news {
+  background: red;
+}
+
 .loggedin {
   text-align: center;
   color: white;
