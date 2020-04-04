@@ -22,9 +22,12 @@
       <center>
         <a href="{{ curriculum.extra }}">
           <img src="{{request.static_url('nwcc_pyramid:static/images/')}}{{ curriculum.img }}" alt="{{ curriculum.title }}"><br>
-          {{ curriculum.markdown|safe }}
+          1-6th Grade Curriculum<br>
+          Click on the picture for more info.
         </a>
       </center>
+      <br>
+      {{ curriculum.markdown|safe }}
     </div><hr style="background: lightgrey; width: 90%">
   {% endif %}
 
