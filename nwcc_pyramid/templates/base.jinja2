@@ -51,7 +51,11 @@
         <a class="brandtitle" href="{{request.route_url('home')}}"><h2>Northwest</h2><br><h3>COMMUNITY CHURCH</h3></a>
         <div class="burger"><img src="{{request.static_url('nwcc_pyramid:static/images/burger.png')}}"></div>
       </div>
-
+      <center>
+        <div id="news" class="loggedin">
+          <a href="{{request.route_url('news')}}">Click Here for Updates on COVID-19</a> <hr> <a href="https://www.youtube.com/channel/UCIjgg71raP7NHHfImDUYjVA" target="_blank">Click Here for YouTube Live Stream</a> <hr> <a href="{{request.route_url('children')}}" target="_blank">Click Here for Parent Resources</a>
+        </div>
+      </center>
       {% if auth %}
         <center>
         <div class="loggedin">
@@ -92,11 +96,7 @@
 
 
     </header>
-    <center>
-      <div id="news" class="loggedin">
-        <a href="{{request.route_url('news')}}">Click Here for Updates on COVID-19</a> <hr> <a href="https://www.youtube.com/channel/UCIjgg71raP7NHHfImDUYjVA" target="_blank">Click Here for YouTube Live Stream</a> <hr> <a href="{{request.route_url('children')}}" target="_blank">Click Here for Parent Resources</a>
-      </div>
-    </center>
+
     {% block login %}{% endblock %}
     {% block notfound %}{% endblock %}
 
