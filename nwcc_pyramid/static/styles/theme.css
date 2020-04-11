@@ -737,6 +737,7 @@ footer {
 }
 
 .content {
+  margin-top: 4rem;
   flex: 1 0 auto;
   margin-left: 0rem;
   margin-right: 0rem;
