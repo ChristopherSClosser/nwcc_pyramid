@@ -504,7 +504,7 @@ div#homeqc {
 
 .imgtitle {
   position: absolute;
-  top: 4rem;
+  top: 10rem;
   left: 1rem;
   letter-spacing: -1px;
 }
@@ -966,7 +966,7 @@ footer {
   }
 
   .imgtitle {
-    top: 5rem;
+    top: 12rem;
   }
 
   .title {
