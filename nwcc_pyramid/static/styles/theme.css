@@ -531,12 +531,16 @@ div#homeqc {
   height: 3.5rem;
 }
 
+.news_placeholder {
+  height: 3.5rem;
+}
+
 .hometopimg {
   max-width: 90%;
 }
 
 .topimg {
-  margin-top: 7rem;
+  /* margin-top: 7rem; */
   margin-top: 0;
   max-width: 100%;
   z-index: -9999;
@@ -807,6 +811,10 @@ footer {
     height: 4.5rem;
   }
 
+  .news_placeholder {
+    height: 3.5rem;
+  }
+
   div#homeqc {
     margin-top: -0.7rem;
   }
@@ -1044,6 +1052,10 @@ footer {
   .topimg_placeholder {
     height: 6.1rem;
   }
+
+  .news_placeholder {
+    height: 3.5rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -1244,7 +1256,7 @@ footer {
   }
 
   .topimg {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     margin-left: 0;
   }
 
